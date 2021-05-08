@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: EnjoyToShare  #网站标题
+title: 倪春恩的博客  #网站标题
 subtitle: 身体和灵魂总要有一个在路上      #网站副标题
 description: 要么出众，要么出局  #Sometimes your whole life boils down to one insame move      #详情
 keywords: 青果小站
-author: WuGenQiang   #作者
+author: George Ni   #作者
 language: zh-CN # 语言
-timezone: UTC #时区
+timezone: Asia/Shanghai #时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://wugenqiang.github.io # wugenqiang是我的账号，修改为自己的账号
+url: https://nichunen.github.io # wugenqiang是我的账号，修改为自己的账号
 root: /
 permalink: articles/:urlname.html #:year/:month/:day/:title/
 permalink_defaults:
@@ -93,8 +93,6 @@ deploy:
   #branch: master
   repo:
     github: https://github.com/wugenqiang/wugenqiang.github.io.git,master
-    # coding: https://dev.tencent.com/u/wugenqiang/p/wugenqiang.coding.me.git,master
-    gitee: https://gitee.com/wugenqiang/wugenqiang.git,master
 
 admin:
   username: wugenqiang

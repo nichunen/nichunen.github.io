@@ -31,6 +31,7 @@
     "image-size": "^0.7.2",
     "live2d-widget-model-koharu": "^1.0.5",
     "live2d-widget-model-wanko": "^1.0.5",
+    "markdown-it": "^12.0.6",
     "markdown-it-emoji": "^1.4.0",
     "shelljs": "^0.8.3"
   }
