@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[博主笔记推荐（notebook.js.org）]]></title>
-    <url>%2Farticles%2Fnotebook-wonderful.html</url>
-    <content type="text"><![CDATA[经历过 2019 年的本科毕业年，在这个社会上疯狂谋生，慢慢接近梦想，逐渐触摸阳光！ 总是会有技术需要分享，总是会有问题需要解答，或许我们遇到的问题出奇的一致，所以，我逐渐喜欢上了写博客，和大家一起分享那些年一起遇到的坎坎坷坷！ 用过 CSDN，写过简书，使用过语雀，19 年突然接触 Hexo，疯狂的改造优化 Hexo - NexT 版本，然而今年，遇到了那个内敛而又不失稳重的 Ta —— Docsify。已经使用了将近 4 个月，文档网站雏形已经建立，内容也在不断完善，记录一路走来的计算机专业知识，记录一群人的成长！ 浏览我的文档网站：https://notebook.js.org 如果觉得文档不错，也想尝试自己建立一个，可以参考本人写的教程：优化使用 Docsify 在此说明一下：如果觉得我的分享内容很好，记得关注这个文档网站，今后的正常更新会在这里完成，这里会最全 博客使用说明 目前使用下面 3 个博客进行记录生活： NoteBook CSDN Hexo !&gt; 其他地方若出现，仅仅表示被转载！在此特别声明！ 使用一：日常笔记 所有的博客、笔记、分享的内容都会在 NoteBook 中进行编排整理然后分享出来，包含我在全网分享的大多数！ 使用二：分享面试题 今后 CSDN 主要更新 LeetCode 和牛客上的算法题和面试题的解题思路和遇到的问题等等，让 CSDN 博客显得内容更清洁！更好！（写于 2020 年 5 月 22 日） 使用三：分享本人成果 今后 Hexo 博客主要更新本人的最新成果、对于常用软件的破解方法的文档以及对于知识点的总结等等]]></content>
-      <categories>
-        <category>思录</category>
-        <category>笔记推荐</category>
-      </categories>
-      <tags>
-        <tag>推荐</tag>
-        <tag>思录</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hexo NexT 添加 Gitter 在线交流]]></title>
     <url>%2Farticles%2FHexo-NexT-Gitter.html</url>
     <content type="text"><![CDATA[添加 Gitter 在线交流 Gitter 的介绍 Gitter 的功能特色 免费无限制：用户可以自由免费地创建、搜素、加入社区、聊天室。支持单独私人聊天、markdown 编辑、媒体文件发送等功能。 简单便捷：支持 Github 项目库关联创建社区，一键即可加入聊天讨论，仅在一个浏览器页面中即可查看和订阅多个聊天室。 对外开放：所有社区支持对外分享并可被搜索到，一个链接即可访问参与聊天讨论，用户头像显示其 GitHub 账号的相关信息。 Gitter 注册 Gitter 国际站：https://gitter.im 集成代码 1234567&lt;!--使用 Gitter 实现一个 IM 即时通讯聊天室功能--&gt;&lt;script&gt; ((window.gitter = &#123;&#125;).chat = &#123;&#125;).options = &#123; room: 'enjoytoshare/community' &#125;;&lt;/script&gt;&lt;script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer&gt;&lt;/script&gt; 集成很简单，把上面的代码拷贝到 html 页面里就可以了。 实现步骤 下面就来实现一下： 步骤一：在 themes/next/layout/_third-party 目录下面新建 gitter.swig 文件，文件内容就是上面的集成代码。 步骤二：修改 themes/next/layout/_layout.swig文件，在第三方功能显示区域添加 gitter，添加如下代码： 1&#123;% include '_third-party/gitter.swig' %&#125; 完工，测试一下： 测试结果 打开 EnjoyToShare Blog 查看，右下角已经出现表明完成啦，嘿嘿嘿！]]></content>
