@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[数据库基础教程习题解答]]></title>
     <url>%2Farticles%2Fundefined.html</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[a) 左表属性acctNo, type, balance, 右表属性firstName, lastName, idNo, account. b)]]></content>
       <categories>
         <category>习题解答</category>
       </categories>
