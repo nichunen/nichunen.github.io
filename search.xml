@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[lc-461]]></title>
+    <url>%2Farticles%2Fundefined.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[lc-1190]]></title>
+    <url>%2Farticles%2Fundefined.html</url>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465//给出一个字符串 s（仅含有小写英文字母和括号）。 //// 请你按照从括号内到外的顺序，逐层反转每对匹配括号中的字符串，并返回最终的结果。 //// 注意，您的结果中 不应 包含任何括号。 //// //// 示例 1： //// 输入：s = "(abcd)"//输出："dcba"// //// 示例 2： //// 输入：s = "(u(love)i)"//输出："iloveu"// //// 示例 3： //// 输入：s = "(ed(et(oc))el)"//输出："leetcode"// //// 示例 4： //// 输入：s = "a(bcdefghijkl(mno)p)q"//输出："apmnolkjihgfedcbq"// //// //// 提示： //// // 0 &lt;= s.length &lt;= 2000 // s 中只有小写英文字母和括号 // 我们确保所有括号都是成对出现的 // // Related Topics 栈 // 👍 123 👎 0//leetcode submit region begin(Prohibit modification and deletion)class Solution &#123; public String reverseParentheses(String s) &#123; Deque&lt;String&gt; stack = new LinkedList&lt;String&gt;(); StringBuffer sb = new StringBuffer(); for (int i = 0; i &lt; s.length(); i++) &#123; char ch = s.charAt(i); if (ch == '(') &#123; stack.push(sb.toString()); sb.setLength(0); &#125; else if (ch == ')') &#123; sb.reverse(); sb.insert(0, stack.pop()); &#125; else &#123; sb.append(ch); &#125; &#125; return sb.toString(); &#125;&#125;//leetcode submit region end(Prohibit modification and deletion)]]></content>
+      <categories>
+        <category>习题解答</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[数据库基础教程习题解答]]></title>
     <url>%2Farticles%2Fundefined.html</url>
-    <content type="text"><![CDATA[a) 左表属性acctNo, type, balance, 右表属性firstName, lastName, idNo, account. b)]]></content>
+    <content type="text"><![CDATA[a) 左表属性acctNo, type, balance, 右表属性firstName, lastName, idNo, account. b) 关系1的元组(12345,savings,12000)… 关系2的元组(Robbie,Banksm901-222,12345),… c) 关系1的元组(12345,savings,12000)分量12345,savings,12000… 关系2的元组(Robbie,Banksm901-222,12345)分量Robbie,Banksm901-222,12345… d) 关系1的关系模式Accounts(acctNo, type, balance), 关系2的关系模式Customers(firstName, lastName, idNo, account) e) 关系1的数据库模式 12345Accounts( acctNo:integer, type:string, balance:string) 关系2的数据库模式 123456Customers( firstName:string, lastName:string, idNo:string, account:integer) f) 关系1中属性acctNo的域为integer,… g) 略 学生用姓名+班级形成主键]]></content>
       <categories>
         <category>习题解答</category>
       </categories>

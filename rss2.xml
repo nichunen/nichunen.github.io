@@ -9,8 +9,49 @@
     <atom:link href="https://nichunen.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Good judgment comes from experience, and experience comes from bad judgment.</description>
-    <pubDate>Wed, 26 May 2021 07:01:30 GMT</pubDate>
+    <pubDate>Thu, 27 May 2021 03:16:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>lc-461</title>
+      <link>https://nichunen.github.io/articles/undefined.html</link>
+      <guid>https://nichunen.github.io/articles/undefined.html</guid>
+      <pubDate>Thu, 27 May 2021 03:16:50 GMT</pubDate>
+      
+      
+      
+      
+      
+      
+      <comments>https://nichunen.github.io/articles/undefined.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>lc-1190</title>
+      <link>https://nichunen.github.io/articles/undefined.html</link>
+      <guid>https://nichunen.github.io/articles/undefined.html</guid>
+      <pubDate>Wed, 26 May 2021 08:20:37 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//给出一个字符串 s（仅含有小写英文字母和括号）。 </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 请你按照从括号内到外的顺序，逐层反转每对匹配括号中的字符串，并返回最终的结果。 </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 注意，您的结果中 不应 包含任何括号。 </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 示例 1： </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 输入：s = "(abcd)"</span></span><br><span class="line"><span class="comment">//输出："dcba"</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 示例 2： </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 输入：s = "(u(love)i)"</span></span><br><span class="line"><span class="comment">//输出："iloveu"</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 示例 3： </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 输入：s = "(ed(et(oc))el)"</span></span><br><span class="line"><span class="comment">//输出："leetcode"</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 示例 4： </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 输入：s = "a(bcdefghijkl(mno)p)q"</span></span><br><span class="line"><span class="comment">//输出："apmnolkjihgfedcbq"</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 提示： </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">// 0 &lt;= s.length &lt;= 2000 </span></span><br><span class="line"><span class="comment">// s 中只有小写英文字母和括号 </span></span><br><span class="line"><span class="comment">// 我们确保所有括号都是成对出现的 </span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">// Related Topics 栈 </span></span><br><span class="line"><span class="comment">// 👍 123 👎 0</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//leetcode submit region begin(Prohibit modification and deletion)</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">reverseParentheses</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        Deque&lt;String&gt; stack = <span class="keyword">new</span> LinkedList&lt;String&gt;();</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            <span class="keyword">char</span> ch = s.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (ch == <span class="string">'('</span>) &#123;</span><br><span class="line">                stack.push(sb.toString());</span><br><span class="line">                sb.setLength(<span class="number">0</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ch == <span class="string">')'</span>) &#123;</span><br><span class="line">                sb.reverse();</span><br><span class="line">                sb.insert(<span class="number">0</span>, stack.pop());</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                sb.append(ch);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//leetcode submit region end(Prohibit modification and deletion)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://nichunen.github.io/categories/%E4%B9%A0%E9%A2%98%E8%A7%A3%E7%AD%94/">习题解答</category>
+      
+      
+      <category domain="https://nichunen.github.io/tags/leetcode/">leetcode</category>
+      
+      
+      <comments>https://nichunen.github.io/articles/undefined.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>数据库基础教程习题解答</title>
@@ -26,7 +67,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526144601.png" alt></p><p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526145720.png" alt></p><p>a) 左表属性acctNo, type, balance, 右表属性firstName, lastName, idNo, account.</p><p>b)</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526144601.png" alt></p><p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526145720.png" alt></p><p>a) 左表属性acctNo, type, balance, 右表属性firstName, lastName, idNo, account.</p><p>b) 关系1的元组(12345,savings,12000)… 关系2的元组(Robbie,Banksm901-222,12345),…</p><p>c) 关系1的元组(12345,savings,12000)分量12345,savings,12000… 关系2的元组(Robbie,Banksm901-222,12345)分量Robbie,Banksm901-222,12345…</p><p>d) 关系1的关系模式Accounts(acctNo, type, balance), 关系2的关系模式Customers(firstName, lastName, idNo, account)</p><p>e) 关系1的数据库模式</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Accounts(</span><br><span class="line">    acctNo:integer,</span><br><span class="line">    type:string,</span><br><span class="line">    balance:string</span><br><span class="line">)</span><br></pre></td></tr></table></figure><p>关系2的数据库模式</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Customers(</span><br><span class="line">    firstName:string,</span><br><span class="line">    lastName:string,</span><br><span class="line">    idNo:string,</span><br><span class="line">    account:integer</span><br><span class="line">)</span><br></pre></td></tr></table></figure><p>f) 关系1中属性acctNo的域为integer,…</p><p>g) 略</p><p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526202726.png" alt></p><p>学生用姓名+班级形成主键</p>]]></content:encoded>
       
       
       <category domain="https://nichunen.github.io/categories/%E4%B9%A0%E9%A2%98%E8%A7%A3%E7%AD%94/">习题解答</category>
