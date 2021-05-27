@@ -9,28 +9,39 @@
     <atom:link href="https://nichunen.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Good judgment comes from experience, and experience comes from bad judgment.</description>
-    <pubDate>Thu, 27 May 2021 03:16:50 GMT</pubDate>
+    <pubDate>Thu, 27 May 2021 05:05:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>lc-461</title>
-      <link>https://nichunen.github.io/articles/undefined.html</link>
-      <guid>https://nichunen.github.io/articles/undefined.html</guid>
+      <link>https://nichunen.github.io/articles/lc-461.html</link>
+      <guid>https://nichunen.github.io/articles/lc-461.html</guid>
       <pubDate>Thu, 27 May 2021 03:16:50 GMT</pubDate>
       
+        
+        
+      <description>&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</description>
+        
       
       
       
+      <content:encoded><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//两个整数之间的汉明距离指的是这两个数字对应二进制位不同的位置的数目。 </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 给出两个整数 x 和 y，计算它们之间的汉明距离。 </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 注意： </span></span><br><span class="line"><span class="comment">//0 ≤ x, y &lt; 231. </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 示例: </span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">//输入: x = 1, y = 4</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//输出: 2</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//解释:</span></span><br><span class="line"><span class="comment">//1   (0 0 0 1)</span></span><br><span class="line"><span class="comment">//4   (0 1 0 0)</span></span><br><span class="line"><span class="comment">//       ↑   ↑</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//上面的箭头指出了对应二进制位不同的位置。</span></span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">// Related Topics 位运算 </span></span><br><span class="line"><span class="comment">// 👍 440 👎 0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//leetcode submit region begin(Prohibit modification and deletion)</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">hammingDistance</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (x != <span class="number">0</span> || y != <span class="number">0</span>) &#123;</span><br><span class="line">            result += (x &amp; <span class="number">0x01</span>) ^ (y &amp; <span class="number">0x01</span>);</span><br><span class="line">            x = x&gt;&gt;<span class="number">1</span>;</span><br><span class="line">            y = y&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//leetcode submit region end(Prohibit modification and deletion)</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
-      <comments>https://nichunen.github.io/articles/undefined.html#disqus_thread</comments>
+      <category domain="https://nichunen.github.io/categories/%E4%B9%A0%E9%A2%98%E8%A7%A3%E7%AD%94/">习题解答</category>
+      
+      
+      <category domain="https://nichunen.github.io/tags/leetcode/">leetcode</category>
+      
+      
+      <comments>https://nichunen.github.io/articles/lc-461.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>lc-1190</title>
-      <link>https://nichunen.github.io/articles/undefined.html</link>
-      <guid>https://nichunen.github.io/articles/undefined.html</guid>
+      <link>https://nichunen.github.io/articles/lc-1190.html</link>
+      <guid>https://nichunen.github.io/articles/lc-1190.html</guid>
       <pubDate>Wed, 26 May 2021 08:20:37 GMT</pubDate>
       
         
@@ -49,14 +60,14 @@
       <category domain="https://nichunen.github.io/tags/leetcode/">leetcode</category>
       
       
-      <comments>https://nichunen.github.io/articles/undefined.html#disqus_thread</comments>
+      <comments>https://nichunen.github.io/articles/lc-1190.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>数据库基础教程习题解答</title>
-      <link>https://nichunen.github.io/articles/undefined.html</link>
-      <guid>https://nichunen.github.io/articles/undefined.html</guid>
+      <link>https://nichunen.github.io/articles/answers-to-database.html</link>
+      <guid>https://nichunen.github.io/articles/answers-to-database.html</guid>
       <pubDate>Wed, 26 May 2021 06:35:14 GMT</pubDate>
       
         
@@ -76,7 +87,7 @@
       <category domain="https://nichunen.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
       
       
-      <comments>https://nichunen.github.io/articles/undefined.html#disqus_thread</comments>
+      <comments>https://nichunen.github.io/articles/answers-to-database.html#disqus_thread</comments>
       
     </item>
     
