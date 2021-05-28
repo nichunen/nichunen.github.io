@@ -167,7 +167,8 @@
 <meta property="og:image" content="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526144601.png">
 <meta property="og:image" content="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526145720.png">
 <meta property="og:image" content="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526202726.png">
-<meta property="og:updated_time" content="2021-05-27T05:05:23.317Z">
+<meta property="og:image" content="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210527132357.png">
+<meta property="og:updated_time" content="2021-05-27T12:29:07.018Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库基础教程习题解答">
 <meta name="twitter:description" content="a) 左表属性acctNo, type, balance, 右表属性firstName, lastName, idNo, account. b) 关系1的元组(12345,savings,12000)… 关系2的元组(Robbie,Banksm901-222,12345),… c) 关系1的元组(12345,savings,12000)分量12345,savings,12000… 关系2的元组">
@@ -175,7 +176,7 @@
 
 
 
-  <link rel="alternate" href="https://nichunen.github.io/rss2.xml" title="倪春恩的博客" type="application/atom+xml">
+  <link rel="alternate" href="https://nichunen.github.io/atom.xml" title="倪春恩的博客" type="application/atom+xml">
 
 
 
@@ -511,7 +512,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2021-05-27 13:05:23" itemprop="dateModified" datetime="2021-05-27T13:05:23+08:00">2021-05-27</time>
+                <time title="修改时间：2021-05-27 20:29:07" itemprop="dateModified" datetime="2021-05-27T20:29:07+08:00">2021-05-27</time>
               
             
           </span>
@@ -608,6 +609,16 @@
 <p>g) 略</p>
 <p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210526202726.png" alt></p>
 <p>学生用姓名+班级形成主键</p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20210527132357.png" alt></p>
+<p>a)</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`Product`</span> (</span><br><span class="line">    <span class="string">`maker`</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    <span class="string">`model`</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    <span class="string">`type`</span> <span class="built_in">varchar</span>(<span class="number">50</span>),</span><br><span class="line">    PRIMARY <span class="keyword">KEY</span> (<span class="string">`maker`</span>),</span><br><span class="line">    <span class="keyword">UNIQUE</span> <span class="keyword">KEY</span> (<span class="string">`model`</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>b)</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`PC`</span> (</span><br><span class="line">    <span class="string">`model`</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    <span class="string">`speed`</span> <span class="built_in">bigint</span>(<span class="number">20</span>),</span><br><span class="line">    <span class="string">`ram`</span> <span class="built_in">bigint</span>(<span class="number">20</span>),</span><br><span class="line">    <span class="string">`hd`</span> <span class="built_in">bigint</span>(<span class="number">20</span>),</span><br><span class="line">    <span class="string">`price`</span> <span class="built_in">decimal</span>(<span class="number">12</span>,<span class="number">2</span>)</span><br><span class="line">    PRIMARY <span class="keyword">KEY</span> (<span class="string">`model`</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>c,d) 略</p>
+<p>e)</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="string">`Printer`</span> <span class="keyword">drop</span> <span class="string">`color`</span>;</span><br></pre></td></tr></table></figure>
+<p>f)</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="string">`Laptop`</span> <span class="keyword">add</span> <span class="keyword">column</span>  <span class="string">`od`</span> <span class="built_in">varchar</span>(<span class="number">20</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -784,7 +795,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -821,7 +834,7 @@
 
           
             <div class="feed-link motion-element">
-              <a href="https://nichunen.github.io/rss2.xml" rel="alternate">
+              <a href="https://nichunen.github.io/atom.xml" rel="alternate">
                 <i class="fa fa-rss"></i>
                 RSS
               </a>

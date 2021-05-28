@@ -5,7 +5,7 @@
     <url>%2Farticles%2Flc-461.html</url>
     <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829303132333435363738//两个整数之间的汉明距离指的是这两个数字对应二进制位不同的位置的数目。 //// 给出两个整数 x 和 y，计算它们之间的汉明距离。 //// 注意： //0 ≤ x, y &lt; 231. //// 示例: //// //输入: x = 1, y = 4////输出: 2////解释://1 (0 0 0 1)//4 (0 1 0 0)// ↑ ↑////上面的箭头指出了对应二进制位不同的位置。// // Related Topics 位运算 // 👍 440 👎 0//leetcode submit region begin(Prohibit modification and deletion)class Solution &#123; public int hammingDistance(int x, int y) &#123; int result = 0; while (x != 0 || y != 0) &#123; result += (x &amp; 0x01) ^ (y &amp; 0x01); x = x&gt;&gt;1; y = y&gt;&gt;1; &#125; return result; &#125;&#125;//leetcode submit region end(Prohibit modification and deletion)]]></content>
       <categories>
-        <category>习题解答</category>
+        <category>leetcode</category>
       </categories>
       <tags>
         <tag>leetcode</tag>
@@ -16,7 +16,7 @@
     <url>%2Farticles%2Flc-1190.html</url>
     <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465//给出一个字符串 s（仅含有小写英文字母和括号）。 //// 请你按照从括号内到外的顺序，逐层反转每对匹配括号中的字符串，并返回最终的结果。 //// 注意，您的结果中 不应 包含任何括号。 //// //// 示例 1： //// 输入：s = "(abcd)"//输出："dcba"// //// 示例 2： //// 输入：s = "(u(love)i)"//输出："iloveu"// //// 示例 3： //// 输入：s = "(ed(et(oc))el)"//输出："leetcode"// //// 示例 4： //// 输入：s = "a(bcdefghijkl(mno)p)q"//输出："apmnolkjihgfedcbq"// //// //// 提示： //// // 0 &lt;= s.length &lt;= 2000 // s 中只有小写英文字母和括号 // 我们确保所有括号都是成对出现的 // // Related Topics 栈 // 👍 123 👎 0//leetcode submit region begin(Prohibit modification and deletion)class Solution &#123; public String reverseParentheses(String s) &#123; Deque&lt;String&gt; stack = new LinkedList&lt;String&gt;(); StringBuffer sb = new StringBuffer(); for (int i = 0; i &lt; s.length(); i++) &#123; char ch = s.charAt(i); if (ch == '(') &#123; stack.push(sb.toString()); sb.setLength(0); &#125; else if (ch == ')') &#123; sb.reverse(); sb.insert(0, stack.pop()); &#125; else &#123; sb.append(ch); &#125; &#125; return sb.toString(); &#125;&#125;//leetcode submit region end(Prohibit modification and deletion)]]></content>
       <categories>
-        <category>习题解答</category>
+        <category>leetcode</category>
       </categories>
       <tags>
         <tag>leetcode</tag>
@@ -25,7 +25,7 @@
   <entry>
     <title><![CDATA[数据库基础教程习题解答]]></title>
     <url>%2Farticles%2Fanswers-to-database.html</url>
-    <content type="text"><![CDATA[a) 左表属性acctNo, type, balance, 右表属性firstName, lastName, idNo, account. b) 关系1的元组(12345,savings,12000)… 关系2的元组(Robbie,Banksm901-222,12345),… c) 关系1的元组(12345,savings,12000)分量12345,savings,12000… 关系2的元组(Robbie,Banksm901-222,12345)分量Robbie,Banksm901-222,12345… d) 关系1的关系模式Accounts(acctNo, type, balance), 关系2的关系模式Customers(firstName, lastName, idNo, account) e) 关系1的数据库模式 12345Accounts( acctNo:integer, type:string, balance:string) 关系2的数据库模式 123456Customers( firstName:string, lastName:string, idNo:string, account:integer) f) 关系1中属性acctNo的域为integer,… g) 略 学生用姓名+班级形成主键]]></content>
+    <content type="text"><![CDATA[a) 左表属性acctNo, type, balance, 右表属性firstName, lastName, idNo, account. b) 关系1的元组(12345,savings,12000)… 关系2的元组(Robbie,Banksm901-222,12345),… c) 关系1的元组(12345,savings,12000)分量12345,savings,12000… 关系2的元组(Robbie,Banksm901-222,12345)分量Robbie,Banksm901-222,12345… d) 关系1的关系模式Accounts(acctNo, type, balance), 关系2的关系模式Customers(firstName, lastName, idNo, account) e) 关系1的数据库模式 12345Accounts( acctNo:integer, type:string, balance:string) 关系2的数据库模式 123456Customers( firstName:string, lastName:string, idNo:string, account:integer) f) 关系1中属性acctNo的域为integer,… g) 略 学生用姓名+班级形成主键 a) 1234567CREATE TABLE `Product` ( `maker` varchar(50) NOT NULL, `model` varchar(50) NOT NULL, `type` varchar(50), PRIMARY KEY (`maker`), UNIQUE KEY (`model`)) b) 12345678CREATE TABLE `PC` ( `model` varchar(50) NOT NULL, `speed` bigint(20), `ram` bigint(20), `hd` bigint(20), `price` decimal(12,2) PRIMARY KEY (`model`)) c,d) 略 e) 1alter table `Printer` drop `color`; f) 1alter table `Laptop` add column `od` varchar(20) DEFAULT NULL]]></content>
       <categories>
         <category>习题解答</category>
       </categories>
