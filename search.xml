@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>lc-28</title>
+      <link href="/2022/06/27/lc-28/"/>
+      <url>/2022/06/27/lc-28/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//Implement strStr(). </span><span class="token comment">//</span><span class="token comment">// Given two strings needle and haystack, return the index of the first occurren</span><span class="token comment">//ce of needle in haystack, or -1 if needle is not part of haystack. </span><span class="token comment">//</span><span class="token comment">// Clarification: </span><span class="token comment">//</span><span class="token comment">// What should we return when needle is an empty string? This is a great questio</span><span class="token comment">//n to ask during an interview. </span><span class="token comment">//</span><span class="token comment">// For the purpose of this problem, we will return 0 when needle is an empty str</span><span class="token comment">//ing. This is consistent to C's strstr() and Java's indexOf(). </span><span class="token comment">//</span><span class="token comment">// </span><span class="token comment">// Example 1: </span><span class="token comment">//</span><span class="token comment">// </span><span class="token comment">//Input: haystack = "hello", needle = "ll"</span><span class="token comment">//Output: 2</span><span class="token comment">// </span><span class="token comment">//</span><span class="token comment">// Example 2: </span><span class="token comment">//</span><span class="token comment">// </span><span class="token comment">//Input: haystack = "aaaaa", needle = "bba"</span><span class="token comment">//Output: -1</span><span class="token comment">// </span><span class="token comment">//</span><span class="token comment">// </span><span class="token comment">// Constraints: </span><span class="token comment">//</span><span class="token comment">// </span><span class="token comment">// 1 &lt;= haystack.length, needle.length &lt;= 104 </span><span class="token comment">// haystack and needle consist of only lowercase English characters. </span><span class="token comment">// </span><span class="token comment">// Related Topics Two Pointers String String Matching </span><span class="token comment">// 👍 4350 👎 3748</span><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">strStr</span><span class="token punctuation">(</span><span class="token class-name">String</span> haystack<span class="token punctuation">,</span> <span class="token class-name">String</span> needle<span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>lc-26</title>
       <link href="/2022/06/24/lc-26/"/>
       <url>/2022/06/24/lc-26/</url>
