@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>lc-41</title>
+      <link href="/2022/07/06/lc-41/"/>
+      <url>/2022/07/06/lc-41/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//Given an unsorted integer array nums, return the smallest missing positive int</span><span class="token comment">//eger. </span><span class="token comment">//</span><span class="token comment">// You must implement an algorithm that runs in O(n) time and uses constant extr</span><span class="token comment">//a space. </span><span class="token comment">//</span><span class="token comment">// </span><span class="token comment">// Example 1: </span><span class="token comment">// Input: nums = [1,2,0]</span><span class="token comment">//Output: 3</span><span class="token comment">// Example 2: </span><span class="token comment">// Input: nums = [3,4,-1,1]</span><span class="token comment">//Output: 2</span><span class="token comment">// Example 3: </span><span class="token comment">// Input: nums = [7,8,9,11,12]</span><span class="token comment">//Output: 1</span><span class="token comment">// </span><span class="token comment">// </span><span class="token comment">// Constraints: </span><span class="token comment">//</span><span class="token comment">// </span><span class="token comment">// 1 &lt;= nums.length &lt;= 5 * 105 </span><span class="token comment">// -231 &lt;= nums[i] &lt;= 231 - 1 </span><span class="token comment">// </span><span class="token comment">// Related Topics Array Hash Table </span><span class="token comment">// 👍 10299 👎 1387</span><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">firstMissingPositive</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> treeSet <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> num <span class="token operator">:</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                treeSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>        <span class="token keyword">int</span> last <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Integer</span> value <span class="token operator">:</span> treeSet<span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">-</span> last <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token keyword">return</span> last <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>            last <span class="token operator">=</span> value<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> last <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>lc-38</title>
       <link href="/2022/07/05/lc-38/"/>
       <url>/2022/07/05/lc-38/</url>
