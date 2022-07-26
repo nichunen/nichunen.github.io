@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-07-25T03:50:49.833Z</updated>
+  <updated>2022-07-26T13:15:26.565Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -17,18 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>lc-56</title>
+    <link href="http://nichunen.github.io/2022/07/26/lc-56/"/>
+    <id>http://nichunen.github.io/2022/07/26/lc-56/</id>
+    <published>2022-07-26T03:20:51.000Z</published>
+    <updated>2022-07-26T13:15:26.565Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//Given an array of</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>lc-55</title>
     <link href="http://nichunen.github.io/2022/07/22/lc-55/"/>
     <id>http://nichunen.github.io/2022/07/22/lc-55/</id>
     <published>2022-07-22T02:38:46.000Z</published>
-    <updated>2022-07-25T03:50:49.833Z</updated>
+    <updated>2022-07-26T03:21:26.571Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-javascript&quot; data-language=&quot;javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token</summary>
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//You are given an</summary>
         
       
     
@@ -479,31 +504,6 @@
         
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//Given n pairs of</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-21</title>
-    <link href="http://nichunen.github.io/2022/06/20/lc-21/"/>
-    <id>http://nichunen.github.io/2022/06/20/lc-21/</id>
-    <published>2022-06-20T03:24:09.000Z</published>
-    <updated>2022-06-20T06:16:29.296Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//You are given the</summary>
         
       
     
