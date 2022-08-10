@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-08-09T07:14:02.274Z</updated>
+  <updated>2022-08-10T08:09:27.047Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-88</title>
+    <link href="http://nichunen.github.io/2022/08/10/lc-88/"/>
+    <id>http://nichunen.github.io/2022/08/10/lc-88/</id>
+    <published>2022-08-10T02:45:10.000Z</published>
+    <updated>2022-08-10T08:09:27.047Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//You are given two</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-84</title>
@@ -488,31 +513,6 @@
     
     
     <category term="其他" scheme="http://nichunen.github.io/tags/%E5%85%B6%E4%BB%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-42</title>
-    <link href="http://nichunen.github.io/2022/07/08/lc-42/"/>
-    <id>http://nichunen.github.io/2022/07/08/lc-42/</id>
-    <published>2022-07-08T03:27:17.000Z</published>
-    <updated>2022-07-08T05:50:43.185Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//Given n non-negative</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   

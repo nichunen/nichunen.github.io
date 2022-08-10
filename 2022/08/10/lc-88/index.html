@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="lc-84, 倪春恩的博客">
+    <meta name="keywords" content="lc-88, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>lc-84 | 倪春恩的博客</title>
+    <title>lc-88 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">lc-84</h1>
+                    <h1 class="description center-align post-title">lc-88</h1>
                 </div>
             </div>
         </div>
@@ -365,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-09
+                    2022-08-10
                 </div>
                 
 
@@ -389,75 +389,110 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//Given an array of integers heights representing the histogram's bar height whe</span>
-<span class="token comment">//re the width of each bar is 1, return the area of the largest rectangle in the h</span>
-<span class="token comment">//istogram. </span>
+                <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//You are given two integer arrays nums1 and nums2, sorted in non-decreasing ord</span>
+<span class="token comment">//er, and two integers m and n, representing the number of elements in nums1 and n</span>
+<span class="token comment">//ums2 respectively. </span>
+<span class="token comment">//</span>
+<span class="token comment">// Merge nums1 and nums2 into a single array sorted in non-decreasing order. </span>
+<span class="token comment">//</span>
+<span class="token comment">// The final sorted array should not be returned by the function, but instead be</span>
+<span class="token comment">// stored inside the array nums1. To accommodate this, nums1 has a length of m + n</span>
+<span class="token comment">//, where the first m elements denote the elements that should be merged, and the </span>
+<span class="token comment">//last n elements are set to 0 and should be ignored. nums2 has a length of n. </span>
 <span class="token comment">//</span>
 <span class="token comment">// </span>
 <span class="token comment">// Example 1: </span>
 <span class="token comment">//</span>
 <span class="token comment">// </span>
-<span class="token comment">//Input: heights = [2,1,5,6,2,3]</span>
-<span class="token comment">//Output: 10</span>
-<span class="token comment">//Explanation: The above is a histogram where width of each bar is 1.</span>
-<span class="token comment">//The largest rectangle is shown in the red area, which has an area = 10 units.</span>
+<span class="token comment">//Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3</span>
+<span class="token comment">//Output: [1,2,2,3,5,6]</span>
+<span class="token comment">//Explanation: The arrays we are merging are [1,2,3] and [2,5,6].</span>
+<span class="token comment">//The result of the merge is [1,2,2,3,5,6] with the underlined elements coming f</span>
+<span class="token comment">//rom nums1.</span>
 <span class="token comment">// </span>
 <span class="token comment">//</span>
 <span class="token comment">// Example 2: </span>
 <span class="token comment">//</span>
 <span class="token comment">// </span>
-<span class="token comment">//Input: heights = [2,4]</span>
-<span class="token comment">//Output: 4</span>
+<span class="token comment">//Input: nums1 = [1], m = 1, nums2 = [], n = 0</span>
+<span class="token comment">//Output: [1]</span>
+<span class="token comment">//Explanation: The arrays we are merging are [1] and [].</span>
+<span class="token comment">//The result of the merge is [1].</span>
+<span class="token comment">// </span>
+<span class="token comment">//</span>
+<span class="token comment">// Example 3: </span>
+<span class="token comment">//</span>
+<span class="token comment">// </span>
+<span class="token comment">//Input: nums1 = [0], m = 0, nums2 = [1], n = 1</span>
+<span class="token comment">//Output: [1]</span>
+<span class="token comment">//Explanation: The arrays we are merging are [] and [1].</span>
+<span class="token comment">//The result of the merge is [1].</span>
+<span class="token comment">//Note that because m = 0, there are no elements in nums1. The 0 is only there t</span>
+<span class="token comment">//o ensure the merge result can fit in nums1.</span>
 <span class="token comment">// </span>
 <span class="token comment">//</span>
 <span class="token comment">// </span>
 <span class="token comment">// Constraints: </span>
 <span class="token comment">//</span>
 <span class="token comment">// </span>
-<span class="token comment">// 1 &lt;= heights.length &lt;= 105 </span>
-<span class="token comment">// 0 &lt;= heights[i] &lt;= 104 </span>
+<span class="token comment">// nums1.length == m + n </span>
+<span class="token comment">// nums2.length == n </span>
+<span class="token comment">// 0 &lt;= m, n &lt;= 200 </span>
+<span class="token comment">// 1 &lt;= m + n &lt;= 200 </span>
+<span class="token comment">// -109 &lt;= nums1[i], nums2[j] &lt;= 109 </span>
 <span class="token comment">// </span>
-<span class="token comment">// Related Topics Array Stack Monotonic Stack </span>
-<span class="token comment">// 👍 11428 👎 160</span>
+<span class="token comment">//</span>
+<span class="token comment">// </span>
+<span class="token comment">// Follow up: Can you come up with an algorithm that runs in O(m + n) time? </span>
+<span class="token comment">// Related Topics Array Two Pointers Sorting </span>
+<span class="token comment">// 👍 6787 👎 599</span>
 
 
 <span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span>
 <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">largestRectangleArea</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> receive<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">int</span> maxArea <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> left <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>receive<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> right <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>receive<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token class-name">Stack</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> stack <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Stack</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> receive<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>stack<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> receive<span class="token punctuation">[</span>stack<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">&gt;=</span> receive<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                stack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums1<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums2<span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>m <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                nums1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> nums2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
             <span class="token punctuation">}</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                left<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">int</span> index1 <span class="token operator">=</span> m <span class="token operator">+</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> index2 <span class="token operator">=</span> m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>index2 <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            nums1<span class="token punctuation">[</span>index1<span class="token operator">--</span><span class="token punctuation">]</span> <span class="token operator">=</span> nums1<span class="token punctuation">[</span>index2<span class="token operator">--</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        index1<span class="token operator">++</span><span class="token punctuation">;</span>
+        index2 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>index <span class="token operator">&lt;</span> m <span class="token operator">+</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>index1 <span class="token operator">==</span> m <span class="token operator">+</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                nums1<span class="token punctuation">[</span>index<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> nums2<span class="token punctuation">[</span>index2<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>index2 <span class="token operator">==</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                nums1<span class="token punctuation">[</span>index<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> nums1<span class="token punctuation">[</span>index1<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>nums1<span class="token punctuation">[</span>index1<span class="token punctuation">]</span> <span class="token operator">&lt;</span> nums2<span class="token punctuation">[</span>index2<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                nums1<span class="token punctuation">[</span>index<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> nums1<span class="token punctuation">[</span>index1<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
             <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                left<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                nums1<span class="token punctuation">[</span>index<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> nums2<span class="token punctuation">[</span>index2<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
             <span class="token punctuation">}</span>
-            stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
-        stack<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> receive<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>stack<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> receive<span class="token punctuation">[</span>stack<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">&gt;=</span> receive<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                stack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                right<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> receive<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                right<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-            stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> receive<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            maxArea <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>maxArea<span class="token punctuation">,</span> <span class="token punctuation">(</span>right<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> left<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> receive<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> maxArea<span class="token punctuation">;</span>
+
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -484,7 +519,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nichunen.github.io/2022/08/09/lc-84/">http://nichunen.github.io/2022/08/09/lc-84/</a>
+                    <a href="http://nichunen.github.io/2022/08/10/lc-88/">http://nichunen.github.io/2022/08/10/lc-88/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -693,9 +728,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/08/10/lc-88/">
                     <div class="card-image">
@@ -713,9 +749,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -728,6 +764,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -746,13 +783,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/08/lc-79/">
+                <a href="/2022/08/09/lc-84/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="lc-79">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="lc-84">
                         
-                        <span class="card-title">lc-79</span>
+                        <span class="card-title">lc-84</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -763,7 +800,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-09
                             </span>
                         <span class="publish-author">
                             
