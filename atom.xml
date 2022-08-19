@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-08-17T15:34:40.873Z</updated>
+  <updated>2022-08-19T06:07:24.783Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-104</title>
+    <link href="http://nichunen.github.io/2022/08/18/lc-104/"/>
+    <id>http://nichunen.github.io/2022/08/18/lc-104/</id>
+    <published>2022-08-18T07:56:41.000Z</published>
+    <updated>2022-08-19T06:07:24.783Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return &lt;em&gt;its maximum depth&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;A binary tree’s &lt;strong&gt;maximum depth&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-102</title>
@@ -479,31 +505,6 @@
         
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//Given an m x n</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-53</title>
-    <link href="http://nichunen.github.io/2022/07/20/lc-53/"/>
-    <id>http://nichunen.github.io/2022/07/20/lc-53/</id>
-    <published>2022-07-20T05:05:26.000Z</published>
-    <updated>2022-07-20T07:33:00.722Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//Given an integer</summary>
         
       
     
