@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-08-26T07:31:17.805Z</updated>
+  <updated>2022-08-29T02:48:51.537Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-136</title>
+    <link href="http://nichunen.github.io/2022/08/29/lc-136/"/>
+    <id>http://nichunen.github.io/2022/08/29/lc-136/</id>
+    <published>2022-08-29T02:45:14.000Z</published>
+    <updated>2022-08-29T02:48:51.537Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+Given a non-empty</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-128</title>
@@ -485,31 +511,6 @@ Given two integer</summary>
         
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//You are climbing a</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-69</title>
-    <link href="http://nichunen.github.io/2022/07/29/lc-69/"/>
-    <id>http://nichunen.github.io/2022/07/29/lc-69/</id>
-    <published>2022-07-29T03:42:21.000Z</published>
-    <updated>2022-07-29T05:47:46.661Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//Given a non-negative</summary>
         
       
     
