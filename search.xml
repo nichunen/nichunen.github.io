@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>lc-139</title>
+      <link href="/2022/08/30/lc-139/"/>
+      <url>/2022/08/30/lc-139/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.  Note that the same word in the dictionary may be reused multiple times in the segmentation.   Example 1:  Input: s = "leetcode", wordDict = ["leet","code"]Output: trueExplanation: Return true because "leetcode" can be segmented as "leet code".  Example 2:  Input: s = "applepenapple", wordDict = ["apple","pen"]Output: trueExplanation: Return true because "applepenapple" can be segmented as "apple pen apple".Note that you are allowed to reuse a dictionary word.  Example 3:  Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]Output: false   Constraints:   1 &lt;= s.length &lt;= 300  1 &lt;= wordDict.length &lt;= 1000  1 &lt;= wordDict[i].length &lt;= 20  s and wordDict[i] consist of only lowercase English letters.  All the strings of wordDict are unique.   Related Topics字典树 | 记忆化搜索 | 哈希表 | 字符串 | 动态规划  👍 1773, 👎 0 */</span> <span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">wordBreak</span><span class="token punctuation">(</span><span class="token class-name">String</span> s<span class="token punctuation">,</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> wordDict<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>lc-136</title>
       <link href="/2022/08/29/lc-136/"/>
       <url>/2022/08/29/lc-136/</url>
