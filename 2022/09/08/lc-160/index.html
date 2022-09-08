@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="lc-101, 倪春恩的博客">
+    <meta name="keywords" content="lc-160, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>lc-101 | 倪春恩的博客</title>
+    <title>lc-160 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">lc-101</h1>
+                    <h1 class="description center-align post-title">lc-160</h1>
                 </div>
             </div>
         </div>
@@ -365,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-16
+                    2022-09-08
                 </div>
                 
 
@@ -389,69 +389,150 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//Given the root of a binary tree, check whether it is a mirror of itself (i.e.,</span>
-<span class="token comment">// symmetric around its center). </span>
-<span class="token comment">//</span>
-<span class="token comment">// </span>
-<span class="token comment">// Example 1: </span>
-<span class="token comment">// </span>
-<span class="token comment">// </span>
-<span class="token comment">//Input: root = [1,2,2,3,4,4,3]</span>
-<span class="token comment">//Output: true</span>
-<span class="token comment">// </span>
-<span class="token comment">//</span>
-<span class="token comment">// Example 2: </span>
-<span class="token comment">// </span>
-<span class="token comment">// </span>
-<span class="token comment">//Input: root = [1,2,2,null,3,null,3]</span>
-<span class="token comment">//Output: false</span>
-<span class="token comment">// </span>
-<span class="token comment">//</span>
-<span class="token comment">// </span>
-<span class="token comment">// Constraints: </span>
-<span class="token comment">//</span>
-<span class="token comment">// </span>
-<span class="token comment">// The number of nodes in the tree is in the range [1, 1000]. </span>
-<span class="token comment">// -100 &lt;= Node.val &lt;= 100 </span>
-<span class="token comment">// </span>
-<span class="token comment">//</span>
-<span class="token comment">// </span>
-<span class="token comment">//Follow up: Could you solve it both recursively and iteratively?</span>
-<span class="token comment">//</span>
-<span class="token comment">// Related Topics Tree Depth-First Search Breadth-First Search Binary Tree 👍 10</span>
-<span class="token comment">//559 👎 248</span>
+                <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
+Given the heads of two singly linked-lists headA and headB, return the node at 
+which the two lists intersect. If the two linked lists have no intersection at 
+all, return null. 
 
+ For example, the following two linked lists begin to intersect at node c1: 
 
+ The test cases are generated such that there are no cycles anywhere in the 
+entire linked structure. 
+
+ Note that the linked lists must retain their original structure after the 
+function returns. 
+
+ Custom Judge: 
+
+ The inputs to the judge are given as follows (your program is not given these 
+inputs): 
+
+ 
+ intersectVal - The value of the node where the intersection occurs. This is 0 
+if there is no intersected node. 
+ listA - The first linked list. 
+ listB - The second linked list. 
+ skipA - The number of nodes to skip ahead in listA (starting from the head) to 
+get to the intersected node. 
+ skipB - The number of nodes to skip ahead in listB (starting from the head) to 
+get to the intersected node. 
+ 
+
+ The judge will then create the linked structure based on these inputs and pass 
+the two heads, headA and headB to your program. If you correctly return the 
+intersected node, then your solution will be accepted. 
+
+ 
+ Example 1: 
+
+ 
+Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, 
+skipB = 3
+Output: Intersected at '8'
+Explanation: The intersected node's value is 8 (note that this must not be 0 if 
+the two lists intersect).
+From the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,
+6,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 
+nodes before the intersected node in B.
+- Note that the intersected node's value is not 1 because the nodes with value 1
+ in A and B (2ⁿᵈ node in A and 3ʳᵈ node in B) are different node references. In 
+other words, they point to two different locations in memory, while the nodes 
+with value 8 in A and B (3ʳᵈ node in A and 4ᵗʰ node in B) point to the same 
+location in memory.
+ 
+
+ Example 2: 
+
+ 
+Input: intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB 
+= 1
+Output: Intersected at '2'
+Explanation: The intersected node's value is 2 (note that this must not be 0 if 
+the two lists intersect).
+From the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,
+2,4]. There are 3 nodes before the intersected node in A; There are 1 node 
+before the intersected node in B.
+ 
+
+ Example 3: 
+
+ 
+Input: intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
+Output: No intersection
+Explanation: From the head of A, it reads as [2,6,4]. From the head of B, it 
+reads as [1,5]. Since the two lists do not intersect, intersectVal must be 0, 
+while skipA and skipB can be arbitrary values.
+Explanation: The two lists do not intersect, so return null.
+ 
+
+ 
+ Constraints: 
+
+ 
+ The number of nodes of listA is in the m. 
+ The number of nodes of listB is in the n. 
+ 1 &lt;= m, n &lt;= 3 * 10⁴ 
+ 1 &lt;= Node.val &lt;= 10⁵ 
+ 0 &lt;= skipA &lt; m 
+ 0 &lt;= skipB &lt; n 
+ intersectVal is 0 if listA and listB do not intersect. 
+ intersectVal == listA[skipA] == listB[skipB] if listA and listB intersect. 
+ 
+
+ 
+Follow up: Could you write a solution that runs in O(m + n) time and use only O(
+1) memory? Related Topics哈希表 | 链表 | 双指针 
+
+ 👍 1845, 👎 0 
+
+*/</span>
 <span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span>
 <span class="token comment">/**
- * Definition for a binary tree node.
- * public class TreeNode {
+ * Definition for singly-linked list.
+ * public class ListNode {
  *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
  *     }
  * }
  */</span>
-<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-    <span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">isSymmetricFunc</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> leftNode<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> rightNode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>leftNode <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> rightNode <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token class-name">ListNode</span> <span class="token function">getIntersectionNode</span><span class="token punctuation">(</span><span class="token class-name">ListNode</span> headA<span class="token punctuation">,</span> <span class="token class-name">ListNode</span> headB<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> lA <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> lB <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token class-name">ListNode</span> temp <span class="token operator">=</span> headA<span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>temp <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            lA<span class="token operator">++</span><span class="token punctuation">;</span>
+            temp <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>leftNode <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> rightNode <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> leftNode<span class="token punctuation">.</span>val <span class="token operator">!=</span> rightNode<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        temp <span class="token operator">=</span> headB<span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>temp <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            lB<span class="token operator">++</span><span class="token punctuation">;</span>
+            temp <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
-        <span class="token keyword">return</span> <span class="token function">isSymmetricFunc</span><span class="token punctuation">(</span>leftNode<span class="token punctuation">.</span>left<span class="token punctuation">,</span> rightNode<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isSymmetricFunc</span><span class="token punctuation">(</span>leftNode<span class="token punctuation">.</span>right<span class="token punctuation">,</span> rightNode<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>lA <span class="token operator">&gt;</span> lB<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> lA <span class="token operator">-</span> lB<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                headA <span class="token operator">=</span> headA<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>lA <span class="token operator">&lt;</span> lB<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> lB <span class="token operator">-</span> lA<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                headB <span class="token operator">=</span> headB<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>headA <span class="token operator">!=</span> headB<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            headA <span class="token operator">=</span> headA<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            headB <span class="token operator">=</span> headB<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> headA<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -478,7 +559,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nichunen.github.io/2022/08/16/lc-101/">http://nichunen.github.io/2022/08/16/lc-101/</a>
+                    <a href="http://nichunen.github.io/2022/09/08/lc-160/">http://nichunen.github.io/2022/09/08/lc-160/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -687,17 +768,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/08/17/lc-102/">
+                <a href="/2022/09/08/lc-160/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="lc-102">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="lc-160">
                         
-                        <span class="card-title">lc-102</span>
+                        <span class="card-title">lc-160</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -707,9 +789,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -722,6 +804,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -740,13 +823,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/15/lc-98/">
+                <a href="/2022/09/07/lc-155/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="lc-98">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="lc-155">
                         
-                        <span class="card-title">lc-98</span>
+                        <span class="card-title">lc-155</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -757,7 +840,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-07
                             </span>
                         <span class="publish-author">
                             
