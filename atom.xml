@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-09-18T03:20:50.325Z</updated>
+  <updated>2022-09-18T05:49:51.366Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-208</title>
+    <link href="http://nichunen.github.io/2022/09/18/lc-208/"/>
+    <id>http://nichunen.github.io/2022/09/18/lc-208/</id>
+    <published>2022-09-18T03:35:33.000Z</published>
+    <updated>2022-09-18T05:49:51.366Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+A trie (pronounced</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-207</title>
@@ -507,32 +533,6 @@ Given two integer</summary>
     
     
     <category term="其他" scheme="http://nichunen.github.io/tags/%E5%85%B6%E4%BB%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-104</title>
-    <link href="http://nichunen.github.io/2022/08/18/lc-104/"/>
-    <id>http://nichunen.github.io/2022/08/18/lc-104/</id>
-    <published>2022-08-18T07:56:41.000Z</published>
-    <updated>2022-08-19T06:07:24.783Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return &lt;em&gt;its maximum depth&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;A binary tree’s &lt;strong&gt;maximum depth&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
