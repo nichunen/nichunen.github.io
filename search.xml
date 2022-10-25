@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>lc-416</title>
+      <link href="/2022/10/24/lc-416/"/>
+      <url>/2022/10/24/lc-416/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**Given a non-empty array nums containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.   Example 1:  Input: nums = [1,5,11,5]Output: trueExplanation: The array can be partitioned as [1, 5, 5] and [11].  Example 2:  Input: nums = [1,2,3,5]Output: falseExplanation: The array cannot be partitioned into equal sum subsets.   Constraints:   1 &lt;= nums.length &lt;= 200  1 &lt;= nums[i] &lt;= 100   Related Topics数组 | 动态规划  👍 1535, 👎 0 */</span><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">canPartition</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>lc-301</title>
       <link href="/2022/10/08/lc-301/"/>
       <url>/2022/10/08/lc-301/</url>
