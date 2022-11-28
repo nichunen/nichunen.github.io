@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-11-21T12:11:39.643Z</updated>
+  <updated>2022-11-28T15:40:47.805Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-03</title>
+    <link href="http://nichunen.github.io/2022/11/24/offer-03/"/>
+    <id>http://nichunen.github.io/2022/11/24/offer-03/</id>
+    <published>2022-11-24T15:38:00.000Z</published>
+    <updated>2022-11-28T15:40:47.805Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+找出数组中重复的数字。 
+
+</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-204</title>
@@ -498,32 +526,6 @@ Given an integer</summary>
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
 Given an array of</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-279</title>
-    <link href="http://nichunen.github.io/2022/09/28/lc-279/"/>
-    <id>http://nichunen.github.io/2022/09/28/lc-279/</id>
-    <published>2022-09-28T03:37:10.000Z</published>
-    <updated>2022-09-28T14:01:08.972Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
-Given an integer</summary>
         
       
     
