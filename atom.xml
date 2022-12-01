@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-11-30T03:54:45.028Z</updated>
+  <updated>2022-12-01T06:20:43.539Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-05</title>
+    <link href="http://nichunen.github.io/2022/12/01/offer-05/"/>
+    <id>http://nichunen.github.io/2022/12/01/offer-05/</id>
+    <published>2022-12-01T03:21:27.000Z</published>
+    <updated>2022-12-01T06:20:43.539Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+请实现一个函数，把字符串 s</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-04</title>
@@ -500,32 +526,6 @@ Given a string s</summary>
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
 Given an integer</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-297</title>
-    <link href="http://nichunen.github.io/2022/10/06/lc-297/"/>
-    <id>http://nichunen.github.io/2022/10/06/lc-297/</id>
-    <published>2022-10-06T03:37:36.000Z</published>
-    <updated>2022-10-06T07:21:13.570Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
- * Serialization</summary>
         
       
     
