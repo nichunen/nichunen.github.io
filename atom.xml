@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-12-06T03:33:02.294Z</updated>
+  <updated>2022-12-07T06:45:37.866Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>offer-10-1</title>
+    <link href="http://nichunen.github.io/2022/12/07/offer-10-1/"/>
+    <id>http://nichunen.github.io/2022/12/07/offer-10-1/</id>
+    <published>2022-12-07T03:29:31.000Z</published>
+    <updated>2022-12-07T06:45:37.866Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+写一个函数，输入 n</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>offer-09</title>
     <link href="http://nichunen.github.io/2022/12/06/offer-09/"/>
     <id>http://nichunen.github.io/2022/12/06/offer-09/</id>
     <published>2022-12-06T02:56:44.000Z</published>
-    <updated>2022-12-06T03:33:02.294Z</updated>
+    <updated>2022-12-07T03:29:36.973Z</updated>
     
     
       
@@ -497,32 +523,6 @@ Given the root of</summary>
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
 Given the root of</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-448</title>
-    <link href="http://nichunen.github.io/2022/10/26/lc-448/"/>
-    <id>http://nichunen.github.io/2022/10/26/lc-448/</id>
-    <published>2022-10-26T03:19:19.000Z</published>
-    <updated>2022-10-26T03:57:07.773Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
-Given an array</summary>
         
       
     
