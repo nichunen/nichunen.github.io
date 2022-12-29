@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2022-12-28T07:29:12.171Z</updated>
+  <updated>2022-12-29T03:25:15.215Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-22</title>
+    <link href="http://nichunen.github.io/2022/12/29/offer-22/"/>
+    <id>http://nichunen.github.io/2022/12/29/offer-22/</id>
+    <published>2022-12-29T03:06:18.000Z</published>
+    <updated>2022-12-29T03:25:15.215Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;输入一个链表，输出该链表中倒数第k个节点。为了符合大多数人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。&lt;/p&gt;
+&lt;p&gt;例如，一个链表有 &lt;code&gt;6&lt;/code&gt; 个节点，从头节点开始，它们的值依次是</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-21</title>
@@ -495,32 +521,6 @@
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
 Given an integer</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-202</title>
-    <link href="http://nichunen.github.io/2022/11/18/lc-202/"/>
-    <id>http://nichunen.github.io/2022/11/18/lc-202/</id>
-    <published>2022-11-18T11:45:26.000Z</published>
-    <updated>2022-11-18T12:04:18.670Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
-Write an algorithm</summary>
         
       
     
