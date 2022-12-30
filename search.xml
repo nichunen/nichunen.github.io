@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>offer-24</title>
+      <link href="/2022/12/30/offer-24/"/>
+      <url>/2022/12/30/offer-24/</url>
+      
+        <content type="html"><![CDATA[<p>定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。</p><p><strong>示例:</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>限制：</strong></p><pre class="line-numbers language-none"><code class="language-none">0 &lt;= 节点个数 &lt;= 5000<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token comment">/** * Definition for singly-linked list. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int x) { val = x; } * } */</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token class-name">ListNode</span> <span class="token function">reverseList</span><span class="token punctuation">(</span><span class="token class-name">ListNode</span> head<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">return</span> <span class="token function">reverseFunc</span><span class="token punctuation">(</span>head<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">private</span> <span class="token class-name">ListNode</span> <span class="token function">reverseFunc</span><span class="token punctuation">(</span><span class="token class-name">ListNode</span> node<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> node<span class="token punctuation">.</span>next <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">return</span> node<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token class-name">ListNode</span> nextNode <span class="token operator">=</span> node<span class="token punctuation">.</span>next<span class="token punctuation">;</span>        node<span class="token punctuation">.</span>next <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>        <span class="token class-name">ListNode</span> newHead <span class="token operator">=</span> <span class="token function">reverseFunc</span><span class="token punctuation">(</span>nextNode<span class="token punctuation">)</span><span class="token punctuation">;</span>        nextNode<span class="token punctuation">.</span>next <span class="token operator">=</span> node<span class="token punctuation">;</span>        <span class="token keyword">return</span> newHead<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>offer-22</title>
       <link href="/2022/12/29/offer-22/"/>
       <url>/2022/12/29/offer-22/</url>
