@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-01-03T14:41:34.733Z</updated>
+  <updated>2023-01-04T07:01:48.182Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-26</title>
+    <link href="http://nichunen.github.io/2023/01/04/offer-26/"/>
+    <id>http://nichunen.github.io/2023/01/04/offer-26/</id>
+    <published>2023-01-04T06:05:57.000Z</published>
+    <updated>2023-01-04T07:01:48.182Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)&lt;/p&gt;
+&lt;p&gt;B是A的子结构， 即 A中有出现和B相同的结构和节点值。&lt;/p&gt;
+&lt;p&gt;例如:&lt;br&gt;给定的树 A:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;     3     / \    4   5 </summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-25</title>
@@ -495,32 +523,6 @@
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
 请实现一个函数，把字符串 s</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-04</title>
-    <link href="http://nichunen.github.io/2022/11/29/offer-04/"/>
-    <id>http://nichunen.github.io/2022/11/29/offer-04/</id>
-    <published>2022-11-29T02:52:52.000Z</published>
-    <updated>2022-11-30T03:54:45.028Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
-在一个 n * m</summary>
         
       
     
