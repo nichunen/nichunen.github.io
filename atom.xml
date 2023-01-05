@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-01-04T07:01:48.182Z</updated>
+  <updated>2023-01-05T07:13:34.065Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-27</title>
+    <link href="http://nichunen.github.io/2023/01/05/offer-27/"/>
+    <id>http://nichunen.github.io/2023/01/05/offer-27/</id>
+    <published>2023-01-05T06:50:09.000Z</published>
+    <updated>2023-01-05T07:13:34.065Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;请完成一个函数，输入一个二叉树，该函数输出它的镜像。&lt;/p&gt;
+&lt;p&gt;例如输入：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;     4    /   \   2     7  / \   / \ 1   3 6   9&lt;/code&gt;&lt;br&gt;镜像输出：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-26</title>
@@ -497,32 +525,6 @@
         
         
     <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-05</title>
-    <link href="http://nichunen.github.io/2022/12/01/offer-05/"/>
-    <id>http://nichunen.github.io/2022/12/01/offer-05/</id>
-    <published>2022-12-01T03:21:27.000Z</published>
-    <updated>2022-12-01T06:20:43.539Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
-请实现一个函数，把字符串 s</summary>
         
       
     
