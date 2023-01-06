@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-01-05T07:13:34.065Z</updated>
+  <updated>2023-01-06T03:51:50.321Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-28</title>
+    <link href="http://nichunen.github.io/2023/01/06/offer-28/"/>
+    <id>http://nichunen.github.io/2023/01/06/offer-28/</id>
+    <published>2023-01-06T03:18:57.000Z</published>
+    <updated>2023-01-06T03:51:50.321Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。&lt;/p&gt;
+&lt;p&gt;例如，二叉树 [1,2,2,3,4,4,3] 是对称的。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;    1    / \   2   2  / \ / \ 3  4 4 </summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-27</title>
@@ -493,31 +520,6 @@
     <id>http://nichunen.github.io/2022/12/05/offer-07/</id>
     <published>2022-12-05T03:21:06.000Z</published>
     <updated>2022-12-05T08:24:14.587Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-06</title>
-    <link href="http://nichunen.github.io/2022/12/02/offer-06/"/>
-    <id>http://nichunen.github.io/2022/12/02/offer-06/</id>
-    <published>2022-12-02T03:33:54.000Z</published>
-    <updated>2022-12-02T06:54:33.605Z</updated>
     
     
       
