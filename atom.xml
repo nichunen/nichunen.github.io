@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-01-06T03:51:50.321Z</updated>
+  <updated>2023-01-09T09:37:36.882Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-29</title>
+    <link href="http://nichunen.github.io/2023/01/09/offer-29/"/>
+    <id>http://nichunen.github.io/2023/01/09/offer-29/</id>
+    <published>2023-01-09T09:09:07.000Z</published>
+    <updated>2023-01-09T09:37:36.882Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-28</title>
@@ -495,31 +522,6 @@
     <id>http://nichunen.github.io/2022/12/06/offer-09/</id>
     <published>2022-12-06T02:56:44.000Z</published>
     <updated>2022-12-07T03:29:36.973Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-07</title>
-    <link href="http://nichunen.github.io/2022/12/05/offer-07/"/>
-    <id>http://nichunen.github.io/2022/12/05/offer-07/</id>
-    <published>2022-12-05T03:21:06.000Z</published>
-    <updated>2022-12-05T08:24:14.587Z</updated>
     
     
       
