@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-01-19T03:14:47.945Z</updated>
+  <updated>2023-01-20T08:15:28.736Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -17,12 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>offer-37</title>
+    <link href="http://nichunen.github.io/2023/01/20/offer-37/"/>
+    <id>http://nichunen.github.io/2023/01/20/offer-37/</id>
+    <published>2023-01-20T03:25:33.000Z</published>
+    <updated>2023-01-20T08:15:28.736Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;请实现两个函数，分别用来序列化和反序列化二叉树。&lt;/p&gt;
+&lt;p&gt;你需要设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 /</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>offer-36</title>
     <link href="http://nichunen.github.io/2023/01/19/offer-36/"/>
     <id>http://nichunen.github.io/2023/01/19/offer-36/</id>
     <published>2023-01-19T03:14:31.000Z</published>
-    <updated>2023-01-19T03:14:47.945Z</updated>
+    <updated>2023-01-20T03:28:23.978Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向。&lt;/p&gt;
+&lt;p&gt;为了让您更好地理解问题，以下面的二叉搜索树为例：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
     
     
     
@@ -501,35 +537,6 @@
         
         
     <summary type="html">&lt;p&gt;请实现一个函数用来匹配包含&lt;code&gt;&#39;.</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-18</title>
-    <link href="http://nichunen.github.io/2022/12/23/offer-18/"/>
-    <id>http://nichunen.github.io/2022/12/23/offer-18/</id>
-    <published>2022-12-23T03:24:00.000Z</published>
-    <updated>2022-12-23T08:55:12.482Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。&lt;/p&gt;
-&lt;p&gt;返回删除后的链表的头节点。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;此题对比原题有改动&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
