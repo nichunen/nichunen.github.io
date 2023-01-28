@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-01-20T08:15:28.736Z</updated>
+  <updated>2023-01-28T09:14:21.900Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-39</title>
+    <link href="http://nichunen.github.io/2023/01/28/offer-39/"/>
+    <id>http://nichunen.github.io/2023/01/28/offer-39/</id>
+    <published>2023-01-28T06:03:30.000Z</published>
+    <updated>2023-01-28T09:14:21.900Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。&lt;/p&gt;
+&lt;p&gt;你可以假设数组是非空的，并且给定的数组总是存在多数元素。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-37</title>
@@ -512,31 +540,6 @@
 &lt;ol&gt;
 &lt;li&gt;若干空格&lt;/li&gt;
 &lt;li&gt;一个</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-19</title>
-    <link href="http://nichunen.github.io/2022/12/26/offer-19/"/>
-    <id>http://nichunen.github.io/2022/12/26/offer-19/</id>
-    <published>2022-12-26T06:56:16.000Z</published>
-    <updated>2022-12-26T09:35:38.959Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请实现一个函数用来匹配包含&lt;code&gt;&#39;.</summary>
         
       
     
