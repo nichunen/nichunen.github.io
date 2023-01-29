@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-01-28T09:14:21.900Z</updated>
+  <updated>2023-01-29T05:39:57.577Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-40</title>
+    <link href="http://nichunen.github.io/2023/01/29/offer-40/"/>
+    <id>http://nichunen.github.io/2023/01/29/offer-40/</id>
+    <published>2023-01-29T03:14:32.000Z</published>
+    <updated>2023-01-29T05:39:57.577Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;输入整数数组 &lt;code&gt;arr&lt;/code&gt; ，找出其中最小的 &lt;code&gt;k&lt;/code&gt; 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-39</title>
@@ -511,35 +538,6 @@
     <summary type="html">&lt;p&gt;输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数在数组的前半部分，所有偶数在数组的后半部分。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-20</title>
-    <link href="http://nichunen.github.io/2022/12/27/offer-20/"/>
-    <id>http://nichunen.github.io/2022/12/27/offer-20/</id>
-    <published>2022-12-27T05:36:20.000Z</published>
-    <updated>2022-12-27T05:46:59.037Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请实现一个函数用来判断字符串是否表示&lt;strong&gt;数值&lt;/strong&gt;（包括整数和小数）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;数值&lt;/strong&gt;（按顺序）可以分成以下几个部分：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;若干空格&lt;/li&gt;
-&lt;li&gt;一个</summary>
         
       
     
