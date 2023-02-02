@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-01T13:18:24.343Z</updated>
+  <updated>2023-02-02T09:51:05.132Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-44</title>
+    <link href="http://nichunen.github.io/2023/02/02/offer-44/"/>
+    <id>http://nichunen.github.io/2023/02/02/offer-44/</id>
+    <published>2023-02-02T07:26:46.000Z</published>
+    <updated>2023-02-02T09:51:05.132Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;数字以0123456789101112131415…的格式序列化到一个字符序列中。在这个序列中，第5位（从下标0开始计数）是5，第13位是1，第19位是4，等等。&lt;/p&gt;
+&lt;p&gt;请写一个函数，求任意第n位对应的数字。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-43</title>
@@ -510,34 +537,6 @@
 &lt;p&gt;例如输入：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;     4    /   \   2     7  / \   / \ 1   3 6   9&lt;/code&gt;&lt;br&gt;镜像输出：&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-26</title>
-    <link href="http://nichunen.github.io/2023/01/04/offer-26/"/>
-    <id>http://nichunen.github.io/2023/01/04/offer-26/</id>
-    <published>2023-01-04T06:05:57.000Z</published>
-    <updated>2023-01-04T07:01:48.182Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)&lt;/p&gt;
-&lt;p&gt;B是A的子结构， 即 A中有出现和B相同的结构和节点值。&lt;/p&gt;
-&lt;p&gt;例如:&lt;br&gt;给定的树 A:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;     3     / \    4   5 </summary>
         
       
     
