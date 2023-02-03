@@ -426,8 +426,8 @@
 <p>After installing the above software, please verify <strong>software requirements</strong> by following commands:</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">$ java -version
 $ mvn -v
-$ node -v
-$ git version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+$ <span class="token function">node</span> -v
+$ <span class="token function">git</span> version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>Options for Packaging Script</strong></p>
 <table>
@@ -495,31 +495,31 @@ $ git version<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 <p><strong>Package Name convention</strong></p>
 <p>Package name is <code>apache-kylin-${release_version}.tar.gz</code>, while <code>${release_version}</code> is <code>{project.version}.YYYYmmDDHHMMSS</code> by default. For example, an unofficial package could be <code>apache-kylin-5.0.0-SNAPSHOT.20220812161045.tar.gz</code> while an official package could be <code>apache-kylin-5.0.0.tar.gz</code></p>
 <p><strong>Example for developer and release manager</strong></p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">## Case 1: For the developer who wants to package for testing purposes
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">## Case 1: For the developer who wants to package for testing purposes</span>
 ./build/release/release.sh 
 
-## Case 2: Official apache release,  Kylin binary for deployment on Hadoop3+ and Hive2.3+, 
-# and the third party cannot be distributed because of apache distribution policy(size and license)
+<span class="token comment">## Case 2: Official apache release,  Kylin binary for deployment on Hadoop3+ and Hive2.3+, </span>
+<span class="token comment"># and the third party cannot be distributed because of apache distribution policy(size and license)</span>
 ./build/release/release.sh -noSpark -official 
 
-## Case 3: A package for Apache Hadoop 3 platform
+<span class="token comment">## Case 3: A package for Apache Hadoop 3 platform</span>
 ./build/release/release.sh -P hadoop3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 <h3 id="Build-source-code"><a href="#Build-source-code" class="headerlink" title="Build source code"></a>Build source code</h3><ul>
 <li><p>Clone</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git clone https://github.com/apache/kylin.git
-cd kylin
-git checkout kylin5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> clone https://github.com/apache/kylin.git
+<span class="token builtin class-name">cd</span> kylin
+<span class="token function">git</span> checkout kylin5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 <ul>
 <li><p>Build backend source code before your start debugging.</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mvn clean install -DskipTests<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mvn clean <span class="token function">install</span> -DskipTests<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li><p>Build front-end source code.</p>
 <p>(Please use node.js <strong>v12.14.0</strong>, for how to use a specific version of node.js, please check <a target="_blank" rel="noopener" href="https://kylin.apache.org/5.0/docs/development/how_to_package#install_older_node">how to switch to a specific node js</a> )</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd kystudio
-npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token builtin class-name">cd</span> kystudio
+<span class="token function">npm</span> <span class="token function">install</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 </ul>
 
                 

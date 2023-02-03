@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-02T09:51:05.132Z</updated>
+  <updated>2023-02-03T06:42:34.840Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-46</title>
+    <link href="http://nichunen.github.io/2023/02/03/offer-46/"/>
+    <id>http://nichunen.github.io/2023/02/03/offer-46/</id>
+    <published>2023-02-03T03:39:29.000Z</published>
+    <updated>2023-02-03T06:42:34.840Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-44</title>
@@ -75,7 +101,7 @@
     <link href="http://nichunen.github.io/2023/01/31/kylin-5-debug/"/>
     <id>http://nichunen.github.io/2023/01/31/kylin-5-debug/</id>
     <published>2023-01-31T08:44:33.000Z</published>
-    <updated>2023-02-01T09:48:53.937Z</updated>
+    <updated>2023-02-02T05:44:22.800Z</updated>
     
     
       
@@ -509,34 +535,6 @@
     <summary type="html">&lt;p&gt;请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。&lt;/p&gt;
 &lt;p&gt;例如，二叉树 [1,2,2,3,4,4,3] 是对称的。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;    1    / \   2   2  / \ / \ 3  4 4 </summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-27</title>
-    <link href="http://nichunen.github.io/2023/01/05/offer-27/"/>
-    <id>http://nichunen.github.io/2023/01/05/offer-27/</id>
-    <published>2023-01-05T06:50:09.000Z</published>
-    <updated>2023-01-05T07:13:34.065Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请完成一个函数，输入一个二叉树，该函数输出它的镜像。&lt;/p&gt;
-&lt;p&gt;例如输入：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;     4    /   \   2     7  / \   / \ 1   3 6   9&lt;/code&gt;&lt;br&gt;镜像输出：&lt;/p&gt;
-&lt;pre</summary>
         
       
     
