@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-03T06:42:34.840Z</updated>
+  <updated>2023-02-05T06:07:31.901Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-47</title>
+    <link href="http://nichunen.github.io/2023/02/05/offer-47/"/>
+    <id>http://nichunen.github.io/2023/02/05/offer-47/</id>
+    <published>2023-02-05T03:25:35.000Z</published>
+    <updated>2023-02-05T06:07:31.901Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-46</title>
@@ -508,33 +533,6 @@
     <summary type="html">&lt;p&gt;输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-28</title>
-    <link href="http://nichunen.github.io/2023/01/06/offer-28/"/>
-    <id>http://nichunen.github.io/2023/01/06/offer-28/</id>
-    <published>2023-01-06T03:18:57.000Z</published>
-    <updated>2023-01-06T03:51:50.321Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。&lt;/p&gt;
-&lt;p&gt;例如，二叉树 [1,2,2,3,4,4,3] 是对称的。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;    1    / \   2   2  / \ / \ 3  4 4 </summary>
         
       
     
