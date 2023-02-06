@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-05T06:07:31.901Z</updated>
+  <updated>2023-02-06T08:55:28.650Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-48</title>
+    <link href="http://nichunen.github.io/2023/02/06/offer-48/"/>
+    <id>http://nichunen.github.io/2023/02/06/offer-48/</id>
+    <published>2023-02-06T08:30:01.000Z</published>
+    <updated>2023-02-06T08:55:28.650Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-47</title>
@@ -506,33 +533,6 @@
     <summary type="html">&lt;p&gt;定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-29</title>
-    <link href="http://nichunen.github.io/2023/01/09/offer-29/"/>
-    <id>http://nichunen.github.io/2023/01/09/offer-29/</id>
-    <published>2023-01-09T09:09:07.000Z</published>
-    <updated>2023-01-09T09:37:36.882Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
