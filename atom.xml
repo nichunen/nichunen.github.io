@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-06T08:55:28.650Z</updated>
+  <updated>2023-02-07T06:11:52.518Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-49</title>
+    <link href="http://nichunen.github.io/2023/02/07/offer-49/"/>
+    <id>http://nichunen.github.io/2023/02/07/offer-49/</id>
+    <published>2023-02-07T03:06:08.000Z</published>
+    <updated>2023-02-07T06:11:52.518Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我们把只包含质因子 2、3 和 5 的数称作丑数（Ugly Number）。求按从小到大的顺序的第 n 个丑数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-48</title>
@@ -506,33 +533,6 @@
         
         
     <summary type="html">&lt;p&gt;输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如，序列 {1,2,3,4,5} 是某栈的压栈序列，序列 {4,5,3,2,1} 是该压栈序列对应的一个弹出序列，但 {4,3,5,1,2}</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-30</title>
-    <link href="http://nichunen.github.io/2023/01/10/offer-30/"/>
-    <id>http://nichunen.github.io/2023/01/10/offer-30/</id>
-    <published>2023-01-10T03:01:04.000Z</published>
-    <updated>2023-01-10T07:47:10.731Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
         
       
     
