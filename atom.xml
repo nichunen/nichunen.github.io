@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-08T03:24:47.341Z</updated>
+  <updated>2023-02-09T05:46:04.604Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-51</title>
+    <link href="http://nichunen.github.io/2023/02/09/offer-51/"/>
+    <id>http://nichunen.github.io/2023/02/09/offer-51/</id>
+    <published>2023-02-09T03:47:25.000Z</published>
+    <updated>2023-02-09T05:46:04.604Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-50</title>
@@ -207,7 +234,7 @@
     <link href="http://nichunen.github.io/2023/01/31/kylin-5-debug/"/>
     <id>http://nichunen.github.io/2023/01/31/kylin-5-debug/</id>
     <published>2023-01-31T08:44:33.000Z</published>
-    <updated>2023-02-02T05:44:22.800Z</updated>
+    <updated>2023-02-09T03:47:33.107Z</updated>
     
     
       
@@ -506,33 +533,6 @@
         
         
     <summary type="html">&lt;p&gt;从上到下按层打印二叉树，同一层的节点按从左到右的顺序打印，每一层打印到一行。&lt;/p&gt;
-&lt;p&gt;例如:&lt;br&gt;给定二叉树: &lt;code&gt;[3,9,20,null,null,15,7]&lt;/code&gt;,&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-32</title>
-    <link href="http://nichunen.github.io/2023/01/12/offer-32/"/>
-    <id>http://nichunen.github.io/2023/01/12/offer-32/</id>
-    <published>2023-01-12T02:58:17.000Z</published>
-    <updated>2023-01-12T06:18:03.731Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。&lt;/p&gt;
 &lt;p&gt;例如:&lt;br&gt;给定二叉树: &lt;code&gt;[3,9,20,null,null,15,7]&lt;/code&gt;,&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
         
