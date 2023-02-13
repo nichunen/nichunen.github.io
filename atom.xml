@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-12T05:53:41.880Z</updated>
+  <updated>2023-02-13T03:23:21.726Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-55-1</title>
+    <link href="http://nichunen.github.io/2023/02/13/offer-55-1/"/>
+    <id>http://nichunen.github.io/2023/02/13/offer-55-1/</id>
+    <published>2023-02-13T03:17:07.000Z</published>
+    <updated>2023-02-13T03:23:21.726Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;输入一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;给定二叉树 &lt;code&gt;[3,9,20,null,null,15,7]&lt;/code&gt;，&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-54</title>
@@ -509,33 +537,6 @@
         
         
     <summary type="html">&lt;p&gt;给你二叉树的根节点 &lt;code&gt;root&lt;/code&gt; 和一个整数目标和 &lt;code&gt;targetSum&lt;/code&gt; ，找出所有 &lt;strong&gt;从根节点到叶子节点&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-33</title>
-    <link href="http://nichunen.github.io/2023/01/16/offer-33/"/>
-    <id>http://nichunen.github.io/2023/01/16/offer-33/</id>
-    <published>2023-01-16T03:33:05.000Z</published>
-    <updated>2023-01-17T09:15:35.467Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回 &lt;code&gt;true&lt;/code&gt;，否则返回 &lt;code&gt;false&lt;/code&gt;。假设输入的数组的任意两个数字都互不相同。&lt;/p&gt;
-&lt;p&gt;参考以下这颗二叉搜索树：&lt;/p&gt;
-&lt;pre</summary>
         
       
     
