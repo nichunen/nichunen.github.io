@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-13T03:23:21.726Z</updated>
+  <updated>2023-02-14T11:52:00.569Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-55-2</title>
+    <link href="http://nichunen.github.io/2023/02/14/offer-55-2/"/>
+    <id>http://nichunen.github.io/2023/02/14/offer-55-2/</id>
+    <published>2023-02-14T03:38:29.000Z</published>
+    <updated>2023-02-14T11:52:00.569Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;输入一棵二叉树的根节点，判断该树是不是平衡二叉树。如果某二叉树中任意节点的左右子树的深度相差不超过1，那么它就是一棵平衡二叉树。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;给定二叉树</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-55-1</title>
@@ -512,31 +539,6 @@
         
         
     <summary type="html">&lt;p&gt;请实现 &lt;code&gt;copyRandomList&lt;/code&gt; 函数，复制一个复杂链表。在复杂链表中，每个节点除了有一个 &lt;code&gt;next&lt;/code&gt; 指针指向下一个节点，还有一个 &lt;code&gt;random&lt;/code&gt; 指针指向链表中的任意节点或者</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-34</title>
-    <link href="http://nichunen.github.io/2023/01/17/offer-34/"/>
-    <id>http://nichunen.github.io/2023/01/17/offer-34/</id>
-    <published>2023-01-17T09:15:46.000Z</published>
-    <updated>2023-01-18T03:25:08.144Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你二叉树的根节点 &lt;code&gt;root&lt;/code&gt; 和一个整数目标和 &lt;code&gt;targetSum&lt;/code&gt; ，找出所有 &lt;strong&gt;从根节点到叶子节点&lt;/strong&gt;</summary>
         
       
     
