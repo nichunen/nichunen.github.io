@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-17T03:34:45.394Z</updated>
+  <updated>2023-02-19T14:35:46.650Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-57-2</title>
+    <link href="http://nichunen.github.io/2023/02/19/offer-57-2/"/>
+    <id>http://nichunen.github.io/2023/02/19/offer-57-2/</id>
+    <published>2023-02-19T14:12:27.000Z</published>
+    <updated>2023-02-19T14:35:46.650Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;输入一个正整数 &lt;code&gt;target&lt;/code&gt; ，输出所有和为 &lt;code&gt;target&lt;/code&gt; 的连续正整数序列（至少含有两个数）。&lt;/p&gt;
+&lt;p&gt;序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-57</title>
@@ -514,34 +541,6 @@
     <summary type="html">&lt;p&gt;输入整数数组 &lt;code&gt;arr&lt;/code&gt; ，找出其中最小的 &lt;code&gt;k&lt;/code&gt; 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-39</title>
-    <link href="http://nichunen.github.io/2023/01/28/offer-39/"/>
-    <id>http://nichunen.github.io/2023/01/28/offer-39/</id>
-    <published>2023-01-28T06:03:30.000Z</published>
-    <updated>2023-01-28T09:14:21.900Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。&lt;/p&gt;
-&lt;p&gt;你可以假设数组是非空的，并且给定的数组总是存在多数元素。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
         
       
     
