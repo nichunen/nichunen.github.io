@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>offer-58-2</title>
+      <link href="/2023/02/21/offer-58-2/"/>
+      <url>/2023/02/21/offer-58-2/</url>
+      
+        <content type="html"><![CDATA[<p>字符串的左旋转操作是把字符串前面的若干个字符转移到字符串的尾部。请定义一个函数实现字符串左旋转操作的功能。比如，输入字符串”abcdefg”和数字2，该函数将返回左旋转两位得到的结果”cdefgab”。</p><p><strong>示例 1：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: s = "abcdefg", k = 2输出: "cdefgab"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>示例 2：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: s = "lrloseumgh", k = 6输出: "umghlrlose"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>限制：</strong></p><ul><li><code>1 &lt;= k &lt; s.length &lt;= 10000</code></li></ul><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">reverseLeftWords</span><span class="token punctuation">(</span><span class="token class-name">String</span> s<span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> s <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">return</span> s<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">int</span> k <span class="token operator">=</span> n <span class="token operator">%</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span> <span class="token operator">+</span> s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>offer-58-1</title>
       <link href="/2023/02/20/offer-58-1/"/>
       <url>/2023/02/20/offer-58-1/</url>
