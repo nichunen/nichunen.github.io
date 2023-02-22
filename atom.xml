@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-21T05:43:15.596Z</updated>
+  <updated>2023-02-22T15:20:07.969Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-59-1</title>
+    <link href="http://nichunen.github.io/2023/02/22/offer-59-1/"/>
+    <id>http://nichunen.github.io/2023/02/22/offer-59-1/</id>
+    <published>2023-02-22T03:09:38.000Z</published>
+    <updated>2023-02-22T15:20:07.969Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个数组 &lt;code&gt;nums&lt;/code&gt; 和滑动窗口的大小 &lt;code&gt;k&lt;/code&gt;，请找出所有滑动窗口里的最大值。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-58-2</title>
@@ -520,34 +547,6 @@
     
     
     <category term="kylin" scheme="http://nichunen.github.io/tags/kylin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-42</title>
-    <link href="http://nichunen.github.io/2023/01/31/offer-42/"/>
-    <id>http://nichunen.github.io/2023/01/31/offer-42/</id>
-    <published>2023-01-31T03:31:36.000Z</published>
-    <updated>2023-01-31T05:44:12.372Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。&lt;/p&gt;
-&lt;p&gt;要求时间复杂度为O(n)。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
