@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-22T15:20:07.969Z</updated>
+  <updated>2023-02-23T12:09:32.031Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-60</title>
+    <link href="http://nichunen.github.io/2023/02/23/offer-60/"/>
+    <id>http://nichunen.github.io/2023/02/23/offer-60/</id>
+    <published>2023-02-23T03:09:11.000Z</published>
+    <updated>2023-02-23T12:09:32.031Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。&lt;/p&gt;
+&lt;p&gt;你需要用一个浮点数数组返回答案，其中第 i 个元素代表这 n 个骰子所能掷出的点数集合中第 i 小的那个的概率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-59-1</title>
@@ -522,31 +549,6 @@
     
     
     <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to setup debugging environment for Kylin5 locally</title>
-    <link href="http://nichunen.github.io/2023/01/31/kylin-5-debug/"/>
-    <id>http://nichunen.github.io/2023/01/31/kylin-5-debug/</id>
-    <published>2023-01-31T08:44:33.000Z</published>
-    <updated>2023-02-09T03:47:33.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;1-Check-Software-Requirement&quot;&gt;&lt;a href=&quot;#1-Check-Software-Requirement&quot; class=&quot;headerlink&quot; title=&quot;1. Check Software</summary>
-        
-      
-    
-    
-    
-    <category term="bigdata" scheme="http://nichunen.github.io/categories/bigdata/"/>
-    
-    
-    <category term="kylin" scheme="http://nichunen.github.io/tags/kylin/"/>
     
   </entry>
   
