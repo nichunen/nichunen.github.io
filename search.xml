@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>offer-64</title>
+      <link href="/2023/02/27/offer-64/"/>
+      <url>/2023/02/27/offer-64/</url>
+      
+        <content type="html"><![CDATA[<p>求 <code>1+2+...+n</code> ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。</p><p><strong>示例 1：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: n = 3输出: 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>示例 2：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: n = 9输出: 45<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>限制：</strong></p><ul><li><code>1 &lt;= n &lt;= 10000</code></li></ul><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">class</span> <span class="token class-name">InnerC</span> <span class="token punctuation">{</span>        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token class-name">InnerC</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>            num <span class="token operator">+=</span> n<span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span>    <span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">innerFunc</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token class-name">InnerC</span> s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">InnerC</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> n <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> <span class="token function">innerFunc</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">sumNums</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token class-name">InnerC</span><span class="token punctuation">.</span>num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token function">innerFunc</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> <span class="token class-name">InnerC</span><span class="token punctuation">.</span>num<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>offer-63</title>
       <link href="/2023/02/26/offer-63/"/>
       <url>/2023/02/26/offer-63/</url>

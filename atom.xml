@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-26T06:58:56.104Z</updated>
+  <updated>2023-02-27T07:36:15.302Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-64</title>
+    <link href="http://nichunen.github.io/2023/02/27/offer-64/"/>
+    <id>http://nichunen.github.io/2023/02/27/offer-64/</id>
+    <published>2023-02-27T06:54:43.000Z</published>
+    <updated>2023-02-27T07:36:15.302Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;求 &lt;code&gt;1+2+...+n&lt;/code&gt; ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-63</title>
@@ -513,32 +540,6 @@
         
         
     <summary type="html">&lt;p&gt;在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-46</title>
-    <link href="http://nichunen.github.io/2023/02/03/offer-46/"/>
-    <id>http://nichunen.github.io/2023/02/03/offer-46/</id>
-    <published>2023-02-03T03:39:29.000Z</published>
-    <updated>2023-02-03T06:42:34.840Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例</summary>
         
       
     
