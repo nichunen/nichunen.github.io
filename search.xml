@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>offer-65</title>
+      <link href="/2023/02/28/offer-65/"/>
+      <url>/2023/02/28/offer-65/</url>
+      
+        <content type="html"><![CDATA[<p>写一个函数，求两个整数之和，要求在函数体内不得使用 “+”、“-”、“*”、“/” 四则运算符号。</p><p><strong>示例:</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: a = 1, b = 1输出: 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>提示：</strong></p><ul><li><code>a</code>, <code>b</code> 均可能是负数或 0</li><li>结果不会溢出 32 位整数</li></ul><p><strong>预备知识</strong></p><p>有符号整数通常用补码来表示和存储，补码具有如下特征：</p><ul><li>正整数的补码与原码相同；负整数的补码为其原码除符号位外的所有位取反后加 1。</li><li>可以将减法运算转化为补码的加法运算来实现。</li><li>符号位与数值位可以一起参与运算。</li></ul><p><strong>思路和算法</strong></p><p>虽然题目只要求了不能使用运算符 +、-、* 和 /，但是原则上来说也不宜使用类似的运算符 +=、-=、*= 和 /=，以及 sum 等方法。于是，我们使用位运算来处理这个问题。</p><p>首先，考虑两个二进制位相加的四种情况如下：</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">while</span> <span class="token punctuation">(</span>b <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">int</span> carry <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">&amp;</span> b<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span>            a <span class="token operator">=</span> a <span class="token operator">^</span> b<span class="token punctuation">;</span>            b <span class="token operator">=</span> carry<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> a<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>offer-64</title>
       <link href="/2023/02/27/offer-64/"/>
       <url>/2023/02/27/offer-64/</url>

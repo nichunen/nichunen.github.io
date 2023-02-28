@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-02-27T07:36:15.302Z</updated>
+  <updated>2023-02-28T06:22:00.923Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-65</title>
+    <link href="http://nichunen.github.io/2023/02/28/offer-65/"/>
+    <id>http://nichunen.github.io/2023/02/28/offer-65/</id>
+    <published>2023-02-28T03:34:30.000Z</published>
+    <updated>2023-02-28T06:22:00.923Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;写一个函数，求两个整数之和，要求在函数体内不得使用 “+”、“-”、“*”、“/” 四则运算符号。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer-64</title>
@@ -515,31 +542,6 @@
     <summary type="html">&lt;p&gt;请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-47</title>
-    <link href="http://nichunen.github.io/2023/02/05/offer-47/"/>
-    <id>http://nichunen.github.io/2023/02/05/offer-47/</id>
-    <published>2023-02-05T03:25:35.000Z</published>
-    <updated>2023-02-05T06:07:31.901Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于</summary>
         
       
     
