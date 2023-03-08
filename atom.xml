@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-07T03:46:30.730Z</updated>
+  <updated>2023-03-08T07:13:45.108Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-4</title>
+    <link href="http://nichunen.github.io/2023/03/08/offer2-4/"/>
+    <id>http://nichunen.github.io/2023/03/08/offer2-4/</id>
+    <published>2023-03-08T03:22:54.000Z</published>
+    <updated>2023-03-08T07:13:45.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; ，除某个元素仅出现 &lt;strong&gt;一次&lt;/strong&gt; 外，其余每个元素都恰出现 &lt;strong&gt;三次 。&lt;/strong&gt;请你找出并返回那个只出现了一次的元素。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-3</title>
@@ -507,34 +533,6 @@
     <summary type="html">&lt;p&gt;输入一棵二叉树的根节点，判断该树是不是平衡二叉树。如果某二叉树中任意节点的左右子树的深度相差不超过1，那么它就是一棵平衡二叉树。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;给定二叉树</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-55-1</title>
-    <link href="http://nichunen.github.io/2023/02/13/offer-55-1/"/>
-    <id>http://nichunen.github.io/2023/02/13/offer-55-1/</id>
-    <published>2023-02-13T03:17:07.000Z</published>
-    <updated>2023-02-13T03:23:21.726Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;输入一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。&lt;/p&gt;
-&lt;p&gt;例如：&lt;/p&gt;
-&lt;p&gt;给定二叉树 &lt;code&gt;[3,9,20,null,null,15,7]&lt;/code&gt;，&lt;/p&gt;
-&lt;pre</summary>
         
       
     
