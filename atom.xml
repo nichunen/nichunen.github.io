@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-08T07:13:45.108Z</updated>
+  <updated>2023-03-10T06:29:36.536Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-5</title>
+    <link href="http://nichunen.github.io/2023/03/09/offer2-5/"/>
+    <id>http://nichunen.github.io/2023/03/09/offer2-5/</id>
+    <published>2023-03-09T03:50:56.000Z</published>
+    <updated>2023-03-10T06:29:36.536Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个字符串数组 &lt;code&gt;words&lt;/code&gt;，请计算当两个字符串 &lt;code&gt;words[i]&lt;/code&gt; 和 &lt;code&gt;words[j]&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-4</title>
@@ -506,33 +531,6 @@
     <summary type="html">&lt;p&gt;一个整型数组 &lt;code&gt;nums&lt;/code&gt; 里除两个数字之外，其他数字都出现了两次。请写程序找出这两个只出现一次的数字。要求时间复杂度是O(n)，空间复杂度是O(1)。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-55-2</title>
-    <link href="http://nichunen.github.io/2023/02/14/offer-55-2/"/>
-    <id>http://nichunen.github.io/2023/02/14/offer-55-2/</id>
-    <published>2023-02-14T03:38:29.000Z</published>
-    <updated>2023-02-14T11:52:00.569Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;输入一棵二叉树的根节点，判断该树是不是平衡二叉树。如果某二叉树中任意节点的左右子树的深度相差不超过1，那么它就是一棵平衡二叉树。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;给定二叉树</summary>
         
       
     
