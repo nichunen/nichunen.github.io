@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-10T06:29:36.536Z</updated>
+  <updated>2023-03-12T15:02:43.710Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-6</title>
+    <link href="http://nichunen.github.io/2023/03/12/offer2-6/"/>
+    <id>http://nichunen.github.io/2023/03/12/offer2-6/</id>
+    <published>2023-03-12T12:03:18.000Z</published>
+    <updated>2023-03-12T15:02:43.710Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个已按照 &lt;strong&gt;升序排列&lt;/strong&gt; 的整数数组 &lt;code&gt;numbers&lt;/code&gt; ，请你从数组中找出两个数满足相加之和等于目标数 &lt;code&gt;target&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;函数应该以长度为 &lt;code&gt;2&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-5</title>
@@ -504,33 +530,6 @@
     <summary type="html">&lt;p&gt;在一个数组 &lt;code&gt;nums&lt;/code&gt; 中除一个数字只出现一次之外，其他数字都出现了三次。请找出那个只出现一次的数字。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-56-1</title>
-    <link href="http://nichunen.github.io/2023/02/15/offer-56-1/"/>
-    <id>http://nichunen.github.io/2023/02/15/offer-56-1/</id>
-    <published>2023-02-15T03:15:52.000Z</published>
-    <updated>2023-02-15T05:22:17.443Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;一个整型数组 &lt;code&gt;nums&lt;/code&gt; 里除两个数字之外，其他数字都出现了两次。请写程序找出这两个只出现一次的数字。要求时间复杂度是O(n)，空间复杂度是O(1)。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
