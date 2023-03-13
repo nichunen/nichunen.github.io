@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-12T15:02:43.710Z</updated>
+  <updated>2023-03-13T08:44:01.201Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-7</title>
+    <link href="http://nichunen.github.io/2023/03/13/offer2-7/"/>
+    <id>http://nichunen.github.io/2023/03/13/offer2-7/</id>
+    <published>2023-03-13T03:16:49.000Z</published>
+    <updated>2023-03-13T08:44:01.201Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; ，判断是否存在三元组 &lt;code&gt;[nums[i], nums[j], nums[k]]&lt;/code&gt; 满足 &lt;code&gt;i != j&lt;/code&gt;、&lt;code&gt;i != k&lt;/code&gt; 且 &lt;code&gt;j !=</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-6</title>
@@ -501,33 +526,6 @@
         
         
     <summary type="html">&lt;p&gt;输入一个递增排序的数组和一个数字s，在数组中查找两个数，使得它们的和正好是s。如果有多对数字的和等于s，则输出任意一对即可。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-56-2</title>
-    <link href="http://nichunen.github.io/2023/02/16/offer-56-2/"/>
-    <id>http://nichunen.github.io/2023/02/16/offer-56-2/</id>
-    <published>2023-02-16T03:09:31.000Z</published>
-    <updated>2023-02-16T03:49:32.865Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在一个数组 &lt;code&gt;nums&lt;/code&gt; 中除一个数字只出现一次之外，其他数字都出现了三次。请找出那个只出现一次的数字。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
         
