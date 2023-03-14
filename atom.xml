@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-13T08:44:01.201Z</updated>
+  <updated>2023-03-14T06:16:28.374Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-8</title>
+    <link href="http://nichunen.github.io/2023/03/14/offer2-8/"/>
+    <id>http://nichunen.github.io/2023/03/14/offer2-8/</id>
+    <published>2023-03-14T02:52:21.000Z</published>
+    <updated>2023-03-14T06:16:28.374Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个含有 &lt;code&gt;n&lt;/code&gt; 个正整数的数组和一个正整数 &lt;code&gt;target&lt;/code&gt; &lt;strong&gt;。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;找出该数组中满足其和 &lt;code&gt;≥ target&lt;/code&gt; 的长度最小的</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-7</title>
@@ -501,33 +527,6 @@
     <summary type="html">&lt;p&gt;输入一个正整数 &lt;code&gt;target&lt;/code&gt; ，输出所有和为 &lt;code&gt;target&lt;/code&gt; 的连续正整数序列（至少含有两个数）。&lt;/p&gt;
 &lt;p&gt;序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-57</title>
-    <link href="http://nichunen.github.io/2023/02/17/offer-57/"/>
-    <id>http://nichunen.github.io/2023/02/17/offer-57/</id>
-    <published>2023-02-17T03:00:49.000Z</published>
-    <updated>2023-02-17T03:34:45.394Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;输入一个递增排序的数组和一个数字s，在数组中查找两个数，使得它们的和正好是s。如果有多对数字的和等于s，则输出任意一对即可。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
         
       
     
