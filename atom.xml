@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-23T06:47:00.983Z</updated>
+  <updated>2023-03-23T14:31:26.847Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -17,12 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>design-pattern-observer</title>
+    <title>【转载】设计模式 观察者模式 以微信公众服务为例</title>
     <link href="http://nichunen.github.io/2023/03/23/design-pattern-observer/"/>
     <id>http://nichunen.github.io/2023/03/23/design-pattern-observer/</id>
     <published>2023-03-23T06:46:26.000Z</published>
-    <updated>2023-03-23T06:47:00.983Z</updated>
+    <updated>2023-03-23T14:31:26.847Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;观察者模式定义&quot;&gt;&lt;a href=&quot;#观察者模式定义&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
