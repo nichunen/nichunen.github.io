@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-23T06:13:44.749Z</updated>
+  <updated>2023-03-23T06:47:00.983Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>design-pattern-observer</title>
+    <link href="http://nichunen.github.io/2023/03/23/design-pattern-observer/"/>
+    <id>http://nichunen.github.io/2023/03/23/design-pattern-observer/</id>
+    <published>2023-03-23T06:46:26.000Z</published>
+    <updated>2023-03-23T06:47:00.983Z</updated>
+    
+    
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-15</title>
@@ -499,33 +516,6 @@
     <summary type="html">&lt;p&gt;写一个函数，求两个整数之和，要求在函数体内不得使用 “+”、“-”、“*”、“/” 四则运算符号。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-64</title>
-    <link href="http://nichunen.github.io/2023/02/27/offer-64/"/>
-    <id>http://nichunen.github.io/2023/02/27/offer-64/</id>
-    <published>2023-02-27T06:54:43.000Z</published>
-    <updated>2023-02-27T07:36:15.302Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;求 &lt;code&gt;1+2+...+n&lt;/code&gt; ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     

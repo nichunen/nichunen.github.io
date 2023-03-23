@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>design-pattern-observer</title>
+      <link href="/2023/03/23/design-pattern-observer/"/>
+      <url>/2023/03/23/design-pattern-observer/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 设计模式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 设计模式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>offer2-15</title>
       <link href="/2023/03/23/offer2-15/"/>
       <url>/2023/03/23/offer2-15/</url>
@@ -1826,14 +1851,14 @@
       
       <categories>
           
-          <category> 默认 </category>
+          <category> leetcode </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 其他 </tag>
+            <tag> leetcode </tag>
             
         </tags>
       
