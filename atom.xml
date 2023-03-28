@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-27T08:04:34.888Z</updated>
+  <updated>2023-03-28T14:55:42.540Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【转载】设计模式：单例设计模式(Singleton Pattern)完全解析</title>
+    <link href="http://nichunen.github.io/2023/03/27/design-pattern-singleton/"/>
+    <id>http://nichunen.github.io/2023/03/27/design-pattern-singleton/</id>
+    <published>2023-03-27T08:29:24.000Z</published>
+    <updated>2023-03-28T14:55:42.540Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;什么会有单例设计模式？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们都知道单例模式是在开发中用的最多的一种设计模式，那么究竟为什么会有单例设计模式呢？对于这个问题相信有很多会写单例的人都会有个这个疑问。在这里先说一下单例的用途，然后举一个例子大家就会明白为什么会有单</summary>
+        
+      
+    
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-17</title>
@@ -502,32 +528,6 @@
         
         
     <summary type="html">&lt;p&gt;给定两个整数 &lt;code&gt;a&lt;/code&gt; 和 &lt;code&gt;b&lt;/code&gt; ，求它们的除法的商 &lt;code&gt;a/b&lt;/code&gt; ，要求不得使用乘号 &lt;code&gt;&#39;*&#39;&lt;/code&gt;、除号 &lt;code&gt;&#39;/&#39;&lt;/code&gt; 以及求余符号 &lt;code&gt;&#39;%&#39;&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-68-2</title>
-    <link href="http://nichunen.github.io/2023/03/03/offer-68-2/"/>
-    <id>http://nichunen.github.io/2023/03/03/offer-68-2/</id>
-    <published>2023-03-03T03:05:09.000Z</published>
-    <updated>2023-03-03T06:02:20.539Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
         
       
     
