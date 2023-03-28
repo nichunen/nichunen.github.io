@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-28T14:55:42.540Z</updated>
+  <updated>2023-03-28T16:08:19.744Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-18</title>
+    <link href="http://nichunen.github.io/2023/03/28/offer2-18/"/>
+    <id>http://nichunen.github.io/2023/03/28/offer2-18/</id>
+    <published>2023-03-28T15:02:24.000Z</published>
+    <updated>2023-03-28T16:08:19.744Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt; ，验证 &lt;code&gt;s&lt;/code&gt; 是否是 &lt;strong&gt;回文串&lt;/strong&gt; ，只考虑字母和数字字符，可以忽略字母的大小写。&lt;/p&gt;
+&lt;p&gt;本题中，将空字符串定义为有效的 &lt;strong&gt;回文串&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【转载】设计模式：单例设计模式(Singleton Pattern)完全解析</title>
@@ -503,31 +529,6 @@
         
     <summary type="html">&lt;p&gt;给定两个 01 字符串 &lt;code&gt;a&lt;/code&gt; 和 &lt;code&gt;b&lt;/code&gt; ，请计算它们的和，并以二进制字符串的形式输出。&lt;/p&gt;
 &lt;p&gt;输入为 &lt;strong&gt;非空&lt;/strong&gt; 字符串且只包含数字 &lt;code&gt;1&lt;/code&gt; 和</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-1</title>
-    <link href="http://nichunen.github.io/2023/03/05/offer2-1/"/>
-    <id>http://nichunen.github.io/2023/03/05/offer2-1/</id>
-    <published>2023-03-05T07:47:12.000Z</published>
-    <updated>2023-03-05T09:09:28.713Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定两个整数 &lt;code&gt;a&lt;/code&gt; 和 &lt;code&gt;b&lt;/code&gt; ，求它们的除法的商 &lt;code&gt;a/b&lt;/code&gt; ，要求不得使用乘号 &lt;code&gt;&#39;*&#39;&lt;/code&gt;、除号 &lt;code&gt;&#39;/&#39;&lt;/code&gt; 以及求余符号 &lt;code&gt;&#39;%&#39;&lt;/code&gt;</summary>
         
       
     
