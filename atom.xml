@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-29T07:34:07.826Z</updated>
+  <updated>2023-03-30T05:28:27.293Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-20</title>
+    <link href="http://nichunen.github.io/2023/03/30/offer2-20/"/>
+    <id>http://nichunen.github.io/2023/03/30/offer2-20/</id>
+    <published>2023-03-30T03:15:16.000Z</published>
+    <updated>2023-03-30T05:28:27.293Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt; ，请计算这个字符串中有多少个回文子字符串。&lt;/p&gt;
+&lt;p&gt;具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不同的子串。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【转载】设计模式：策略模式-以角色游戏为背景</title>
@@ -503,32 +531,6 @@
         
         
     <summary type="html">&lt;p&gt;给定一个字符串数组 &lt;code&gt;words&lt;/code&gt;，请计算当两个字符串 &lt;code&gt;words[i]&lt;/code&gt; 和 &lt;code&gt;words[j]&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-4</title>
-    <link href="http://nichunen.github.io/2023/03/08/offer2-4/"/>
-    <id>http://nichunen.github.io/2023/03/08/offer2-4/</id>
-    <published>2023-03-08T03:22:54.000Z</published>
-    <updated>2023-03-08T07:13:45.108Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; ，除某个元素仅出现 &lt;strong&gt;一次&lt;/strong&gt; 外，其余每个元素都恰出现 &lt;strong&gt;三次 。&lt;/strong&gt;请你找出并返回那个只出现了一次的元素。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例</summary>
         
       
     
