@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-30T15:11:02.459Z</updated>
+  <updated>2023-03-31T05:41:40.865Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-21</title>
+    <link href="http://nichunen.github.io/2023/03/31/offer2-21/"/>
+    <id>http://nichunen.github.io/2023/03/31/offer2-21/</id>
+    <published>2023-03-31T05:40:56.000Z</published>
+    <updated>2023-03-31T05:41:40.865Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个链表，删除链表的倒数第 &lt;code&gt;n&lt;/code&gt; 个结点，并且返回链表的头结点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【转载】设计模式：适配器模式-以手机充电器为例</title>
@@ -507,32 +534,6 @@
         
         
     <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; ，判断是否存在三元组 &lt;code&gt;[nums[i], nums[j], nums[k]]&lt;/code&gt; 满足 &lt;code&gt;i != j&lt;/code&gt;、&lt;code&gt;i != k&lt;/code&gt; 且 &lt;code&gt;j !=</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-6</title>
-    <link href="http://nichunen.github.io/2023/03/12/offer2-6/"/>
-    <id>http://nichunen.github.io/2023/03/12/offer2-6/</id>
-    <published>2023-03-12T12:03:18.000Z</published>
-    <updated>2023-03-12T15:02:43.710Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个已按照 &lt;strong&gt;升序排列&lt;/strong&gt; 的整数数组 &lt;code&gt;numbers&lt;/code&gt; ，请你从数组中找出两个数满足相加之和等于目标数 &lt;code&gt;target&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;函数应该以长度为 &lt;code&gt;2&lt;/code&gt;</summary>
         
       
     

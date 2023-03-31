@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>offer2-21</title>
+      <link href="/2023/03/31/offer2-21/"/>
+      <url>/2023/03/31/offer2-21/</url>
+      
+        <content type="html"><![CDATA[<p>给定一个链表，删除链表的倒数第 <code>n</code> 个结点，并且返回链表的头结点。</p><p><strong>示例 1：</strong></p><p><img src="https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg" alt="img"></p><pre class="line-numbers language-none"><code class="language-none">输入：head = [1,2,3,4,5], n = 2输出：[1,2,3,5]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>示例 2：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入：head = [1], n = 1输出：[]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>示例 3：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入：head = [1,2], n = 1输出：[1]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>提示：</strong></p><ul><li>链表中结点的数目为 <code>sz</code></li><li><code>1 &lt;= sz &lt;= 30</code></li><li><code>0 &lt;= Node.val &lt;= 100</code></li><li><code>1 &lt;= n &lt;= sz</code></li></ul><p><strong>进阶：</strong>能尝试使用一趟扫描实现吗？</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【转载】设计模式：适配器模式-以手机充电器为例</title>
       <link href="/2023/03/30/design-pattern-adapter/"/>
       <url>/2023/03/30/design-pattern-adapter/</url>
