@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="offer2-20, 倪春恩的博客">
+    <meta name="keywords" content="【转载】设计模式：适配器模式-以手机充电器为例, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>offer2-20 | 倪春恩的博客</title>
+    <title>【转载】设计模式：适配器模式-以手机充电器为例 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">offer2-20</h1>
+                    <h1 class="description center-align post-title">【转载】设计模式：适配器模式-以手机充电器为例</h1>
                 </div>
             </div>
         </div>
@@ -340,8 +340,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/leetcode/">
-                                <span class="chip bg-color">leetcode</span>
+                            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                                <span class="chip bg-color">设计模式</span>
                             </a>
                         
                     </div>
@@ -352,8 +352,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/leetcode/" class="post-category">
-                                leetcode
+                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
+                                设计模式
                             </a>
                         
                     </div>
@@ -389,73 +389,91 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>给定一个字符串 <code>s</code> ，请计算这个字符串中有多少个回文子字符串。</p>
-<p>具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不同的子串。</p>
-<p><strong>示例 1：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：s = "abc"
-输出：3
-解释：三个回文子串: "a", "b", "c"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+                <p>老样子，定义：将一个类的接口转换成客户期望的另一个接口，适配器让原本接口不兼容的类可以相互合作。这个定义还好，说适配器的功能就是把一个接口转成另一个接口。</p>
+<p>发现两张图片可以很好的解释<strong>适配器模式</strong>：</p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230330230354.png"></p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230330230416.png"></p>
+<p>这两张图很好的说明了适配器的作用哈，话说我当年买了个欧版的HTC G17 ，还配了个插头转化器，这个插头转化器就是起得适配器的作用。下来来点代码解释哈，如题目，手机充电器一般都是5V左右吧，咱天朝的家用交流电压220V，所以手机充电需要一个适配器（降压器），有什么物理名词使用错误的，见谅。</p>
+<p>首先一部手机：Mobile.java</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>adapter</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Mobile</span> <span class="token punctuation">{</span>
+	<span class="token comment">/**
+	 * 充电
+	 * @param power 
+	 */</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">inputPower</span><span class="token punctuation">(</span><span class="token class-name">V5Power</span> power<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> provideV5Power <span class="token operator">=</span> power<span class="token punctuation">.</span><span class="token function">provideV5Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"手机（客户端）：我需要5V电压充电，现在是--&gt;"</span> <span class="token operator">+</span> provideV5Power <span class="token operator">+</span> <span class="token string">"V"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><strong>示例 2：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：s = "aaa"
-输出：6
-解释：6个回文子串: "a", "a", "a", "aa", "aa", "aaa"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>然后我们拥有的是220V家用交流电：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>adapter</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 家用220V交流电
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">V220Power</span> <span class="token punctuation">{</span>
+	<span class="token comment">/**
+	 * 提供220V电压
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">provideV220Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"我提供220V交流电压。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token number">220</span> <span class="token punctuation">;</span> 
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<p>下面我们需要一个适配器，完成220V转5V的作用：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>adapter</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 适配器，把220V电压变成5V
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">V5PowerAdapter</span> <span class="token keyword">implements</span> <span class="token class-name">V5Power</span> <span class="token punctuation">{</span>
+	<span class="token comment">/**
+	 * 组合的方式
+	 */</span>
+	<span class="token keyword">private</span> <span class="token class-name">V220Power</span> v220Power <span class="token punctuation">;</span>
+	
+	<span class="token keyword">public</span> <span class="token class-name">V5PowerAdapter</span><span class="token punctuation">(</span><span class="token class-name">V220Power</span> v220Power<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>v220Power <span class="token operator">=</span> v220Power <span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">provideV5Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> power <span class="token operator">=</span> v220Power<span class="token punctuation">.</span><span class="token function">provideV220Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>
+		<span class="token comment">//power经过各种操作--&gt;5 </span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"适配器：我悄悄的适配了电压。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token number">5</span> <span class="token punctuation">;</span> 
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<p>最后测试，我们给手机冲个电：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>adapter</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">Mobile</span> mobile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Mobile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">V5Power</span> v5Power <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">V5PowerAdapter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">V220Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">;</span> 
+		mobile<span class="token punctuation">.</span><span class="token function">inputPower</span><span class="token punctuation">(</span>v5Power<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><strong>提示：</strong></p>
-<ul>
-<li><code>1 &lt;= s.length &lt;= 1000</code></li>
-<li><code>s</code> 由小写英文字母组成</li>
-</ul>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">
-<span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span>
-<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">countSubstrings</span><span class="token punctuation">(</span><span class="token class-name">String</span> s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>s <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+<p>输出：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">现有类：我提供220V交流电压。
+适配器：我悄悄的适配了电压。
+手机（客户端）：我需要5V电压充电，现在是--&gt;5V<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-        <span class="token class-name">Boolean</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> valid <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">[</span>s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">[</span>s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-
-        <span class="token keyword">return</span> <span class="token function">getCount</span><span class="token punctuation">(</span>valid<span class="token punctuation">,</span> s<span class="token punctuation">,</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">getCount</span><span class="token punctuation">(</span><span class="token class-name">Boolean</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> valid<span class="token punctuation">,</span> <span class="token class-name">String</span> s<span class="token punctuation">,</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> index<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isValid</span><span class="token punctuation">(</span>valid<span class="token punctuation">,</span> i<span class="token punctuation">,</span> index<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                count<span class="token operator">++</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-
-        <span class="token keyword">return</span> count <span class="token operator">+</span> <span class="token function">getCount</span><span class="token punctuation">(</span>valid<span class="token punctuation">,</span> s<span class="token punctuation">,</span> index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-
-    <span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">isValid</span><span class="token punctuation">(</span><span class="token class-name">Boolean</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> valid<span class="token punctuation">,</span> <span class="token keyword">int</span> from<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token keyword">to</span><span class="token punctuation">,</span> <span class="token class-name">String</span> s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>valid<span class="token punctuation">[</span>from<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">to</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> valid<span class="token punctuation">[</span>from<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">to</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">boolean</span> isValid <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>from <span class="token operator">==</span> <span class="token keyword">to</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            isValid <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>from <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token keyword">to</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            isValid <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>from<span class="token punctuation">)</span> <span class="token operator">==</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token keyword">to</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-            isValid <span class="token operator">=</span> <span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>from<span class="token punctuation">)</span> <span class="token operator">==</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token keyword">to</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isValid</span><span class="token punctuation">(</span>valid<span class="token punctuation">,</span> from <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">to</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-
-        valid<span class="token punctuation">[</span>from<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">to</span><span class="token punctuation">]</span> <span class="token operator">=</span> isValid<span class="token punctuation">;</span>
-        <span class="token keyword">return</span> isValid<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>可以看出，我们使用一个适配器完成了把220V转化了5V然后提供给手机使用，且我们使用了组合（OO设计原则），原有的手机，以及200V电压类都不需要变化，且手机（客户端）和220V（被适配者）完全解耦。</p>
+<p>最后画个uml类图，便于大家理解：</p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230330231047.png"></p>
+<p>————————————————<br>版权声明：本文为CSDN博主「鸿洋_」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/lmj623565791/article/details/25833393">https://blog.csdn.net/lmj623565791/article/details/25833393</a></p>
 
                 
             </div>
@@ -482,7 +500,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nichunen.github.io/2023/03/30/offer2-20/">http://nichunen.github.io/2023/03/30/offer2-20/</a>
+                    <a href="http://nichunen.github.io/2023/03/30/design-pattern-adapter/">http://nichunen.github.io/2023/03/30/design-pattern-adapter/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -520,8 +538,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/leetcode/">
-                                    <span class="chip bg-color">leetcode</span>
+                                <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                                    <span class="chip bg-color">设计模式</span>
                                 </a>
                             
                         </div>
@@ -691,9 +709,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/03/30/design-pattern-adapter/">
                     <div class="card-image">
@@ -711,9 +730,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -726,6 +745,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -744,13 +764,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/03/29/design-pattern-strategy/">
+                <a href="/2023/03/30/offer2-20/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="【转载】设计模式：策略模式-以角色游戏为背景">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="offer2-20">
                         
-                        <span class="card-title">【转载】设计模式：策略模式-以角色游戏为背景</span>
+                        <span class="card-title">offer2-20</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -761,14 +781,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
-                                    设计模式
+                            <a href="/categories/leetcode/" class="post-category">
+                                    leetcode
                                 </a>
                             
                             
@@ -778,8 +798,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
+                    <a href="/tags/leetcode/">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
