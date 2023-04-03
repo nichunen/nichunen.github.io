@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="design-pattern-command, 倪春恩的博客">
+    <meta name="keywords" content="【转载】设计模式：命令模式-管理智能家电, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>design-pattern-command | 倪春恩的博客</title>
+    <title>【转载】设计模式：命令模式-管理智能家电 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2">
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="倪春恩的博客" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="倪春恩的博客" type="application/atom+xml">
 </head>
 
 
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/source/images/xxx.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">design-pattern-command</h1>
+                    <h1 class="description center-align post-title">【转载】设计模式：命令模式-管理智能家电</h1>
                 </div>
             </div>
         </div>
@@ -340,8 +340,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%85%B6%E4%BB%96/">
-                                <span class="chip bg-color">其他</span>
+                            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                                <span class="chip bg-color">设计模式</span>
                             </a>
                         
                     </div>
@@ -352,8 +352,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E9%BB%98%E8%AE%A4/" class="post-category">
-                                默认
+                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
+                                设计模式
                             </a>
                         
                     </div>
@@ -389,7 +389,283 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>定义：将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也支持可撤销的操作。</p>
+<p>这尼玛定义，看得人蛋疼，看不明白要淡定，我稍微简化一下：将请求封装成对象，将动作请求者和动作执行者解耦。好了，直接用例子来说明。</p>
+<p>需求：最近智能家电很火热啊，未来尼玛估计冰箱都会用支付宝自动买东西了。假设现在有电视、电脑、电灯等家电，现在需要你做个遥控器控制所有家电的开关，要求做到每个按钮对应的功能供用户个性化，对于新买入家电要有非常强的扩展性。</p>
+<p>这个需求一看，尼玛要是没有什么个性化、扩展性还好说啊，直接针对每个遥控器的按钮onClick，然后在里面把代码写死就搞定了，但是个性化怎么整，还要有扩展性。。。</p>
+<p>好了，下面命令模式出场，命令模式的核心就是把命令封装成类，对于命令执行者不需要知道现在执行的具体是什么命令。</p>
+<p>1、首先看下我们拥有的家电的API：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 门
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Door</span> <span class="token punctuation">{</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token keyword">open</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"打开门"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"关闭门"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 电灯
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Light</span> <span class="token punctuation">{</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"打开电灯"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"关闭电灯"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 电脑
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Computer</span> <span class="token punctuation">{</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"打开电脑"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"关闭电脑"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>看来我们有电灯、电脑、和门，并且开关的接口的设计好了。接下来看如何把命令封装成类：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 关闭电灯的命令
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LightOffCommond</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token class-name">Light</span> light<span class="token punctuation">;</span> 
+	
+	<span class="token keyword">public</span> <span class="token class-name">LightOffCommond</span><span class="token punctuation">(</span><span class="token class-name">Light</span> light<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>light <span class="token operator">=</span> light<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		light<span class="token punctuation">.</span><span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 打开电灯的命令
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LightOnCommond</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token class-name">Light</span> light<span class="token punctuation">;</span> 
+	
+	<span class="token keyword">public</span> <span class="token class-name">LightOnCommond</span><span class="token punctuation">(</span><span class="token class-name">Light</span> light<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>light <span class="token operator">=</span> light<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		light<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 开电脑的命令
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComputerOnCommond</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token class-name">Computer</span> computer<span class="token punctuation">;</span> 
+	
+	<span class="token keyword">public</span> <span class="token class-name">ComputerOnCommond</span><span class="token punctuation">(</span><span class="token class-name">Computer</span> computer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>computer <span class="token operator">=</span> computer<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		computer<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 关电脑的命令
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComputerOffCommond</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token class-name">Computer</span> computer<span class="token punctuation">;</span> 
+	
+	<span class="token keyword">public</span> <span class="token class-name">ComputerOffCommond</span><span class="token punctuation">(</span><span class="token class-name">Computer</span> computer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>computer <span class="token operator">=</span> computer<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		computer<span class="token punctuation">.</span><span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>好了，不贴那么多了，既然有很多命令，按照设计原则，我们肯定有个超类型的Command，然后各个子类，看我们把每个命令（请求）都封装成类了。接下来看我们的遥控器。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 控制器面板，一共有9个按钮
+ * 
+ * @author zhy
+ * 
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ControlPanel</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> CONTROL_SIZE <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
+	<span class="token keyword">private</span> <span class="token class-name">Command</span><span class="token punctuation">[</span><span class="token punctuation">]</span> commands<span class="token punctuation">;</span>
+ 
+	<span class="token keyword">public</span> <span class="token class-name">ControlPanel</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		commands <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Command</span><span class="token punctuation">[</span>CONTROL_SIZE<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token comment">/**
+		 * 初始化所有按钮指向空对象
+		 */</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> CONTROL_SIZE<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			commands<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NoCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token comment">/**
+	 * 设置每个按钮对应的命令
+	 * @param index
+	 * @param command
+	 */</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">,</span> <span class="token class-name">Command</span> command<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		commands<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> command<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token comment">/**
+	 * 模拟点击按钮
+	 * @param index
+	 */</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		commands<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">NoCommand</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ 
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>注意看到我们的遥控器有9个按钮，提供了设置每个按钮的功能和点击的方法，还有注意到我们使用了一个NoCommand对象，叫做空对象，这个对象的好处就是，我们不用执行前都判断个<code>if(!=null)</code>，并且提供了一致的操作。</p>
+<p>最后测试一下代码：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token comment">/**
+		 * 三个家电
+		 */</span>
+		<span class="token class-name">Light</span> light <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Light</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">Door</span> door <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Door</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">Computer</span> computer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Computer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">/**
+		 * 一个控制器，假设是我们的app主界面
+		 */</span>
+		<span class="token class-name">ControlPanel</span> controlPanel <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ControlPanel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">// 为每个按钮设置功能</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">LightOnCommond</span><span class="token punctuation">(</span>light<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">LightOffCommond</span><span class="token punctuation">(</span>light<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ComputerOnCommond</span><span class="token punctuation">(</span>computer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ComputerOffCommond</span><span class="token punctuation">(</span>computer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">DoorOnCommond</span><span class="token punctuation">(</span>door<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">DoorOffCommond</span><span class="token punctuation">(</span>door<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+		<span class="token comment">// 模拟点击</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		controlPanel<span class="token punctuation">.</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 这个没有指定，但是不会出任何问题，我们的NoCommand的功劳</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>输出结果：</p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230331164628.png"></p>
+<p>可以看到任意按钮可以随意配置任何命令，再也不需要尼玛的变一下需求改代码了，随便用户怎么个性化了。其实想白了，这里的设置我们还可以配置到一个配置文件中，完全的解耦有木有。</p>
+<p>好了，用户对于这个按钮可能还不是太满意，用户希望夜深人静的时候，能够提供个按钮直接关门、关灯、开电脑。大家懂的，我们稍微修改下代码，满足他。</p>
+<p>定义一个命令，用户干一些列的事，可配置，且与原来的命令保持接口一致：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 定义一个命令，可以干一系列的事情
+ * 
+ * @author zhy
+ * 
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">QuickCommand</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token class-name">Command</span><span class="token punctuation">[</span><span class="token punctuation">]</span> commands<span class="token punctuation">;</span>
+ 
+	<span class="token keyword">public</span> <span class="token class-name">QuickCommand</span><span class="token punctuation">(</span><span class="token class-name">Command</span><span class="token punctuation">[</span><span class="token punctuation">]</span> commands<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>commands <span class="token operator">=</span> commands<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> commands<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			commands<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>好了，已经满足屌丝的需求了。我们测试看看。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 定义一键搞定模式</span>
+<span class="token class-name">QuickCommand</span> quickCommand <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">QuickCommand</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Command</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+    <span class="token keyword">new</span> <span class="token class-name">DoorOffCommond</span><span class="token punctuation">(</span>door<span class="token punctuation">)</span><span class="token punctuation">,</span>
+	<span class="token keyword">new</span> <span class="token class-name">LightOffCommond</span><span class="token punctuation">(</span>light<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">ComputerOnCommond</span><span class="token punctuation">(</span>computer<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"****点击一键搞定按钮****"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+controlPanel<span class="token punctuation">.</span><span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> quickCommand<span class="token punctuation">)</span><span class="token punctuation">;</span>
+controlPanel<span class="token punctuation">.</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230331171941.png"></p>
+<p>是不是很完美。</p>
+<p>最后，继续来谈谈命令模式，命令模式就是把命令封装成对象，然后将动作请求者与动作执行者完全解耦，上例中遥控器的按钮和电器一毛钱关系都没吧。</p>
+<p>还记得定义中提到了队列，命令模式如何用于队列呢，比如饭店有很多个点菜的地方，有一个做菜的地方，把点菜看作命令，做菜看作命令执行者，不断有人点菜就相当于把菜加入队列，对于做菜的只管从队列里面取，取一个做一个。</p>
+<p>定义中还提到了日志，日志一般用于记录用户行为，或者在异常时恢复时用的，比如每个命令现在包含两个方法，一个执行execute，一个undo（上例中为了方便大家理解，没有写undo），我们可以把用户所有命令调用保存到日志中，比如用户操作不当了，电器异常了，只需要把日志中所有的命令拿出来执行一遍undo就完全恢复了，是吧，就是这么个意思。</p>
+<p>————————————————<br>版权声明：本文为CSDN博主「鸿洋_」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/lmj623565791/article/details/24602057">https://blog.csdn.net/lmj623565791/article/details/24602057</a></p>
+
                 
             </div>
             <hr/>
@@ -453,8 +729,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%85%B6%E4%BB%96/">
-                                    <span class="chip bg-color">其他</span>
+                                <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                                    <span class="chip bg-color">设计模式</span>
                                 </a>
                             
                         </div>
@@ -632,9 +908,10 @@
                 <a href="/2023/03/31/design-pattern-command/">
                     <div class="card-image">
                         
-                        <img src="/source/images/xxx.jpg" class="responsive-img" alt="design-pattern-command">
                         
-                        <span class="card-title">design-pattern-command</span>
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="【转载】设计模式：命令模式-管理智能家电">
+                        
+                        <span class="card-title">【转载】设计模式：命令模式-管理智能家电</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -651,8 +928,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%BB%98%E8%AE%A4/" class="post-category">
-                                    默认
+                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
+                                    设计模式
                                 </a>
                             
                             
@@ -663,8 +940,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%85%B6%E4%BB%96/">
-                        <span class="chip bg-color">其他</span>
+                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                        <span class="chip bg-color">设计模式</span>
                     </a>
                     
                 </div>

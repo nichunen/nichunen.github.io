@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-03-31T07:56:39.259Z</updated>
+  <updated>2023-03-31T11:33:31.885Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -17,19 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>design-pattern-command</title>
+    <title>【转载】设计模式：命令模式-管理智能家电</title>
     <link href="http://nichunen.github.io/2023/03/31/design-pattern-command/"/>
     <id>http://nichunen.github.io/2023/03/31/design-pattern-command/</id>
     <published>2023-03-31T07:56:39.000Z</published>
-    <updated>2023-03-31T07:56:39.259Z</updated>
+    <updated>2023-03-31T11:33:31.885Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;定义：将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也支持可撤销的操作。&lt;/p&gt;
+&lt;p&gt;这尼玛定义，看得人蛋疼，看不明白要淡定，我稍微简化一下：将请求封装成对象，将动作请求者和动作执行者解耦。好了，直接用例子来说明。&lt;/p&gt;
+&lt;p&gt;需求：最</summary>
+        
+      
     
     
     
+    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
-    <category term="默认" scheme="http://nichunen.github.io/categories/%E9%BB%98%E8%AE%A4/"/>
     
-    
-    <category term="其他" scheme="http://nichunen.github.io/tags/%E5%85%B6%E4%BB%96/"/>
+    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
