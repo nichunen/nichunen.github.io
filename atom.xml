@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-04-03T13:57:45.659Z</updated>
+  <updated>2023-04-04T03:38:14.201Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-23</title>
+    <link href="http://nichunen.github.io/2023/04/04/offer2-23/"/>
+    <id>http://nichunen.github.io/2023/04/04/offer2-23/</id>
+    <published>2023-04-04T03:08:54.000Z</published>
+    <updated>2023-04-04T03:38:14.201Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个单链表的头节点 &lt;code&gt;headA&lt;/code&gt; 和 &lt;code&gt;headB&lt;/code&gt; ，请找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 &lt;code&gt;null&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;图示两个链表在节点</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【转载】设计模式：装饰者模式-带你重回传奇世界</title>
@@ -506,33 +532,6 @@
         
         
     <summary type="html">&lt;p&gt;给定一个二进制数组 &lt;code&gt;nums&lt;/code&gt; , 找到含有相同数量的 &lt;code&gt;0&lt;/code&gt; 和 &lt;code&gt;1&lt;/code&gt; 的最长连续子数组，并返回该子数组的长度。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-10</title>
-    <link href="http://nichunen.github.io/2023/03/16/offer2-10/"/>
-    <id>http://nichunen.github.io/2023/03/16/offer2-10/</id>
-    <published>2023-03-16T03:03:22.000Z</published>
-    <updated>2023-03-16T07:11:20.839Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个整数数组和一个整数 &lt;code&gt;k&lt;/code&gt; &lt;strong&gt;，&lt;/strong&gt;请找到该数组中和为 &lt;code&gt;k&lt;/code&gt; 的连续子数组的个数。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
         
