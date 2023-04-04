@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="【转载】设计模式：适配器模式-以手机充电器为例, 倪春恩的博客">
+    <meta name="keywords" content="【转载】设计模式：装饰者模式-带你重回传奇世界, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>【转载】设计模式：适配器模式-以手机充电器为例 | 倪春恩的博客</title>
+    <title>【转载】设计模式：装饰者模式-带你重回传奇世界 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">【转载】设计模式：适配器模式-以手机充电器为例</h1>
+                    <h1 class="description center-align post-title">【转载】设计模式：装饰者模式-带你重回传奇世界</h1>
                 </div>
             </div>
         </div>
@@ -365,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-03-30
+                    2023-04-03
                 </div>
                 
 
@@ -389,91 +389,262 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>老样子，定义：将一个类的接口转换成客户期望的另一个接口，适配器让原本接口不兼容的类可以相互合作。这个定义还好，说适配器的功能就是把一个接口转成另一个接口。</p>
-<p>发现两张图片可以很好的解释<strong>适配器模式</strong>：</p>
-<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230330230354.png"></p>
-<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230330230416.png"></p>
-<p>这两张图很好的说明了适配器的作用哈，话说我当年买了个欧版的HTC G17 ，还配了个插头转化器，这个插头转化器就是起得适配器的作用。下来来点代码解释哈，如题目，手机充电器一般都是5V左右吧，咱天朝的家用交流电压220V，所以手机充电需要一个适配器（降压器），有什么物理名词使用错误的，见谅。</p>
-<p>首先一部手机：Mobile.java</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>adapter</span><span class="token punctuation">;</span>
- 
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Mobile</span> <span class="token punctuation">{</span>
-	<span class="token comment">/**
-	 * 充电
-	 * @param power 
-	 */</span>
-	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">inputPower</span><span class="token punctuation">(</span><span class="token class-name">V5Power</span> power<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">int</span> provideV5Power <span class="token operator">=</span> power<span class="token punctuation">.</span><span class="token function">provideV5Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"手机（客户端）：我需要5V电压充电，现在是--&gt;"</span> <span class="token operator">+</span> provideV5Power <span class="token operator">+</span> <span class="token string">"V"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>然后我们拥有的是220V家用交流电：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>adapter</span><span class="token punctuation">;</span>
+                <p>装饰者模式：若要扩展功能，装饰者提供了比集成更有弹性的替代方案，动态地将责任附加到对象上。</p>
+<p>先简单描述下装饰者模式发挥作用的地方，当我们设计好了一个类，我们需要给这个类添加一些辅助的功能，并且不希望改变这个类的代码，这时候就是装饰者模式大展雄威的时候了。这里还体现了一个原则：类应该对扩展开放，对修改关闭。</p>
+<p>下面进入正题，今天在那看电影，忽然想起年轻时在游戏场上的血雨腥风啊，哈哈，下面以游戏为背景介绍装饰者模式。玩过游戏的兄弟应该都知道，游戏里面每个角色有武器、鞋子、护腕、戒指、还有各种红宝石、蓝宝石、黄宝石等等。</p>
+<p>下面需求开始：设计游戏的装备系统，基本要求，要可以计算出每种装备在镶嵌了各种宝石后的攻击力和描述：</p>
+<p>具体需求：</p>
+<p>1、武器（攻击力20） 、戒指（攻击力5）、护腕（攻击力5）、鞋子（攻击力5）</p>
+<p>2、蓝宝石（攻击力5/颗）、黄宝石（攻击力10/颗）、红宝石（攻击力15/颗）</p>
+<p>3、每个装备可以随意镶嵌3颗</p>
+<p>好了，需求介绍完毕，当然了，不要吐槽我的设计，尼玛鞋子哪来的攻击力，关键时刻也是可以砸人的嘛。下面开始初步的设想，出于多年面向对象的经验，我们可能会这么设计：</p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230403192154.png"></p>
+<p>如果你这么设计了，我靠，就这么点需求你写了几百个类，随便添加两个宝石，哈哈，指数增长听过么，准备加班吧。</p>
+<p>可能你还会这么设计：写一个超类，然后里面各种set宝石，然后在计算攻击力的地方，使劲的If有哪几种宝石，恭喜你，代码量不是很大，但是随便添加个武器，你得又多写多少个IF呢。</p>
+<p>上面叙述了一些可能性的设计，都不是很好，下面看看如何将装饰者模式融入：</p>
+<p>首先是装备的超类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
  
 <span class="token comment">/**
- * 家用220V交流电
+ * 装备的接口
+ * 
  * @author zhy
- *
+ * 
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">V220Power</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">IEquip</span> <span class="token punctuation">{</span>
+ 
 	<span class="token comment">/**
-	 * 提供220V电压
+	 * 计算攻击力
+	 * 
 	 * @return
 	 */</span>
-	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">provideV220Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"我提供220V交流电压。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token keyword">return</span> <span class="token number">220</span> <span class="token punctuation">;</span> 
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+	<span class="token comment">/**
+	 * 装备的描述
+	 * 
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>下面我们需要一个适配器，完成220V转5V的作用：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>adapter</span><span class="token punctuation">;</span>
+<p>然后分别是武器、戒指、护腕、鞋子</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
  
 <span class="token comment">/**
- * 适配器，把220V电压变成5V
+ * 武器
+ * 攻击力20
  * @author zhy
- *
+ * 
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">V5PowerAdapter</span> <span class="token keyword">implements</span> <span class="token class-name">V5Power</span> <span class="token punctuation">{</span>
-	<span class="token comment">/**
-	 * 组合的方式
-	 */</span>
-	<span class="token keyword">private</span> <span class="token class-name">V220Power</span> v220Power <span class="token punctuation">;</span>
-	
-	<span class="token keyword">public</span> <span class="token class-name">V5PowerAdapter</span><span class="token punctuation">(</span><span class="token class-name">V220Power</span> v220Power<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>v220Power <span class="token operator">=</span> v220Power <span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ArmEquip</span> <span class="token keyword">implements</span> <span class="token class-name">IEquip</span> <span class="token punctuation">{</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">20</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
  
 	<span class="token annotation punctuation">@Override</span>
-	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">provideV5Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">int</span> power <span class="token operator">=</span> v220Power<span class="token punctuation">.</span><span class="token function">provideV220Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>
-		<span class="token comment">//power经过各种操作--&gt;5 </span>
-		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"适配器：我悄悄的适配了电压。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token keyword">return</span> <span class="token number">5</span> <span class="token punctuation">;</span> 
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token string">"屠龙刀"</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>最后测试，我们给手机冲个电：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>adapter</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 戒指
+ * 攻击力 5
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RingEquip</span> <span class="token keyword">implements</span> <span class="token class-name">IEquip</span> <span class="token punctuation">{</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">5</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token string">"圣战戒指"</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 护腕
+ * 攻击力 5
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">WristEquip</span> <span class="token keyword">implements</span> <span class="token class-name">IEquip</span> <span class="token punctuation">{</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">5</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token string">"圣战护腕"</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 鞋子
+ * 攻击力 5
+ * @author zhy
+ * 
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ShoeEquip</span> <span class="token keyword">implements</span> <span class="token class-name">IEquip</span> <span class="token punctuation">{</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">5</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token string">"圣战靴子"</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>接下来当然是装饰品，宝石了，首先超类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 装饰品的接口
+ * @author zhy
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">IEquipDecorator</span> <span class="token keyword">extends</span> <span class="token class-name">IEquip</span> <span class="token punctuation">{</span>
+	
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>下来蓝宝石、黄宝石、红宝石</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 蓝宝石装饰品
+ * 每颗攻击力+5
+ * @author zhy
+ * 
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BlueGemDecorator</span> <span class="token keyword">implements</span> <span class="token class-name">IEquipDecorator</span> <span class="token punctuation">{</span>
+	<span class="token comment">/**
+	 * 每个装饰品维护一个装备
+	 */</span>
+	<span class="token keyword">private</span> <span class="token class-name">IEquip</span> equip<span class="token punctuation">;</span>
+ 
+	<span class="token keyword">public</span> <span class="token class-name">BlueGemDecorator</span><span class="token punctuation">(</span><span class="token class-name">IEquip</span> equip<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>equip <span class="token operator">=</span> equip<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">5</span> <span class="token operator">+</span> equip<span class="token punctuation">.</span><span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> equip<span class="token punctuation">.</span><span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"+ 蓝宝石"</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 黄宝石装饰品
+ * 每颗攻击力+10
+ * @author zhy
+ * 
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">YellowGemDecorator</span> <span class="token keyword">implements</span> <span class="token class-name">IEquipDecorator</span> <span class="token punctuation">{</span>
+	<span class="token comment">/**
+	 * 每个装饰品维护一个装备
+	 */</span>
+	<span class="token keyword">private</span> <span class="token class-name">IEquip</span> equip<span class="token punctuation">;</span>
+ 
+	<span class="token keyword">public</span> <span class="token class-name">YellowGemDecorator</span><span class="token punctuation">(</span><span class="token class-name">IEquip</span> equip<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>equip <span class="token operator">=</span> equip<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">10</span> <span class="token operator">+</span> equip<span class="token punctuation">.</span><span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> equip<span class="token punctuation">.</span><span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"+ 黄宝石"</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">/**
+ * 红宝石装饰品 每颗攻击力+15
+ * 
+ * @author zhy
+ * 
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RedGemDecorator</span> <span class="token keyword">implements</span> <span class="token class-name">IEquipDecorator</span> <span class="token punctuation">{</span>
+	<span class="token comment">/**
+	 * 每个装饰品维护一个装备
+	 */</span>
+	<span class="token keyword">private</span> <span class="token class-name">IEquip</span> equip<span class="token punctuation">;</span>
+ 
+	<span class="token keyword">public</span> <span class="token class-name">RedGemDecorator</span><span class="token punctuation">(</span><span class="token class-name">IEquip</span> equip<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>equip <span class="token operator">=</span> equip<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">15</span> <span class="token operator">+</span> equip<span class="token punctuation">.</span><span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> equip<span class="token punctuation">.</span><span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"+ 红宝石"</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>好了，到此结束，我们已经实现了需求的功能了，是不是每个类都很清晰加简单，下面看测试：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhy<span class="token punctuation">.</span>pattern<span class="token punctuation">.</span>decorator</span><span class="token punctuation">;</span>
  
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
 	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token class-name">Mobile</span> mobile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Mobile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token class-name">V5Power</span> v5Power <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">V5PowerAdapter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">V220Power</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">;</span> 
-		mobile<span class="token punctuation">.</span><span class="token function">inputPower</span><span class="token punctuation">(</span>v5Power<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">// 一个镶嵌2颗红宝石，1颗蓝宝石的靴子</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" 一个镶嵌2颗红宝石，1颗蓝宝石的靴子"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">IEquip</span> equip <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RedGemDecorator</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">RedGemDecorator</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BlueGemDecorator</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ShoeEquip</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"攻击力  : "</span> <span class="token operator">+</span> equip<span class="token punctuation">.</span><span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"描述 :"</span> <span class="token operator">+</span> equip<span class="token punctuation">.</span><span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"-------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">// 一个镶嵌1颗红宝石，1颗蓝宝石的武器</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" 一个镶嵌1颗红宝石，1颗蓝宝石,1颗黄宝石的武器"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		equip <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RedGemDecorator</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BlueGemDecorator</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">YellowGemDecorator</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ArmEquip</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"攻击力  : "</span> <span class="token operator">+</span> equip<span class="token punctuation">.</span><span class="token function">caculateAttack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"描述 :"</span> <span class="token operator">+</span> equip<span class="token punctuation">.</span><span class="token function">description</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"-------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>输出：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">现有类：我提供220V交流电压。
-适配器：我悄悄的适配了电压。
-手机（客户端）：我需要5V电压充电，现在是--&gt;5V<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>可以看出，我们使用一个适配器完成了把220V转化了5V然后提供给手机使用，且我们使用了组合（OO设计原则），原有的手机，以及200V电压类都不需要变化，且手机（客户端）和220V（被适配者）完全解耦。</p>
-<p>最后画个uml类图，便于大家理解：</p>
-<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230330231047.png"></p>
-<p>————————————————<br>版权声明：本文为CSDN博主「鸿洋_」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/lmj623565791/article/details/25833393">https://blog.csdn.net/lmj623565791/article/details/25833393</a></p>
+<p>输出：<br> 一个镶嵌2颗红宝石，1颗蓝宝石的靴子<br>攻击力  : 40<br>描述 :圣战靴子+ 蓝宝石+ 红宝石+ 红宝石</p>
+<hr>
+<p> 一个镶嵌1颗红宝石，1颗蓝宝石,1颗黄宝石的武器<br>攻击力  : 50<br>描述 :屠龙刀+ 黄宝石+ 蓝宝石+ 红宝石</p>
+<hr>
+<p>赞不赞，要是需求随便多几个装备，几种宝石，我们随随便便就可以加上，然后开开心心下班。</p>
+<p>好了，恭喜你，你又学会了一个设计模式，装饰者模式。</p>
+<p>现在根据例子对定义的理解，不用我多说吧。</p>
+<p>Java的API中也有装饰者模式的身影，如果你初学Java，一定记得Java里面的各种流，很痛苦吧，但是当你明</p>
+<p>白你们的设计之后就会感觉清晰很多。</p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230403214810.png"></p>
+<p>把<code>InputStream</code>看作我们的<code>IEquip</code>，把<code>FilterInputStream</code>看作我们的<code>IEquipDecorator</code>，是不是和我们的设计几乎一样~</p>
+<p>————————————————<br>版权声明：本文为CSDN博主「鸿洋_」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/lmj623565791/article/details/24269409">https://blog.csdn.net/lmj623565791/article/details/24269409</a></p>
 
                 
             </div>
@@ -500,7 +671,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nichunen.github.io/2023/03/30/design-pattern-adapter/">http://nichunen.github.io/2023/03/30/design-pattern-adapter/</a>
+                    <a href="http://nichunen.github.io/2023/04/03/design-pattern-decorator/">http://nichunen.github.io/2023/04/03/design-pattern-decorator/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -709,17 +880,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/03/31/offer2-21/">
+                <a href="/2023/04/03/design-pattern-decorator/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="offer2-21">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="【转载】设计模式：装饰者模式-带你重回传奇世界">
                         
-                        <span class="card-title">offer2-21</span>
+                        <span class="card-title">【转载】设计模式：装饰者模式-带你重回传奇世界</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -729,26 +901,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/leetcode/" class="post-category">
-                                    leetcode
+                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
+                                    设计模式
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/leetcode/">
-                        <span class="chip bg-color">leetcode</span>
+                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                        <span class="chip bg-color">设计模式</span>
                     </a>
                     
                 </div>
@@ -762,13 +935,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/03/30/offer2-20/">
+                <a href="/2023/04/03/offer2-22/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="offer2-20">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="offer2-22">
                         
-                        <span class="card-title">offer2-20</span>
+                        <span class="card-title">offer2-22</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -779,7 +952,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-03
                             </span>
                         <span class="publish-author">
                             
