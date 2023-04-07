@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-04-06T11:17:21.971Z</updated>
+  <updated>2023-04-07T09:34:33.016Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-25</title>
+    <link href="http://nichunen.github.io/2023/04/07/offer2-25/"/>
+    <id>http://nichunen.github.io/2023/04/07/offer2-25/</id>
+    <published>2023-04-07T06:26:12.000Z</published>
+    <updated>2023-04-07T09:34:33.016Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个 &lt;strong&gt;非空链表&lt;/strong&gt; &lt;code&gt;l1&lt;/code&gt;和 &lt;code&gt;l2&lt;/code&gt; 来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。&lt;/p&gt;
+&lt;p&gt;可以假设除了数字 0</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【转载】设计模式：模版方法模式-展现程序员的一天</title>
+    <link href="http://nichunen.github.io/2023/04/06/design-pattern-template/"/>
+    <id>http://nichunen.github.io/2023/04/06/design-pattern-template/</id>
+    <published>2023-04-06T11:52:14.000Z</published>
+    <updated>2023-04-07T05:58:00.915Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;老套路，先看下定义：定义了一个算法的骨架，而将一些步骤延迟到子类中，模版方法使得子类可以在不改变算法结构的情况下，重新定义算法的步骤。&lt;/p&gt;
+&lt;p&gt;简单看下定义，模版方法定义了一个算法的步骤，并且允许子类为一个或多个步骤提供实现。定义还算清晰，下面来个例子展示下本公司的上</summary>
+        
+      
+    
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-24</title>
@@ -481,59 +533,6 @@
         
         
     <summary type="html">&lt;p&gt;给定两个字符串 &lt;code&gt;s&lt;/code&gt; 和 &lt;code&gt;p&lt;/code&gt;，找到 &lt;code&gt;s&lt;/code&gt; 中所有 &lt;code&gt;p&lt;/code&gt; 的 &lt;strong&gt;变位词&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-14</title>
-    <link href="http://nichunen.github.io/2023/03/21/offer2-14/"/>
-    <id>http://nichunen.github.io/2023/03/21/offer2-14/</id>
-    <published>2023-03-21T05:49:04.000Z</published>
-    <updated>2023-03-23T05:59:42.639Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定两个字符串 &lt;code&gt;s1&lt;/code&gt; 和 &lt;code&gt;s2&lt;/code&gt;，写一个函数来判断 &lt;code&gt;s2&lt;/code&gt; 是否包含 &lt;code&gt;s1&lt;/code&gt; 的某个变位词。&lt;/p&gt;
-&lt;p&gt;换句话说，第一个字符串的排列之一是第二个字符串的</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-13</title>
-    <link href="http://nichunen.github.io/2023/03/20/offer2-13/"/>
-    <id>http://nichunen.github.io/2023/03/20/offer2-13/</id>
-    <published>2023-03-20T03:27:39.000Z</published>
-    <updated>2023-03-20T06:28:12.993Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个二维矩阵 &lt;code&gt;matrix&lt;/code&gt;，以下类型的多个请求：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;计算其子矩形范围内元素的总和，该子矩阵的左上角为 &lt;code&gt;(row1, col1)&lt;/code&gt; ，右下角为 &lt;code&gt;(row2, col2)&lt;/code&gt;</summary>
         
       
     
