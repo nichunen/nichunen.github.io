@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>offer2-27</title>
+      <link href="/2023/04/11/offer2-27/"/>
+      <url>/2023/04/11/offer2-27/</url>
+      
+        <content type="html"><![CDATA[<p>给定一个链表的 <strong>头节点</strong> <code>head</code> <strong>，</strong>请判断其是否为回文链表。</p><p>如果一个链表是回文，那么链表节点序列从前往后看和从后往前看是相同的。</p><p><strong>示例 1：</strong></p><p><strong><img src="https://pic.leetcode-cn.com/1626421737-LjXceN-image.png" alt="img"></strong></p><pre class="line-numbers language-none"><code class="language-none">输入: head = [1,2,3,3,2,1]输出: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>示例 2：</strong></p><p><strong><img src="https://pic.leetcode-cn.com/1626422231-wgvnWh-image.png" alt="img"></strong></p><pre class="line-numbers language-none"><code class="language-none">输入: head = [1,2]输出: false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>提示：</strong></p><ul><li>链表 L 的长度范围为 <code>[1, 105]</code></li><li><code>0 &lt;= node.val &lt;= 9</code></li></ul><p><strong>进阶：</strong>能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token comment">/** * Definition for singly-linked list. * public class ListNode { *     int val; *     ListNode next; *     ListNode() {} *     ListNode(int val) { this.val = val; } *     ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isPalindrome</span><span class="token punctuation">(</span><span class="token class-name">ListNode</span> head<span class="token punctuation">)</span> <span class="token punctuation">{</span>        curProntNode <span class="token operator">=</span> head<span class="token punctuation">;</span>        <span class="token keyword">return</span> <span class="token function">isValid</span><span class="token punctuation">(</span>head<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">private</span> <span class="token class-name">ListNode</span> curProntNode<span class="token punctuation">;</span>    <span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">isValid</span><span class="token punctuation">(</span><span class="token class-name">ListNode</span> curTailNode<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>curTailNode <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isValid</span><span class="token punctuation">(</span>curTailNode<span class="token punctuation">.</span>next<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>curProntNode<span class="token punctuation">.</span>val <span class="token operator">!=</span> curTailNode<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>            curProntNode <span class="token operator">=</span> curProntNode<span class="token punctuation">.</span>next<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【转载】设计模式：状态模式-以自动售货机为例</title>
       <link href="/2023/04/10/design-pattern-state/"/>
       <url>/2023/04/10/design-pattern-state/</url>
