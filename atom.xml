@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-04-13T11:27:52.406Z</updated>
+  <updated>2023-04-13T11:54:51.449Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-29</title>
+    <link href="http://nichunen.github.io/2023/04/13/offer2-29/"/>
+    <id>http://nichunen.github.io/2023/04/13/offer2-29/</id>
+    <published>2023-04-13T11:54:15.000Z</published>
+    <updated>2023-04-13T11:54:51.449Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定&lt;strong&gt;循环单调非递减列表&lt;/strong&gt;中的一个点，写一个函数向这个列表中插入一个新元素 &lt;code&gt;insertVal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【转载】设计模式：原型模式</title>
@@ -505,32 +530,6 @@
     <summary type="html">&lt;p&gt;给定一个非空字符串 &lt;code&gt;s&lt;/code&gt;，请判断如果 &lt;strong&gt;最多&lt;/strong&gt; 从字符串中删除一个字符能否得到一个回文字符串。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-18</title>
-    <link href="http://nichunen.github.io/2023/03/28/offer2-18/"/>
-    <id>http://nichunen.github.io/2023/03/28/offer2-18/</id>
-    <published>2023-03-28T15:02:24.000Z</published>
-    <updated>2023-03-28T16:08:19.744Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt; ，验证 &lt;code&gt;s&lt;/code&gt; 是否是 &lt;strong&gt;回文串&lt;/strong&gt; ，只考虑字母和数字字符，可以忽略字母的大小写。&lt;/p&gt;
-&lt;p&gt;本题中，将空字符串定义为有效的 &lt;strong&gt;回文串&lt;/strong&gt;</summary>
         
       
     
