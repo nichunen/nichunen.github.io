@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-04-12T06:13:18.963Z</updated>
+  <updated>2023-04-13T11:27:52.406Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【转载】设计模式：原型模式</title>
+    <link href="http://nichunen.github.io/2023/04/12/design-pattern-prototype/"/>
+    <id>http://nichunen.github.io/2023/04/12/design-pattern-prototype/</id>
+    <published>2023-04-12T07:23:22.000Z</published>
+    <updated>2023-04-13T11:27:52.406Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;原型模式（Prototype</summary>
+        
+      
+    
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-28</title>
@@ -515,32 +540,6 @@
     
     
     <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【转载】设计模式：单例设计模式(Singleton Pattern)完全解析</title>
-    <link href="http://nichunen.github.io/2023/03/27/design-pattern-singleton/"/>
-    <id>http://nichunen.github.io/2023/03/27/design-pattern-singleton/</id>
-    <published>2023-03-27T08:29:24.000Z</published>
-    <updated>2023-03-28T14:55:42.540Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;什么会有单例设计模式？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我们都知道单例模式是在开发中用的最多的一种设计模式，那么究竟为什么会有单例设计模式呢？对于这个问题相信有很多会写单例的人都会有个这个疑问。在这里先说一下单例的用途，然后举一个例子大家就会明白为什么会有单</summary>
-        
-      
-    
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
