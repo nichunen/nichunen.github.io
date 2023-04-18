@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-04-17T12:45:48.695Z</updated>
+  <updated>2023-04-18T09:22:50.786Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer-13</title>
+    <link href="http://nichunen.github.io/2023/04/18/offer-13/"/>
+    <id>http://nichunen.github.io/2023/04/18/offer-13/</id>
+    <published>2023-04-18T06:30:13.000Z</published>
+    <updated>2023-04-18T09:22:50.786Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;地上有一个m行n列的方格，从坐标 &lt;code&gt;[0,0]&lt;/code&gt; 到坐标 &lt;code&gt;[m-1,n-1]&lt;/code&gt; 。一个机器人从坐标 &lt;code&gt;[0, 0]</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-31</title>
@@ -511,34 +536,6 @@
     
     
     <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-20</title>
-    <link href="http://nichunen.github.io/2023/03/30/offer2-20/"/>
-    <id>http://nichunen.github.io/2023/03/30/offer2-20/</id>
-    <published>2023-03-30T03:15:16.000Z</published>
-    <updated>2023-03-30T05:28:27.293Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt; ，请计算这个字符串中有多少个回文子字符串。&lt;/p&gt;
-&lt;p&gt;具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不同的子串。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
