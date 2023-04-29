@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-04-28T07:39:22.546Z</updated>
+  <updated>2023-04-28T13:48:19.200Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【转载】设计模式：桥接模式</title>
+    <link href="http://nichunen.github.io/2023/04/28/design-pattern-bridge/"/>
+    <id>http://nichunen.github.io/2023/04/28/design-pattern-bridge/</id>
+    <published>2023-04-28T09:49:28.000Z</published>
+    <updated>2023-04-28T13:48:19.200Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;桥接（Bridge）是用于把抽象化与实现化解耦，使得二者可以独立变化。这种类型的设计模式属于结构型模式，它通过提供抽象化和实现化之间的桥接结构，来实现二者的解耦。&lt;/p&gt;
+&lt;p&gt;这种模式涉及到一个作为桥接的接口，使得实体类的功能独立于接口实现类。这两种类型的类可被结构化改变</summary>
+        
+      
+    
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-35</title>
@@ -502,32 +528,6 @@
     
     
     <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-26</title>
-    <link href="http://nichunen.github.io/2023/04/10/offer2-26/"/>
-    <id>http://nichunen.github.io/2023/04/10/offer2-26/</id>
-    <published>2023-04-10T03:25:10.000Z</published>
-    <updated>2023-04-10T06:10:18.027Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个单链表 &lt;code&gt;L&lt;/code&gt; 的头节点 &lt;code&gt;head&lt;/code&gt; ，单链表 &lt;code&gt;L&lt;/code&gt; 表示为：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;L0 → L1 → … → Ln-1 →</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
