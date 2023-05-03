@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-04-29T08:20:25.596Z</updated>
+  <updated>2023-05-03T07:37:38.688Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-37</title>
+    <link href="http://nichunen.github.io/2023/05/03/offer2-37/"/>
+    <id>http://nichunen.github.io/2023/05/03/offer2-37/</id>
+    <published>2023-05-03T06:16:53.000Z</published>
+    <updated>2023-05-03T07:37:38.688Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个整数数组</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【转载】设计模式：组合模式</title>
@@ -499,34 +524,6 @@
     
     
     <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【转载】设计模式：建造者模式(Builder Pattern)-以造汽车买汽车为例</title>
-    <link href="http://nichunen.github.io/2023/04/11/design-pattern-builder/"/>
-    <id>http://nichunen.github.io/2023/04/11/design-pattern-builder/</id>
-    <published>2023-04-11T05:58:15.000Z</published>
-    <updated>2023-04-11T06:45:09.582Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;定义：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。&lt;/p&gt;
-&lt;p&gt;类型：创建类模式&lt;/p&gt;
-&lt;p&gt;类图：&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
