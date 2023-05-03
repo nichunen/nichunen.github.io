@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-03T07:37:38.688Z</updated>
+  <updated>2023-05-03T08:44:56.882Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【转载】设计模式：迭代器模式</title>
+    <link href="http://nichunen.github.io/2023/05/03/design-pattern-iterator/"/>
+    <id>http://nichunen.github.io/2023/05/03/design-pattern-iterator/</id>
+    <published>2023-05-03T08:16:43.000Z</published>
+    <updated>2023-05-03T08:44:56.882Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;迭代器模式（Iterator Pattern）是 Java 和 .Net</summary>
+        
+      
+    
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-37</title>
@@ -498,32 +523,6 @@
     
     
     <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-28</title>
-    <link href="http://nichunen.github.io/2023/04/12/offer2-28/"/>
-    <id>http://nichunen.github.io/2023/04/12/offer2-28/</id>
-    <published>2023-04-12T02:59:09.000Z</published>
-    <updated>2023-04-12T06:13:18.963Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;多级双向链表中，除了指向下一个节点和前一个节点指针之外，它还有一个子链表指针，可能指向单独的双向链表。这些子列表也可能会有一个或多个自己的子项，依此类推，生成多级数据结构，如下面的示例所示。&lt;/p&gt;
-&lt;p&gt;给定位于列表第一级的头节点，请扁平化列表，即将这样的多级双向链表展平</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
