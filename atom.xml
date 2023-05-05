@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-05T06:48:53.736Z</updated>
+  <updated>2023-05-05T09:30:02.975Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-39</title>
+    <link href="http://nichunen.github.io/2023/05/05/offer2-39/"/>
+    <id>http://nichunen.github.io/2023/05/05/offer2-39/</id>
+    <published>2023-05-05T06:54:03.000Z</published>
+    <updated>2023-05-05T09:30:02.975Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定非负整数数组 &lt;code&gt;heights&lt;/code&gt; ，数组中的数字用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 &lt;code&gt;1&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;求在该柱状图中，能够勾勒出来的矩形的最大面积。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【转载】设计模式：中介者模式</title>
@@ -487,33 +514,6 @@
         
     <summary type="html">&lt;p&gt;运用所掌握的数据结构，设计和实现一个 &lt;a href=&quot;https://baike.baidu.com/item/LRU&quot;&gt;LRU (Least Recently Used，最近最少使用) 缓存机制&lt;/a&gt; 。&lt;/p&gt;
 &lt;p&gt;实现</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-30</title>
-    <link href="http://nichunen.github.io/2023/04/14/offer2-30/"/>
-    <id>http://nichunen.github.io/2023/04/14/offer2-30/</id>
-    <published>2023-04-14T06:00:41.000Z</published>
-    <updated>2023-04-14T07:39:58.171Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设计一个支持在&lt;em&gt;平均&lt;/em&gt; 时间复杂度 &lt;strong&gt;O(1)&lt;/strong&gt; 下，执行以下操作的数据结构：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;insert(val)&lt;/code&gt;：当元素 &lt;code&gt;val&lt;/code&gt; 不存在时返回</summary>
         
       
     
