@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-09T03:26:47.022Z</updated>
+  <updated>2023-05-10T05:55:18.886Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-42</title>
+    <link href="http://nichunen.github.io/2023/05/10/offer2-42/"/>
+    <id>http://nichunen.github.io/2023/05/10/offer2-42/</id>
+    <published>2023-05-10T05:22:42.000Z</published>
+    <updated>2023-05-10T05:55:18.886Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;写一个 &lt;code&gt;RecentCounter&lt;/code&gt; 类来计算特定时间范围内最近的请求。&lt;/p&gt;
+&lt;p&gt;请实现 &lt;code&gt;RecentCounter&lt;/code&gt; 类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RecentCounter()&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-41</title>
@@ -490,33 +518,6 @@
         
         
     <summary type="html">&lt;p&gt;写一个函数 StrToInt，实现把字符串转换成整数这个功能。不能使用 atoi</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-45</title>
-    <link href="http://nichunen.github.io/2023/04/19/offer-45/"/>
-    <id>http://nichunen.github.io/2023/04/19/offer-45/</id>
-    <published>2023-04-19T03:18:03.000Z</published>
-    <updated>2023-04-20T09:27:22.541Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
