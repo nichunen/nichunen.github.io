@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-10T05:55:18.886Z</updated>
+  <updated>2023-05-11T11:21:39.935Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-43</title>
+    <link href="http://nichunen.github.io/2023/05/11/offer2-43/"/>
+    <id>http://nichunen.github.io/2023/05/11/offer2-43/</id>
+    <published>2023-05-11T09:39:09.000Z</published>
+    <updated>2023-05-11T11:21:39.935Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;完全二叉树是每一层（除最后一层外）都是完全填充（即，节点数达到最大，第 &lt;code&gt;n&lt;/code&gt; 层有 &lt;code&gt;2n-1&lt;/code&gt; 个节点）的，并且所有的节点都尽可能地集中在左侧。&lt;/p&gt;
+&lt;p&gt;设计一个用完全二叉树初始化的数据结构</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-42</title>
@@ -493,31 +519,6 @@
         
         
     <summary type="html">&lt;p&gt;请定义一个队列并实现函数 &lt;code&gt;max_value&lt;/code&gt; 得到队列里的最大值，要求函数&lt;code&gt;max_value&lt;/code&gt;、&lt;code&gt;push_back&lt;/code&gt; 和 &lt;code&gt;pop_front&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-67</title>
-    <link href="http://nichunen.github.io/2023/04/21/offer-67/"/>
-    <id>http://nichunen.github.io/2023/04/21/offer-67/</id>
-    <published>2023-04-21T02:59:24.000Z</published>
-    <updated>2023-04-21T11:35:02.960Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;写一个函数 StrToInt，实现把字符串转换成整数这个功能。不能使用 atoi</summary>
         
       
     
