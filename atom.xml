@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-11T11:21:39.935Z</updated>
+  <updated>2023-05-12T07:05:14.571Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-44</title>
+    <link href="http://nichunen.github.io/2023/05/12/offer2-44/"/>
+    <id>http://nichunen.github.io/2023/05/12/offer2-44/</id>
+    <published>2023-05-12T05:40:40.000Z</published>
+    <updated>2023-05-12T07:05:14.571Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一棵二叉树的根节点 &lt;code&gt;root&lt;/code&gt; ，请找出该二叉树中每一层的最大值。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-43</title>
@@ -494,31 +521,6 @@
         
         
     <summary type="html">&lt;p&gt;从&lt;strong&gt;若干副扑克牌&lt;/strong&gt;中随机抽 &lt;code&gt;5&lt;/code&gt; 张牌，判断是不是一个顺子，即这5张牌是不是连续的。2～10为数字本身，A为1，J为11，Q为12，K为13，而大、小王为 0 ，可以看成任意数字。A 不能视为</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer-59-2</title>
-    <link href="http://nichunen.github.io/2023/04/23/offer-59-2/"/>
-    <id>http://nichunen.github.io/2023/04/23/offer-59-2/</id>
-    <published>2023-04-23T06:28:13.000Z</published>
-    <updated>2023-04-23T06:49:40.341Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请定义一个队列并实现函数 &lt;code&gt;max_value&lt;/code&gt; 得到队列里的最大值，要求函数&lt;code&gt;max_value&lt;/code&gt;、&lt;code&gt;push_back&lt;/code&gt; 和 &lt;code&gt;pop_front&lt;/code&gt;</summary>
         
       
     
