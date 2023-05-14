@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="倪春恩的博客" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.2">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="倪春恩的博客" type="application/atom+xml">
 </head>
 
 
@@ -408,7 +408,7 @@
 
 <p><strong>提示：</strong></p>
 <ul>
-<li>最初给定的树是完全二叉树，且包含 <code>1</code> 到 <code>1000</code> 个节点。</li>
+<li>&nbsp;​//leetcode submit region begin(Prohibit modification and deletion)/** * Definition for a binary tree node. * public class TreeNode { * &nbsp; &nbsp; int val; * &nbsp; &nbsp; TreeNode left; * &nbsp; &nbsp; TreeNode right; * &nbsp; &nbsp; TreeNode() {} * &nbsp; &nbsp; TreeNode(int val) { this.val = val; } * &nbsp; &nbsp; TreeNode(int val, TreeNode left, TreeNode right) { * &nbsp; &nbsp; &nbsp; &nbsp; this.val = val; * &nbsp; &nbsp; &nbsp; &nbsp; this.left = left; * &nbsp; &nbsp; &nbsp; &nbsp; this.right = right; * &nbsp; &nbsp; } * } */class Solution { &nbsp; &nbsp;public List<integer> largestValues(TreeNode root) { &nbsp; &nbsp; &nbsp; &nbsp;List<integer> result = new ArrayList&lt;&gt;(); &nbsp; &nbsp; &nbsp; &nbsp;Queue<treenode> nodeQ = new LinkedList&lt;&gt;();​ &nbsp; &nbsp; &nbsp; &nbsp;if (root == null) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return result; &nbsp; &nbsp; &nbsp;  }​ &nbsp; &nbsp; &nbsp; &nbsp;int nodeNum = 1; &nbsp; &nbsp; &nbsp; &nbsp;nodeQ.add(root);​ &nbsp; &nbsp; &nbsp; &nbsp;while (!nodeQ.isEmpty()) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int maxNum = Integer.MIN_VALUE; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for (int i = 0; i &lt; nodeNum; i++) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;TreeNode node = nodeQ.poll(); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (node.val &gt; maxNum) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;maxNum = node.val; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  } &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (node.left != null) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;nodeQ.add(node.left); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  } &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (node.right != null) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;nodeQ.add(node.right); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  } &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  } &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;nodeNum = nodeQ.size(); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;result.add(maxNum); &nbsp; &nbsp; &nbsp;  }​ &nbsp; &nbsp; &nbsp; &nbsp;return result; &nbsp;  }}//leetcode submit region end(Prohibit modification and deletion)java</treenode></integer></integer></li>
 <li>每个测试用例最多调用 <code>CBTInserter.insert</code> 操作 <code>10000</code> 次。</li>
 <li>给定节点或插入节点的每个值都在 <code>0</code> 到 <code>5000</code> 之间。</li>
 </ul>
