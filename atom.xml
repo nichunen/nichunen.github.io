@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-17T12:08:59.129Z</updated>
+  <updated>2023-05-18T06:11:52.320Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-49</title>
+    <link href="http://nichunen.github.io/2023/05/18/offer2-49/"/>
+    <id>http://nichunen.github.io/2023/05/18/offer2-49/</id>
+    <published>2023-05-18T05:43:23.000Z</published>
+    <updated>2023-05-18T06:11:52.320Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个二叉树的根节点 &lt;code&gt;root&lt;/code&gt; ，树中每个节点都存放有一个 &lt;code&gt;0&lt;/code&gt; 到 &lt;code&gt;9&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-48</title>
@@ -509,31 +534,6 @@
     
     
     <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【转载】设计模式：原型模式</title>
-    <link href="http://nichunen.github.io/2023/04/26/design-pattern-proxy/"/>
-    <id>http://nichunen.github.io/2023/04/26/design-pattern-proxy/</id>
-    <published>2023-04-26T09:18:04.000Z</published>
-    <updated>2023-04-26T09:32:59.034Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在代理模式（Proxy</summary>
-        
-      
-    
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
