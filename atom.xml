@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-19T04:52:05.206Z</updated>
+  <updated>2023-05-21T13:43:49.599Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-51</title>
+    <link href="http://nichunen.github.io/2023/05/21/offer2-51/"/>
+    <id>http://nichunen.github.io/2023/05/21/offer2-51/</id>
+    <published>2023-05-21T09:26:53.000Z</published>
+    <updated>2023-05-21T13:43:49.599Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;路径&lt;/strong&gt; 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 &lt;strong&gt;至多出现一次&lt;/strong&gt; 。该路径 &lt;strong&gt;至少包含一个&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-50</title>
@@ -506,33 +531,6 @@
     
     
     <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-35</title>
-    <link href="http://nichunen.github.io/2023/04/28/offer2-35/"/>
-    <id>http://nichunen.github.io/2023/04/28/offer2-35/</id>
-    <published>2023-04-28T05:38:29.000Z</published>
-    <updated>2023-04-28T07:39:22.546Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个 24 小时制（小时:分钟 **”HH:MM”**）的时间列表，找出列表中任意两个时间的最小时间差并以分钟数表示。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
