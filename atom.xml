@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-26T03:42:56.490Z</updated>
+  <updated>2023-05-28T13:43:29.578Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-56</title>
+    <link href="http://nichunen.github.io/2023/05/28/offer2-56/"/>
+    <id>http://nichunen.github.io/2023/05/28/offer2-56/</id>
+    <published>2023-05-28T12:44:18.000Z</published>
+    <updated>2023-05-28T13:43:29.578Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个二叉搜索树的 &lt;strong&gt;根节点&lt;/strong&gt; &lt;code&gt;root&lt;/code&gt; 和一个整数 &lt;code&gt;k&lt;/code&gt; , 请判断该二叉搜索树中是否存在两个节点它们的值之和等于 &lt;code&gt;k&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-55</title>
@@ -513,31 +538,6 @@
     
     
     <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【转载】设计模式：迭代器模式</title>
-    <link href="http://nichunen.github.io/2023/05/03/design-pattern-iterator/"/>
-    <id>http://nichunen.github.io/2023/05/03/design-pattern-iterator/</id>
-    <published>2023-05-03T08:16:43.000Z</published>
-    <updated>2023-05-03T08:44:56.882Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;迭代器模式（Iterator Pattern）是 Java 和 .Net</summary>
-        
-      
-    
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
