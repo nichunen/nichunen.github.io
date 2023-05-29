@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-05-28T13:43:29.578Z</updated>
+  <updated>2023-05-29T03:29:23.713Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-57</title>
+    <link href="http://nichunen.github.io/2023/05/29/offer2-57/"/>
+    <id>http://nichunen.github.io/2023/05/29/offer2-57/</id>
+    <published>2023-05-29T02:37:55.000Z</published>
+    <updated>2023-05-29T03:29:23.713Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; 和两个整数 &lt;code&gt;k&lt;/code&gt; 和 &lt;code&gt;t&lt;/code&gt; 。请你判断是否存在 &lt;strong&gt;两个不同下标&lt;/strong&gt; &lt;code&gt;i&lt;/code&gt; 和 &lt;code&gt;j&lt;/code&gt;，使得</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-56</title>
@@ -513,31 +538,6 @@
     
     
     <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-38</title>
-    <link href="http://nichunen.github.io/2023/05/04/offer2-38/"/>
-    <id>http://nichunen.github.io/2023/05/04/offer2-38/</id>
-    <published>2023-05-04T03:45:49.000Z</published>
-    <updated>2023-05-04T07:25:03.328Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请根据每日 &lt;code&gt;气温&lt;/code&gt; 列表 &lt;code&gt;temperatures&lt;/code&gt; ，重新生成一个列表，要求其对应位置的输出为：要想观测到更高的气温，至少需要等待的天数。如果气温在这之后都不会升高，请在该位置用 &lt;code&gt;0&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
