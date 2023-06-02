@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-01T06:48:56.377Z</updated>
+  <updated>2023-06-02T03:45:16.740Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-61</title>
+    <link href="http://nichunen.github.io/2023/06/02/offer2-61/"/>
+    <id>http://nichunen.github.io/2023/06/02/offer2-61/</id>
+    <published>2023-06-02T03:16:13.000Z</published>
+    <updated>2023-06-02T03:45:16.740Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个以升序排列的整数数组 &lt;code&gt;nums1&lt;/code&gt; 和 &lt;code&gt;nums2&lt;/code&gt; , 以及一个整数 &lt;code&gt;k&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;定义一对值 &lt;code&gt;(u,v)&lt;/code&gt;，其中第一个元素来自</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-60</title>
@@ -501,34 +527,6 @@
 &lt;p&gt;请实现 &lt;code&gt;RecentCounter&lt;/code&gt; 类：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;RecentCounter()&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-41</title>
-    <link href="http://nichunen.github.io/2023/05/09/offer2-41/"/>
-    <id>http://nichunen.github.io/2023/05/09/offer2-41/</id>
-    <published>2023-05-09T03:15:13.000Z</published>
-    <updated>2023-05-09T03:26:47.022Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个整数数据流和一个窗口大小，根据该滑动窗口的大小，计算滑动窗口里所有数字的平均值。&lt;/p&gt;
-&lt;p&gt;实现 &lt;code&gt;MovingAverage&lt;/code&gt; 类：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;MovingAverage(int size)&lt;/code&gt;</summary>
         
       
     
