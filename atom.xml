@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-04T14:44:56.816Z</updated>
+  <updated>2023-06-05T06:45:56.029Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-63</title>
+    <link href="http://nichunen.github.io/2023/06/05/offer2-63/"/>
+    <id>http://nichunen.github.io/2023/06/05/offer2-63/</id>
+    <published>2023-06-05T03:42:31.000Z</published>
+    <updated>2023-06-05T06:45:56.029Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在英语中，有一个叫做 &lt;code&gt;词根(root)&lt;/code&gt; 的概念，它可以跟着其他一些词组成另一个较长的单词——我们称这个词为 &lt;code&gt;继承词(successor)&lt;/code&gt;。例如，词根&lt;code&gt;an&lt;/code&gt;，跟随着单词</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-62</title>
@@ -498,32 +523,6 @@
     <summary type="html">&lt;p&gt;给定一棵二叉树的根节点 &lt;code&gt;root&lt;/code&gt; ，请找出该二叉树中每一层的最大值。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-43</title>
-    <link href="http://nichunen.github.io/2023/05/11/offer2-43/"/>
-    <id>http://nichunen.github.io/2023/05/11/offer2-43/</id>
-    <published>2023-05-11T09:39:09.000Z</published>
-    <updated>2023-05-14T03:19:28.559Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;完全二叉树是每一层（除最后一层外）都是完全填充（即，节点数达到最大，第 &lt;code&gt;n&lt;/code&gt; 层有 &lt;code&gt;2n-1&lt;/code&gt; 个节点）的，并且所有的节点都尽可能地集中在左侧。&lt;/p&gt;
-&lt;p&gt;设计一个用完全二叉树初始化的数据结构</summary>
         
       
     
