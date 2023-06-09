@@ -551,6 +551,11 @@ npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">./dev-support/local/local.sh ps<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="Debug-Kylin-in-IDEA"><a href="#Debug-Kylin-in-IDEA" class="headerlink" title="Debug Kylin in IDEA"></a>Debug Kylin in IDEA</h3><h4 id="Start-backend-in-IDEA"><a href="#Start-backend-in-IDEA" class="headerlink" title="Start backend in IDEA"></a>Start backend in IDEA</h4><ul>
+<li><p>Alter the scope of dependency <code>com.h2database</code> in module <code>kylin-server</code> from <code>test</code> to <code>runtime</code>.</p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230608174024.png"></p>
+</li>
+</ul>
+<ul>
 <li>Select “BootstrapServer[Local]” on top of IDEA and click <strong>Run</strong> .</li>
 </ul>
 <p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230608172318.png"></p>
