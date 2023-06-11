@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-09T06:19:11.898Z</updated>
+  <updated>2023-06-11T05:17:26.821Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-68</title>
+    <link href="http://nichunen.github.io/2023/06/11/offer2-68/"/>
+    <id>http://nichunen.github.io/2023/06/11/offer2-68/</id>
+    <published>2023-06-11T03:12:11.000Z</published>
+    <updated>2023-06-11T05:17:26.821Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个排序的整数数组 &lt;code&gt;nums&lt;/code&gt; 和一个整数目标值&lt;code&gt; target&lt;/code&gt; ，请在数组中找到 &lt;code&gt;target</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-67</title>
@@ -495,31 +520,6 @@
         
         
     <summary type="html">&lt;p&gt;给定一个二叉树的根节点 &lt;code&gt;root&lt;/code&gt; ，和一个整数 &lt;code&gt;targetSum&lt;/code&gt; ，求该二叉树里节点值之和等于 &lt;code&gt;targetSum&lt;/code&gt; 的 &lt;strong&gt;路径&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-49</title>
-    <link href="http://nichunen.github.io/2023/05/18/offer2-49/"/>
-    <id>http://nichunen.github.io/2023/05/18/offer2-49/</id>
-    <published>2023-05-18T05:43:23.000Z</published>
-    <updated>2023-05-18T06:11:52.320Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个二叉树的根节点 &lt;code&gt;root&lt;/code&gt; ，树中每个节点都存放有一个 &lt;code&gt;0&lt;/code&gt; 到 &lt;code&gt;9&lt;/code&gt;</summary>
         
       
     
