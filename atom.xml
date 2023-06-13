@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-12T06:49:48.548Z</updated>
+  <updated>2023-06-13T09:23:57.922Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-70</title>
+    <link href="http://nichunen.github.io/2023/06/13/offer2-70/"/>
+    <id>http://nichunen.github.io/2023/06/13/offer2-70/</id>
+    <published>2023-06-13T03:15:52.000Z</published>
+    <updated>2023-06-13T09:23:57.922Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个只包含整数的有序数组 &lt;code&gt;nums&lt;/code&gt; ，每个元素都会出现两次，唯有一个数只会出现一次，请找出这个唯一的数字。&lt;/p&gt;
+&lt;p&gt;你设计的解决方案必须满足 &lt;code&gt;O(log n)&lt;/code&gt; 时间复杂度和 &lt;code&gt;O(1)&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-69</title>
@@ -496,31 +522,6 @@
     <summary type="html">&lt;p&gt;给你一棵二叉搜索树，请 &lt;strong&gt;按中序遍历&lt;/strong&gt; 将其重新排列为一棵递增顺序搜索树，使树中最左边的节点成为树的根节点，并且每个节点没有左子节点，只有一个右子节点。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-51</title>
-    <link href="http://nichunen.github.io/2023/05/21/offer2-51/"/>
-    <id>http://nichunen.github.io/2023/05/21/offer2-51/</id>
-    <published>2023-05-21T09:26:53.000Z</published>
-    <updated>2023-05-21T13:43:49.599Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;路径&lt;/strong&gt; 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 &lt;strong&gt;至多出现一次&lt;/strong&gt; 。该路径 &lt;strong&gt;至少包含一个&lt;/strong&gt;</summary>
         
       
     
