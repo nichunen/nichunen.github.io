@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-13T09:23:57.922Z</updated>
+  <updated>2023-06-14T06:08:06.501Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-71</title>
+    <link href="http://nichunen.github.io/2023/06/14/offer2-71/"/>
+    <id>http://nichunen.github.io/2023/06/14/offer2-71/</id>
+    <published>2023-06-14T03:05:11.000Z</published>
+    <updated>2023-06-14T06:08:06.501Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个正整数数组 &lt;code&gt;w&lt;/code&gt; ，其中 &lt;code&gt;w[i]&lt;/code&gt; 代表下标 &lt;code&gt;i&lt;/code&gt; 的权重（下标从 &lt;code&gt;0&lt;/code&gt; 开始），请写一个函数 &lt;code&gt;pickIndex&lt;/code&gt; ，它可以随机地获取下标</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-70</title>
@@ -495,33 +520,6 @@
         
     <summary type="html">&lt;p&gt;给定一棵二叉搜索树和其中的一个节点 &lt;code&gt;p&lt;/code&gt; ，找到该节点在树中的中序后继。如果节点没有中序后继，请返回 &lt;code&gt;null&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;节点 &lt;code&gt;p&lt;/code&gt; 的后继是值比 &lt;code&gt;p.val&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-52</title>
-    <link href="http://nichunen.github.io/2023/05/22/offer2-52/"/>
-    <id>http://nichunen.github.io/2023/05/22/offer2-52/</id>
-    <published>2023-05-22T02:50:06.000Z</published>
-    <updated>2023-05-22T03:30:34.948Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一棵二叉搜索树，请 &lt;strong&gt;按中序遍历&lt;/strong&gt; 将其重新排列为一棵递增顺序搜索树，使树中最左边的节点成为树的根节点，并且每个节点没有左子节点，只有一个右子节点。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
         
       
     
