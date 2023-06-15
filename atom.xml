@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-14T07:30:15.367Z</updated>
+  <updated>2023-06-15T05:29:00.896Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-72</title>
+    <link href="http://nichunen.github.io/2023/06/15/offer2-72/"/>
+    <id>http://nichunen.github.io/2023/06/15/offer2-72/</id>
+    <published>2023-06-15T03:26:56.000Z</published>
+    <updated>2023-06-15T05:29:00.896Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个非负整数 &lt;code&gt;x&lt;/code&gt; ，计算并返回 &lt;code&gt;x&lt;/code&gt; 的平方根，即实现 &lt;code&gt;int sqrt(int x)&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【转载】设计模式：解释器模式</title>
@@ -491,34 +516,6 @@
     <summary type="html">&lt;p&gt;实现一个二叉搜索树迭代器类&lt;code&gt;BSTIterator&lt;/code&gt; ，表示一个按中序遍历二叉搜索树（BST）的迭代器：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;BSTIterator(TreeNode root)&lt;/code&gt; 初始化</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-54</title>
-    <link href="http://nichunen.github.io/2023/05/25/offer2-54/"/>
-    <id>http://nichunen.github.io/2023/05/25/offer2-54/</id>
-    <published>2023-05-25T05:29:52.000Z</published>
-    <updated>2023-05-25T15:03:49.156Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个二叉搜索树，请将它的每个节点的值替换成树中大于或者等于该节点值的所有节点值之和。&lt;/p&gt;
-&lt;p&gt;提醒一下，二叉搜索树满足下列约束条件：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;节点的左子树仅包含键 &lt;strong&gt;小于&lt;/strong&gt;</summary>
         
       
     
