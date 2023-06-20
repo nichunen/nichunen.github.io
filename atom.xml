@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-19T03:27:40.321Z</updated>
+  <updated>2023-06-20T03:27:22.181Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-76</title>
+    <link href="http://nichunen.github.io/2023/06/20/offer2-76/"/>
+    <id>http://nichunen.github.io/2023/06/20/offer2-76/</id>
+    <published>2023-06-20T02:55:09.000Z</published>
+    <updated>2023-06-20T03:27:22.181Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定整数数组 &lt;code&gt;nums&lt;/code&gt; 和整数 &lt;code&gt;k&lt;/code&gt;，请返回数组中第 &lt;code&gt;**k**&lt;/code&gt; 个最大的元素。&lt;/p&gt;
+&lt;p&gt;请注意，你需要找的是数组排序后的第 &lt;code&gt;k&lt;/code&gt; 个最大的元素，而不是第</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-75</title>
@@ -491,32 +517,6 @@
         
     <summary type="html">&lt;p&gt;给定一个整数数组 &lt;code&gt;nums&lt;/code&gt; 和一个整数 &lt;code&gt;k&lt;/code&gt; ，请返回其中出现频率前 &lt;code&gt;k&lt;/code&gt; 高的元素。可以按 &lt;strong&gt;任意顺序&lt;/strong&gt; 返回答案。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-59</title>
-    <link href="http://nichunen.github.io/2023/05/31/offer2-59/"/>
-    <id>http://nichunen.github.io/2023/05/31/offer2-59/</id>
-    <published>2023-05-31T03:05:13.000Z</published>
-    <updated>2023-05-31T06:35:24.332Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设计一个找到数据流中第 &lt;code&gt;k&lt;/code&gt; 大元素的类（class）。注意是排序后的第 &lt;code&gt;k&lt;/code&gt; 大元素，不是第 &lt;code&gt;k&lt;/code&gt; 个不同的元素。&lt;/p&gt;
-&lt;p&gt;请实现 &lt;code&gt;KthLargest&lt;/code&gt;</summary>
         
       
     
