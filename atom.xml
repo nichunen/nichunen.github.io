@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-27T05:48:11.956Z</updated>
+  <updated>2023-06-28T03:16:23.016Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-82</title>
+    <link href="http://nichunen.github.io/2023/06/28/offer2-82/"/>
+    <id>http://nichunen.github.io/2023/06/28/offer2-82/</id>
+    <published>2023-06-28T03:01:06.000Z</published>
+    <updated>2023-06-28T03:16:23.016Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个可能有重复数字的整数数组 &lt;code&gt;candidates&lt;/code&gt; 和一个目标数 &lt;code&gt;target&lt;/code&gt; ，找出 &lt;code&gt;candidates&lt;/code&gt; 中所有可以使数字和为 &lt;code&gt;target&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-81</title>
@@ -515,31 +540,6 @@
     
     
     <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【转载】设计模式：备忘录模式</title>
-    <link href="http://nichunen.github.io/2023/06/07/design-pattern-memento/"/>
-    <id>http://nichunen.github.io/2023/06/07/design-pattern-memento/</id>
-    <published>2023-06-07T07:00:22.000Z</published>
-    <updated>2023-06-07T07:23:21.049Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;备忘录模式（Memento</summary>
-        
-      
-    
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
