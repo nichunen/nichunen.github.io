@@ -339,6 +339,31 @@
   </entry>
   
   <entry>
+    <title>【转载】设计模式：责任链模式</title>
+    <link href="http://nichunen.github.io/2023/06/15/design-pattern-responsibility/"/>
+    <id>http://nichunen.github.io/2023/06/15/design-pattern-responsibility/</id>
+    <published>2023-06-15T05:51:26.000Z</published>
+    <updated>2023-06-28T03:17:29.996Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;顾名思义，责任链模式（Chain of Responsibility</summary>
+        
+      
+    
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>offer2-72</title>
     <link href="http://nichunen.github.io/2023/06/15/offer2-72/"/>
     <id>http://nichunen.github.io/2023/06/15/offer2-72/</id>
@@ -504,33 +529,6 @@
         
     <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; ，返回 &lt;code&gt;nums[i] XOR nums[j]&lt;/code&gt; 的最大运算结果，其中 &lt;code&gt;0 ≤ i ≤ j &amp;lt; n&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-66</title>
-    <link href="http://nichunen.github.io/2023/06/08/offer2-66/"/>
-    <id>http://nichunen.github.io/2023/06/08/offer2-66/</id>
-    <published>2023-06-08T03:07:57.000Z</published>
-    <updated>2023-06-08T05:39:01.066Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;实现一个 &lt;code&gt;MapSum&lt;/code&gt; 类，支持两个方法，&lt;code&gt;insert&lt;/code&gt; 和 &lt;code&gt;sum&lt;/code&gt;：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;MapSum()&lt;/code&gt; 初始化 &lt;code&gt;MapSum&lt;/code&gt;</summary>
         
       
     

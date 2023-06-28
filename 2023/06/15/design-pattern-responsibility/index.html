@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="offer2-73, 倪春恩的博客">
+    <meta name="keywords" content="【转载】设计模式：责任链模式, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>offer2-73 | 倪春恩的博客</title>
+    <title>【转载】设计模式：责任链模式 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">offer2-73</h1>
+                    <h1 class="description center-align post-title">【转载】设计模式：责任链模式</h1>
                 </div>
             </div>
         </div>
@@ -340,8 +340,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/leetcode/">
-                                <span class="chip bg-color">leetcode</span>
+                            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                                <span class="chip bg-color">设计模式</span>
                             </a>
                         
                     </div>
@@ -352,8 +352,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/leetcode/" class="post-category">
-                                leetcode
+                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
+                                设计模式
                             </a>
                         
                     </div>
@@ -365,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-16
+                    2023-06-15
                 </div>
                 
 
@@ -389,88 +389,120 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>狒狒喜欢吃香蕉。这里有 <code>n</code> 堆香蕉，第 <code>i</code> 堆中有 <code>piles[i]</code> 根香蕉。警卫已经离开了，将在 <code>h</code> 小时后回来。</p>
-<p>狒狒可以决定她吃香蕉的速度 <code>k</code> （单位：根/小时）。每个小时，她将会选择一堆香蕉，从中吃掉 <code>k</code> 根。如果这堆香蕉少于 <code>k</code> 根，她将吃掉这堆的所有香蕉，然后这一小时内不会再吃更多的香蕉，下一个小时才会开始吃另一堆的香蕉。</p>
-<p>狒狒喜欢慢慢吃，但仍然想在警卫回来前吃掉所有的香蕉。</p>
-<p>返回她可以在 <code>h</code> 小时内吃掉所有香蕉的最小速度 <code>k</code>（<code>k</code> 为整数）。</p>
-<p><strong>示例 1：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：piles = [3,6,7,11], h = 8
-输出：4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+                <p>顾名思义，责任链模式（Chain of Responsibility Pattern）为请求创建了一个接收者对象的链。这种模式给予请求的类型，对请求的发送者和接收者进行解耦。这种类型的设计模式属于行为型模式。</p>
+<p>在这种模式中，通常每个接收者都包含对另一个接收者的引用。如果一个对象不能处理该请求，那么它会把相同的请求传给下一个接收者，依此类推。</p>
+<p><strong>意图：</strong>避免请求发送者与接收者耦合在一起，让多个对象都有可能接收请求，将这些对象连接成一条链，并且沿着这条链传递请求，直到有对象处理它为止。</p>
+<p><strong>主要解决：</strong>职责链上的处理者负责处理请求，客户只需要将请求发送到职责链上即可，无须关心请求的处理细节和请求的传递，所以职责链将请求的发送者和请求的处理者解耦了。</p>
+<p><strong>何时使用：</strong>在处理消息的时候以过滤很多道。</p>
+<p><strong>如何解决：</strong>拦截的类都实现统一接口。</p>
+<p><strong>关键代码：</strong>Handler 里面聚合它自己，在 HandlerRequest 里判断是否合适，如果没达到条件则向下传递，向谁传递之前 set 进去。</p>
+<p><strong>应用实例：</strong> 1、红楼梦中的”击鼓传花”。 2、JS 中的事件冒泡。 3、JAVA WEB 中 Apache Tomcat 对 Encoding 的处理，Struts2 的拦截器，jsp servlet 的 Filter。</p>
+<p><strong>优点：</strong> 1、降低耦合度。它将请求的发送者和接收者解耦。 2、简化了对象。使得对象不需要知道链的结构。 3、增强给对象指派职责的灵活性。通过改变链内的成员或者调动它们的次序，允许动态地新增或者删除责任。 4、增加新的请求处理类很方便。</p>
+<p><strong>缺点：</strong> 1、不能保证请求一定被接收。 2、系统性能将受到一定影响，而且在进行代码调试时不太方便，可能会造成循环调用。 3、可能不容易观察运行时的特征，有碍于除错。</p>
+<p><strong>使用场景：</strong> 1、有多个对象可以处理同一个请求，具体哪个对象处理该请求由运行时刻自动确定。 2、在不明确指定接收者的情况下，向多个对象中的一个提交一个请求。 3、可动态指定一组对象处理请求。</p>
+<p><strong>注意事项：</strong>在 JAVA WEB 中遇到很多应用。</p>
+<p>我们创建抽象类 <em>AbstractLogger</em>，带有详细的日志记录级别。然后我们创建三种类型的记录器，都扩展了 <em>AbstractLogger</em>。每个记录器消息的级别是否属于自己的级别，如果是则相应地打印出来，否则将不打印并把消息传给下一个记录器。</p>
+<p><img src="https://nichunen-pic.oss-cn-shanghai.aliyuncs.com/20230615171948.png"></p>
+<h3 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤 1"></a>步骤 1</h3><p>创建抽象的记录器类。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">AbstractLogger</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> INFO <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> DEBUG <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> ERROR <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+ 
+   <span class="token keyword">protected</span> <span class="token keyword">int</span> level<span class="token punctuation">;</span>
+ 
+   <span class="token comment">//责任链中的下一个元素</span>
+   <span class="token keyword">protected</span> <span class="token class-name">AbstractLogger</span> nextLogger<span class="token punctuation">;</span>
+ 
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setNextLogger</span><span class="token punctuation">(</span><span class="token class-name">AbstractLogger</span> nextLogger<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>nextLogger <span class="token operator">=</span> nextLogger<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+ 
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">logMessage</span><span class="token punctuation">(</span><span class="token keyword">int</span> level<span class="token punctuation">,</span> <span class="token class-name">String</span> message<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>level <span class="token operator">&lt;=</span> level<span class="token punctuation">)</span><span class="token punctuation">{</span>
+         <span class="token function">write</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>nextLogger <span class="token operator">!=</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+         nextLogger<span class="token punctuation">.</span><span class="token function">logMessage</span><span class="token punctuation">(</span>level<span class="token punctuation">,</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+ 
+   <span class="token keyword">abstract</span> <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token class-name">String</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><strong>示例 2：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：piles = [30,11,23,4,20], h = 5
-输出：30<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p><strong>示例 3：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：piles = [30,11,23,4,20], h = 6
-输出：23<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-<p><strong>提示：</strong></p>
-<ul>
-<li><code>1 &lt;= piles.length &lt;= 104</code></li>
-<li><code>piles.length &lt;= h &lt;= 109</code></li>
-<li><code>1 &lt;= piles[i] &lt;= 109</code></li>
-</ul>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">
-<span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span>
-<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">minEatingSpeed</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> piles<span class="token punctuation">,</span> <span class="token keyword">int</span> h<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> start <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-
-        <span class="token keyword">int</span> end <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> pile <span class="token operator">:</span> piles<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>pile <span class="token operator">&gt;</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                end <span class="token operator">=</span> pile<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>start <span class="token operator">&lt;=</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>start <span class="token operator">==</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">return</span> start<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>start <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">int</span> startH <span class="token operator">=</span> <span class="token function">needH</span><span class="token punctuation">(</span>piles<span class="token punctuation">,</span> start<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>startH <span class="token operator">&lt;=</span> h<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    <span class="token keyword">return</span> start<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                    <span class="token keyword">return</span> end<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span>
-
-            <span class="token keyword">int</span> mid <span class="token operator">=</span> start <span class="token operator">+</span> <span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
-            <span class="token keyword">int</span> midH <span class="token operator">=</span> <span class="token function">needH</span><span class="token punctuation">(</span>piles<span class="token punctuation">,</span> mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>midH <span class="token operator">&lt;=</span> h<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                end <span class="token operator">=</span> mid<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                start <span class="token operator">=</span> mid<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-
-        <span class="token punctuation">}</span>
-
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-
-    <span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">needH</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> piles<span class="token punctuation">,</span> <span class="token keyword">int</span> speed<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> pile <span class="token operator">:</span> piles<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            result <span class="token operator">+=</span> <span class="token punctuation">(</span>pile <span class="token operator">/</span> speed<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>pile <span class="token operator">%</span> speed <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                result<span class="token operator">++</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-
-        <span class="token keyword">return</span> result<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+<h3 id="步骤-2"><a href="#步骤-2" class="headerlink" title="步骤 2"></a>步骤 2</h3><p>创建扩展了该记录器类的实体类。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConsoleLogger</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractLogger</span> <span class="token punctuation">{</span>
+ 
+   <span class="token keyword">public</span> <span class="token class-name">ConsoleLogger</span><span class="token punctuation">(</span><span class="token keyword">int</span> level<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>level <span class="token operator">=</span> level<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+ 
+   <span class="token annotation punctuation">@Override</span>
+   <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token class-name">String</span> message<span class="token punctuation">)</span> <span class="token punctuation">{</span>    
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Standard Console::Logger: "</span> <span class="token operator">+</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ErrorLogger</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractLogger</span> <span class="token punctuation">{</span>
+ 
+   <span class="token keyword">public</span> <span class="token class-name">ErrorLogger</span><span class="token punctuation">(</span><span class="token keyword">int</span> level<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>level <span class="token operator">=</span> level<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+ 
+   <span class="token annotation punctuation">@Override</span>
+   <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token class-name">String</span> message<span class="token punctuation">)</span> <span class="token punctuation">{</span>    
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Error Console::Logger: "</span> <span class="token operator">+</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FileLogger</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractLogger</span> <span class="token punctuation">{</span>
+ 
+   <span class="token keyword">public</span> <span class="token class-name">FileLogger</span><span class="token punctuation">(</span><span class="token keyword">int</span> level<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>level <span class="token operator">=</span> level<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+ 
+   <span class="token annotation punctuation">@Override</span>
+   <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token class-name">String</span> message<span class="token punctuation">)</span> <span class="token punctuation">{</span>    
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"File::Logger: "</span> <span class="token operator">+</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="步骤-3"><a href="#步骤-3" class="headerlink" title="步骤 3"></a>步骤 3</h3><p>创建不同类型的记录器。赋予它们不同的错误级别，并在每个记录器中设置下一个记录器。每个记录器中的下一个记录器代表的是链的一部分。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ChainPatternDemo</span> <span class="token punctuation">{</span>
+   
+   <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">AbstractLogger</span> <span class="token function">getChainOfLoggers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+ 
+      <span class="token class-name">AbstractLogger</span> errorLogger <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ErrorLogger</span><span class="token punctuation">(</span><span class="token class-name">AbstractLogger</span><span class="token punctuation">.</span>ERROR<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">AbstractLogger</span> fileLogger <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileLogger</span><span class="token punctuation">(</span><span class="token class-name">AbstractLogger</span><span class="token punctuation">.</span>DEBUG<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">AbstractLogger</span> consoleLogger <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ConsoleLogger</span><span class="token punctuation">(</span><span class="token class-name">AbstractLogger</span><span class="token punctuation">.</span>INFO<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+      errorLogger<span class="token punctuation">.</span><span class="token function">setNextLogger</span><span class="token punctuation">(</span>fileLogger<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      fileLogger<span class="token punctuation">.</span><span class="token function">setNextLogger</span><span class="token punctuation">(</span>consoleLogger<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+      <span class="token keyword">return</span> errorLogger<span class="token punctuation">;</span>  
+   <span class="token punctuation">}</span>
+ 
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">AbstractLogger</span> loggerChain <span class="token operator">=</span> <span class="token function">getChainOfLoggers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+      loggerChain<span class="token punctuation">.</span><span class="token function">logMessage</span><span class="token punctuation">(</span><span class="token class-name">AbstractLogger</span><span class="token punctuation">.</span>INFO<span class="token punctuation">,</span> <span class="token string">"This is an information."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+      loggerChain<span class="token punctuation">.</span><span class="token function">logMessage</span><span class="token punctuation">(</span><span class="token class-name">AbstractLogger</span><span class="token punctuation">.</span>DEBUG<span class="token punctuation">,</span> 
+         <span class="token string">"This is a debug level information."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+      loggerChain<span class="token punctuation">.</span><span class="token function">logMessage</span><span class="token punctuation">(</span><span class="token class-name">AbstractLogger</span><span class="token punctuation">.</span>ERROR<span class="token punctuation">,</span> 
+         <span class="token string">"This is an error information."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="步骤-4"><a href="#步骤-4" class="headerlink" title="步骤 4"></a>步骤 4</h3><p>执行程序，输出结果：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Standard Console::Logger: This is an information.
+File::Logger: This is a debug level information.
+Standard Console::Logger: This is a debug level information.
+Error Console::Logger: This is an error information.
+File::Logger: This is an error information.
+Standard Console::Logger: This is an error information.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -497,7 +529,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nichunen.github.io/2023/06/16/offer2-73/">http://nichunen.github.io/2023/06/16/offer2-73/</a>
+                    <a href="http://nichunen.github.io/2023/06/15/design-pattern-responsibility/">http://nichunen.github.io/2023/06/15/design-pattern-responsibility/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -535,8 +567,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/leetcode/">
-                                    <span class="chip bg-color">leetcode</span>
+                                <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                                    <span class="chip bg-color">设计模式</span>
                                 </a>
                             
                         </div>
@@ -710,13 +742,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/18/offer2-74/">
+                <a href="/2023/06/16/offer2-73/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="offer2-74">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="offer2-73">
                         
-                        <span class="card-title">offer2-74</span>
+                        <span class="card-title">offer2-73</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -727,7 +759,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-16
                         </span>
                         <span class="publish-author">
                             
@@ -759,13 +791,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/15/design-pattern-responsibility/">
+                <a href="/2023/06/15/offer2-72/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="【转载】设计模式：责任链模式">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="offer2-72">
                         
-                        <span class="card-title">【转载】设计模式：责任链模式</span>
+                        <span class="card-title">offer2-72</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -782,8 +814,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
-                                    设计模式
+                            <a href="/categories/leetcode/" class="post-category">
+                                    leetcode
                                 </a>
                             
                             
@@ -793,8 +825,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
+                    <a href="/tags/leetcode/">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
