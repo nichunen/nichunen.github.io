@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-29T03:19:01.578Z</updated>
+  <updated>2023-06-30T11:49:30.787Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-84</title>
+    <link href="http://nichunen.github.io/2023/06/30/offer2-84/"/>
+    <id>http://nichunen.github.io/2023/06/30/offer2-84/</id>
+    <published>2023-06-30T05:39:38.000Z</published>
+    <updated>2023-06-30T11:49:30.787Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个可包含重复数字的整数集合 &lt;code&gt;nums&lt;/code&gt; ，&lt;strong&gt;按任意顺序&lt;/strong&gt; 返回它所有不重复的全排列。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-83</title>
@@ -505,31 +532,6 @@
         
     <summary type="html">&lt;p&gt;符合下列属性的数组 arr 称为 山峰数组（山脉数组） ：&lt;/p&gt;
 &lt;p&gt;arr.length &amp;gt;= 3&lt;br&gt;存在 i（0 &amp;lt; i &amp;lt; arr.length - 1）使得：&lt;br&gt;arr[0] &amp;lt; arr[1] &amp;lt; … arr[i-1]</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-68</title>
-    <link href="http://nichunen.github.io/2023/06/11/offer2-68/"/>
-    <id>http://nichunen.github.io/2023/06/11/offer2-68/</id>
-    <published>2023-06-11T03:12:11.000Z</published>
-    <updated>2023-06-11T05:17:26.821Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个排序的整数数组 &lt;code&gt;nums&lt;/code&gt; 和一个整数目标值&lt;code&gt; target&lt;/code&gt; ，请在数组中找到 &lt;code&gt;target</summary>
         
       
     
