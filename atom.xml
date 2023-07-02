@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-06-30T11:49:30.787Z</updated>
+  <updated>2023-07-02T12:16:31.931Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-85</title>
+    <link href="http://nichunen.github.io/2023/07/02/offer2-85/"/>
+    <id>http://nichunen.github.io/2023/07/02/offer2-85/</id>
+    <published>2023-07-02T09:34:21.000Z</published>
+    <updated>2023-07-02T12:16:31.931Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;正整数 &lt;code&gt;n&lt;/code&gt; 代表生成括号的对数，请设计一个函数，用于能够生成所有可能的并且 &lt;strong&gt;有效的&lt;/strong&gt; 括号组合。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-84</title>
@@ -506,32 +533,6 @@
         
     <summary type="html">&lt;p&gt;给定一个只包含整数的有序数组 &lt;code&gt;nums&lt;/code&gt; ，每个元素都会出现两次，唯有一个数只会出现一次，请找出这个唯一的数字。&lt;/p&gt;
 &lt;p&gt;你设计的解决方案必须满足 &lt;code&gt;O(log n)&lt;/code&gt; 时间复杂度和 &lt;code&gt;O(1)&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-69</title>
-    <link href="http://nichunen.github.io/2023/06/12/offer2-69/"/>
-    <id>http://nichunen.github.io/2023/06/12/offer2-69/</id>
-    <published>2023-06-12T03:03:25.000Z</published>
-    <updated>2023-06-12T06:49:48.548Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;符合下列属性的数组 arr 称为 山峰数组（山脉数组） ：&lt;/p&gt;
-&lt;p&gt;arr.length &amp;gt;= 3&lt;br&gt;存在 i（0 &amp;lt; i &amp;lt; arr.length - 1）使得：&lt;br&gt;arr[0] &amp;lt; arr[1] &amp;lt; … arr[i-1]</summary>
         
       
     
