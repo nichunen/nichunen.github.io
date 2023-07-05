@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-07-04T03:50:51.805Z</updated>
+  <updated>2023-07-05T03:25:36.876Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-88</title>
+    <link href="http://nichunen.github.io/2023/07/05/offer2-88/"/>
+    <id>http://nichunen.github.io/2023/07/05/offer2-88/</id>
+    <published>2023-07-05T02:53:04.000Z</published>
+    <updated>2023-07-05T03:25:36.876Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;数组的每个下标作为一个阶梯，第 &lt;code&gt;i&lt;/code&gt; 个阶梯对应着一个非负数的体力花费值 &lt;code&gt;cost[i]&lt;/code&gt;（下标从 &lt;code&gt;0&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-87</title>
@@ -518,31 +543,6 @@
     
     
     <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【转载】设计模式：解释器模式</title>
-    <link href="http://nichunen.github.io/2023/06/14/design-pattern-interpreter/"/>
-    <id>http://nichunen.github.io/2023/06/14/design-pattern-interpreter/</id>
-    <published>2023-06-14T06:29:53.000Z</published>
-    <updated>2023-06-14T07:30:15.367Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;解释器模式（Interpreter Pattern）提供了评估语言的语法或表达式的方式，它属于行为型模式。这种模式实现了一个表达式接口，该接口解释一个特定的上下文。这种模式被用在 SQL</summary>
-        
-      
-    
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-    <category term="设计模式" scheme="http://nichunen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
