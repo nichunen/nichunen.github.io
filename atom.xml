@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-07-14T08:16:00.007Z</updated>
+  <updated>2023-07-16T06:24:00.783Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-96</title>
+    <link href="http://nichunen.github.io/2023/07/16/offer2-96/"/>
+    <id>http://nichunen.github.io/2023/07/16/offer2-96/</id>
+    <published>2023-07-16T03:25:08.000Z</published>
+    <updated>2023-07-16T06:24:00.783Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定三个字符串 &lt;code&gt;s1&lt;/code&gt;、&lt;code&gt;s2&lt;/code&gt;、&lt;code&gt;s3&lt;/code&gt;，请判断 &lt;code&gt;s3&lt;/code&gt; 能不能由 &lt;code&gt;s1&lt;/code&gt; 和 &lt;code&gt;s2&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-95</title>
@@ -501,33 +526,6 @@
 &lt;p&gt;请将所有链表合并到一个升序链表中，返回合并后的链表。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-77</title>
-    <link href="http://nichunen.github.io/2023/06/21/offer2-77/"/>
-    <id>http://nichunen.github.io/2023/06/21/offer2-77/</id>
-    <published>2023-06-21T03:03:39.000Z</published>
-    <updated>2023-06-21T07:11:36.818Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定链表的头结点 &lt;code&gt;head&lt;/code&gt; ，请将其按 &lt;strong&gt;升序&lt;/strong&gt; 排列并返回 &lt;strong&gt;排序后的链表&lt;/strong&gt; 。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
         
       
     
