@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-07-18T09:52:08.621Z</updated>
+  <updated>2023-07-19T08:04:58.238Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-99</title>
+    <link href="http://nichunen.github.io/2023/07/19/offer2-99/"/>
+    <id>http://nichunen.github.io/2023/07/19/offer2-99/</id>
+    <published>2023-07-19T07:52:28.000Z</published>
+    <updated>2023-07-19T08:04:58.238Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个包含非负整数的 &lt;code&gt;*m* x *n*&lt;/code&gt; 网格 &lt;code&gt;grid&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-98</title>
@@ -497,33 +522,6 @@
         
         
     <summary type="html">&lt;p&gt;给定一个&lt;strong&gt;无重复元素&lt;/strong&gt;的正整数数组 &lt;code&gt;candidates&lt;/code&gt; 和一个正整数 &lt;code&gt;target&lt;/code&gt; ，找出 &lt;code&gt;candidates&lt;/code&gt; 中所有可以使数字和为目标数</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-80</title>
-    <link href="http://nichunen.github.io/2023/06/26/offer2-80/"/>
-    <id>http://nichunen.github.io/2023/06/26/offer2-80/</id>
-    <published>2023-06-26T03:32:16.000Z</published>
-    <updated>2023-06-26T11:54:34.753Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定两个整数 &lt;code&gt;n&lt;/code&gt; 和 &lt;code&gt;k&lt;/code&gt;，返回 &lt;code&gt;1 ... n&lt;/code&gt; 中所有可能的 &lt;code&gt;k&lt;/code&gt; 个数的组合。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
