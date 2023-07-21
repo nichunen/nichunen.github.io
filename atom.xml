@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-07-20T05:18:35.844Z</updated>
+  <updated>2023-07-21T05:35:43.098Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-101</title>
+    <link href="http://nichunen.github.io/2023/07/21/offer2-101/"/>
+    <id>http://nichunen.github.io/2023/07/21/offer2-101/</id>
+    <published>2023-07-21T03:22:18.000Z</published>
+    <updated>2023-07-21T05:35:43.098Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个非空的正整数数组 &lt;code&gt;nums&lt;/code&gt; ，请判断能否将这些数字分成元素和相等的两部分。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-100</title>
@@ -498,31 +525,6 @@
     <summary type="html">&lt;p&gt;给定一个不含重复数字的整数数组 &lt;code&gt;nums&lt;/code&gt; ，返回其 &lt;strong&gt;所有可能的全排列&lt;/strong&gt; 。可以 &lt;strong&gt;按任意顺序&lt;/strong&gt; 返回答案。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-82</title>
-    <link href="http://nichunen.github.io/2023/06/28/offer2-82/"/>
-    <id>http://nichunen.github.io/2023/06/28/offer2-82/</id>
-    <published>2023-06-28T03:01:06.000Z</published>
-    <updated>2023-06-28T03:16:23.016Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个可能有重复数字的整数数组 &lt;code&gt;candidates&lt;/code&gt; 和一个目标数 &lt;code&gt;target&lt;/code&gt; ，找出 &lt;code&gt;candidates&lt;/code&gt; 中所有可以使数字和为 &lt;code&gt;target&lt;/code&gt;</summary>
         
       
     
