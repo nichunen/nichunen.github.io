@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-07-21T05:35:43.098Z</updated>
+  <updated>2023-07-23T08:18:42.663Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-102</title>
+    <link href="http://nichunen.github.io/2023/07/23/offer2-102/"/>
+    <id>http://nichunen.github.io/2023/07/23/offer2-102/</id>
+    <published>2023-07-23T06:11:29.000Z</published>
+    <updated>2023-07-23T08:18:42.663Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个正整数数组 &lt;code&gt;nums&lt;/code&gt; 和一个整数 &lt;code&gt;target&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;向数组中的每个整数前添加 &lt;code&gt;&#39;+&#39;&lt;/code&gt; 或 &lt;code&gt;&#39;-&#39;&lt;/code&gt; ，然后串联起所有整数，可以构造一个</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-101</title>
@@ -498,33 +524,6 @@
     <summary type="html">&lt;p&gt;给定一个可包含重复数字的整数集合 &lt;code&gt;nums&lt;/code&gt; ，&lt;strong&gt;按任意顺序&lt;/strong&gt; 返回它所有不重复的全排列。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-83</title>
-    <link href="http://nichunen.github.io/2023/06/29/offer2-83/"/>
-    <id>http://nichunen.github.io/2023/06/29/offer2-83/</id>
-    <published>2023-06-29T02:53:21.000Z</published>
-    <updated>2023-06-29T03:19:01.578Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个不含重复数字的整数数组 &lt;code&gt;nums&lt;/code&gt; ，返回其 &lt;strong&gt;所有可能的全排列&lt;/strong&gt; 。可以 &lt;strong&gt;按任意顺序&lt;/strong&gt; 返回答案。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
