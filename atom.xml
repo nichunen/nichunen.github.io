@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-07-23T08:18:42.663Z</updated>
+  <updated>2023-07-24T07:28:12.116Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>offer2-103</title>
+    <link href="http://nichunen.github.io/2023/07/24/offer2-103/"/>
+    <id>http://nichunen.github.io/2023/07/24/offer2-103/</id>
+    <published>2023-07-24T02:56:47.000Z</published>
+    <updated>2023-07-24T07:28:12.116Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定不同面额的硬币 &lt;code&gt;coins&lt;/code&gt; 和一个总金额 &lt;code&gt;amount&lt;/code&gt;。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>offer2-102</title>
@@ -495,33 +520,6 @@
         
         
     <summary type="html">&lt;p&gt;正整数 &lt;code&gt;n&lt;/code&gt; 代表生成括号的对数，请设计一个函数，用于能够生成所有可能的并且 &lt;strong&gt;有效的&lt;/strong&gt; 括号组合。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-84</title>
-    <link href="http://nichunen.github.io/2023/06/30/offer2-84/"/>
-    <id>http://nichunen.github.io/2023/06/30/offer2-84/</id>
-    <published>2023-06-30T05:39:38.000Z</published>
-    <updated>2023-06-30T11:49:30.787Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个可包含重复数字的整数集合 &lt;code&gt;nums&lt;/code&gt; ，&lt;strong&gt;按任意顺序&lt;/strong&gt; 返回它所有不重复的全排列。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
         
