@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-07-30T06:47:09.514Z</updated>
+  <updated>2023-07-31T03:32:48.681Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-1-5</title>
+    <link href="http://nichunen.github.io/2023/07/31/gold-1-5/"/>
+    <id>http://nichunen.github.io/2023/07/31/gold-1-5/</id>
+    <published>2023-07-31T02:58:49.000Z</published>
+    <updated>2023-07-31T03:32:48.681Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-1-4</title>
@@ -501,31 +528,6 @@
         
         
     <summary type="html">&lt;p&gt;假如有一排房子，共 &lt;code&gt;n&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-90</title>
-    <link href="http://nichunen.github.io/2023/07/07/offer2-90/"/>
-    <id>http://nichunen.github.io/2023/07/07/offer2-90/</id>
-    <published>2023-07-07T06:13:12.000Z</published>
-    <updated>2023-07-07T07:31:45.552Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;一个专业的小偷，计划偷窃一个环形街道上沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都 &lt;strong&gt;围成一圈&lt;/strong&gt;</summary>
         
       
     
