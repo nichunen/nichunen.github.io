@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-01T06:41:08.194Z</updated>
+  <updated>2023-08-02T06:26:04.025Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-1-7</title>
+    <link href="http://nichunen.github.io/2023/08/02/gold-1-7/"/>
+    <id>http://nichunen.github.io/2023/08/02/gold-1-7/</id>
+    <published>2023-08-02T06:06:36.000Z</published>
+    <updated>2023-08-02T06:26:04.025Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一幅由 &lt;code&gt;N × N&lt;/code&gt; 矩阵表示的图像，其中每个像素的大小为 4 字节。请你设计一种算法，将图像旋转 90 度。&lt;/p&gt;
+&lt;p&gt;不占用额外内存空间能否做到？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-1-6</title>
@@ -503,31 +531,6 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;n &amp;gt;= 3&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;对于所有 &lt;code&gt;i + 2 &amp;lt;=</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-92</title>
-    <link href="http://nichunen.github.io/2023/07/10/offer2-92/"/>
-    <id>http://nichunen.github.io/2023/07/10/offer2-92/</id>
-    <published>2023-07-10T02:48:31.000Z</published>
-    <updated>2023-07-11T03:09:25.841Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;如果一个由 &lt;code&gt;&#39;0&#39;&lt;/code&gt; 和 &lt;code&gt;&#39;1&#39;&lt;/code&gt; 组成的字符串，是以一些 &lt;code&gt;&#39;0&#39;&lt;/code&gt;（可能没有 &lt;code&gt;&#39;0&#39;&lt;/code&gt;）后面跟着一些 &lt;code&gt;&#39;1&#39;&lt;/code&gt;（也可能没有</summary>
         
       
     
