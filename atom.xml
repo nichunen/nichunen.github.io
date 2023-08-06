@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-03T03:21:11.127Z</updated>
+  <updated>2023-08-06T15:14:26.537Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-1-9</title>
+    <link href="http://nichunen.github.io/2023/08/06/gold-1-9/"/>
+    <id>http://nichunen.github.io/2023/08/06/gold-1-9/</id>
+    <published>2023-08-06T14:17:41.000Z</published>
+    <updated>2023-08-06T15:14:26.537Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;字符串轮转。给定两个字符串&lt;code&gt;s1&lt;/code&gt;和&lt;code&gt;s2&lt;/code&gt;，请编写代码检查&lt;code&gt;s2&lt;/code&gt;是否为&lt;code&gt;s1&lt;/code&gt;旋转而成（比如，&lt;code&gt;waterbottle&lt;/code&gt;是&lt;code&gt;erbottlewat&lt;/</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-1-8</title>
@@ -512,33 +537,6 @@
     
     
     <category term="SQL" scheme="http://nichunen.github.io/tags/SQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-94</title>
-    <link href="http://nichunen.github.io/2023/07/12/offer2-94/"/>
-    <id>http://nichunen.github.io/2023/07/12/offer2-94/</id>
-    <published>2023-07-12T03:28:06.000Z</published>
-    <updated>2023-07-12T07:16:01.975Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt;，请将 &lt;code&gt;s&lt;/code&gt; 分割成一些子串，使每个子串都是回文串。&lt;/p&gt;
-&lt;p&gt;返回符合要求的 &lt;strong&gt;最少分割次数&lt;/strong&gt; 。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
