@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-08T11:04:23.529Z</updated>
+  <updated>2023-08-09T03:37:58.928Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-2-3</title>
+    <link href="http://nichunen.github.io/2023/08/09/gold-2-3/"/>
+    <id>http://nichunen.github.io/2023/08/09/gold-2-3/</id>
+    <published>2023-08-09T02:59:53.000Z</published>
+    <updated>2023-08-09T03:37:58.928Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;若链表中的某个节点，既不是链表头节点，也不是链表尾节点，则称其为该链表的「中间节点」。&lt;/p&gt;
+&lt;p&gt;假定已知链表的某一个中间节点，请实现一种算法，将该节点从链表中删除。&lt;/p&gt;
+&lt;p&gt;例如，传入节点 &lt;code&gt;c&lt;/code&gt;（位于单向链表</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-2-2</title>
@@ -506,31 +533,6 @@
         
     <summary type="html">&lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt; 和一个字符串 &lt;code&gt;t&lt;/code&gt; ，计算在 &lt;code&gt;s&lt;/code&gt; 的子序列中 &lt;code&gt;t&lt;/code&gt; 出现的个数。&lt;/p&gt;
 &lt;p&gt;字符串的一个 &lt;strong&gt;子序列&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-96</title>
-    <link href="http://nichunen.github.io/2023/07/16/offer2-96/"/>
-    <id>http://nichunen.github.io/2023/07/16/offer2-96/</id>
-    <published>2023-07-16T03:25:08.000Z</published>
-    <updated>2023-07-16T06:24:00.783Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定三个字符串 &lt;code&gt;s1&lt;/code&gt;、&lt;code&gt;s2&lt;/code&gt;、&lt;code&gt;s3&lt;/code&gt;，请判断 &lt;code&gt;s3&lt;/code&gt; 能不能由 &lt;code&gt;s1&lt;/code&gt; 和 &lt;code&gt;s2&lt;/code&gt;</summary>
         
       
     
