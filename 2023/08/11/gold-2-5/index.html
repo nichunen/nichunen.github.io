@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="gold-2-4, 倪春恩的博客">
+    <meta name="keywords" content="gold-2-5, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>gold-2-4 | 倪春恩的博客</title>
+    <title>gold-2-5 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">gold-2-4</h1>
+                    <h1 class="description center-align post-title">gold-2-5</h1>
                 </div>
             </div>
         </div>
@@ -365,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-08-10
+                    2023-08-11
                 </div>
                 
 
@@ -389,25 +389,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>给你一个链表的头节点 <code>head</code> 和一个特定值 <code>x</code> ，请你对链表进行分隔，使得所有 <strong>小于</strong> <code>x</code> 的节点都出现在 <strong>大于或等于</strong> <code>x</code> 的节点之前。</p>
-<p>你不需要 <strong>保留</strong> 每个分区中各节点的初始相对位置。</p>
-<p><strong>示例 1：</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2021/01/04/partition.jpg" alt="img"></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：head = [1,4,3,2,5,2], x = 3
-输出：[1,2,2,4,3,5]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+                <p>给定两个用链表表示的整数，每个节点包含一个数位。</p>
+<p>这些数位是反向存放的，也就是个位排在链表首部。</p>
+<p>编写函数对这两个整数求和，并用链表形式返回结果。</p>
+<p><strong>示例：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">输入：(7 -&gt; 1 -&gt; 6) + (5 -&gt; 9 -&gt; 2)，即617 + 295
+输出：2 -&gt; 1 -&gt; 9，即912<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p><strong>示例 2：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：head = [2,1], x = 2
-输出：[1,2]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>进阶：</strong>思考一下，假设这些数位是正向存放的，又该如何解决呢?</p>
+<p><strong>示例：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">输入：(6 -&gt; 1 -&gt; 7) + (2 -&gt; 9 -&gt; 5)，即617 + 295
+输出：9 -&gt; 1 -&gt; 2，即912<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-
-
-<p><strong>提示：</strong></p>
-<ul>
-<li>链表中节点的数目在范围 <code>[0, 200]</code> 内</li>
-<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
-<li><code>-200 &lt;= x &lt;= 200</code></li>
-</ul>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java">
 <span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span>
 <span class="token comment">/**
@@ -419,49 +412,70 @@
  * }
  */</span>
 <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token class-name">ListNode</span> <span class="token function">partition</span><span class="token punctuation">(</span><span class="token class-name">ListNode</span> head<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">ListNode</span> small <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-        <span class="token class-name">ListNode</span> big <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-        <span class="token class-name">ListNode</span> temp <span class="token operator">=</span> head<span class="token punctuation">;</span>
-        <span class="token class-name">ListNode</span> firstBig <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-        <span class="token class-name">ListNode</span> firstSmall <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token class-name">ListNode</span> <span class="token function">addTwoNumbers</span><span class="token punctuation">(</span><span class="token class-name">ListNode</span> l1<span class="token punctuation">,</span> <span class="token class-name">ListNode</span> l2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>l1 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> l2<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>l2 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> l1<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
 
+        <span class="token keyword">int</span> l1Len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> l2Len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token class-name">ListNode</span> temp <span class="token operator">=</span> l1<span class="token punctuation">;</span>
         <span class="token keyword">while</span> <span class="token punctuation">(</span>temp <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>temp<span class="token punctuation">.</span>val <span class="token operator">&lt;</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>small <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    small <span class="token operator">=</span> temp<span class="token punctuation">;</span>
-                    firstSmall <span class="token operator">=</span> temp<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                    small<span class="token punctuation">.</span>next <span class="token operator">=</span> temp<span class="token punctuation">;</span>
-                    small <span class="token operator">=</span> temp<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>big <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    big <span class="token operator">=</span> temp<span class="token punctuation">;</span>
-                    firstBig <span class="token operator">=</span> temp<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                    big<span class="token punctuation">.</span>next <span class="token operator">=</span> temp<span class="token punctuation">;</span>
-                    big <span class="token operator">=</span> temp<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span>
+            l1Len<span class="token operator">++</span><span class="token punctuation">;</span>
+            temp <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        temp <span class="token operator">=</span> l2<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>temp <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            l2Len<span class="token operator">++</span><span class="token punctuation">;</span>
             temp <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>small <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            small<span class="token punctuation">.</span>next <span class="token operator">=</span> firstBig<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>big <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            big<span class="token punctuation">.</span>next <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> carry <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token class-name">ListNode</span> l <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token class-name">ListNode</span> otherL <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token class-name">ListNode</span> head <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>l1Len <span class="token operator">&gt;</span> l2Len<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            len <span class="token operator">=</span> l1Len<span class="token punctuation">;</span>
+            l <span class="token operator">=</span> l1<span class="token punctuation">;</span>
+            otherL <span class="token operator">=</span> l2<span class="token punctuation">;</span>
+            head <span class="token operator">=</span> l1<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            len <span class="token operator">=</span> l2Len<span class="token punctuation">;</span>
+            l <span class="token operator">=</span> l2<span class="token punctuation">;</span>
+            otherL <span class="token operator">=</span> l1<span class="token punctuation">;</span>
+            head <span class="token operator">=</span> l2<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>firstSmall <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> firstSmall<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> firstBig<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>otherL <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                l<span class="token punctuation">.</span>val <span class="token operator">+=</span> otherL<span class="token punctuation">.</span>val<span class="token punctuation">;</span>
+                otherL <span class="token operator">=</span> otherL<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            l<span class="token punctuation">.</span>val <span class="token operator">+=</span> carry<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>l<span class="token punctuation">.</span>val <span class="token operator">&gt;</span> <span class="token number">9</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                l<span class="token punctuation">.</span>val <span class="token operator">-=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+                carry <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                carry <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> len <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> carry <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token class-name">ListNode</span> last <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                last<span class="token punctuation">.</span>val <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                l<span class="token punctuation">.</span>next <span class="token operator">=</span> last<span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            l <span class="token operator">=</span> l<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> head<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -488,7 +502,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nichunen.github.io/2023/08/10/gold-2-4/">http://nichunen.github.io/2023/08/10/gold-2-4/</a>
+                    <a href="http://nichunen.github.io/2023/08/11/gold-2-5/">http://nichunen.github.io/2023/08/11/gold-2-5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -697,9 +711,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/08/11/gold-2-5/">
                     <div class="card-image">
@@ -717,9 +732,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -732,6 +747,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -750,13 +766,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/08/09/gold-2-3/">
+                <a href="/2023/08/10/gold-2-4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="gold-2-3">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="gold-2-4">
                         
-                        <span class="card-title">gold-2-3</span>
+                        <span class="card-title">gold-2-4</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -767,7 +783,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-10
                             </span>
                         <span class="publish-author">
                             

@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-10T03:40:55.062Z</updated>
+  <updated>2023-08-11T07:41:49.986Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-2-5</title>
+    <link href="http://nichunen.github.io/2023/08/11/gold-2-5/"/>
+    <id>http://nichunen.github.io/2023/08/11/gold-2-5/</id>
+    <published>2023-08-11T06:26:53.000Z</published>
+    <updated>2023-08-11T07:41:49.986Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个用链表表示的整数，每个节点包含一个数位。&lt;/p&gt;
+&lt;p&gt;这些数位是反向存放的，也就是个位排在链表首部。&lt;/p&gt;
+&lt;p&gt;编写函数对这两个整数求和，并用链表形式返回结果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-2-4</title>
@@ -506,32 +535,6 @@
         
         
     <summary type="html">&lt;p&gt;给定一个包含非负整数的 &lt;code&gt;*m* x *n*&lt;/code&gt; 网格 &lt;code&gt;grid&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-98</title>
-    <link href="http://nichunen.github.io/2023/07/18/offer2-98/"/>
-    <id>http://nichunen.github.io/2023/07/18/offer2-98/</id>
-    <published>2023-07-18T07:58:00.000Z</published>
-    <updated>2023-07-18T09:52:08.621Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;一个机器人位于一个 &lt;code&gt;m x n&lt;/code&gt; 网格的左上角 （起始点在下图中标记为 “Start” ）。&lt;/p&gt;
-&lt;p&gt;机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为 “Finish”</summary>
         
       
     
