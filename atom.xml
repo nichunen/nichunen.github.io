@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-11T07:41:49.986Z</updated>
+  <updated>2023-08-13T06:24:08.895Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-2-6</title>
+    <link href="http://nichunen.github.io/2023/08/13/gold-2-6/"/>
+    <id>http://nichunen.github.io/2023/08/13/gold-2-6/</id>
+    <published>2023-08-13T06:07:25.000Z</published>
+    <updated>2023-08-13T06:24:08.895Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;编写一个函数，检查输入的链表是否是回文的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;输入：</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-2-5</title>
@@ -510,31 +537,6 @@
         
     <summary type="html">&lt;p&gt;给定一个三角形 &lt;code&gt;triangle&lt;/code&gt; ，找出自顶向下的最小路径和。&lt;/p&gt;
 &lt;p&gt;每一步只能移动到下一行中相邻的结点上。&lt;strong&gt;相邻的结点&lt;/strong&gt; 在这里指的是 &lt;strong&gt;下标&lt;/strong&gt; 与</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-99</title>
-    <link href="http://nichunen.github.io/2023/07/19/offer2-99/"/>
-    <id>http://nichunen.github.io/2023/07/19/offer2-99/</id>
-    <published>2023-07-19T07:52:28.000Z</published>
-    <updated>2023-07-19T08:04:58.238Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个包含非负整数的 &lt;code&gt;*m* x *n*&lt;/code&gt; 网格 &lt;code&gt;grid&lt;/code&gt;</summary>
         
       
     
