@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-13T06:24:08.895Z</updated>
+  <updated>2023-08-14T03:17:08.880Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-2-7</title>
+    <link href="http://nichunen.github.io/2023/08/14/gold-2-7/"/>
+    <id>http://nichunen.github.io/2023/08/14/gold-2-7/</id>
+    <published>2023-08-14T03:03:18.000Z</published>
+    <updated>2023-08-14T03:17:08.880Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你两个单链表的头节点 &lt;code&gt;headA&lt;/code&gt; 和 &lt;code&gt;headB&lt;/code&gt; ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 &lt;code&gt;null&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;图示两个链表在节点</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-2-6</title>
@@ -511,32 +537,6 @@
     <summary type="html">&lt;p&gt;给定一个非空的正整数数组 &lt;code&gt;nums&lt;/code&gt; ，请判断能否将这些数字分成元素和相等的两部分。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-100</title>
-    <link href="http://nichunen.github.io/2023/07/20/offer2-100/"/>
-    <id>http://nichunen.github.io/2023/07/20/offer2-100/</id>
-    <published>2023-07-20T03:26:29.000Z</published>
-    <updated>2023-07-20T05:18:35.844Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个三角形 &lt;code&gt;triangle&lt;/code&gt; ，找出自顶向下的最小路径和。&lt;/p&gt;
-&lt;p&gt;每一步只能移动到下一行中相邻的结点上。&lt;strong&gt;相邻的结点&lt;/strong&gt; 在这里指的是 &lt;strong&gt;下标&lt;/strong&gt; 与</summary>
         
       
     
