@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-14T03:17:08.880Z</updated>
+  <updated>2023-08-16T03:36:18.014Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-2-8</title>
+    <link href="http://nichunen.github.io/2023/08/15/gold-2-8/"/>
+    <id>http://nichunen.github.io/2023/08/15/gold-2-8/</id>
+    <published>2023-08-15T11:11:38.000Z</published>
+    <updated>2023-08-16T03:36:18.014Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个链表，如果它是有环链表，实现一个算法返回环路的&lt;code&gt;开头节点&lt;/code&gt;。若环不存在，请返回 &lt;code&gt;null&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;如果链表中有某个节点，可以通过连续跟踪 &lt;code&gt;next&lt;/code&gt; 指针再次到达，则链表中存在环。</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-2-7</title>
@@ -510,33 +536,6 @@
         
     <summary type="html">&lt;p&gt;给定一个正整数数组 &lt;code&gt;nums&lt;/code&gt; 和一个整数 &lt;code&gt;target&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;向数组中的每个整数前添加 &lt;code&gt;&#39;+&#39;&lt;/code&gt; 或 &lt;code&gt;&#39;-&#39;&lt;/code&gt; ，然后串联起所有整数，可以构造一个</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-101</title>
-    <link href="http://nichunen.github.io/2023/07/21/offer2-101/"/>
-    <id>http://nichunen.github.io/2023/07/21/offer2-101/</id>
-    <published>2023-07-21T03:22:18.000Z</published>
-    <updated>2023-07-21T05:35:43.098Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个非空的正整数数组 &lt;code&gt;nums&lt;/code&gt; ，请判断能否将这些数字分成元素和相等的两部分。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
