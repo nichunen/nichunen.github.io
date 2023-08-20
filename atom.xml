@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-18T09:14:16.997Z</updated>
+  <updated>2023-08-20T11:10:15.703Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-3-3</title>
+    <link href="http://nichunen.github.io/2023/08/20/gold-3-3/"/>
+    <id>http://nichunen.github.io/2023/08/20/gold-3-3/</id>
+    <published>2023-08-20T03:05:43.000Z</published>
+    <updated>2023-08-20T11:10:15.703Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;堆盘子。设想有一堆盘子，堆太高可能会倒下来。因此，在现实生活中，盘子堆到一定高度时，我们就会另外堆一堆盘子。请实现数据结构&lt;code&gt;SetOfStacks&lt;/code&gt;，模拟这种行为。&lt;code&gt;SetOfStacks&lt;/code&gt;应该由多个栈组成，并且在前一个栈填满时新</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-3-2</title>
@@ -513,31 +538,6 @@
     <summary type="html">&lt;p&gt;实现一个算法，确定一个字符串 &lt;code&gt;s&lt;/code&gt; 的所有字符是否全都不同。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>offer2-104</title>
-    <link href="http://nichunen.github.io/2023/07/25/offer2-104/"/>
-    <id>http://nichunen.github.io/2023/07/25/offer2-104/</id>
-    <published>2023-07-25T02:43:11.000Z</published>
-    <updated>2023-07-25T03:17:40.323Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个由 &lt;strong&gt;不同&lt;/strong&gt; 正整数组成的数组 &lt;code&gt;nums&lt;/code&gt; ，和一个目标整数 &lt;code&gt;target&lt;/code&gt; 。请从 &lt;code&gt;nums&lt;/code&gt; 中找出并返回总和为 &lt;code&gt;target&lt;/code&gt;</summary>
         
       
     
