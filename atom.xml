@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-22T08:47:20.148Z</updated>
+  <updated>2023-08-23T05:24:16.954Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-2-6</title>
+    <link href="http://nichunen.github.io/2023/08/23/gold-3-6/"/>
+    <id>http://nichunen.github.io/2023/08/23/gold-3-6/</id>
+    <published>2023-08-23T05:21:24.000Z</published>
+    <updated>2023-08-23T05:24:16.954Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;动物收容所。有家动物收容所只收容狗与猫，且严格遵守“先进先出”的原则。在收养该收容所的动物时，收养人只能收养所有动物中“最老”（由其进入收容所的时间长短而定）的动物，或者可以挑选猫或狗（同时必须收养此类动物中“最老”的）。换言之，收养人不能自由挑选想收养的对象。请创建适用于</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-3-5</title>
@@ -510,32 +535,6 @@
 &lt;p&gt;回文串不一定是字典当中的单词。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-1-3</title>
-    <link href="http://nichunen.github.io/2023/07/28/gold-1-3/"/>
-    <id>http://nichunen.github.io/2023/07/28/gold-1-3/</id>
-    <published>2023-07-28T05:28:59.000Z</published>
-    <updated>2023-07-28T05:37:12.397Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;URL化。编写一种方法，将字符串中的空格全部替换为&lt;code&gt;%20&lt;/code&gt;。假定该字符串尾部有足够的空间存放新增字符，并且知道字符串的“真实”长度。（注：用&lt;code&gt;Java&lt;/code&gt;实现的话，请使用字符数组实现，以便直接在数组上操作。）&lt;/p&gt;
-&lt;p&gt;&lt;st</summary>
         
       
     
