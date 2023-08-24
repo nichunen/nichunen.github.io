@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-23T05:24:16.954Z</updated>
+  <updated>2023-08-24T08:26:19.430Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-4-1</title>
+    <link href="http://nichunen.github.io/2023/08/24/gold-4-1/"/>
+    <id>http://nichunen.github.io/2023/08/24/gold-4-1/</id>
+    <published>2023-08-24T06:50:27.000Z</published>
+    <updated>2023-08-24T08:26:19.430Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;节点间通路。给定有向图，设计一个算法，找出两个节点之间是否存在一条路径。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-2-6</title>
@@ -506,35 +533,6 @@
     <summary type="html">&lt;p&gt;字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-1-4</title>
-    <link href="http://nichunen.github.io/2023/07/30/gold-1-4/"/>
-    <id>http://nichunen.github.io/2023/07/30/gold-1-4/</id>
-    <published>2023-07-30T06:22:00.000Z</published>
-    <updated>2023-07-30T06:47:09.514Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个字符串，编写一个函数判定其是否为某个回文串的排列之一。&lt;/p&gt;
-&lt;p&gt;回文串是指正反两个方向都一样的单词或短语。排列是指字母的重新排列。&lt;/p&gt;
-&lt;p&gt;回文串不一定是字典当中的单词。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
