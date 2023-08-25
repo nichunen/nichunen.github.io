@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-24T08:26:19.430Z</updated>
+  <updated>2023-08-25T06:08:42.885Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-4-2</title>
+    <link href="http://nichunen.github.io/2023/08/25/gold-4-2/"/>
+    <id>http://nichunen.github.io/2023/08/25/gold-4-2/</id>
+    <published>2023-08-25T03:36:22.000Z</published>
+    <updated>2023-08-25T06:08:42.885Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个有序整数数组，元素各不相同且按升序排列，编写一个算法，创建一棵高度最小的二叉搜索树。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-4-1</title>
@@ -506,33 +533,6 @@
         
         
     <summary type="html">&lt;p&gt;字符串压缩。利用字符重复出现的次数，编写一种方法，实现基本的字符串压缩功能。比如，字符串&lt;code&gt;aabcccccaaa&lt;/code&gt;会变为&lt;code&gt;a2b1c5a3&lt;/code&gt;。若“压缩”后的字符串没有变短，则返回原先的字符串。你可以假设字符串中只包含大小写英文字母</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-1-5</title>
-    <link href="http://nichunen.github.io/2023/07/31/gold-1-5/"/>
-    <id>http://nichunen.github.io/2023/07/31/gold-1-5/</id>
-    <published>2023-07-31T02:58:49.000Z</published>
-    <updated>2023-07-31T03:32:48.681Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
         
       
     
