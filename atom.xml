@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-27T05:46:55.404Z</updated>
+  <updated>2023-08-28T03:55:26.631Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-4-4</title>
+    <link href="http://nichunen.github.io/2023/08/28/gold-4-4/"/>
+    <id>http://nichunen.github.io/2023/08/28/gold-4-4/</id>
+    <published>2023-08-28T03:12:42.000Z</published>
+    <updated>2023-08-28T03:55:26.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;实现一个函数，检查二叉树是否平衡。在这个问题中，平衡树的定义如下：任意一个节点，其两棵子树的高度差不超过 1。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-4-3</title>
@@ -505,34 +532,6 @@
     <summary type="html">&lt;p&gt;编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-1-7</title>
-    <link href="http://nichunen.github.io/2023/08/02/gold-1-7/"/>
-    <id>http://nichunen.github.io/2023/08/02/gold-1-7/</id>
-    <published>2023-08-02T06:06:36.000Z</published>
-    <updated>2023-08-02T06:26:04.025Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一幅由 &lt;code&gt;N × N&lt;/code&gt; 矩阵表示的图像，其中每个像素的大小为 4 字节。请你设计一种算法，将图像旋转 90 度。&lt;/p&gt;
-&lt;p&gt;不占用额外内存空间能否做到？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
