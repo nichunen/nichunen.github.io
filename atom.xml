@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-30T07:20:55.861Z</updated>
+  <updated>2023-08-31T03:55:47.097Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-4-8</title>
+    <link href="http://nichunen.github.io/2023/08/31/gold-4-8/"/>
+    <id>http://nichunen.github.io/2023/08/31/gold-4-8/</id>
+    <published>2023-08-31T03:03:51.000Z</published>
+    <updated>2023-08-31T03:55:47.097Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;设计并实现一个算法，找出二叉树中某两个节点的第一个共同祖先。不得将其他的节点存储在另外的数据结构中。注意：这不一定是二叉搜索树。&lt;/p&gt;
+&lt;p&gt;例如，给定如下二叉树: root = [3,5,1,6,2,0,8,null,null,7,4]&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-4-6</title>
@@ -510,33 +537,6 @@
 &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;本题相对原题稍作改动&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-2-1</title>
-    <link href="http://nichunen.github.io/2023/08/07/gold-2-1/"/>
-    <id>http://nichunen.github.io/2023/08/07/gold-2-1/</id>
-    <published>2023-08-07T03:01:57.000Z</published>
-    <updated>2023-08-07T03:14:46.326Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
