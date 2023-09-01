@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-08-31T03:55:47.097Z</updated>
+  <updated>2023-09-01T06:00:09.563Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-4-9</title>
+    <link href="http://nichunen.github.io/2023/09/01/gold-4-9/"/>
+    <id>http://nichunen.github.io/2023/09/01/gold-4-9/</id>
+    <published>2023-09-01T05:45:03.000Z</published>
+    <updated>2023-09-01T06:00:09.563Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;从左向右遍历一个数组，通过不断将其中的元素插入树中可以逐步地生成一棵二叉搜索树。&lt;/p&gt;
+&lt;p&gt;给定一个由&lt;strong&gt;不同节点&lt;/strong&gt;组成的二叉搜索树 &lt;code&gt;root&lt;/code&gt;，输出所有可能生成此树的数组。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-4-8</title>
@@ -509,34 +536,6 @@
     <summary type="html">&lt;p&gt;若链表中的某个节点，既不是链表头节点，也不是链表尾节点，则称其为该链表的「中间节点」。&lt;/p&gt;
 &lt;p&gt;假定已知链表的某一个中间节点，请实现一种算法，将该节点从链表中删除。&lt;/p&gt;
 &lt;p&gt;例如，传入节点 &lt;code&gt;c&lt;/code&gt;（位于单向链表</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-2-2</title>
-    <link href="http://nichunen.github.io/2023/08/08/gold-2-2/"/>
-    <id>http://nichunen.github.io/2023/08/08/gold-2-2/</id>
-    <published>2023-08-08T03:17:12.000Z</published>
-    <updated>2023-08-08T11:04:23.529Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;本题相对原题稍作改动&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
         
       
     
