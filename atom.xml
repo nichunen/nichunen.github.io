@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-09-01T06:00:09.563Z</updated>
+  <updated>2023-09-03T03:48:37.445Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-4-10</title>
+    <link href="http://nichunen.github.io/2023/09/03/gold-4-10/"/>
+    <id>http://nichunen.github.io/2023/09/03/gold-4-10/</id>
+    <published>2023-09-03T02:52:18.000Z</published>
+    <updated>2023-09-03T03:48:37.445Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;检查子树。你有两棵非常大的二叉树：T1，有几万个节点；T2，有几万个节点。设计一个算法，判断 T2 是否为 T1 的子树。&lt;/p&gt;
+&lt;p&gt;如果 T1 有这么一个节点 n，其子树与 T2 一模一样，则 T2 为 T1 的子树，也就是说，从节点 n 处把树砍断，得到的树与</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-4-9</title>
@@ -509,33 +535,6 @@
         
         
     <summary type="html">&lt;p&gt;给你一个链表的头节点 &lt;code&gt;head&lt;/code&gt; 和一个特定值 &lt;code&gt;x&lt;/code&gt; ，请你对链表进行分隔，使得所有 &lt;strong&gt;小于&lt;/strong&gt; &lt;code&gt;x&lt;/code&gt; 的节点都出现在 &lt;strong&gt;大于或等于&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-2-3</title>
-    <link href="http://nichunen.github.io/2023/08/09/gold-2-3/"/>
-    <id>http://nichunen.github.io/2023/08/09/gold-2-3/</id>
-    <published>2023-08-09T02:59:53.000Z</published>
-    <updated>2023-08-09T03:37:58.928Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;若链表中的某个节点，既不是链表头节点，也不是链表尾节点，则称其为该链表的「中间节点」。&lt;/p&gt;
-&lt;p&gt;假定已知链表的某一个中间节点，请实现一种算法，将该节点从链表中删除。&lt;/p&gt;
-&lt;p&gt;例如，传入节点 &lt;code&gt;c&lt;/code&gt;（位于单向链表</summary>
         
       
     
