@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-09-04T09:18:57.066Z</updated>
+  <updated>2023-09-05T14:31:50.367Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-5-1</title>
+    <link href="http://nichunen.github.io/2023/09/05/gold-5-1/"/>
+    <id>http://nichunen.github.io/2023/09/05/gold-5-1/</id>
+    <published>2023-09-05T13:18:32.000Z</published>
+    <updated>2023-09-05T14:31:50.367Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个整型数字 &lt;code&gt;N&lt;/code&gt; 与 &lt;code&gt;M&lt;/code&gt;，以及表示比特位置的 &lt;code&gt;i&lt;/code&gt; 与 &lt;code&gt;j&lt;/code&gt;（&lt;code&gt;i &amp;lt;= j&lt;/code&gt;，且从 0 位开始计算）。&lt;/p&gt;
+&lt;p&gt;编写一种方法，使</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-4-12</title>
@@ -507,35 +533,6 @@
     <summary type="html">&lt;p&gt;编写一个函数，检查输入的链表是否是回文的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;输入：</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-2-5</title>
-    <link href="http://nichunen.github.io/2023/08/11/gold-2-5/"/>
-    <id>http://nichunen.github.io/2023/08/11/gold-2-5/</id>
-    <published>2023-08-11T06:26:53.000Z</published>
-    <updated>2023-08-11T07:41:49.986Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定两个用链表表示的整数，每个节点包含一个数位。&lt;/p&gt;
-&lt;p&gt;这些数位是反向存放的，也就是个位排在链表首部。&lt;/p&gt;
-&lt;p&gt;编写函数对这两个整数求和，并用链表形式返回结果。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
