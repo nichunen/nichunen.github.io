@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-09-05T14:31:50.367Z</updated>
+  <updated>2023-09-08T04:41:52.256Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-5-2</title>
+    <link href="http://nichunen.github.io/2023/09/08/gold-5-2/"/>
+    <id>http://nichunen.github.io/2023/09/08/gold-5-2/</id>
+    <published>2023-09-08T03:30:15.000Z</published>
+    <updated>2023-09-08T04:41:52.256Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;二进制数转字符串。给定一个介于0和1之间的实数（如0.72），类型为double，打印它的二进制表达式。如果该数字无法精确地用32位以内的二进制表示，则打印“ERROR”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-5-1</title>
@@ -506,33 +533,6 @@
         
     <summary type="html">&lt;p&gt;给你两个单链表的头节点 &lt;code&gt;headA&lt;/code&gt; 和 &lt;code&gt;headB&lt;/code&gt; ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 &lt;code&gt;null&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;图示两个链表在节点</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-2-6</title>
-    <link href="http://nichunen.github.io/2023/08/13/gold-2-6/"/>
-    <id>http://nichunen.github.io/2023/08/13/gold-2-6/</id>
-    <published>2023-08-13T06:07:25.000Z</published>
-    <updated>2023-08-13T06:24:08.895Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;编写一个函数，检查输入的链表是否是回文的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;输入：</summary>
         
       
     
