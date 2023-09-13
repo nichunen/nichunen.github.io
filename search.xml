@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>gold-5-7</title>
+      <link href="/2023/09/13/gold-5-7/"/>
+      <url>/2023/09/13/gold-5-7/</url>
+      
+        <content type="html"><![CDATA[<p>配对交换。编写程序，交换某个整数的奇数位和偶数位，尽量使用较少的指令（也就是说，位0与位1交换，位2与位3交换，以此类推）。</p><p><strong>示例1:</strong></p><pre class="line-numbers language-none"><code class="language-none">输入：num = 2（或者0b10）输出 1 (或者 0b01)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>示例2:</strong></p><pre class="line-numbers language-none"><code class="language-none">输入：num = 3输出：3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>提示:</strong></p><ol><li><code>num</code>的范围在[0, 2^30 - 1]之间，不会发生整数溢出。</li></ol><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">exchangeBits</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span> odd <span class="token operator">=</span> <span class="token number">0x55555555</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> even <span class="token operator">=</span> <span class="token number">0xAAAAAAAA</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>num <span class="token operator">&amp;</span> odd<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>num <span class="token operator">&amp;</span> even<span class="token punctuation">)</span> <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gold-5-6</title>
       <link href="/2023/09/12/gold-5-6/"/>
       <url>/2023/09/12/gold-5-6/</url>
