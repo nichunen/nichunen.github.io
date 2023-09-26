@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-09-21T14:47:43.024Z</updated>
+  <updated>2023-09-26T11:38:50.489Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-8-3</title>
+    <link href="http://nichunen.github.io/2023/09/26/gold-8-3/"/>
+    <id>http://nichunen.github.io/2023/09/26/gold-8-3/</id>
+    <published>2023-09-26T11:10:58.000Z</published>
+    <updated>2023-09-26T11:38:50.489Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;魔术索引。 在数组&lt;code&gt;A[0...n-1]&lt;/code&gt;中，有所谓的魔术索引，满足条件&lt;code&gt;A[i] =</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-8-2</title>
@@ -512,31 +537,6 @@
         
         
     <summary type="html">&lt;p&gt;动物收容所。有家动物收容所只收容狗与猫，且严格遵守“先进先出”的原则。在收养该收容所的动物时，收养人只能收养所有动物中“最老”（由其进入收容所的时间长短而定）的动物，或者可以挑选猫或狗（同时必须收养此类动物中“最老”的）。换言之，收养人不能自由挑选想收养的对象。请创建适用于</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-3-5</title>
-    <link href="http://nichunen.github.io/2023/08/22/gold-3-5/"/>
-    <id>http://nichunen.github.io/2023/08/22/gold-3-5/</id>
-    <published>2023-08-22T07:37:18.000Z</published>
-    <updated>2023-08-22T08:47:20.148Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;栈排序。 编写程序，对栈进行排序使最小元素位于栈顶。最多只能使用一个其他的临时栈存放数据，但不得将元素复制到别的数据结构（如数组）中。该栈支持如下操作：&lt;code&gt;push&lt;/code&gt;、&lt;code&gt;pop&lt;/code&gt;、&lt;code&gt;peek&lt;/code&gt; 和</summary>
         
       
     
