@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-09-26T11:38:50.489Z</updated>
+  <updated>2023-09-27T08:19:44.397Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-8-4</title>
+    <link href="http://nichunen.github.io/2023/09/27/gold-8-4/"/>
+    <id>http://nichunen.github.io/2023/09/27/gold-8-4/</id>
+    <published>2023-09-27T03:40:01.000Z</published>
+    <updated>2023-09-27T08:19:44.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;幂集。编写一种方法，返回某集合的所有子集。集合中&lt;strong&gt;不包含重复的元素&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;说明：解集不能包含重复的子集。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-8-3</title>
@@ -512,31 +540,6 @@
     <summary type="html">&lt;p&gt;节点间通路。给定有向图，设计一个算法，找出两个节点之间是否存在一条路径。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-2-6</title>
-    <link href="http://nichunen.github.io/2023/08/23/gold-3-6/"/>
-    <id>http://nichunen.github.io/2023/08/23/gold-3-6/</id>
-    <published>2023-08-23T05:21:24.000Z</published>
-    <updated>2023-08-23T05:24:16.954Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;动物收容所。有家动物收容所只收容狗与猫，且严格遵守“先进先出”的原则。在收养该收容所的动物时，收养人只能收养所有动物中“最老”（由其进入收容所的时间长短而定）的动物，或者可以挑选猫或狗（同时必须收养此类动物中“最老”的）。换言之，收养人不能自由挑选想收养的对象。请创建适用于</summary>
         
       
     
