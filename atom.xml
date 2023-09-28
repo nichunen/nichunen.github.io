@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-09-27T08:19:44.397Z</updated>
+  <updated>2023-09-28T04:59:21.892Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-8-5</title>
+    <link href="http://nichunen.github.io/2023/09/28/gold-8-5/"/>
+    <id>http://nichunen.github.io/2023/09/28/gold-8-5/</id>
+    <published>2023-09-28T04:56:49.000Z</published>
+    <updated>2023-09-28T04:59:21.892Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;递归乘法。 写一个递归函数，不使用 * 运算符， 实现两个正整数的相乘。可以使用加号、减号、位移，但要吝啬一些。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-8-4</title>
@@ -512,33 +539,6 @@
         
     <summary type="html">&lt;p&gt;给定一个有序整数数组，元素各不相同且按升序排列，编写一个算法，创建一棵高度最小的二叉搜索树。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-4-1</title>
-    <link href="http://nichunen.github.io/2023/08/24/gold-4-1/"/>
-    <id>http://nichunen.github.io/2023/08/24/gold-4-1/</id>
-    <published>2023-08-24T06:50:27.000Z</published>
-    <updated>2023-08-24T08:26:19.430Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;节点间通路。给定有向图，设计一个算法，找出两个节点之间是否存在一条路径。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
