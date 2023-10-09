@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-10-08T03:18:23.060Z</updated>
+  <updated>2023-10-09T08:51:01.023Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-8-10</title>
+    <link href="http://nichunen.github.io/2023/10/09/gold-8-10/"/>
+    <id>http://nichunen.github.io/2023/10/09/gold-8-10/</id>
+    <published>2023-10-09T05:34:27.000Z</published>
+    <updated>2023-10-09T08:51:01.023Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;编写函数，实现许多图片编辑软件都支持的「颜色填充」功能。&lt;/p&gt;
+&lt;p&gt;待填充的图像用二维数组 &lt;code&gt;image&lt;/code&gt; 表示，元素为初始颜色值。初始坐标点的行坐标为 &lt;code&gt;sr&lt;/code&gt; 列坐标为 &lt;code&gt;sc&lt;/code&gt;。需要填充的新颜色为</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-8-9</title>
@@ -510,34 +536,6 @@
         
     <summary type="html">&lt;p&gt;设计并实现一个算法，找出二叉树中某两个节点的第一个共同祖先。不得将其他的节点存储在另外的数据结构中。注意：这不一定是二叉搜索树。&lt;/p&gt;
 &lt;p&gt;例如，给定如下二叉树: root = [3,5,1,6,2,0,8,null,null,7,4]&lt;/p&gt;
-&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-4-6</title>
-    <link href="http://nichunen.github.io/2023/08/30/gold-4-6/"/>
-    <id>http://nichunen.github.io/2023/08/30/gold-4-6/</id>
-    <published>2023-08-30T03:54:27.000Z</published>
-    <updated>2023-08-30T07:20:55.861Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设计一个算法，找出二叉搜索树中指定节点的“下一个”节点（也即中序后继）。&lt;/p&gt;
-&lt;p&gt;如果指定节点没有对应的“下一个”节点，则返回&lt;code&gt;null&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
         
       
