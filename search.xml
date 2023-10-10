@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>gold-8-11</title>
+      <link href="/2023/10/10/gold-8-11/"/>
+      <url>/2023/10/10/gold-8-11/</url>
+      
+        <content type="html"><![CDATA[<p>硬币。给定数量不限的硬币，币值为25分、10分、5分和1分，编写代码计算n分有几种表示法。(结果可能会很大，你需要将结果模上1000000007)</p><p><strong>示例1:</strong></p><pre class="line-numbers language-none"><code class="language-none"> 输入: n = 5 输出：2 解释: 有两种方式可以凑成总金额:5=55=1+1+1+1+1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>示例2:</strong></p><pre class="line-numbers language-none"><code class="language-none"> 输入: n = 10 输出：4 解释: 有四种方式可以凑成总金额:10=1010=5+510=5+1+1+1+1+110=1+1+1+1+1+1+1+1+1+1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>说明：</strong></p><p>注意:</p><p>你可以假设：</p><ul><li>0 &lt;= n (总金额) &lt;= 1000000</li></ul><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">waysToChange</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> dp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> coins <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">25</span><span class="token punctuation">}</span><span class="token punctuation">;</span>        <span class="token comment">//刚好可以用一个硬币凑成的情况，是一种情况</span>        <span class="token comment">// while i == coin :</span>        <span class="token comment">//dp[i] = dp[i - coin] =&gt; dp[0]</span>        dp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>        <span class="token comment">/**         * dp方程：dp[i] += dp[i - coin];         */</span>        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> coin <span class="token operator">:</span> coins<span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> coin<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>i <span class="token operator">-</span> coin<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">1000000007</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> dp<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gold-8-10</title>
       <link href="/2023/10/09/gold-8-10/"/>
       <url>/2023/10/09/gold-8-10/</url>
