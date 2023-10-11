@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-10-10T07:48:22.536Z</updated>
+  <updated>2023-10-11T13:23:18.976Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-8-12</title>
+    <link href="http://nichunen.github.io/2023/10/11/gold-8-12/"/>
+    <id>http://nichunen.github.io/2023/10/11/gold-8-12/</id>
+    <published>2023-10-11T13:22:38.000Z</published>
+    <updated>2023-10-11T13:23:18.976Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;设计一种算法，打印 N 皇后在 N × N</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-8-11</title>
@@ -510,33 +535,6 @@
         
     <summary type="html">&lt;p&gt;检查子树。你有两棵非常大的二叉树：T1，有几万个节点；T2，有几万个节点。设计一个算法，判断 T2 是否为 T1 的子树。&lt;/p&gt;
 &lt;p&gt;如果 T1 有这么一个节点 n，其子树与 T2 一模一样，则 T2 为 T1 的子树，也就是说，从节点 n 处把树砍断，得到的树与</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-4-9</title>
-    <link href="http://nichunen.github.io/2023/09/01/gold-4-9/"/>
-    <id>http://nichunen.github.io/2023/09/01/gold-4-9/</id>
-    <published>2023-09-01T05:45:03.000Z</published>
-    <updated>2023-09-01T06:00:09.563Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;从左向右遍历一个数组，通过不断将其中的元素插入树中可以逐步地生成一棵二叉搜索树。&lt;/p&gt;
-&lt;p&gt;给定一个由&lt;strong&gt;不同节点&lt;/strong&gt;组成的二叉搜索树 &lt;code&gt;root&lt;/code&gt;，输出所有可能生成此树的数组。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例</summary>
         
       
     
