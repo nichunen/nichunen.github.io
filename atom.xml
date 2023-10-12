@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-10-11T13:23:18.976Z</updated>
+  <updated>2023-10-12T13:02:49.318Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-8-13</title>
+    <link href="http://nichunen.github.io/2023/10/12/gold-8-13/"/>
+    <id>http://nichunen.github.io/2023/10/12/gold-8-13/</id>
+    <published>2023-10-12T05:54:37.000Z</published>
+    <updated>2023-10-12T13:02:49.318Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;堆箱子。给你一堆n个箱子，箱子宽 wi、深 di、高 hi。箱子不能翻转，将箱子堆起来时，下面箱子的宽度、高度和深度必须大于上面的箱子。实现一种方法，搭出最高的一堆箱子。箱堆的高度为每个箱子高度的总和。&lt;/p&gt;
+&lt;p&gt;输入使用数组&lt;code&gt;[wi, di,</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-8-12</title>
@@ -509,32 +535,6 @@
         
     <summary type="html">&lt;p&gt;给定一棵二叉树，其中每个节点都含有一个整数数值(该值或正或负)。设计一个算法，打印节点数值总和等于某个给定值的所有路径的数量。注意，路径不一定非得从二叉树的根节点或叶节点开始或结束，但是其方向必须向下(只能从父节点指向子节点方向)。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例:&lt;/</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-4-10</title>
-    <link href="http://nichunen.github.io/2023/09/03/gold-4-10/"/>
-    <id>http://nichunen.github.io/2023/09/03/gold-4-10/</id>
-    <published>2023-09-03T02:52:18.000Z</published>
-    <updated>2023-09-03T03:48:37.445Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;检查子树。你有两棵非常大的二叉树：T1，有几万个节点；T2，有几万个节点。设计一个算法，判断 T2 是否为 T1 的子树。&lt;/p&gt;
-&lt;p&gt;如果 T1 有这么一个节点 n，其子树与 T2 一模一样，则 T2 为 T1 的子树，也就是说，从节点 n 处把树砍断，得到的树与</summary>
         
       
     
