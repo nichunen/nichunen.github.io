@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-10-18T15:56:01.249Z</updated>
+  <updated>2023-10-20T06:11:26.270Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-10-9</title>
+    <link href="http://nichunen.github.io/2023/10/19/gold-10-9/"/>
+    <id>http://nichunen.github.io/2023/10/19/gold-10-9/</id>
+    <published>2023-10-19T05:57:13.000Z</published>
+    <updated>2023-10-20T06:11:26.270Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定M×N矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;现有矩阵 matrix 如下：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-10-5</title>
@@ -505,33 +533,6 @@
         
         
     <summary type="html">&lt;p&gt;整数转换。编写一个函数，确定需要改变几个位才能将整数A转成整数B。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-5-4</title>
-    <link href="http://nichunen.github.io/2023/09/11/gold-5-4/"/>
-    <id>http://nichunen.github.io/2023/09/11/gold-5-4/</id>
-    <published>2023-09-11T05:45:36.000Z</published>
-    <updated>2023-09-11T05:50:17.127Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;下一个数。给定一个正整数，找出与其二进制表达式中1的个数相同且大小最接近的那两个数（一个略大，一个略小）。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
