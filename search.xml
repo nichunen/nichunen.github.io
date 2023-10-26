@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>gold-16-1</title>
+      <link href="/2023/10/26/gold-16-1/"/>
+      <url>/2023/10/26/gold-16-1/</url>
+      
+        <content type="html"><![CDATA[<p>编写一个函数，不用临时变量，直接交换<code>numbers = [a, b]</code>中<code>a</code>与<code>b</code>的值。</p><p><strong>示例：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: numbers = [1,2]输出: [2,1]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>提示：</strong></p><ul><li><code>numbers.length == 2</code></li><li>`-2147483647 &lt;= numbers[i] &lt;= 2147483647</li></ul><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">swapNumbers</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> numbers<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>numbers<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>numbers<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gold-10-11</title>
       <link href="/2023/10/25/gold-10-11/"/>
       <url>/2023/10/25/gold-10-11/</url>
