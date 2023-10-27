@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-10-26T12:02:08.390Z</updated>
+  <updated>2023-10-27T06:29:17.305Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-2</title>
+    <link href="http://nichunen.github.io/2023/10/27/gold-16-2/"/>
+    <id>http://nichunen.github.io/2023/10/27/gold-16-2/</id>
+    <published>2023-10-27T02:41:17.000Z</published>
+    <updated>2023-10-27T06:29:17.305Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;设计一个方法，找出任意指定单词在一本书中的出现频率。&lt;/p&gt;
+&lt;p&gt;你的实现应该支持如下操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;WordsFrequency(book)&lt;/code&gt;构造函数，参数为字符串数组构成的一本书&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;get(word</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-1</title>
@@ -507,32 +536,6 @@
         
         
     <summary type="html">&lt;p&gt;魔术索引。 在数组&lt;code&gt;A[0...n-1]&lt;/code&gt;中，有所谓的魔术索引，满足条件&lt;code&gt;A[i] =</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-8-2</title>
-    <link href="http://nichunen.github.io/2023/09/21/gold-8-2/"/>
-    <id>http://nichunen.github.io/2023/09/21/gold-8-2/</id>
-    <published>2023-09-21T10:52:59.000Z</published>
-    <updated>2023-09-21T14:47:43.024Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。设计一种算法，寻找机器人从左上角移动到右下角的路径。&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
         
       
     
