@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-10-29T06:14:02.131Z</updated>
+  <updated>2023-10-30T03:46:22.883Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>gold-16-4</title>
+    <link href="http://nichunen.github.io/2023/10/30/gold-16-4/"/>
+    <id>http://nichunen.github.io/2023/10/30/gold-16-4/</id>
+    <published>2023-10-30T03:02:42.000Z</published>
+    <updated>2023-10-30T03:46:22.883Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;设计一个算法，判断玩家是否赢了井字游戏。输入是一个 N x N 的数组棋盘，由字符” “，”X”和”O”组成，其中字符” “代表一个空位。&lt;/p&gt;
+&lt;p&gt;以下是井字游戏的规则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;玩家轮流将字符放入空位（”</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>gold-16-3</title>
     <link href="http://nichunen.github.io/2023/10/29/gold-16-3/"/>
     <id>http://nichunen.github.io/2023/10/29/gold-16-3/</id>
     <published>2023-10-29T06:13:25.000Z</published>
-    <updated>2023-10-29T06:14:02.131Z</updated>
+    <updated>2023-10-30T03:02:54.247Z</updated>
     
     
       
@@ -508,34 +536,6 @@
     <summary type="html">&lt;p&gt;递归乘法。 写一个递归函数，不使用 * 运算符， 实现两个正整数的相乘。可以使用加号、减号、位移，但要吝啬一些。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-8-4</title>
-    <link href="http://nichunen.github.io/2023/09/27/gold-8-4/"/>
-    <id>http://nichunen.github.io/2023/09/27/gold-8-4/</id>
-    <published>2023-09-27T03:40:01.000Z</published>
-    <updated>2023-09-27T08:19:44.397Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;幂集。编写一种方法，返回某集合的所有子集。集合中&lt;strong&gt;不包含重复的元素&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;说明：解集不能包含重复的子集。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
         
       
     
