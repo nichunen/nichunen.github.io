@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>gold-16-7</title>
+      <link href="/2023/11/02/gold-16-7/"/>
+      <url>/2023/11/02/gold-16-7/</url>
+      
+        <content type="html"><![CDATA[<p>编写一个方法，找出两个数字<code>a</code>和<code>b</code>中最大的那一个。不得使用if-else或其他比较运算符。</p><p><strong>示例：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入： a = 1, b = 2输出： 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maximum</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">return</span> a <span class="token operator">&gt;</span> b <span class="token operator">?</span> a <span class="token operator">:</span> b<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gold-16-6</title>
       <link href="/2023/11/01/gold-16-6/"/>
       <url>/2023/11/01/gold-16-6/</url>
