@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-02T02:27:35.846Z</updated>
+  <updated>2023-11-03T12:13:44.791Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-8</title>
+    <link href="http://nichunen.github.io/2023/11/03/gold-16-8/"/>
+    <id>http://nichunen.github.io/2023/11/03/gold-16-8/</id>
+    <published>2023-11-03T12:11:34.000Z</published>
+    <updated>2023-11-03T12:13:44.791Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个整数，打印该整数的英文描述。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;输入: 123
+输出:</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-7</title>
@@ -511,33 +539,6 @@
     <summary type="html">&lt;p&gt;括号。设计一种算法，打印n对括号的所有合法的（例如，开闭一一对应）组合。&lt;/p&gt;
 &lt;p&gt;说明：解集不能包含重复的子集。&lt;/p&gt;
 &lt;p&gt;例如，给出 n = 3，生成结果为：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-8-8</title>
-    <link href="http://nichunen.github.io/2023/10/07/gold-8-8/"/>
-    <id>http://nichunen.github.io/2023/10/07/gold-8-8/</id>
-    <published>2023-10-07T08:48:19.000Z</published>
-    <updated>2023-10-07T09:10:08.261Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;有重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
