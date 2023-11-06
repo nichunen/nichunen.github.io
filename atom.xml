@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-03T12:13:44.791Z</updated>
+  <updated>2023-11-06T03:54:22.303Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-9</title>
+    <link href="http://nichunen.github.io/2023/11/06/gold-16-9/"/>
+    <id>http://nichunen.github.io/2023/11/06/gold-16-9/</id>
+    <published>2023-11-06T02:16:13.000Z</published>
+    <updated>2023-11-06T03:54:22.303Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;请实现整数数字的乘法、减法和除法运算，运算结果均为整数数字，程序中只允许使用加法运算符和逻辑运算符，允许程序中出现正负常数，不允许使用位运算。&lt;/p&gt;
+&lt;p&gt;你的实现应该支持如下操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Operations()&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-8</title>
@@ -512,34 +540,6 @@
         
     <summary type="html">&lt;p&gt;编写函数，实现许多图片编辑软件都支持的「颜色填充」功能。&lt;/p&gt;
 &lt;p&gt;待填充的图像用二维数组 &lt;code&gt;image&lt;/code&gt; 表示，元素为初始颜色值。初始坐标点的行坐标为 &lt;code&gt;sr&lt;/code&gt; 列坐标为 &lt;code&gt;sc&lt;/code&gt;。需要填充的新颜色为</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-8-9</title>
-    <link href="http://nichunen.github.io/2023/10/08/gold-8-9/"/>
-    <id>http://nichunen.github.io/2023/10/08/gold-8-9/</id>
-    <published>2023-10-08T02:56:21.000Z</published>
-    <updated>2023-10-08T03:18:23.060Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;括号。设计一种算法，打印n对括号的所有合法的（例如，开闭一一对应）组合。&lt;/p&gt;
-&lt;p&gt;说明：解集不能包含重复的子集。&lt;/p&gt;
-&lt;p&gt;例如，给出 n = 3，生成结果为：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
