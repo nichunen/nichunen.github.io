@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-07T12:54:38.041Z</updated>
+  <updated>2023-11-08T02:38:18.121Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-11</title>
+    <link href="http://nichunen.github.io/2023/11/08/gold-16-11/"/>
+    <id>http://nichunen.github.io/2023/11/08/gold-16-11/</id>
+    <published>2023-11-08T02:16:41.000Z</published>
+    <updated>2023-11-08T02:38:18.121Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;你正在使用一堆木板建造跳水板。有两种类型的木板，其中长度较短的木板长度为&lt;code&gt;shorter&lt;/code&gt;，长度较长的木板长度为&lt;code&gt;longer&lt;/code&gt;。你必须正好使用&lt;code&gt;k&lt;/code&gt;块木板。编写一个方法，生成跳水板所有可能的长度。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-10</title>
@@ -513,33 +539,6 @@
         
         
     <summary type="html">&lt;p&gt;设计一种算法，打印 N 皇后在 N × N</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-8-11</title>
-    <link href="http://nichunen.github.io/2023/10/10/gold-8-11/"/>
-    <id>http://nichunen.github.io/2023/10/10/gold-8-11/</id>
-    <published>2023-10-10T03:06:55.000Z</published>
-    <updated>2023-10-10T07:48:22.536Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;硬币。给定数量不限的硬币，币值为25分、10分、5分和1分，编写代码计算n分有几种表示法。(结果可能会很大，你需要将结果模上1000000007)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
         
       
     
