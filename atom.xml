@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-08T02:38:18.121Z</updated>
+  <updated>2023-11-09T02:12:34.863Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-13</title>
+    <link href="http://nichunen.github.io/2023/11/09/gold-16-13/"/>
+    <id>http://nichunen.github.io/2023/11/09/gold-16-13/</id>
+    <published>2023-11-09T02:11:16.000Z</published>
+    <updated>2023-11-09T02:12:34.863Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个正方形及一个二维平面。请找出将这两个正方形分割成两半的一条直线。假设正方形顶边和底边与 x 轴平行。&lt;/p&gt;
+&lt;p&gt;每个正方形的数据&lt;code&gt;square&lt;/code&gt;包含3个数值，正方形的左下顶点坐标&lt;code&gt;[X,Y] =</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-11</title>
@@ -514,31 +540,6 @@
         
     <summary type="html">&lt;p&gt;堆箱子。给你一堆n个箱子，箱子宽 wi、深 di、高 hi。箱子不能翻转，将箱子堆起来时，下面箱子的宽度、高度和深度必须大于上面的箱子。实现一种方法，搭出最高的一堆箱子。箱堆的高度为每个箱子高度的总和。&lt;/p&gt;
 &lt;p&gt;输入使用数组&lt;code&gt;[wi, di,</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-8-12</title>
-    <link href="http://nichunen.github.io/2023/10/11/gold-8-12/"/>
-    <id>http://nichunen.github.io/2023/10/11/gold-8-12/</id>
-    <published>2023-10-11T13:22:38.000Z</published>
-    <updated>2023-10-11T13:23:18.976Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设计一种算法，打印 N 皇后在 N × N</summary>
         
       
     
