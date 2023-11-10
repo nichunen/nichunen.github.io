@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-09T02:12:34.863Z</updated>
+  <updated>2023-11-10T06:27:18.758Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-14</title>
+    <link href="http://nichunen.github.io/2023/11/10/gold-16-14/"/>
+    <id>http://nichunen.github.io/2023/11/10/gold-16-14/</id>
+    <published>2023-11-10T03:17:03.000Z</published>
+    <updated>2023-11-10T06:27:18.758Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个二维平面及平面上的 N</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-13</title>
@@ -514,32 +539,6 @@
         
         
     <summary type="html">&lt;p&gt;给定一个布尔表达式和一个期望的布尔结果 result，布尔表达式由 &lt;code&gt;0&lt;/code&gt; (false)、&lt;code&gt;1&lt;/code&gt; (true)、&lt;code&gt;&amp;amp;&lt;/code&gt; (AND)、 &lt;code&gt;|&lt;/code&gt; (OR) 和</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-8-13</title>
-    <link href="http://nichunen.github.io/2023/10/12/gold-8-13/"/>
-    <id>http://nichunen.github.io/2023/10/12/gold-8-13/</id>
-    <published>2023-10-12T05:54:37.000Z</published>
-    <updated>2023-10-12T13:02:49.318Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;堆箱子。给你一堆n个箱子，箱子宽 wi、深 di、高 hi。箱子不能翻转，将箱子堆起来时，下面箱子的宽度、高度和深度必须大于上面的箱子。实现一种方法，搭出最高的一堆箱子。箱堆的高度为每个箱子高度的总和。&lt;/p&gt;
-&lt;p&gt;输入使用数组&lt;code&gt;[wi, di,</summary>
         
       
     
