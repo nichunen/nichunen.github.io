@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="归档, 倪春恩的博客">
+    <meta name="keywords" content="gold-16-15, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>归档 | 倪春恩的博客</title>
+    <title>gold-16-15 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,297 +309,492 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                倪春恩的博客
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">gold-16-15</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/leetcode/">
+                                <span class="chip bg-color">leetcode</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/leetcode/" class="post-category">
+                                leetcode
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-11-12
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>珠玑妙算游戏（the game of master mind）的玩法如下。</p>
+<p>计算机有4个槽，每个槽放一个球，颜色可能是红色（R）、黄色（Y）、绿色（G）或蓝色（B）。例如，计算机可能有RGGB 4种（槽1为红色，槽2、3为绿色，槽4为蓝色）。作为用户，你试图猜出颜色组合。打个比方，你可能会猜YRGB。要是猜对某个槽的颜色，则算一次“猜中”；要是只猜对颜色但槽位猜错了，则算一次“伪猜中”。注意，“猜中”不能算入“伪猜中”。</p>
+<p>给定一种颜色组合<code>solution</code>和一个猜测<code>guess</code>，编写一个方法，返回猜中和伪猜中的次数<code>answer</code>，其中<code>answer[0]</code>为猜中的次数，<code>answer[1]</code>为伪猜中的次数。</p>
+<p><strong>示例：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">输入： solution="RGBY",guess="GGRR"
+输出： [1,1]
+解释： 猜中1次，伪猜中1次。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>len(solution) = len(guess) = 4</code></li>
+<li><code>solution</code>和<code>guess</code>仅包含<code>"R"</code>,<code>"G"</code>,<code>"B"</code>,<code>"Y"</code>这4种字符</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">
+<span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">masterMind</span><span class="token punctuation">(</span><span class="token class-name">String</span> solution<span class="token punctuation">,</span> <span class="token class-name">String</span> guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> sol <span class="token operator">=</span> solution<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> gue <span class="token operator">=</span> guess<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> res <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">//先把猜对的挑出来</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> sol<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>sol<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> gue<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                sol<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">' '</span><span class="token punctuation">;</span>
+                gue<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">' '</span><span class="token punctuation">;</span>
+                res<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//再把伪猜对的挑出来</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> gue<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>gue<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token char">' '</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> sol<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>sol<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> gue<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        sol<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">' '</span><span class="token punctuation">;</span>
+                        gue<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">' '</span><span class="token punctuation">;</span>
+                        res<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+                        <span class="token keyword">break</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">倪春恩</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://nichunen.github.io/2023/11/12/gold-16-15/">http://nichunen.github.io/2023/11/12/gold-16-15/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">倪春恩</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/leetcode/">
+                                    <span class="chip bg-color">leetcode</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $(function () {
+        $('.tabs').tabs();
+    });
 </script>
 
-
+            
+        </div>
     </div>
-</div>
-
-<main class="content">
-
-    
-    <div class="container archive-calendar">
-    <div class="card">
-        <div id="post-calendar" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let myChart = echarts.init(document.getElementById('post-calendar'));
-
-    
-
-    let option = {
-        title: {
-            top: 0,
-            text: '文章日历',
-            left: 'center',
-            textStyle: {
-                color: '#3C4858'
-            }
-        },
-        tooltip: {
-            padding: 10,
-            backgroundColor: '#555',
-            borderColor: '#777',
-            borderWidth: 1,
-            formatter: function (obj) {
-                var value = obj.value;
-                return '<div style="font-size: 14px;">' + value[0] + '：' + value[1] + '</div>';
-            }
-        },
-        visualMap: {
-            show: true,
-            showLabel: true,
-            categories: [0, 1, 2, 3, 4],
-            calculable: true,
-            inRange: {
-                symbol: 'rect',
-                color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
-            },
-            itemWidth: 12,
-            itemHeight: 12,
-            orient: 'horizontal',
-            left: 'center',
-            bottom: 0
-        },
-        calendar: [{
-            left: 'center',
-            range: ["2022-11-12", "2023-11-12"],
-            cellSize: [13, 13],
-            splitLine: {
-                show: false
-            },
-            itemStyle: {
-                color: '#196127',
-                borderColor: '#fff',
-                borderWidth: 2
-            },
-            yearLabel: {
-                show: false
-            },
-            monthLabel: {
-                nameMap: 'cn',
-                fontSize: 11
-            },
-            dayLabel: {
-                formatter: '{start}  1st',
-                nameMap: 'cn',
-                fontSize: 11
-            }
-        }],
-        series: [{
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 0,
-            data: [["2022-11-12", 0], ["2022-11-13", 0], ["2022-11-14", 1], ["2022-11-15", 1], ["2022-11-16", 0], ["2022-11-17", 1], ["2022-11-18", 1], ["2022-11-19", 0], ["2022-11-20", 0], ["2022-11-21", 1], ["2022-11-22", 0], ["2022-11-23", 0], ["2022-11-24", 1], ["2022-11-25", 0], ["2022-11-26", 0], ["2022-11-27", 0], ["2022-11-28", 0], ["2022-11-29", 1], ["2022-11-30", 0], ["2022-12-01", 1], ["2022-12-02", 1], ["2022-12-03", 0], ["2022-12-04", 0], ["2022-12-05", 1], ["2022-12-06", 1], ["2022-12-07", 1], ["2022-12-08", 1], ["2022-12-09", 1], ["2022-12-10", 0], ["2022-12-11", 1], ["2022-12-12", 0], ["2022-12-13", 0], ["2022-12-14", 0], ["2022-12-15", 0], ["2022-12-16", 0], ["2022-12-17", 0], ["2022-12-18", 0], ["2022-12-19", 2], ["2022-12-20", 0], ["2022-12-21", 1], ["2022-12-22", 1], ["2022-12-23", 1], ["2022-12-24", 0], ["2022-12-25", 0], ["2022-12-26", 1], ["2022-12-27", 1], ["2022-12-28", 1], ["2022-12-29", 1], ["2022-12-30", 1], ["2022-12-31", 0], ["2023-01-01", 0], ["2023-01-02", 0], ["2023-01-03", 1], ["2023-01-04", 1], ["2023-01-05", 1], ["2023-01-06", 1], ["2023-01-07", 0], ["2023-01-08", 0], ["2023-01-09", 1], ["2023-01-10", 1], ["2023-01-11", 1], ["2023-01-12", 1], ["2023-01-13", 1], ["2023-01-14", 0], ["2023-01-15", 1], ["2023-01-16", 1], ["2023-01-17", 1], ["2023-01-18", 1], ["2023-01-19", 1], ["2023-01-20", 1], ["2023-01-21", 0], ["2023-01-22", 0], ["2023-01-23", 0], ["2023-01-24", 0], ["2023-01-25", 0], ["2023-01-26", 0], ["2023-01-27", 0], ["2023-01-28", 1], ["2023-01-29", 1], ["2023-01-30", 1], ["2023-01-31", 2], ["2023-02-01", 1], ["2023-02-02", 1], ["2023-02-03", 1], ["2023-02-04", 0], ["2023-02-05", 1], ["2023-02-06", 1], ["2023-02-07", 1], ["2023-02-08", 1], ["2023-02-09", 1], ["2023-02-10", 1], ["2023-02-11", 0], ["2023-02-12", 1], ["2023-02-13", 1], ["2023-02-14", 1], ["2023-02-15", 1], ["2023-02-16", 1], ["2023-02-17", 1], ["2023-02-18", 0], ["2023-02-19", 1], ["2023-02-20", 1], ["2023-02-21", 1], ["2023-02-22", 1], ["2023-02-23", 1], ["2023-02-24", 1], ["2023-02-25", 0], ["2023-02-26", 1], ["2023-02-27", 1], ["2023-02-28", 1], ["2023-03-01", 1], ["2023-03-02", 1], ["2023-03-03", 1], ["2023-03-04", 0], ["2023-03-05", 1], ["2023-03-06", 1], ["2023-03-07", 1], ["2023-03-08", 1], ["2023-03-09", 1], ["2023-03-10", 0], ["2023-03-11", 0], ["2023-03-12", 1], ["2023-03-13", 1], ["2023-03-14", 1], ["2023-03-15", 1], ["2023-03-16", 1], ["2023-03-17", 1], ["2023-03-18", 0], ["2023-03-19", 1], ["2023-03-20", 1], ["2023-03-21", 0], ["2023-03-22", 0], ["2023-03-23", 2], ["2023-03-24", 2], ["2023-03-25", 0], ["2023-03-26", 0], ["2023-03-27", 2], ["2023-03-28", 1], ["2023-03-29", 2], ["2023-03-30", 2], ["2023-03-31", 2], ["2023-04-01", 0], ["2023-04-02", 0], ["2023-04-03", 2], ["2023-04-04", 2], ["2023-04-05", 0], ["2023-04-06", 2], ["2023-04-07", 1], ["2023-04-08", 0], ["2023-04-09", 0], ["2023-04-10", 2], ["2023-04-11", 2], ["2023-04-12", 2], ["2023-04-13", 1], ["2023-04-14", 1], ["2023-04-15", 0], ["2023-04-16", 0], ["2023-04-17", 1], ["2023-04-18", 1], ["2023-04-19", 1], ["2023-04-20", 0], ["2023-04-21", 1], ["2023-04-22", 0], ["2023-04-23", 1], ["2023-04-24", 2], ["2023-04-25", 1], ["2023-04-26", 2], ["2023-04-27", 1], ["2023-04-28", 2], ["2023-04-29", 2], ["2023-04-30", 0], ["2023-05-01", 0], ["2023-05-02", 0], ["2023-05-03", 2], ["2023-05-04", 2], ["2023-05-05", 1], ["2023-05-06", 1], ["2023-05-07", 0], ["2023-05-08", 0], ["2023-05-09", 1], ["2023-05-10", 1], ["2023-05-11", 1], ["2023-05-12", 1], ["2023-05-13", 0], ["2023-05-14", 1], ["2023-05-15", 1], ["2023-05-16", 1], ["2023-05-17", 1], ["2023-05-18", 1], ["2023-05-19", 1], ["2023-05-20", 0], ["2023-05-21", 1], ["2023-05-22", 1], ["2023-05-23", 1], ["2023-05-24", 0], ["2023-05-25", 1], ["2023-05-26", 1], ["2023-05-27", 0], ["2023-05-28", 1], ["2023-05-29", 1], ["2023-05-30", 1], ["2023-05-31", 1], ["2023-06-01", 1], ["2023-06-02", 1], ["2023-06-03", 0], ["2023-06-04", 1], ["2023-06-05", 1], ["2023-06-06", 1], ["2023-06-07", 2], ["2023-06-08", 1], ["2023-06-09", 1], ["2023-06-10", 0], ["2023-06-11", 1], ["2023-06-12", 1], ["2023-06-13", 1], ["2023-06-14", 2], ["2023-06-15", 2], ["2023-06-16", 1], ["2023-06-17", 0], ["2023-06-18", 2], ["2023-06-19", 1], ["2023-06-20", 2], ["2023-06-21", 1], ["2023-06-22", 0], ["2023-06-23", 0], ["2023-06-24", 1], ["2023-06-25", 1], ["2023-06-26", 1], ["2023-06-27", 1], ["2023-06-28", 1], ["2023-06-29", 1], ["2023-06-30", 1], ["2023-07-01", 0], ["2023-07-02", 1], ["2023-07-03", 1], ["2023-07-04", 1], ["2023-07-05", 1], ["2023-07-06", 1], ["2023-07-07", 1], ["2023-07-08", 0], ["2023-07-09", 1], ["2023-07-10", 1], ["2023-07-11", 1], ["2023-07-12", 1], ["2023-07-13", 1], ["2023-07-14", 1], ["2023-07-15", 0], ["2023-07-16", 1], ["2023-07-17", 1], ["2023-07-18", 1], ["2023-07-19", 1], ["2023-07-20", 1], ["2023-07-21", 1], ["2023-07-22", 0], ["2023-07-23", 1], ["2023-07-24", 1], ["2023-07-25", 1], ["2023-07-26", 1], ["2023-07-27", 1], ["2023-07-28", 1], ["2023-07-29", 0], ["2023-07-30", 1], ["2023-07-31", 1], ["2023-08-01", 1], ["2023-08-02", 1], ["2023-08-03", 1], ["2023-08-04", 0], ["2023-08-05", 0], ["2023-08-06", 1], ["2023-08-07", 1], ["2023-08-08", 1], ["2023-08-09", 1], ["2023-08-10", 1], ["2023-08-11", 1], ["2023-08-12", 0], ["2023-08-13", 1], ["2023-08-14", 1], ["2023-08-15", 1], ["2023-08-16", 0], ["2023-08-17", 1], ["2023-08-18", 1], ["2023-08-19", 0], ["2023-08-20", 1], ["2023-08-21", 1], ["2023-08-22", 1], ["2023-08-23", 1], ["2023-08-24", 1], ["2023-08-25", 1], ["2023-08-26", 0], ["2023-08-27", 1], ["2023-08-28", 1], ["2023-08-29", 1], ["2023-08-30", 1], ["2023-08-31", 1], ["2023-09-01", 1], ["2023-09-02", 0], ["2023-09-03", 1], ["2023-09-04", 1], ["2023-09-05", 1], ["2023-09-06", 0], ["2023-09-07", 0], ["2023-09-08", 1], ["2023-09-09", 0], ["2023-09-10", 1], ["2023-09-11", 1], ["2023-09-12", 1], ["2023-09-13", 1], ["2023-09-14", 0], ["2023-09-15", 0], ["2023-09-16", 0], ["2023-09-17", 0], ["2023-09-18", 0], ["2023-09-19", 0], ["2023-09-20", 1], ["2023-09-21", 1], ["2023-09-22", 0], ["2023-09-23", 0], ["2023-09-24", 0], ["2023-09-25", 0], ["2023-09-26", 1], ["2023-09-27", 1], ["2023-09-28", 1], ["2023-09-29", 0], ["2023-09-30", 0], ["2023-10-01", 0], ["2023-10-02", 0], ["2023-10-03", 0], ["2023-10-04", 0], ["2023-10-05", 1], ["2023-10-06", 1], ["2023-10-07", 1], ["2023-10-08", 1], ["2023-10-09", 1], ["2023-10-10", 1], ["2023-10-11", 1], ["2023-10-12", 1], ["2023-10-13", 1], ["2023-10-14", 0], ["2023-10-15", 1], ["2023-10-16", 1], ["2023-10-17", 0], ["2023-10-18", 1], ["2023-10-19", 1], ["2023-10-20", 0], ["2023-10-21", 0], ["2023-10-22", 0], ["2023-10-23", 1], ["2023-10-24", 0], ["2023-10-25", 1], ["2023-10-26", 1], ["2023-10-27", 1], ["2023-10-28", 0], ["2023-10-29", 1], ["2023-10-30", 1], ["2023-10-31", 1], ["2023-11-01", 1], ["2023-11-02", 1], ["2023-11-03", 1], ["2023-11-04", 0], ["2023-11-05", 0], ["2023-11-06", 1], ["2023-11-07", 1], ["2023-11-08", 1], ["2023-11-09", 1], ["2023-11-10", 1], ["2023-11-11", 0], ["2023-11-12", 1]]
-        }]
-
-    };
-
-    myChart.setOption(option);
-</script>
 
     
 
     
 
-    <div id="cd-timeline" class="container">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
         
-        <div class="cd-timeline-block">
-
-            
-            
-            
-            <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                <a href="/archives/2022">2022</a>
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
-            
-
-            
-            
-            
-            <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/archives/2022/06">06</a>
-            </div>
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>16</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/06/16/lc-17/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="lc-17">
-                                
-                                <span class="card-title">lc-17</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    //Given a string containing digits from 2-9 inclusive, return all possible lette
-//r combinations that the number could 
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2022-06-16
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/leetcode/" class="post-category">
-                                    leetcode
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
+            <div class="card">
+                <a href="/2023/11/12/gold-16-15/">
+                    <div class="card-image">
                         
-                        <div class="card-action article-tags">
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="gold-16-15">
+                        
+                        <span class="card-title">gold-16-15</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
                             
-                            <a href="/tags/leetcode/"><span class="chip bg-color">leetcode</span></a>
-                            
-                        </div>
                         
                     </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/leetcode/" class="post-category">
+                                    leetcode
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
                 </div>
-            </article>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/leetcode/">
+                        <span class="chip bg-color">leetcode</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
         </div>
         
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>15</span>
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/06/15/lc-15/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="lc-15">
-                                
-                                <span class="card-title">lc-15</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    //Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k
-//]] such that i != j, i != k, and j !=
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2022-06-15
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/leetcode/" class="post-category">
-                                    leetcode
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
+            <div class="card">
+                <a href="/2023/11/10/gold-16-14/">
+                    <div class="card-image">
                         
-                        <div class="card-action article-tags">
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="gold-16-14">
+                        
+                        <span class="card-title">gold-16-14</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
                             
-                            <a href="/tags/leetcode/"><span class="chip bg-color">leetcode</span></a>
-                            
-                        </div>
                         
                     </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/leetcode/" class="post-category">
+                                    leetcode
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
                 </div>
-            </article>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/leetcode/">
+                        <span class="chip bg-color">leetcode</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
         </div>
         
     </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    
 
 </main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/archives/page/30/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">31 / 31</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a class="right btn-floating btn-large disabled">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
 
 
 
