@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-12T02:56:24.435Z</updated>
+  <updated>2023-11-14T03:05:10.013Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-16</title>
+    <link href="http://nichunen.github.io/2023/11/13/gold-16-16/"/>
+    <id>http://nichunen.github.io/2023/11/13/gold-16-16/</id>
+    <published>2023-11-13T03:09:15.000Z</published>
+    <updated>2023-11-14T03:05:10.013Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个整数数组，编写一个函数，找出索引&lt;code&gt;m&lt;/code&gt;和&lt;code&gt;n&lt;/code&gt;，只要将索引区间&lt;code&gt;[m,n]&lt;/code&gt;的元素排好序，整个数组就是有序的。注意：&lt;code&gt;n-m&lt;/code&gt;尽量最小，也就是说，找出符合条件的最短序列。函数返回</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-15</title>
@@ -514,32 +539,6 @@
     <summary type="html">&lt;p&gt;搜索旋转数组。给定一个排序后的数组，包含n个整数，但这个数组已被旋转过很多次了，次数不详。请编写代码找出数组中的某个元素，假设数组元素原先是按升序排列的。若有多个相同元素，返回索引值最小的一个。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-10-1</title>
-    <link href="http://nichunen.github.io/2023/10/15/gold-10-1/"/>
-    <id>http://nichunen.github.io/2023/10/15/gold-10-1/</id>
-    <published>2023-10-15T03:15:30.000Z</published>
-    <updated>2023-10-15T05:46:16.943Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定两个排序后的数组 A 和 B，其中 A 的末端有足够的缓冲空间容纳 B。 编写一个方法，将 B 合并入 A 并排序。&lt;/p&gt;
-&lt;p&gt;初始化 A 和 B 的元素数量分别为 &lt;em&gt;m&lt;/em&gt; 和</summary>
         
       
     
