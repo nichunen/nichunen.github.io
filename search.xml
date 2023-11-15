@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>gold-16-17</title>
+      <link href="/2023/11/15/gold-16-17/"/>
+      <url>/2023/11/15/gold-16-17/</url>
+      
+        <content type="html"><![CDATA[<p>给定一个整数数组，找出总和最大的连续数列，并返回总和。</p><p><strong>示例：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入： [-2,1,-3,4,-1,2,1,-5,4]输出： 6解释： 连续子数组 [4,-1,2,1] 的和最大，为 6。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><strong>进阶：</strong></p><p>如果你已经实现复杂度为 O(<em>n</em>) 的解法，尝试使用更为精妙的分治法求解。</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxSubArray</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span>MIN_VALUE<span class="token punctuation">;</span>        <span class="token keyword">int</span> curSum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> num <span class="token operator">:</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>            curSum <span class="token operator">+=</span> num<span class="token punctuation">;</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>curSum <span class="token operator">&gt;</span> result<span class="token punctuation">)</span> <span class="token punctuation">{</span>                result <span class="token operator">=</span> curSum<span class="token punctuation">;</span>            <span class="token punctuation">}</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>curSum <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                curSum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> result<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gold-16-16</title>
       <link href="/2023/11/13/gold-16-16/"/>
       <url>/2023/11/13/gold-16-16/</url>
