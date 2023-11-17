@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-16T07:40:41.849Z</updated>
+  <updated>2023-11-17T07:58:11.372Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-19</title>
+    <link href="http://nichunen.github.io/2023/11/17/gold-16-19/"/>
+    <id>http://nichunen.github.io/2023/11/17/gold-16-19/</id>
+    <published>2023-11-17T02:28:38.000Z</published>
+    <updated>2023-11-17T07:58:11.372Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;你有一个用于表示一片土地的整数矩阵&lt;code&gt;land&lt;/code&gt;，该矩阵中每个点的值代表对应地点的海拔高度。若值为0则表示水域。由垂直、水平或对角连接的水域为池塘。池塘的大小是指相连接的水域的个数。编写一个方法来计算矩阵中所有池塘的大小，返回值需要从小到大排序。&lt;/p&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-18</title>
@@ -509,34 +534,6 @@
     <summary type="html">&lt;p&gt;假设你正在读取一串整数。每隔一段时间，你希望能找出数字 x 的秩(小于或等于 x 的值的个数)。请实现数据结构和算法来支持这些操作，也就是说：&lt;/p&gt;
 &lt;p&gt;实现 &lt;code&gt;track(int x)&lt;/code&gt; 方法，每读入一个数字都会调用该方法；&lt;/p&gt;
 &lt;p&gt;实现</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-10-9</title>
-    <link href="http://nichunen.github.io/2023/10/19/gold-10-9/"/>
-    <id>http://nichunen.github.io/2023/10/19/gold-10-9/</id>
-    <published>2023-10-19T05:57:13.000Z</published>
-    <updated>2023-10-20T06:11:26.270Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定M×N矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;现有矩阵 matrix 如下：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
