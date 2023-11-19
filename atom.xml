@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-17T07:58:11.372Z</updated>
+  <updated>2023-11-19T08:24:22.212Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-20</title>
+    <link href="http://nichunen.github.io/2023/11/19/gold-16-20/"/>
+    <id>http://nichunen.github.io/2023/11/19/gold-16-20/</id>
+    <published>2023-11-19T05:20:56.000Z</published>
+    <updated>2023-11-19T08:24:22.212Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在老式手机上，用户通过数字键盘输入，手机将提供与这些数字相匹配的单词列表。每个数字映射到0至4个字母。给定一个数字序列，实现一个算法来返回匹配单词的列表。你会得到一张含有有效单词的列表。映射如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-19</title>
@@ -507,33 +533,6 @@
         
         
     <summary type="html">&lt;p&gt;在一个整数数组中，“峰”是大于或等于相邻整数的元素，相应地，“谷”是小于或等于相邻整数的元素。例如，在数组{5, 8, 4, 2, 3, 4, 6}中，{8, 6}是峰， {5,</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-10-10</title>
-    <link href="http://nichunen.github.io/2023/10/23/gold-10-10/"/>
-    <id>http://nichunen.github.io/2023/10/23/gold-10-10/</id>
-    <published>2023-10-23T11:21:12.000Z</published>
-    <updated>2023-10-24T15:02:44.736Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;假设你正在读取一串整数。每隔一段时间，你希望能找出数字 x 的秩(小于或等于 x 的值的个数)。请实现数据结构和算法来支持这些操作，也就是说：&lt;/p&gt;
-&lt;p&gt;实现 &lt;code&gt;track(int x)&lt;/code&gt; 方法，每读入一个数字都会调用该方法；&lt;/p&gt;
-&lt;p&gt;实现</summary>
         
       
     
