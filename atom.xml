@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-19T08:24:22.212Z</updated>
+  <updated>2023-11-21T14:07:19.400Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-21</title>
+    <link href="http://nichunen.github.io/2023/11/20/gold-16-21/"/>
+    <id>http://nichunen.github.io/2023/11/20/gold-16-21/</id>
+    <published>2023-11-20T05:44:02.000Z</published>
+    <updated>2023-11-21T14:07:19.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个整数数组，请交换一对数值（每个数组中取一个数值），使得两个数组所有元素的和相等。&lt;/p&gt;
+&lt;p&gt;返回一个数组，第一个元素是第一个数组中要交换的元素，第二个元素是第二个数组中要交换的元素。若有多个答案，返回任意一个均可。若无满足条件的数值，返回空数组。&lt;/p&gt;
+&lt;p&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-20</title>
@@ -508,31 +535,6 @@
     <summary type="html">&lt;p&gt;编写一个函数，不用临时变量，直接交换&lt;code&gt;numbers = [a, b]&lt;/code&gt;中&lt;code&gt;a&lt;/code&gt;与&lt;code&gt;b&lt;/code&gt;的值。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-10-11</title>
-    <link href="http://nichunen.github.io/2023/10/25/gold-10-11/"/>
-    <id>http://nichunen.github.io/2023/10/25/gold-10-11/</id>
-    <published>2023-10-25T07:07:25.000Z</published>
-    <updated>2023-10-25T07:11:33.233Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在一个整数数组中，“峰”是大于或等于相邻整数的元素，相应地，“谷”是小于或等于相邻整数的元素。例如，在数组{5, 8, 4, 2, 3, 4, 6}中，{8, 6}是峰， {5,</summary>
         
       
     
