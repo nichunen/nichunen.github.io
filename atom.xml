@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-23T02:26:42.887Z</updated>
+  <updated>2023-11-24T07:52:43.213Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-16-24</title>
+    <link href="http://nichunen.github.io/2023/11/24/gold-16-24/"/>
+    <id>http://nichunen.github.io/2023/11/24/gold-16-24/</id>
+    <published>2023-11-24T07:46:20.000Z</published>
+    <updated>2023-11-24T07:52:43.213Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;设计一个算法，找出数组中两数之和为指定值的所有整数对。一个数只能属于一个数对。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-16-22</title>
@@ -505,35 +532,6 @@
         
         
     <summary type="html">&lt;p&gt;给定两条线段（表示为起点&lt;code&gt;start = {X1, Y1}&lt;/code&gt;和终点&lt;code&gt;end = {X2,</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-16-2</title>
-    <link href="http://nichunen.github.io/2023/10/27/gold-16-2/"/>
-    <id>http://nichunen.github.io/2023/10/27/gold-16-2/</id>
-    <published>2023-10-27T02:41:17.000Z</published>
-    <updated>2023-10-27T06:29:17.305Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设计一个方法，找出任意指定单词在一本书中的出现频率。&lt;/p&gt;
-&lt;p&gt;你的实现应该支持如下操作：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;WordsFrequency(book)&lt;/code&gt;构造函数，参数为字符串数组构成的一本书&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;get(word</summary>
         
       
     
