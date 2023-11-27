@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>gold-17-1</title>
+      <link href="/2023/11/27/gold-17-1/"/>
+      <url>/2023/11/27/gold-17-1/</url>
+      
+        <content type="html"><![CDATA[<p>设计一个函数把两个数字相加。不得使用 + 或者其他算术运算符。</p><p><strong>示例:</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: a = 1, b = 1输出: 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>提示：</strong></p><ul><li><code>a</code>, <code>b</code> 均可能是负数或 0</li><li>结果不会溢出 32 位整数</li></ul><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">while</span> <span class="token punctuation">(</span>b <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">int</span> carry <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">&amp;</span> b<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span>            a <span class="token operator">=</span> a <span class="token operator">^</span> b<span class="token punctuation">;</span>            b <span class="token operator">=</span> carry<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> a<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gold-16-26</title>
       <link href="/2023/11/26/gold-16-26/"/>
       <url>/2023/11/26/gold-16-26/</url>
