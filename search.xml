@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>gold-17-4</title>
+      <link href="/2023/11/30/gold-17-4/"/>
+      <url>/2023/11/30/gold-17-4/</url>
+      
+        <content type="html"><![CDATA[<p>数组<code>nums</code>包含从<code>0</code>到<code>n</code>的所有整数，但其中缺了一个。请编写代码找出那个缺失的整数。你有办法在O(n)时间内完成吗？</p><p><strong>注意：</strong>本题相对书上原题稍作改动</p><p><strong>示例 1：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入：[3,0,1]输出：2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>示例 2：</strong></p><pre class="line-numbers language-none"><code class="language-none">输入：[9,6,4,2,3,5,7,0,1]输出：8<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">missingNumber</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>nums <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">boolean</span><span class="token punctuation">[</span><span class="token punctuation">]</span> checked <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">boolean</span><span class="token punctuation">[</span>nums<span class="token punctuation">.</span>length <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> num <span class="token operator">:</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>            checked<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> checked<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>checked<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token keyword">return</span> i<span class="token punctuation">;</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gold-17-1</title>
       <link href="/2023/11/27/gold-17-1/"/>
       <url>/2023/11/27/gold-17-1/</url>

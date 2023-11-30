@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-27T03:37:59.552Z</updated>
+  <updated>2023-11-30T08:39:43.353Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-17-4</title>
+    <link href="http://nichunen.github.io/2023/11/30/gold-17-4/"/>
+    <id>http://nichunen.github.io/2023/11/30/gold-17-4/</id>
+    <published>2023-11-30T08:17:39.000Z</published>
+    <updated>2023-11-30T08:39:43.353Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;数组&lt;code&gt;nums&lt;/code&gt;包含从&lt;code&gt;0&lt;/code&gt;到&lt;code&gt;n&lt;/code&gt;的所有整数，但其中缺了一个。请编写代码找出那个缺失的整数。你有办法在O(n)时间内完成吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;本题相对书上原题稍作改动&lt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-17-1</title>
@@ -501,33 +527,6 @@
         
         
     <summary type="html">&lt;p&gt;编写一个方法，找出两个数字&lt;code&gt;a&lt;/code&gt;和&lt;code&gt;b&lt;/code&gt;中最大的那一个。不得使用if-else或其他比较运算符。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-16-6</title>
-    <link href="http://nichunen.github.io/2023/11/01/gold-16-6/"/>
-    <id>http://nichunen.github.io/2023/11/01/gold-16-6/</id>
-    <published>2023-11-01T03:00:49.000Z</published>
-    <updated>2023-11-01T06:26:51.669Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定两个整数数组&lt;code&gt;a&lt;/code&gt;和&lt;code&gt;b&lt;/code&gt;，计算具有最小差绝对值的一对数值（每个数组中取一个值），并返回该对数值的差&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
         
