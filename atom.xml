@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-11-30T08:39:43.353Z</updated>
+  <updated>2023-12-01T06:44:26.055Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-17-5</title>
+    <link href="http://nichunen.github.io/2023/12/01/gold-17-5/"/>
+    <id>http://nichunen.github.io/2023/12/01/gold-17-5/</id>
+    <published>2023-12-01T06:43:59.000Z</published>
+    <updated>2023-12-01T06:44:26.055Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个放有字母和数字的数组，找到最长的子数组，且包含的字母和数字的个数相同。&lt;/p&gt;
+&lt;p&gt;返回该子数组，若存在多个最长子数组，返回左端点下标值最小的子数组。若不存在这样的数组，返回一个空数组。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-17-4</title>
@@ -502,33 +529,6 @@
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;输入: 123
 输出:</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-16-7</title>
-    <link href="http://nichunen.github.io/2023/11/02/gold-16-7/"/>
-    <id>http://nichunen.github.io/2023/11/02/gold-16-7/</id>
-    <published>2023-11-02T01:59:37.000Z</published>
-    <updated>2023-11-02T02:27:35.846Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;编写一个方法，找出两个数字&lt;code&gt;a&lt;/code&gt;和&lt;code&gt;b&lt;/code&gt;中最大的那一个。不得使用if-else或其他比较运算符。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
         
       
     

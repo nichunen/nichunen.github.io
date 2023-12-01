@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>gold-17-5</title>
+      <link href="/2023/12/01/gold-17-5/"/>
+      <url>/2023/12/01/gold-17-5/</url>
+      
+        <content type="html"><![CDATA[<p>给定一个放有字母和数字的数组，找到最长的子数组，且包含的字母和数字的个数相同。</p><p>返回该子数组，若存在多个最长子数组，返回左端点下标值最小的子数组。若不存在这样的数组，返回一个空数组。</p><p><strong>示例 1:</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: ["A","1","B","C","D","2","3","4","E","5","F","G","6","7","H","I","J","K","L","M"]输出: ["A","1","B","C","D","2","3","4","E","5","F","G","6","7"]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><strong>示例 2:</strong></p><pre class="line-numbers language-none"><code class="language-none">输入: ["A","A"]输出: []<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><strong>提示：</strong></p><ul><li><code>array.length &lt;= 100000</code></li></ul><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">findLongestSubarray</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gold-17-4</title>
       <link href="/2023/11/30/gold-17-4/"/>
       <url>/2023/11/30/gold-17-4/</url>
