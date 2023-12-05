@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-12-04T03:35:31.823Z</updated>
+  <updated>2023-12-05T07:19:07.740Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-17-6</title>
+    <link href="http://nichunen.github.io/2023/12/05/gold-17-6/"/>
+    <id>http://nichunen.github.io/2023/12/05/gold-17-6/</id>
+    <published>2023-12-05T07:15:04.000Z</published>
+    <updated>2023-12-05T07:19:07.740Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-17-5</title>
@@ -501,34 +528,6 @@
 &lt;p&gt;你的实现应该支持如下操作：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Operations()&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-16-8</title>
-    <link href="http://nichunen.github.io/2023/11/03/gold-16-8/"/>
-    <id>http://nichunen.github.io/2023/11/03/gold-16-8/</id>
-    <published>2023-11-03T12:11:34.000Z</published>
-    <updated>2023-11-03T12:13:44.791Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个整数，打印该整数的英文描述。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;输入: 123
-输出:</summary>
         
       
     
