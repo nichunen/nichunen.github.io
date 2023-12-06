@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-12-05T07:19:07.740Z</updated>
+  <updated>2023-12-06T12:44:23.612Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-17-7</title>
+    <link href="http://nichunen.github.io/2023/12/06/gold-17-7/"/>
+    <id>http://nichunen.github.io/2023/12/06/gold-17-7/</id>
+    <published>2023-12-06T11:30:38.000Z</published>
+    <updated>2023-12-06T12:44:23.612Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;每年，政府都会公布一万个最常见的婴儿名字和它们出现的频率，也就是同名婴儿的数量。有些名字有多种拼法，例如，John 和 Jon</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-17-6</title>
@@ -500,34 +525,6 @@
         
     <summary type="html">&lt;p&gt;给定 N 个人的出生年份和死亡年份，第 &lt;code&gt;i&lt;/code&gt; 个人的出生年份为 &lt;code&gt;birth[i]&lt;/code&gt;，死亡年份为 &lt;code&gt;death[i]&lt;/code&gt;，实现一个方法以计算生存人数最多的年份。&lt;/p&gt;
 &lt;p&gt;你可以假设所有人都出生于</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-16-9</title>
-    <link href="http://nichunen.github.io/2023/11/06/gold-16-9/"/>
-    <id>http://nichunen.github.io/2023/11/06/gold-16-9/</id>
-    <published>2023-11-06T02:16:13.000Z</published>
-    <updated>2023-11-06T03:54:22.303Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请实现整数数字的乘法、减法和除法运算，运算结果均为整数数字，程序中只允许使用加法运算符和逻辑运算符，允许程序中出现正负常数，不允许使用位运算。&lt;/p&gt;
-&lt;p&gt;你的实现应该支持如下操作：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Operations()&lt;/code&gt;</summary>
         
       
     
