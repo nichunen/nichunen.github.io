@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2023-12-20T03:02:53.209Z</updated>
+  <updated>2023-12-21T06:22:22.866Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gold-17-12</title>
+    <link href="http://nichunen.github.io/2023/12/21/gold-17-12/"/>
+    <id>http://nichunen.github.io/2023/12/21/gold-17-12/</id>
+    <published>2023-12-21T04:34:33.000Z</published>
+    <updated>2023-12-21T06:22:22.866Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;二叉树数据结构&lt;code&gt;TreeNode&lt;/code&gt;可用来表示单向链表（其中&lt;code&gt;left&lt;/code&gt;置空，&lt;code&gt;right&lt;/code&gt;为下一个链表节点）。实现一个方法，把二叉搜索树转换为单向链表，要求依然符合二叉搜索树的性质，转换操作应是原址的，也就是</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>gold-17-11</title>
@@ -503,31 +528,6 @@
         
     <summary type="html">&lt;p&gt;珠玑妙算游戏（the game of master mind）的玩法如下。&lt;/p&gt;
 &lt;p&gt;计算机有4个槽，每个槽放一个球，颜色可能是红色（R）、黄色（Y）、绿色（G）或蓝色（B）。例如，计算机可能有RGGB</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-16-14</title>
-    <link href="http://nichunen.github.io/2023/11/10/gold-16-14/"/>
-    <id>http://nichunen.github.io/2023/11/10/gold-16-14/</id>
-    <published>2023-11-10T03:17:03.000Z</published>
-    <updated>2023-11-10T06:27:18.758Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个二维平面及平面上的 N</summary>
         
       
     
