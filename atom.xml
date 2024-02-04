@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-02-02T12:33:22.844Z</updated>
+  <updated>2024-02-04T13:17:13.827Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -21,15 +21,26 @@
     <link href="http://nichunen.github.io/2024/02/02/gold-17-19/"/>
     <id>http://nichunen.github.io/2024/02/02/gold-17-19/</id>
     <published>2024-02-02T12:33:22.000Z</published>
-    <updated>2024-02-02T12:33:22.844Z</updated>
+    <updated>2024-02-04T13:17:13.827Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个数组，包含从 1 到 N 所有的整数，但其中缺了两个数字。你能在 O(N) 时间内只用 O(1) 的空间找到它们吗？&lt;/p&gt;
+&lt;p&gt;以任意顺序返回这两个数字均可。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
     
     
     
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
     
-    <category term="默认" scheme="http://nichunen.github.io/categories/%E9%BB%98%E8%AE%A4/"/>
     
-    
-    <category term="其他" scheme="http://nichunen.github.io/tags/%E5%85%B6%E4%BB%96/"/>
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
     
   </entry>
   
