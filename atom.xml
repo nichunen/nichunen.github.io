@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-02-21T09:29:48.582Z</updated>
+  <updated>2024-02-23T12:10:06.134Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-889</title>
+    <link href="http://nichunen.github.io/2024/02/22/lc-889/"/>
+    <id>http://nichunen.github.io/2024/02/22/lc-889/</id>
+    <published>2024-02-22T02:48:19.000Z</published>
+    <updated>2024-02-23T12:10:06.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个整数数组，&lt;code&gt;preorder&lt;/code&gt; 和 &lt;code&gt;postorder&lt;/code&gt; ，其中 &lt;code&gt;preorder&lt;/code&gt; 是一个具有 &lt;strong&gt;无重复&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-106</title>
@@ -505,32 +530,6 @@
         
     <summary type="html">&lt;p&gt;给定一个包含正整数、加(+)、减(-)、乘(*)、除(/)的算数表达式(括号除外)，计算其结果。&lt;/p&gt;
 &lt;p&gt;表达式仅包含非负整数，&lt;code&gt;+&lt;/code&gt;， &lt;code&gt;-&lt;/code&gt; ，&lt;code&gt;*&lt;/code&gt;，&lt;code&gt;/&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-16-25</title>
-    <link href="http://nichunen.github.io/2023/11/25/gold-16-25/"/>
-    <id>http://nichunen.github.io/2023/11/25/gold-16-25/</id>
-    <published>2023-11-25T03:46:06.000Z</published>
-    <updated>2023-11-25T13:29:17.706Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设计和构建一个“最近最少使用”缓存，该缓存会删除最近最少使用的项目。缓存应该从键映射到值(允许你插入和检索特定键对应的值)，并在初始化时指定最大容量。当缓存被填满时，它应该删除最近最少使用的项目。&lt;/p&gt;
-&lt;p&gt;它应该支持以下操作： 获取数据</summary>
         
       
     
