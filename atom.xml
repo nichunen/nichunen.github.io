@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-02-26T02:29:49.456Z</updated>
+  <updated>2024-02-27T03:25:28.393Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-135</title>
+    <link href="http://nichunen.github.io/2024/02/27/lc-135/"/>
+    <id>http://nichunen.github.io/2024/02/27/lc-135/</id>
+    <published>2024-02-27T03:20:24.000Z</published>
+    <updated>2024-02-27T03:25:28.393Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;code&gt;n&lt;/code&gt; 个孩子站成一排。给你一个整数数组 &lt;code&gt;ratings&lt;/code&gt; 表示每个孩子的评分。&lt;/p&gt;
+&lt;p&gt;你需要按照以下要求，给这些孩子分发糖果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每个孩子至少分配到 &lt;code&gt;1&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-889</title>
@@ -504,32 +532,6 @@
     <summary type="html">&lt;p&gt;设计一个函数把两个数字相加。不得使用 + 或者其他算术运算符。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;输入:</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-16-26</title>
-    <link href="http://nichunen.github.io/2023/11/26/gold-16-26/"/>
-    <id>http://nichunen.github.io/2023/11/26/gold-16-26/</id>
-    <published>2023-11-26T02:02:51.000Z</published>
-    <updated>2023-11-26T11:49:07.635Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个包含正整数、加(+)、减(-)、乘(*)、除(/)的算数表达式(括号除外)，计算其结果。&lt;/p&gt;
-&lt;p&gt;表达式仅包含非负整数，&lt;code&gt;+&lt;/code&gt;， &lt;code&gt;-&lt;/code&gt; ，&lt;code&gt;*&lt;/code&gt;，&lt;code&gt;/&lt;/code&gt;</summary>
         
       
     
