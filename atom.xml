@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-03-01T02:38:52.864Z</updated>
+  <updated>2024-03-04T03:17:26.207Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-225</title>
+    <link href="http://nichunen.github.io/2024/03/03/lc-225/"/>
+    <id>http://nichunen.github.io/2024/03/03/lc-225/</id>
+    <published>2024-03-03T13:33:01.000Z</published>
+    <updated>2024-03-04T03:17:26.207Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;请你仅使用两个队列实现一个后入先出（LIFO）的栈，并支持普通栈的全部四种操作（&lt;code&gt;push&lt;/code&gt;、&lt;code&gt;top&lt;/code&gt;、&lt;code&gt;pop&lt;/code&gt; 和 &lt;code&gt;empty&lt;/code&gt;）。&lt;/p&gt;
+&lt;p&gt;实现</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-135</title>
@@ -505,33 +531,6 @@
         
     <summary type="html">&lt;p&gt;数组&lt;code&gt;nums&lt;/code&gt;包含从&lt;code&gt;0&lt;/code&gt;到&lt;code&gt;n&lt;/code&gt;的所有整数，但其中缺了一个。请编写代码找出那个缺失的整数。你有办法在O(n)时间内完成吗？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;本题相对书上原题稍作改动&lt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-17-1</title>
-    <link href="http://nichunen.github.io/2023/11/27/gold-17-1/"/>
-    <id>http://nichunen.github.io/2023/11/27/gold-17-1/</id>
-    <published>2023-11-27T03:25:59.000Z</published>
-    <updated>2023-11-27T03:37:59.552Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设计一个函数把两个数字相加。不得使用 + 或者其他算术运算符。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;输入:</summary>
         
       
     
