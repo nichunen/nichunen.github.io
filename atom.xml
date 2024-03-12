@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-03-11T03:45:47.876Z</updated>
+  <updated>2024-03-12T03:17:03.898Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-145</title>
+    <link href="http://nichunen.github.io/2024/03/12/lc-145/"/>
+    <id>http://nichunen.github.io/2024/03/12/lc-145/</id>
+    <published>2024-03-12T02:27:38.000Z</published>
+    <updated>2024-03-12T03:17:03.898Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一棵二叉树的根节点 &lt;code&gt;root&lt;/code&gt; ，返回其节点值的 &lt;strong&gt;后序遍历&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-144</title>
@@ -504,33 +531,6 @@
         
         
     <summary type="html">&lt;p&gt;每年，政府都会公布一万个最常见的婴儿名字和它们出现的频率，也就是同名婴儿的数量。有些名字有多种拼法，例如，John 和 Jon</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-17-6</title>
-    <link href="http://nichunen.github.io/2023/12/05/gold-17-6/"/>
-    <id>http://nichunen.github.io/2023/12/05/gold-17-6/</id>
-    <published>2023-12-05T07:15:04.000Z</published>
-    <updated>2023-12-05T07:19:07.740Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
