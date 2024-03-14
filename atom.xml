@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-03-12T03:17:03.898Z</updated>
+  <updated>2024-03-14T14:26:12.108Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-147</title>
+    <link href="http://nichunen.github.io/2024/03/13/lc-147/"/>
+    <id>http://nichunen.github.io/2024/03/13/lc-147/</id>
+    <published>2024-03-13T02:44:13.000Z</published>
+    <updated>2024-03-14T14:26:12.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定单个链表的头 &lt;code&gt;head&lt;/code&gt; ，使用 &lt;strong&gt;插入排序&lt;/strong&gt; 对链表进行排序，并返回 &lt;em&gt;排序后链表的头&lt;/em&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;插入排序&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-145</title>
@@ -506,31 +532,6 @@
     <summary type="html">&lt;p&gt;有个马戏团正在设计叠罗汉的表演节目，一个人要站在另一人的肩膀上。出于实际和美观的考虑，在上面的人要比下面的人矮一点且轻一点。已知马戏团每个人的身高和体重，请编写代码计算叠罗汉最多能叠几个人。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-17-7</title>
-    <link href="http://nichunen.github.io/2023/12/06/gold-17-7/"/>
-    <id>http://nichunen.github.io/2023/12/06/gold-17-7/</id>
-    <published>2023-12-06T11:30:38.000Z</published>
-    <updated>2023-12-06T12:44:23.612Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;每年，政府都会公布一万个最常见的婴儿名字和它们出现的频率，也就是同名婴儿的数量。有些名字有多种拼法，例如，John 和 Jon</summary>
         
       
     
