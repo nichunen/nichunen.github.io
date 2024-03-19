@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-03-17T12:01:38.996Z</updated>
+  <updated>2024-03-18T02:09:57.277Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-164</title>
+    <link href="http://nichunen.github.io/2024/03/18/lc-164/"/>
+    <id>http://nichunen.github.io/2024/03/18/lc-164/</id>
+    <published>2024-03-18T02:09:24.000Z</published>
+    <updated>2024-03-18T02:09:57.277Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个无序的数组 &lt;code&gt;nums&lt;/code&gt;，返回 &lt;em&gt;数组在排序之后，相邻元素之间最大的差值&lt;/em&gt; 。如果数组元素个数小于 2，则返回 &lt;code&gt;0&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-153</title>
@@ -501,33 +526,6 @@
         
         
     <summary type="html">&lt;p&gt;二叉树数据结构&lt;code&gt;TreeNode&lt;/code&gt;可用来表示单向链表（其中&lt;code&gt;left&lt;/code&gt;置空，&lt;code&gt;right&lt;/code&gt;为下一个链表节点）。实现一个方法，把二叉搜索树转换为单向链表，要求依然符合二叉搜索树的性质，转换操作应是原址的，也就是</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-17-11</title>
-    <link href="http://nichunen.github.io/2023/12/20/gold-17-11/"/>
-    <id>http://nichunen.github.io/2023/12/20/gold-17-11/</id>
-    <published>2023-12-20T03:02:11.000Z</published>
-    <updated>2023-12-20T03:02:53.209Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;有个内含单词的超大文本文件，给定任意两个&lt;code&gt;不同的&lt;/code&gt;单词，找出在这个文件中这两个单词的最短距离(相隔单词数)。如果寻找过程在这个文件中会重复多次，而每次寻找的单词不同，你能对此优化吗?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
-&lt;p</summary>
         
       
     
