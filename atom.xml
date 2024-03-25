@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-03-24T14:44:51.841Z</updated>
+  <updated>2024-03-25T02:23:07.053Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-172</title>
+    <link href="http://nichunen.github.io/2024/03/25/lc-172/"/>
+    <id>http://nichunen.github.io/2024/03/25/lc-172/</id>
+    <published>2024-03-25T02:16:37.000Z</published>
+    <updated>2024-03-25T02:23:07.053Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个整数 &lt;code&gt;n&lt;/code&gt; ，返回 &lt;code&gt;n!&lt;/code&gt; 结果中尾随零的数量。&lt;/p&gt;
+&lt;p&gt;提示 &lt;code&gt;n! = n * (n - 1) * (n - 2) * ... * 3 * 2 *</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-168</title>
@@ -502,32 +528,6 @@
         
     <summary type="html">&lt;p&gt;一个有名的按摩师会收到源源不断的预约请求，每个预约都可以选择接或不接。在每次预约服务之间要有休息时间，因此她不能接受相邻的预约。给定一个预约请求序列，替按摩师找到最优的预约集合（总预约时间最长），返回总的分钟数。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;本题相</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-17-15</title>
-    <link href="http://nichunen.github.io/2024/01/03/gold-17-15/"/>
-    <id>http://nichunen.github.io/2024/01/03/gold-17-15/</id>
-    <published>2024-01-03T07:02:27.000Z</published>
-    <updated>2024-01-03T12:00:17.417Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一组单词&lt;code&gt;words&lt;/code&gt;，编写一个程序，找出其中的最长单词，且该单词由这组单词中的其他单词组合而成。若有多个长度相同的结果，返回其中字典序最小的一项，若没有符合要求的单词则返回空字符串。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;</summary>
         
       
     
