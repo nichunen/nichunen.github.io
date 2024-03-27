@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-03-26T03:36:35.636Z</updated>
+  <updated>2024-03-27T02:36:20.076Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-176</title>
+    <link href="http://nichunen.github.io/2024/03/27/lc-176/"/>
+    <id>http://nichunen.github.io/2024/03/27/lc-176/</id>
+    <published>2024-03-27T02:07:07.000Z</published>
+    <updated>2024-03-27T02:36:20.076Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;code&gt;Employee&lt;/code&gt; 表：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+------+
+| Column Name |</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-174</title>
@@ -502,31 +529,6 @@
     <summary type="html">&lt;p&gt;假设你有两个数组，一个长一个短，短的元素均不相同。找到长数组中包含短数组所有的元素的最短子数组，其出现顺序无关紧要。&lt;/p&gt;
 &lt;p&gt;返回最短子数组的左端点和右端点，如有多个满足条件的子数组，返回左端点最小的一个。若不存在，返回空数组。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-17-17</title>
-    <link href="http://nichunen.github.io/2024/01/26/gold-17-17/"/>
-    <id>http://nichunen.github.io/2024/01/26/gold-17-17/</id>
-    <published>2024-01-26T05:13:55.000Z</published>
-    <updated>2024-01-28T05:53:13.619Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个较长字符串&lt;code&gt;big&lt;/code&gt;和一个包含较短字符串的数组&lt;code&gt;smalls&lt;/code&gt;，设计一个方法，根据&lt;code&gt;smalls&lt;/code&gt;中的每一个较短字符串，对&lt;code&gt;big&lt;/code&gt;进行搜索。输出&lt;code&gt;smalls&lt;/co</summary>
         
       
     
