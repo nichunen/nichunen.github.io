@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-03-27T02:36:20.076Z</updated>
+  <updated>2024-03-28T02:29:33.282Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-177</title>
+    <link href="http://nichunen.github.io/2024/03/28/lc-177/"/>
+    <id>http://nichunen.github.io/2024/03/28/lc-177/</id>
+    <published>2024-03-28T02:28:07.000Z</published>
+    <updated>2024-03-28T02:29:33.282Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;表: &lt;code&gt;Employee&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+------+
+| Column Name |</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-176</title>
@@ -502,33 +529,6 @@
 &lt;p&gt;以任意顺序返回这两个数字均可。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-17-18</title>
-    <link href="http://nichunen.github.io/2024/01/29/gold-17-18/"/>
-    <id>http://nichunen.github.io/2024/01/29/gold-17-18/</id>
-    <published>2024-01-29T02:05:42.000Z</published>
-    <updated>2024-02-01T03:32:41.710Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;假设你有两个数组，一个长一个短，短的元素均不相同。找到长数组中包含短数组所有的元素的最短子数组，其出现顺序无关紧要。&lt;/p&gt;
-&lt;p&gt;返回最短子数组的左端点和右端点，如有多个满足条件的子数组，返回左端点最小的一个。若不存在，返回空数组。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例</summary>
         
       
     
