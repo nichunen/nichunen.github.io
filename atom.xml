@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-03-29T03:06:24.454Z</updated>
+  <updated>2024-03-31T02:40:53.983Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-180</title>
+    <link href="http://nichunen.github.io/2024/03/31/lc-180/"/>
+    <id>http://nichunen.github.io/2024/03/31/lc-180/</id>
+    <published>2024-03-31T02:24:50.000Z</published>
+    <updated>2024-03-31T02:40:53.983Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;表：&lt;code&gt;Logs&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+---------+
+| Column Name |</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-178</title>
@@ -500,34 +527,6 @@
     <summary type="html">&lt;p&gt;给定字典中的两个词，长度相等。写一个方法，把一个词转换成另一个词， 但是一次只能改变一个字符。每一步得到的新词都必须能在字典中找到。&lt;/p&gt;
 &lt;p&gt;编写一个程序，返回一个可能的转换序列。如有多个可能的转换序列，你可以返回任何一个。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gold-17-20</title>
-    <link href="http://nichunen.github.io/2024/02/06/gold-17-20/"/>
-    <id>http://nichunen.github.io/2024/02/06/gold-17-20/</id>
-    <published>2024-02-06T03:51:38.000Z</published>
-    <updated>2024-02-06T14:41:55.268Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;随机产生数字并传递给一个方法。你能否完成这个方法，在每次产生新值时，寻找当前所有值的中间值（中位数）并保存。&lt;/p&gt;
-&lt;p&gt;中位数是有序列表中间的数。如果列表长度是偶数，中位数则是中间两个数的平均值。&lt;/p&gt;
-&lt;p&gt;例如，&lt;/p&gt;
-&lt;p&gt;[2,3,4] 的中位数是</summary>
         
       
     
