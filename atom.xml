@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-04-03T12:10:29.634Z</updated>
+  <updated>2024-04-06T02:50:32.213Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-181</title>
+    <link href="http://nichunen.github.io/2024/04/06/lc-181/"/>
+    <id>http://nichunen.github.io/2024/04/06/lc-181/</id>
+    <published>2024-04-06T02:38:48.000Z</published>
+    <updated>2024-04-06T02:50:32.213Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;表：&lt;code&gt;Employee&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+---------+
+| Column Name</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-199</title>
@@ -502,31 +529,6 @@
         
         
     <summary type="html">&lt;p&gt;给定两个整数数组，&lt;code&gt;preorder&lt;/code&gt; 和 &lt;code&gt;postorder&lt;/code&gt; ，其中 &lt;code&gt;preorder&lt;/code&gt; 是一个具有 &lt;strong&gt;无重复&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-106</title>
-    <link href="http://nichunen.github.io/2024/02/21/lc-106/"/>
-    <id>http://nichunen.github.io/2024/02/21/lc-106/</id>
-    <published>2024-02-21T06:19:34.000Z</published>
-    <updated>2024-02-21T09:29:48.582Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定两个整数数组 &lt;code&gt;inorder&lt;/code&gt; 和 &lt;code&gt;postorder&lt;/code&gt; ，其中 &lt;code&gt;inorder&lt;/code&gt; 是二叉树的中序遍历， &lt;code&gt;postorder&lt;/code&gt; 是同一棵树的后序遍历，请你构造并返回这颗</summary>
         
       
     
