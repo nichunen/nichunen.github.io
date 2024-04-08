@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-04-08T03:18:33.488Z</updated>
+  <updated>2024-04-08T12:23:31.825Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-203</title>
+    <link href="http://nichunen.github.io/2024/04/08/lc-203/"/>
+    <id>http://nichunen.github.io/2024/04/08/lc-203/</id>
+    <published>2024-04-08T07:51:59.000Z</published>
+    <updated>2024-04-08T12:23:31.825Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个链表的头节点 &lt;code&gt;head&lt;/code&gt; 和一个整数 &lt;code&gt;val&lt;/code&gt; ，请你删除链表中所有满足 &lt;code&gt;Node.val == val&lt;/code&gt; 的节点，并返回 &lt;strong&gt;新的头节点&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-182</title>
@@ -502,32 +527,6 @@
         
     <summary type="html">&lt;p&gt;给定一个单链表 &lt;code&gt;L&lt;/code&gt; 的头节点 &lt;code&gt;head&lt;/code&gt; ，单链表 &lt;code&gt;L&lt;/code&gt; 表示为：&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-225</title>
-    <link href="http://nichunen.github.io/2024/03/03/lc-225/"/>
-    <id>http://nichunen.github.io/2024/03/03/lc-225/</id>
-    <published>2024-03-03T13:33:01.000Z</published>
-    <updated>2024-03-07T14:28:37.839Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请你仅使用两个队列实现一个后入先出（LIFO）的栈，并支持普通栈的全部四种操作（&lt;code&gt;push&lt;/code&gt;、&lt;code&gt;top&lt;/code&gt;、&lt;code&gt;pop&lt;/code&gt; 和 &lt;code&gt;empty&lt;/code&gt;）。&lt;/p&gt;
-&lt;p&gt;实现</summary>
         
       
     
