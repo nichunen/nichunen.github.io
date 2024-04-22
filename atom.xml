@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-04-21T12:27:23.343Z</updated>
+  <updated>2024-04-22T07:38:20.620Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-210</title>
+    <link href="http://nichunen.github.io/2024/04/22/lc-210/"/>
+    <id>http://nichunen.github.io/2024/04/22/lc-210/</id>
+    <published>2024-04-22T02:46:28.000Z</published>
+    <updated>2024-04-22T07:38:20.620Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;现在你总共有 &lt;code&gt;numCourses&lt;/code&gt; 门课需要选，记为 &lt;code&gt;0&lt;/code&gt; 到 &lt;code&gt;numCourses - 1&lt;/code&gt;。给你一个数组 &lt;code&gt;prerequisites&lt;/code&gt; ，其中</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-185</title>
@@ -505,31 +530,6 @@
         
         
     <summary type="html">&lt;p&gt;给你一个下标从 &lt;strong&gt;1&lt;/strong&gt; 开始的整数数组 &lt;code&gt;numbers&lt;/code&gt; ，该数组已按 &lt;strong&gt;非递减顺序排列&lt;/strong&gt; ，请你从数组中找出满足相加之和等于目标数 &lt;code&gt;target&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-164</title>
-    <link href="http://nichunen.github.io/2024/03/18/lc-164/"/>
-    <id>http://nichunen.github.io/2024/03/18/lc-164/</id>
-    <published>2024-03-18T02:09:24.000Z</published>
-    <updated>2024-03-20T15:31:35.795Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个无序的数组 &lt;code&gt;nums&lt;/code&gt;，返回 &lt;em&gt;数组在排序之后，相邻元素之间最大的差值&lt;/em&gt; 。如果数组元素个数小于 2，则返回 &lt;code&gt;0&lt;/code&gt;</summary>
         
       
     
