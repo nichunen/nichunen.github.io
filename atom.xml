@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-04-25T09:53:50.489Z</updated>
+  <updated>2024-04-26T07:38:15.158Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-192</title>
+    <link href="http://nichunen.github.io/2024/04/26/lc-192/"/>
+    <id>http://nichunen.github.io/2024/04/26/lc-192/</id>
+    <published>2024-04-26T07:17:12.000Z</published>
+    <updated>2024-04-26T07:38:15.158Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;写一个 bash 脚本以统计一个文本文件 &lt;code&gt;words.txt&lt;/code&gt; 中每个单词出现的频率。&lt;/p&gt;
+&lt;p&gt;为了简单起见，你可以假设：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;words.txt&lt;/code&gt;只包括小写字母和 &lt;code&gt;&#39;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-189</title>
@@ -506,31 +534,6 @@
     <summary type="html">&lt;p&gt;&lt;code&gt;Employee&lt;/code&gt; 表：&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+------+
 | Column Name |</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-174</title>
-    <link href="http://nichunen.github.io/2024/03/26/lc-174/"/>
-    <id>http://nichunen.github.io/2024/03/26/lc-174/</id>
-    <published>2024-03-26T02:31:40.000Z</published>
-    <updated>2024-03-26T03:36:35.636Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;恶魔们抓住了公主并将她关在了地下城 &lt;code&gt;dungeon&lt;/code&gt; 的 &lt;strong&gt;右下角&lt;/strong&gt; 。地下城是由 &lt;code&gt;m x n&lt;/code&gt; 个房间组成的二维网格。我们英勇的骑士最初被安置在 &lt;strong&gt;左上角&lt;/strong&gt;</summary>
         
       
     
