@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-04-29T12:58:54.606Z</updated>
+  <updated>2024-05-05T03:46:41.670Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-193</title>
+    <link href="http://nichunen.github.io/2024/05/05/lc-193/"/>
+    <id>http://nichunen.github.io/2024/05/05/lc-193/</id>
+    <published>2024-05-05T03:37:41.000Z</published>
+    <updated>2024-05-05T03:46:41.670Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个包含电话号码列表（一行一个电话号码）的文本文件 &lt;code&gt;file.txt&lt;/code&gt;，写一个单行 bash 脚本输出所有有效的电话号码。&lt;/p&gt;
+&lt;p&gt;你可以假设一个有效的电话号码必须满足以下两种格式： (xxx) xxx-xxxx 或</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-211</title>
@@ -505,33 +531,6 @@
         
         
     <summary type="html">&lt;p&gt;表：&lt;code&gt;Logs&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+---------+
-| Column Name |</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-178</title>
-    <link href="http://nichunen.github.io/2024/03/29/lc-178/"/>
-    <id>http://nichunen.github.io/2024/03/29/lc-178/</id>
-    <published>2024-03-29T02:50:37.000Z</published>
-    <updated>2024-03-29T03:06:24.454Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;表: &lt;code&gt;Scores&lt;/code&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+---------+
 | Column Name |</summary>
         
