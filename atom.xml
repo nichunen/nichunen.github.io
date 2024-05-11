@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-05-09T03:16:17.558Z</updated>
+  <updated>2024-05-11T08:08:25.739Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-216</title>
+    <link href="http://nichunen.github.io/2024/05/11/lc-216/"/>
+    <id>http://nichunen.github.io/2024/05/11/lc-216/</id>
+    <published>2024-05-11T02:03:22.000Z</published>
+    <updated>2024-05-11T08:08:25.739Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;找出所有相加之和为 &lt;code&gt;n&lt;/code&gt; 的 &lt;code&gt;k&lt;/code&gt; 个数的组合，且满足下列条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只使用数字1到9&lt;/li&gt;
+&lt;li&gt;每个数字 &lt;strong&gt;最多使用一次&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;返回</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-214</title>
@@ -507,33 +537,6 @@
         
         
     <summary type="html">&lt;p&gt;给你两个整数 &lt;code&gt;left&lt;/code&gt; 和 &lt;code&gt;right&lt;/code&gt; ，表示区间 &lt;code&gt;[left, right]&lt;/code&gt; ，返回此区间内所有数字 &lt;strong&gt;按位与&lt;/strong&gt; 的结果（包含 &lt;code&gt;left&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-181</title>
-    <link href="http://nichunen.github.io/2024/04/06/lc-181/"/>
-    <id>http://nichunen.github.io/2024/04/06/lc-181/</id>
-    <published>2024-04-06T02:38:48.000Z</published>
-    <updated>2024-04-06T02:50:32.213Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;表：&lt;code&gt;Employee&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+---------+
-| Column Name</summary>
         
       
     
