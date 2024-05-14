@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="lc-195, 倪春恩的博客">
+    <meta name="keywords" content="lc-218, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>lc-195 | 倪春恩的博客</title>
+    <title>lc-218 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">lc-195</h1>
+                    <h1 class="description center-align post-title">lc-218</h1>
                 </div>
             </div>
         </div>
@@ -365,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-05-13
+                    2024-05-14
                 </div>
                 
 
@@ -389,29 +389,66 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>给定一个文本文件 <code>file.txt</code>，请只打印这个文件中的第十行。</p>
-<p><strong>示例:</strong></p>
-<p>假设 <code>file.txt</code> 有如下内容：</p>
-<pre class="line-numbers language-none"><code class="language-none">Line 1
-Line 2
-Line 3
-Line 4
-Line 5
-Line 6
-Line 7
-Line 8
-Line 9
-Line 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <p>城市的 <strong>天际线</strong> 是从远处观看该城市中所有建筑物形成的轮廓的外部轮廓。给你所有建筑物的位置和高度，请返回 <em>由这些建筑物形成的 <strong>天际线</strong></em> 。</p>
+<p>每个建筑物的几何信息由数组 <code>buildings</code> 表示，其中三元组 <code>buildings[i] = [lefti, righti, heighti]</code> 表示：</p>
+<ul>
+<li><code>lefti</code> 是第 <code>i</code> 座建筑物左边缘的 <code>x</code> 坐标。</li>
+<li><code>righti</code> 是第 <code>i</code> 座建筑物右边缘的 <code>x</code> 坐标。</li>
+<li><code>heighti</code> 是第 <code>i</code> 座建筑物的高度。</li>
+</ul>
+<p>你可以假设所有的建筑都是完美的长方形，在高度为 <code>0</code> 的绝对平坦的表面上。</p>
+<p><strong>天际线</strong> 应该表示为由 “关键点” 组成的列表，格式 <code>[[x1,y1],[x2,y2],...]</code> ，并按 <strong>x 坐标</strong> 进行 <strong>排序</strong> 。<strong>关键点是水平线段的左端点</strong>。列表中最后一个点是最右侧建筑物的终点，<code>y</code> 坐标始终为 <code>0</code> ，仅用于标记天际线的终点。此外，任何两个相邻建筑物之间的地面都应被视为天际线轮廓的一部分。</p>
+<p><strong>注意：</strong>输出天际线中不得有连续的相同高度的水平线。例如 <code>[...[2 3], [4 5], [7 5], [11 5], [12 7]...]</code> 是不正确的答案；三条高度为 5 的线应该在最终输出中合并为一个：<code>[...[2 3], [4 5], [12 7], ...]</code></p>
+<p><strong>示例 1：</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/12/01/merged.jpg" alt="img"></p>
+<pre class="line-numbers language-none"><code class="language-none">输入：buildings = [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]
+输出：[[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
+解释：
+图 A 显示输入的所有建筑物的位置和高度，
+图 B 显示由这些建筑物形成的天际线。图 B 中的红点表示输出列表中的关键点。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>你的脚本应当显示第十行：</p>
-<pre class="line-numbers language-none"><code class="language-none">Line 10<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>示例 2：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">输入：buildings = [[0,2,3],[2,5,3]]
+输出：[[0,3],[5,0]]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p><strong>说明:</strong></p>
-<ol>
-<li>如果文件少于十行，你应当输出什么？</li>
-<li>至少有三种不同的解法，请尝试尽可能多的方法来解题。</li>
-</ol>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">tail -n +10 file.txt | head -1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>1 &lt;= buildings.length &lt;= 104</code></li>
+<li><code>0 &lt;= lefti &lt; righti &lt;= 231 - 1</code></li>
+<li><code>1 &lt;= heighti &lt;= 231 - 1</code></li>
+<li><code>buildings</code> 按 <code>lefti</code> 非递减排序</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">getSkyline</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> buildings<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">PriorityQueue</span><span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> pq <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PriorityQueue</span><span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> b<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> boundaries <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> building <span class="token operator">:</span> buildings<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            boundaries<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>building<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            boundaries<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>building<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>boundaries<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> ret <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> buildings<span class="token punctuation">.</span>length<span class="token punctuation">,</span> idx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> boundary <span class="token operator">:</span> boundaries<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>idx <span class="token operator">&lt;</span> n <span class="token operator">&amp;&amp;</span> buildings<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> boundary<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                pq<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span>buildings<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> buildings<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                idx<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>pq<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> pq<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> boundary<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                pq<span class="token punctuation">.</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">int</span> maxn <span class="token operator">=</span> pq<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> pq<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>ret<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> maxn <span class="token operator">!=</span> ret<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>ret<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                ret<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span>boundary<span class="token punctuation">,</span> maxn<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> ret<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -438,7 +475,7 @@ Line 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nichunen.github.io/2024/05/13/lc-195/">http://nichunen.github.io/2024/05/13/lc-195/</a>
+                    <a href="http://nichunen.github.io/2024/05/14/lc-218/">http://nichunen.github.io/2024/05/14/lc-218/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -647,9 +684,10 @@ Line 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2024/05/14/lc-218/">
                     <div class="card-image">
@@ -667,9 +705,9 @@ Line 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-05-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -682,6 +720,7 @@ Line 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -700,13 +739,13 @@ Line 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/05/11/lc-216/">
+                <a href="/2024/05/13/lc-195/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="lc-216">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="lc-195">
                         
-                        <span class="card-title">lc-216</span>
+                        <span class="card-title">lc-195</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -717,7 +756,7 @@ Line 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-13
                             </span>
                         <span class="publish-author">
                             
