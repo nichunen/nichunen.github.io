@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-05-15T13:52:43.699Z</updated>
+  <updated>2024-05-16T09:45:36.393Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-196</title>
+    <link href="http://nichunen.github.io/2024/05/16/lc-196/"/>
+    <id>http://nichunen.github.io/2024/05/16/lc-196/</id>
+    <published>2024-05-16T07:11:44.000Z</published>
+    <updated>2024-05-16T09:45:36.393Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;表: &lt;code&gt;Person&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+---------+
+| Column Name |</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-222</title>
@@ -514,32 +541,6 @@
     <summary type="html">&lt;p&gt;&lt;code&gt;Customers&lt;/code&gt; 表：&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+---------+
 | Column</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-151</title>
-    <link href="http://nichunen.github.io/2024/04/10/lc-151/"/>
-    <id>http://nichunen.github.io/2024/04/10/lc-151/</id>
-    <published>2024-04-10T03:17:58.000Z</published>
-    <updated>2024-04-12T02:25:32.255Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一个字符串 &lt;code&gt;s&lt;/code&gt; ，请你反转字符串中 &lt;strong&gt;单词&lt;/strong&gt; 的顺序。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;单词&lt;/strong&gt; 是由非空格字符组成的字符串。&lt;code&gt;s&lt;/code&gt; 中使用至少一个空格将字符串中的</summary>
         
       
     
