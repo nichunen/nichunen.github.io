@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-05-22T02:39:08.672Z</updated>
+  <updated>2024-05-23T02:32:22.380Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-230</title>
+    <link href="http://nichunen.github.io/2024/05/23/lc-230/"/>
+    <id>http://nichunen.github.io/2024/05/23/lc-230/</id>
+    <published>2024-05-23T02:30:51.000Z</published>
+    <updated>2024-05-23T02:32:22.380Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个二叉搜索树的根节点 &lt;code&gt;root&lt;/code&gt; ，和一个整数 &lt;code&gt;k&lt;/code&gt; ，请你设计一个算法查找其中第 &lt;code&gt;k&lt;/code&gt; 个最小元素（从 1 开始计数）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-229</title>
@@ -515,32 +541,6 @@
     <summary type="html">&lt;p&gt;表: &lt;code&gt;Employee&lt;/code&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+--------------+---------+
 | Column</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-209</title>
-    <link href="http://nichunen.github.io/2024/04/18/lc-209/"/>
-    <id>http://nichunen.github.io/2024/04/18/lc-209/</id>
-    <published>2024-04-18T03:37:22.000Z</published>
-    <updated>2024-04-18T06:44:17.861Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个含有 &lt;code&gt;n&lt;/code&gt; 个正整数的数组和一个正整数 &lt;code&gt;target&lt;/code&gt; &lt;strong&gt;。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;找出该数组中满足其总和大于等于 &lt;code&gt;target&lt;/code&gt; 的长度最小的</summary>
         
       
     
