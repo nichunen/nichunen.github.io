@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-05-29T03:40:45.182Z</updated>
+  <updated>2024-05-30T09:22:20.149Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-235</title>
+    <link href="http://nichunen.github.io/2024/05/30/lc-235/"/>
+    <id>http://nichunen.github.io/2024/05/30/lc-235/</id>
+    <published>2024-05-30T02:21:57.000Z</published>
+    <updated>2024-05-30T09:22:20.149Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-233</title>
@@ -516,31 +542,6 @@
     <summary type="html">&lt;p&gt;&lt;strong&gt;DNA序列&lt;/strong&gt; 由一系列核苷酸组成，缩写为 &lt;code&gt;&#39;A&#39;&lt;/code&gt;, &lt;code&gt;&#39;C&#39;&lt;/code&gt;, &lt;code&gt;&#39;G&#39;&lt;/code&gt; 和 &lt;code&gt;&#39;T&#39;&lt;/code&gt;.。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;例如，</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-210</title>
-    <link href="http://nichunen.github.io/2024/04/22/lc-210/"/>
-    <id>http://nichunen.github.io/2024/04/22/lc-210/</id>
-    <published>2024-04-22T02:46:28.000Z</published>
-    <updated>2024-04-22T07:38:20.620Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;现在你总共有 &lt;code&gt;numCourses&lt;/code&gt; 门课需要选，记为 &lt;code&gt;0&lt;/code&gt; 到 &lt;code&gt;numCourses - 1&lt;/code&gt;。给你一个数组 &lt;code&gt;prerequisites&lt;/code&gt; ，其中</summary>
         
       
     
