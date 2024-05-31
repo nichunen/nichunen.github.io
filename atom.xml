@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-05-30T09:22:20.149Z</updated>
+  <updated>2024-05-31T03:04:25.209Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-237</title>
+    <link href="http://nichunen.github.io/2024/05/31/lc-237/"/>
+    <id>http://nichunen.github.io/2024/05/31/lc-237/</id>
+    <published>2024-05-31T02:12:28.000Z</published>
+    <updated>2024-05-31T03:04:25.209Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;有一个单链表的 &lt;code&gt;head&lt;/code&gt;，我们想删除它其中的一个节点 &lt;code&gt;node&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;给你一个需要删除的节点 &lt;code&gt;node&lt;/code&gt; 。你将 &lt;strong&gt;无法访问&lt;/strong&gt; 第一个节点</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-235</title>
@@ -515,33 +541,6 @@
         
         
     <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;prices&lt;/code&gt; 和一个整数 &lt;code&gt;k&lt;/code&gt; ，其中 &lt;code&gt;prices[i]&lt;/code&gt; 是某支给定的股票在第 &lt;code&gt;i&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-187</title>
-    <link href="http://nichunen.github.io/2024/04/23/lc-187/"/>
-    <id>http://nichunen.github.io/2024/04/23/lc-187/</id>
-    <published>2024-04-23T02:34:15.000Z</published>
-    <updated>2024-04-23T05:38:39.435Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;DNA序列&lt;/strong&gt; 由一系列核苷酸组成，缩写为 &lt;code&gt;&#39;A&#39;&lt;/code&gt;, &lt;code&gt;&#39;C&#39;&lt;/code&gt;, &lt;code&gt;&#39;G&#39;&lt;/code&gt; 和 &lt;code&gt;&#39;T&#39;&lt;/code&gt;.。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;例如，</summary>
         
       
     
