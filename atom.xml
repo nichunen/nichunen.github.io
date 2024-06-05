@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-06-03T13:29:41.628Z</updated>
+  <updated>2024-06-05T12:44:02.444Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-242</title>
+    <link href="http://nichunen.github.io/2024/06/05/lc-242/"/>
+    <id>http://nichunen.github.io/2024/06/05/lc-242/</id>
+    <published>2024-06-05T11:59:33.000Z</published>
+    <updated>2024-06-05T12:44:02.444Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个字符串 &lt;code&gt;*s*&lt;/code&gt; 和 &lt;code&gt;*t*&lt;/code&gt; ，编写一个函数来判断 &lt;code&gt;*t*&lt;/code&gt; 是否是 &lt;code&gt;*s*&lt;/code&gt; 的字母异位词。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;若</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-241</title>
@@ -515,33 +541,6 @@
 &lt;p&gt;为了简单起见，你可以假设：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;words.txt&lt;/code&gt;只包括小写字母和 &lt;code&gt;&#39;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-189</title>
-    <link href="http://nichunen.github.io/2024/04/25/lc-189/"/>
-    <id>http://nichunen.github.io/2024/04/25/lc-189/</id>
-    <published>2024-04-25T02:37:12.000Z</published>
-    <updated>2024-04-25T09:53:50.489Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个整数数组 &lt;code&gt;nums&lt;/code&gt;，将数组中的元素向右轮转 &lt;code&gt;k&lt;/code&gt; 个位置，其中 &lt;code&gt;k&lt;/code&gt; 是非负数。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
