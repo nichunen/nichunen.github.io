@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-06-18T09:23:47.241Z</updated>
+  <updated>2024-06-19T03:33:38.954Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-264</title>
+    <link href="http://nichunen.github.io/2024/06/19/lc-264/"/>
+    <id>http://nichunen.github.io/2024/06/19/lc-264/</id>
+    <published>2024-06-19T02:07:52.000Z</published>
+    <updated>2024-06-19T03:33:38.954Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个整数 &lt;code&gt;n&lt;/code&gt; ，请你找出并返回第 &lt;code&gt;n&lt;/code&gt; 个 &lt;strong&gt;丑数&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;丑数&lt;/strong&gt; 就是质因子只包含 &lt;code&gt;2&lt;/code&gt;、&lt;code&gt;3&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-263</title>
@@ -510,34 +536,6 @@
     <summary type="html">&lt;p&gt;给定一个字符串 &lt;em&gt;&lt;strong&gt;s&lt;/strong&gt;&lt;/em&gt;，你可以通过在字符串前面添加字符将其转换为回文串。找到并返回可以用这种方式转换的最短回文串。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-194</title>
-    <link href="http://nichunen.github.io/2024/05/07/lc-194/"/>
-    <id>http://nichunen.github.io/2024/05/07/lc-194/</id>
-    <published>2024-05-07T02:29:45.000Z</published>
-    <updated>2024-05-07T06:35:07.119Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个文件 &lt;code&gt;file.txt&lt;/code&gt;，转置它的内容。&lt;/p&gt;
-&lt;p&gt;你可以假设每行列数相同，并且每个字段由 &lt;code&gt;&#39; &#39;&lt;/code&gt; 分隔。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;假设</summary>
         
       
     
