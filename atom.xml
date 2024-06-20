@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-06-19T03:33:38.954Z</updated>
+  <updated>2024-06-20T03:31:39.160Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-268</title>
+    <link href="http://nichunen.github.io/2024/06/20/lc-268/"/>
+    <id>http://nichunen.github.io/2024/06/20/lc-268/</id>
+    <published>2024-06-20T02:11:43.000Z</published>
+    <updated>2024-06-20T03:31:39.160Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个包含 &lt;code&gt;[0, n]&lt;/code&gt; 中 &lt;code&gt;n&lt;/code&gt; 个数的数组 &lt;code&gt;nums&lt;/code&gt; ，找出 &lt;code&gt;[0, n]&lt;/code&gt; 这个范围内没有出现在数组中的那个数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-264</title>
@@ -509,33 +535,6 @@
 &lt;li&gt;每个数字 &lt;strong&gt;最多使用一次&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;返回</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-214</title>
-    <link href="http://nichunen.github.io/2024/05/08/lc-214/"/>
-    <id>http://nichunen.github.io/2024/05/08/lc-214/</id>
-    <published>2024-05-08T12:20:15.000Z</published>
-    <updated>2024-05-09T03:16:17.558Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个字符串 &lt;em&gt;&lt;strong&gt;s&lt;/strong&gt;&lt;/em&gt;，你可以通过在字符串前面添加字符将其转换为回文串。找到并返回可以用这种方式转换的最短回文串。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre</summary>
         
       
     
