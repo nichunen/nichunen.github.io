@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="lc-268, 倪春恩的博客">
+    <meta name="keywords" content="lc-273, 倪春恩的博客">
     <meta name="description" content="倪春恩的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>lc-268 | 倪春恩的博客</title>
+    <title>lc-273 | 倪春恩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">lc-268</h1>
+                    <h1 class="description center-align post-title">lc-273</h1>
                 </div>
             </div>
         </div>
@@ -365,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-06-20
+                    2024-06-21
                 </div>
                 
 
@@ -389,58 +389,63 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>给定一个包含 <code>[0, n]</code> 中 <code>n</code> 个数的数组 <code>nums</code> ，找出 <code>[0, n]</code> 这个范围内没有出现在数组中的那个数。</p>
+                <p>将非负整数 <code>num</code> 转换为其对应的英文表示。</p>
 <p><strong>示例 1：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：nums = [3,0,1]
-输出：2
-解释：n = 3，因为有 3 个数字，所以所有的数字都在范围 [0,3] 内。2 是丢失的数字，因为它没有出现在 nums 中。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">输入：num = 123
+输出："One Hundred Twenty Three"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><strong>示例 2：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：nums = [0,1]
-输出：2
-解释：n = 2，因为有 2 个数字，所以所有的数字都在范围 [0,2] 内。2 是丢失的数字，因为它没有出现在 nums 中。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">输入：num = 12345
+输出："Twelve Thousand Three Hundred Forty Five"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><strong>示例 3：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：nums = [9,6,4,2,3,5,7,0,1]
-输出：8
-解释：n = 9，因为有 9 个数字，所以所有的数字都在范围 [0,9] 内。8 是丢失的数字，因为它没有出现在 nums 中。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>示例 4：</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：nums = [0]
-输出：1
-解释：n = 1，因为有 1 个数字，所以所有的数字都在范围 [0,1] 内。1 是丢失的数字，因为它没有出现在 nums 中。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">输入：num = 1234567
+输出："One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><strong>提示：</strong></p>
 <ul>
-<li><code>n == nums.length</code></li>
-<li><code>1 &lt;= n &lt;= 104</code></li>
-<li><code>0 &lt;= nums[i] &lt;= n</code></li>
-<li><code>nums</code> 中的所有数字都 <strong>独一无二</strong></li>
+<li><code>0 &lt;= num &lt;= 231 - 1</code></li>
 </ul>
-<p><strong>进阶：</strong>你能否实现线性时间复杂度、仅使用额外常数空间的算法解决此问题?</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">
-<span class="token comment">//leetcode submit region begin(Prohibit modification and deletion)</span>
-<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">missingNumber</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>nums <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> nums<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+    <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> singles <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">"One"</span><span class="token punctuation">,</span> <span class="token string">"Two"</span><span class="token punctuation">,</span> <span class="token string">"Three"</span><span class="token punctuation">,</span> <span class="token string">"Four"</span><span class="token punctuation">,</span> <span class="token string">"Five"</span><span class="token punctuation">,</span> <span class="token string">"Six"</span><span class="token punctuation">,</span> <span class="token string">"Seven"</span><span class="token punctuation">,</span> <span class="token string">"Eight"</span><span class="token punctuation">,</span> <span class="token string">"Nine"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> teens <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"Ten"</span><span class="token punctuation">,</span> <span class="token string">"Eleven"</span><span class="token punctuation">,</span> <span class="token string">"Twelve"</span><span class="token punctuation">,</span> <span class="token string">"Thirteen"</span><span class="token punctuation">,</span> <span class="token string">"Fourteen"</span><span class="token punctuation">,</span> <span class="token string">"Fifteen"</span><span class="token punctuation">,</span> <span class="token string">"Sixteen"</span><span class="token punctuation">,</span> <span class="token string">"Seventeen"</span><span class="token punctuation">,</span> <span class="token string">"Eighteen"</span><span class="token punctuation">,</span> <span class="token string">"Nineteen"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> tens <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">"Ten"</span><span class="token punctuation">,</span> <span class="token string">"Twenty"</span><span class="token punctuation">,</span> <span class="token string">"Thirty"</span><span class="token punctuation">,</span> <span class="token string">"Forty"</span><span class="token punctuation">,</span> <span class="token string">"Fifty"</span><span class="token punctuation">,</span> <span class="token string">"Sixty"</span><span class="token punctuation">,</span> <span class="token string">"Seventy"</span><span class="token punctuation">,</span> <span class="token string">"Eighty"</span><span class="token punctuation">,</span> <span class="token string">"Ninety"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> thousands <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">"Thousand"</span><span class="token punctuation">,</span> <span class="token string">"Million"</span><span class="token punctuation">,</span> <span class="token string">"Billion"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">boolean</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">boolean</span><span class="token punctuation">[</span>nums<span class="token punctuation">.</span>length <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> num <span class="token operator">:</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            bMap<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">numberToWords</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">"Zero"</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
-
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> bMap<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>bMap<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">return</span> i<span class="token punctuation">;</span>
+        <span class="token class-name">StringBuffer</span> sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> unit <span class="token operator">=</span> <span class="token number">1000000000</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">,</span> unit <span class="token operator">/=</span> <span class="token number">1000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> curNum <span class="token operator">=</span> num <span class="token operator">/</span> unit<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>curNum <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                num <span class="token operator">-=</span> curNum <span class="token operator">*</span> unit<span class="token punctuation">;</span>
+                <span class="token class-name">StringBuffer</span> curr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">recursion</span><span class="token punctuation">(</span>curr<span class="token punctuation">,</span> curNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                curr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>thousands<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>curr<span class="token punctuation">)</span><span class="token punctuation">;</span>
             <span class="token punctuation">}</span>
         <span class="token punctuation">}</span>
-
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token comment">//leetcode submit region end(Prohibit modification and deletion)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">recursion</span><span class="token punctuation">(</span><span class="token class-name">StringBuffer</span> curr<span class="token punctuation">,</span> <span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            curr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>singles<span class="token punctuation">[</span>num<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            curr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>teens<span class="token punctuation">[</span>num <span class="token operator">-</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            curr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>tens<span class="token punctuation">[</span>num <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">recursion</span><span class="token punctuation">(</span>curr<span class="token punctuation">,</span> num <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            curr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>singles<span class="token punctuation">[</span>num <span class="token operator">/</span> <span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">" Hundred "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">recursion</span><span class="token punctuation">(</span>curr<span class="token punctuation">,</span> num <span class="token operator">%</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -467,7 +472,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nichunen.github.io/2024/06/20/lc-268/">http://nichunen.github.io/2024/06/20/lc-268/</a>
+                    <a href="http://nichunen.github.io/2024/06/21/lc-273/">http://nichunen.github.io/2024/06/21/lc-273/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -676,9 +681,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2024/06/21/lc-273/">
                     <div class="card-image">
@@ -696,9 +702,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -711,6 +717,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -729,13 +736,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/06/19/lc-264/">
+                <a href="/2024/06/20/lc-268/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="lc-264">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="lc-268">
                         
-                        <span class="card-title">lc-264</span>
+                        <span class="card-title">lc-268</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -746,7 +753,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-20
                             </span>
                         <span class="publish-author">
                             
