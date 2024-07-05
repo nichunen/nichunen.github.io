@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-07-04T06:44:00.916Z</updated>
+  <updated>2024-07-05T09:10:25.464Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-289</title>
+    <link href="http://nichunen.github.io/2024/07/05/lc-289/"/>
+    <id>http://nichunen.github.io/2024/07/05/lc-289/</id>
+    <published>2024-07-05T02:10:45.000Z</published>
+    <updated>2024-07-05T09:10:25.464Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;根据 &lt;a href=&quot;https://baike.baidu.com/item/%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F/2926434?fr=aladdin&quot;&gt;百度百科&lt;/a&gt; ， &lt;strong&gt;生命游戏&lt;/strong&gt; ，简称为</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-284</title>
@@ -500,32 +525,6 @@
     <summary type="html">&lt;p&gt;表： &lt;code&gt;Weather&lt;/code&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+---------------+---------+
 | Column</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-228</title>
-    <link href="http://nichunen.github.io/2024/05/17/lc-228/"/>
-    <id>http://nichunen.github.io/2024/05/17/lc-228/</id>
-    <published>2024-05-17T02:26:38.000Z</published>
-    <updated>2024-05-20T03:11:45.903Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个 &lt;strong&gt;无重复元素&lt;/strong&gt; 的 &lt;strong&gt;有序&lt;/strong&gt; 整数数组 &lt;code&gt;nums&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;返回 &lt;em&gt;&lt;strong&gt;恰好覆盖数组中所有数字&lt;/strong&gt; 的</summary>
         
       
     
