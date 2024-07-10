@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-07-09T13:47:09.955Z</updated>
+  <updated>2024-07-10T06:21:18.841Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-299</title>
+    <link href="http://nichunen.github.io/2024/07/10/lc-299/"/>
+    <id>http://nichunen.github.io/2024/07/10/lc-299/</id>
+    <published>2024-07-10T06:18:07.000Z</published>
+    <updated>2024-07-10T06:21:18.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;你在和朋友一起玩 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-295</title>
@@ -498,32 +523,6 @@
     <summary type="html">&lt;p&gt;给定一个整数 &lt;code&gt;n&lt;/code&gt;，计算所有小于等于 &lt;code&gt;n&lt;/code&gt; 的非负整数中数字 &lt;code&gt;1&lt;/code&gt; 出现的个数。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-230</title>
-    <link href="http://nichunen.github.io/2024/05/23/lc-230/"/>
-    <id>http://nichunen.github.io/2024/05/23/lc-230/</id>
-    <published>2024-05-23T02:30:51.000Z</published>
-    <updated>2024-05-28T13:51:45.363Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个二叉搜索树的根节点 &lt;code&gt;root&lt;/code&gt; ，和一个整数 &lt;code&gt;k&lt;/code&gt; ，请你设计一个算法查找其中第 &lt;code&gt;k&lt;/code&gt; 个最小元素（从 1 开始计数）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;示例</summary>
         
       
     
