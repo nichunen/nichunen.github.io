@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-07-19T02:20:41.744Z</updated>
+  <updated>2024-07-21T06:36:23.648Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-328</title>
+    <link href="http://nichunen.github.io/2024/07/21/lc-328/"/>
+    <id>http://nichunen.github.io/2024/07/21/lc-328/</id>
+    <published>2024-07-21T02:29:21.000Z</published>
+    <updated>2024-07-21T06:36:23.648Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定单链表的头节点 &lt;code&gt;head&lt;/code&gt; ，将所有索引为奇数的节点和索引为偶数的节点分别组合在一起，然后返回重新排序的列表。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一个&lt;/strong&gt;节点的索引被认为是 &lt;strong&gt;奇数&lt;/strong&gt; ，</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-327</title>
@@ -492,33 +518,6 @@
         
     <summary type="html">&lt;p&gt;&lt;strong&gt;丑数&lt;/strong&gt; 就是只包含质因数 &lt;code&gt;2&lt;/code&gt;、&lt;code&gt;3&lt;/code&gt; 和 &lt;code&gt;5&lt;/code&gt; 的正整数。&lt;/p&gt;
 &lt;p&gt;给你一个整数 &lt;code&gt;n&lt;/code&gt; ，请你判断 &lt;code&gt;n&lt;/code&gt; 是否为</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-262</title>
-    <link href="http://nichunen.github.io/2024/06/13/lc-262/"/>
-    <id>http://nichunen.github.io/2024/06/13/lc-262/</id>
-    <published>2024-06-13T12:19:47.000Z</published>
-    <updated>2024-06-17T02:17:59.549Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;表：&lt;code&gt;Trips&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;+-------------+----------+
-| Column Name |</summary>
         
       
     
