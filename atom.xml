@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-07-28T08:06:50.425Z</updated>
+  <updated>2024-07-30T09:23:50.767Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-343</title>
+    <link href="http://nichunen.github.io/2024/07/29/lc-343/"/>
+    <id>http://nichunen.github.io/2024/07/29/lc-343/</id>
+    <published>2024-07-29T13:52:18.000Z</published>
+    <updated>2024-07-30T09:23:50.767Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个正整数 &lt;code&gt;n&lt;/code&gt; ，将其拆分为 &lt;code&gt;k&lt;/code&gt; 个 &lt;strong&gt;正整数&lt;/strong&gt; 的和（ &lt;code&gt;k &amp;gt;= 2&lt;/code&gt; ），并使这些整数的乘积最大化。&lt;/p&gt;
+&lt;p&gt;返回</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-336</title>
@@ -492,31 +518,6 @@
         
         
     <summary type="html">&lt;p&gt;给定一个仅包含数字 &lt;code&gt;0-9&lt;/code&gt; 的字符串 &lt;code&gt;num&lt;/code&gt; 和一个目标值整数 &lt;code&gt;target&lt;/code&gt; ，在 &lt;code&gt;num&lt;/code&gt; 的数字之间添加 &lt;strong&gt;二元&lt;/strong&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-275</title>
-    <link href="http://nichunen.github.io/2024/06/24/lc-275/"/>
-    <id>http://nichunen.github.io/2024/06/24/lc-275/</id>
-    <published>2024-06-24T01:59:50.000Z</published>
-    <updated>2024-06-24T02:55:11.808Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;citations&lt;/code&gt; ，其中 &lt;code&gt;citations[i]&lt;/code&gt; 表示研究者的第 &lt;code&gt;i&lt;/code&gt; 篇论文被引用的次数，&lt;code&gt;citations&lt;/code&gt; 已经按照</summary>
         
       
     
