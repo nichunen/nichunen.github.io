@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-07-31T02:42:55.484Z</updated>
+  <updated>2024-08-01T02:38:27.270Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-349</title>
+    <link href="http://nichunen.github.io/2024/08/01/lc-349/"/>
+    <id>http://nichunen.github.io/2024/08/01/lc-349/</id>
+    <published>2024-08-01T02:09:53.000Z</published>
+    <updated>2024-08-01T02:38:27.270Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定两个数组 &lt;code&gt;nums1&lt;/code&gt; 和 &lt;code&gt;nums2&lt;/code&gt; ，返回 &lt;em&gt;它们的 交集&lt;/em&gt; 。输出结果中的每个元素一定是 &lt;strong&gt;唯一&lt;/strong&gt; 的。我们可以 &lt;strong&gt;不考虑输出结果的顺序&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-344</title>
@@ -493,32 +518,6 @@
         
         
     <summary type="html">&lt;p&gt;根据 &lt;a href=&quot;https://baike.baidu.com/item/%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F/2926434?fr=aladdin&quot;&gt;百度百科&lt;/a&gt; ， &lt;strong&gt;生命游戏&lt;/strong&gt; ，简称为</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-284</title>
-    <link href="http://nichunen.github.io/2024/06/30/lc-284/"/>
-    <id>http://nichunen.github.io/2024/06/30/lc-284/</id>
-    <published>2024-06-30T13:31:03.000Z</published>
-    <updated>2024-07-04T06:44:00.916Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;请你在设计一个迭代器，在集成现有迭代器拥有的 &lt;code&gt;hasNext&lt;/code&gt; 和 &lt;code&gt;next&lt;/code&gt; 操作的基础上，还额外支持 &lt;code&gt;peek&lt;/code&gt; 操作。&lt;/p&gt;
-&lt;p&gt;实现</summary>
         
       
     
