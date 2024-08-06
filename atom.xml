@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-08-01T02:38:27.270Z</updated>
+  <updated>2024-08-06T03:00:46.985Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-350</title>
+    <link href="http://nichunen.github.io/2024/08/02/lc-350/"/>
+    <id>http://nichunen.github.io/2024/08/02/lc-350/</id>
+    <published>2024-08-02T11:50:02.000Z</published>
+    <updated>2024-08-06T03:00:46.985Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你两个整数数组 &lt;code&gt;nums1&lt;/code&gt; 和 &lt;code&gt;nums2&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-349</title>
@@ -493,31 +518,6 @@
         
     <summary type="html">&lt;p&gt;给定一种规律 &lt;code&gt;pattern&lt;/code&gt; 和一个字符串 &lt;code&gt;s&lt;/code&gt; ，判断 &lt;code&gt;s&lt;/code&gt; 是否遵循相同的规律。&lt;/p&gt;
 &lt;p&gt;这里的 &lt;strong&gt;遵循&lt;/strong&gt; 指完全匹配，例如，</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-289</title>
-    <link href="http://nichunen.github.io/2024/07/05/lc-289/"/>
-    <id>http://nichunen.github.io/2024/07/05/lc-289/</id>
-    <published>2024-07-05T02:10:45.000Z</published>
-    <updated>2024-07-05T09:10:25.464Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;根据 &lt;a href=&quot;https://baike.baidu.com/item/%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F/2926434?fr=aladdin&quot;&gt;百度百科&lt;/a&gt; ， &lt;strong&gt;生命游戏&lt;/strong&gt; ，简称为</summary>
         
       
     
