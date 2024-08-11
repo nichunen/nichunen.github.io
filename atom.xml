@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-08-09T08:42:19.373Z</updated>
+  <updated>2024-08-11T12:26:59.290Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-354</title>
+    <link href="http://nichunen.github.io/2024/08/11/lc-354/"/>
+    <id>http://nichunen.github.io/2024/08/11/lc-354/</id>
+    <published>2024-08-11T12:23:20.000Z</published>
+    <updated>2024-08-11T12:26:59.290Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个二维整数数组 &lt;code&gt;envelopes&lt;/code&gt; ，其中 &lt;code&gt;envelopes[i] = [wi, hi]&lt;/code&gt; ，表示第 &lt;code&gt;i&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-352</title>
@@ -491,33 +516,6 @@
         
         
     <summary type="html">&lt;p&gt;你在和朋友一起玩 &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-295</title>
-    <link href="http://nichunen.github.io/2024/07/08/lc-295/"/>
-    <id>http://nichunen.github.io/2024/07/08/lc-295/</id>
-    <published>2024-07-08T13:18:16.000Z</published>
-    <updated>2024-07-09T13:47:09.955Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;中位数&lt;/strong&gt;是有序整数列表中的中间值。如果列表的大小是偶数，则没有中间值，中位数是两个中间值的平均值。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;例如 &lt;code&gt;arr = [2,3,4]&lt;/code&gt; 的中位数是 &lt;code&gt;3&lt;/code&gt;</summary>
         
       
     
