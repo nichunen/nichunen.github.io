@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-08-23T03:59:21.387Z</updated>
+  <updated>2024-08-25T05:56:04.458Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-363</title>
+    <link href="http://nichunen.github.io/2024/08/25/lc-363/"/>
+    <id>http://nichunen.github.io/2024/08/25/lc-363/</id>
+    <published>2024-08-25T05:55:04.000Z</published>
+    <updated>2024-08-25T05:56:04.458Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个 &lt;code&gt;m x n&lt;/code&gt; 的矩阵 &lt;code&gt;matrix&lt;/code&gt; 和一个整数 &lt;code&gt;k&lt;/code&gt; ，找出并返回矩阵内部矩形区域的不超过 &lt;code&gt;k&lt;/code&gt; 的最大数值和。&lt;/p&gt;
+&lt;p&gt;题目数据保证总会存在一个数值和不超过</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-355</title>
@@ -490,33 +516,6 @@
         
         
     <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; ，按要求返回一个新数组 &lt;code&gt;counts&lt;/code&gt; 。数组 &lt;code&gt;counts&lt;/code&gt; 有该性质： &lt;code&gt;counts[i]&lt;/code&gt; 的值是 &lt;code&gt;nums[i]&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-303</title>
-    <link href="http://nichunen.github.io/2024/07/11/lc-303/"/>
-    <id>http://nichunen.github.io/2024/07/11/lc-303/</id>
-    <published>2024-07-11T02:30:55.000Z</published>
-    <updated>2024-07-11T03:28:58.592Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个整数数组 &lt;code&gt;nums&lt;/code&gt;，处理以下类型的多个查询:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;计算索引 &lt;code&gt;left&lt;/code&gt; 和 &lt;code&gt;right&lt;/code&gt; （包含 &lt;code&gt;left&lt;/code&gt; 和</summary>
         
       
     
