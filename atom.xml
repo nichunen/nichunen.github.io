@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-08-25T05:56:04.458Z</updated>
+  <updated>2024-08-26T03:05:03.496Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>extra-4</title>
+    <link href="http://nichunen.github.io/2024/08/26/extra-4/"/>
+    <id>http://nichunen.github.io/2024/08/26/extra-4/</id>
+    <published>2024-08-26T02:08:32.000Z</published>
+    <updated>2024-08-26T03:05:03.496Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt;，请你将该数组升序排列。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-363</title>
@@ -491,31 +518,6 @@
         
     <summary type="html">&lt;p&gt;初始时有 &lt;code&gt;n&lt;/code&gt; 个灯泡处于关闭状态。第一轮，你将会打开所有灯泡。接下来的第二轮，你将会每两个灯泡关闭第二个。&lt;/p&gt;
 &lt;p&gt;第三轮，你每三个灯泡就切换第三个灯泡的开关（即，打开变关闭，关闭变打开）。第 &lt;code&gt;i&lt;/code&gt; 轮，你每</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-315</title>
-    <link href="http://nichunen.github.io/2024/07/12/lc-315/"/>
-    <id>http://nichunen.github.io/2024/07/12/lc-315/</id>
-    <published>2024-07-12T02:09:34.000Z</published>
-    <updated>2024-07-12T06:33:26.453Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; ，按要求返回一个新数组 &lt;code&gt;counts&lt;/code&gt; 。数组 &lt;code&gt;counts&lt;/code&gt; 有该性质： &lt;code&gt;counts[i]&lt;/code&gt; 的值是 &lt;code&gt;nums[i]&lt;/code&gt;</summary>
         
       
     
