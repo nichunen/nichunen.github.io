@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-09-03T03:55:57.642Z</updated>
+  <updated>2024-09-04T05:50:07.083Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-372</title>
+    <link href="http://nichunen.github.io/2024/09/04/lc-372/"/>
+    <id>http://nichunen.github.io/2024/09/04/lc-372/</id>
+    <published>2024-09-04T05:47:56.000Z</published>
+    <updated>2024-09-04T05:50:07.083Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;你的任务是计算 &lt;code&gt;ab&lt;/code&gt; 对 &lt;code&gt;1337&lt;/code&gt; 取模，&lt;code&gt;a&lt;/code&gt; 是一个正整数，&lt;code&gt;b&lt;/code&gt; 是一个非常大的正整数且会以数组形式给出。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-368</title>
@@ -492,31 +518,6 @@
         
         
     <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt; 以及两个整数 &lt;code&gt;lower&lt;/code&gt; 和 &lt;code&gt;upper&lt;/code&gt; 。求数组中，值位于范围 &lt;code&gt;[lower, upper]&lt;/code&gt; （包含 &lt;code&gt;lower&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-324</title>
-    <link href="http://nichunen.github.io/2024/07/18/lc-324/"/>
-    <id>http://nichunen.github.io/2024/07/18/lc-324/</id>
-    <published>2024-07-18T08:52:19.000Z</published>
-    <updated>2024-07-18T09:15:38.679Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;nums&lt;/code&gt;，将它重新排列成 &lt;code&gt;nums[0] &amp;lt; nums[1] &amp;gt; nums[2] &amp;lt; nums[3]...&lt;/code&gt;</summary>
         
       
     
