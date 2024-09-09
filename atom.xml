@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-09-06T11:35:40.720Z</updated>
+  <updated>2024-09-08T15:29:09.646Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-376</title>
+    <link href="http://nichunen.github.io/2024/09/08/lc-376/"/>
+    <id>http://nichunen.github.io/2024/09/08/lc-376/</id>
+    <published>2024-09-08T15:28:41.000Z</published>
+    <updated>2024-09-08T15:29:09.646Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为 &lt;strong&gt;摆动序列 。&lt;/strong&gt;第一个差（如果存在的话）可能是正数或负数。仅有一个元素或者含两个不等元素的序列也视作摆动序列。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;例如， &lt;code&gt;[1, 7, 4,</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-375</title>
@@ -496,32 +523,6 @@
         
     <summary type="html">&lt;p&gt;给定一个 &lt;code&gt;m x n&lt;/code&gt; 整数矩阵 &lt;code&gt;matrix&lt;/code&gt; ，找出其中 &lt;strong&gt;最长递增路径&lt;/strong&gt; 的长度。&lt;/p&gt;
 &lt;p&gt;对于每个单元格，你可以往上，下，左，右四个方向移动。 你</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-328</title>
-    <link href="http://nichunen.github.io/2024/07/21/lc-328/"/>
-    <id>http://nichunen.github.io/2024/07/21/lc-328/</id>
-    <published>2024-07-21T02:29:21.000Z</published>
-    <updated>2024-07-21T06:36:23.648Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定单链表的头节点 &lt;code&gt;head&lt;/code&gt; ，将所有索引为奇数的节点和索引为偶数的节点分别组合在一起，然后返回重新排序的列表。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第一个&lt;/strong&gt;节点的索引被认为是 &lt;strong&gt;奇数&lt;/strong&gt; ，</summary>
         
       
     
