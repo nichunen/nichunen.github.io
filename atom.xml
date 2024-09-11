@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-09-10T06:21:47.507Z</updated>
+  <updated>2024-09-11T12:42:06.902Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-377</title>
+    <link href="http://nichunen.github.io/2024/09/11/lc-377/"/>
+    <id>http://nichunen.github.io/2024/09/11/lc-377/</id>
+    <published>2024-09-11T12:41:22.000Z</published>
+    <updated>2024-09-11T12:42:06.902Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个由 &lt;strong&gt;不同&lt;/strong&gt; 整数组成的数组 &lt;code&gt;nums&lt;/code&gt; ，和一个目标整数 &lt;code&gt;target&lt;/code&gt; 。请你从 &lt;code&gt;nums&lt;/code&gt; 中找出并返回总和为 &lt;code&gt;target&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-376</title>
@@ -497,32 +522,6 @@
         
         
     <summary type="html">&lt;p&gt;给定一个已排序的正整数数组 &lt;code&gt;nums&lt;/code&gt; &lt;em&gt;，&lt;/em&gt;和一个正整数 &lt;code&gt;n&lt;/code&gt; &lt;em&gt;。&lt;/em&gt;从 &lt;code&gt;[1, n]&lt;/code&gt; 区间内选取任意个数字补充到 nums 中，使得 &lt;code&gt;[1,</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-329</title>
-    <link href="http://nichunen.github.io/2024/07/22/lc-329/"/>
-    <id>http://nichunen.github.io/2024/07/22/lc-329/</id>
-    <published>2024-07-22T15:00:55.000Z</published>
-    <updated>2024-07-23T06:38:47.908Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个 &lt;code&gt;m x n&lt;/code&gt; 整数矩阵 &lt;code&gt;matrix&lt;/code&gt; ，找出其中 &lt;strong&gt;最长递增路径&lt;/strong&gt; 的长度。&lt;/p&gt;
-&lt;p&gt;对于每个单元格，你可以往上，下，左，右四个方向移动。 你</summary>
         
       
     
