@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-09-13T06:10:14.643Z</updated>
+  <updated>2024-09-14T03:41:04.016Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc-378</title>
+    <link href="http://nichunen.github.io/2024/09/14/lc-378/"/>
+    <id>http://nichunen.github.io/2024/09/14/lc-378/</id>
+    <published>2024-09-14T03:40:37.000Z</published>
+    <updated>2024-09-14T03:41:04.016Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给你一个 &lt;code&gt;n x n&lt;/code&gt; 矩阵 &lt;code&gt;matrix&lt;/code&gt; ，其中每行和每列元素均按升序排序，找到矩阵中第 &lt;code&gt;k&lt;/code&gt; 小的元素。&lt;br&gt;请注意，它是 &lt;strong&gt;排序后&lt;/strong&gt; 的第</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>lc-377</title>
@@ -497,31 +522,6 @@
         
     <summary type="html">&lt;p&gt;给你一个整数数组 &lt;code&gt;distance&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;从 &lt;strong&gt;X-Y&lt;/strong&gt; 平面上的点 &lt;code&gt;(0,0)&lt;/code&gt; 开始，先向北移动 &lt;code&gt;distance[0]&lt;/code&gt; 米，然后向西移动</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-330</title>
-    <link href="http://nichunen.github.io/2024/07/24/lc-330/"/>
-    <id>http://nichunen.github.io/2024/07/24/lc-330/</id>
-    <published>2024-07-24T02:04:56.000Z</published>
-    <updated>2024-07-24T02:34:44.131Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定一个已排序的正整数数组 &lt;code&gt;nums&lt;/code&gt; &lt;em&gt;，&lt;/em&gt;和一个正整数 &lt;code&gt;n&lt;/code&gt; &lt;em&gt;。&lt;/em&gt;从 &lt;code&gt;[1, n]&lt;/code&gt; 区间内选取任意个数字补充到 nums 中，使得 &lt;code&gt;[1,</summary>
         
       
     
