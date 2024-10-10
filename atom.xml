@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2024-10-08T13:12:22.140Z</updated>
+  <updated>2024-10-10T13:40:57.879Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>lc-385</title>
+    <link href="http://nichunen.github.io/2024/10/10/lc-385/"/>
+    <id>http://nichunen.github.io/2024/10/10/lc-385/</id>
+    <published>2024-10-10T13:16:04.000Z</published>
+    <updated>2024-10-10T13:40:57.879Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给定一个字符串 s 表示一个整数嵌套列表，实现一个解析它的语法分析器并返回解析的结果 &lt;code&gt;NestedInteger&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;列表中的每个元素只可能是整数或整数嵌套列表&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Calcite技术详解</title>
     <link href="http://nichunen.github.io/2024/10/08/calcite/"/>
     <id>http://nichunen.github.io/2024/10/08/calcite/</id>
     <published>2024-10-08T02:25:15.000Z</published>
-    <updated>2024-10-08T13:12:22.140Z</updated>
+    <updated>2024-10-09T02:54:12.620Z</updated>
     
     
       
@@ -498,32 +525,6 @@
         
     <summary type="html">&lt;p&gt;给定一个由唯一字符串构成的 &lt;strong&gt;0 索引&lt;/strong&gt; 数组 &lt;code&gt;words&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;回文对&lt;/strong&gt; 是一对整数 &lt;code&gt;(i, j)&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-332</title>
-    <link href="http://nichunen.github.io/2024/07/26/lc-332/"/>
-    <id>http://nichunen.github.io/2024/07/26/lc-332/</id>
-    <published>2024-07-26T02:48:00.000Z</published>
-    <updated>2024-07-26T02:49:05.742Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一份航线列表 &lt;code&gt;tickets&lt;/code&gt; ，其中 &lt;code&gt;tickets[i] = [fromi, toi]&lt;/code&gt; 表示飞机出发和降落的机场地点。请你对该行程进行重新规划排序。&lt;/p&gt;
-&lt;p&gt;所有这些机票都属于一个从</summary>
         
       
     

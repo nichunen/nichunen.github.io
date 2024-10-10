@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="倪春恩的博客" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.2">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="倪春恩的博客" type="application/atom+xml">
 </head>
 
 
@@ -404,17 +404,7 @@
 <p>关系代数是Calcite的核心。每个查询都被表示为一颗关联操作树。你可以将SQL翻译成关联代数，或者直接建立关联操作树。</p>
 <p>规划器规则使用保留语义的数学标识来转换表达式树。</p>
 <p>下面是一个带有过滤和聚合的查询：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">final</span> <span class="token class-name">RelNode</span> node <span class="token operator">=</span> builder
-  <span class="token punctuation">.</span><span class="token function">scan</span><span class="token punctuation">(</span><span class="token string">"EMP"</span><span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span>builder<span class="token punctuation">.</span><span class="token function">groupKey</span><span class="token punctuation">(</span><span class="token string">"DEPTNO"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-      builder<span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-      builder<span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token string">"S"</span><span class="token punctuation">,</span> builder<span class="token punctuation">.</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token string">"SAL"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>
-      builder<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token class-name">SqlStdOperatorTable</span><span class="token punctuation">.</span>GREATER_THAN<span class="token punctuation">,</span>
-          builder<span class="token punctuation">.</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token string">"C"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-          builder<span class="token punctuation">.</span><span class="token function">literal</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">RelOptUtil</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>它等同于下面的sql语句：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">SELECT</span> deptno<span class="token punctuation">,</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token class-name">AS</span> c<span class="token punctuation">,</span> <span class="token function">sum</span><span class="token punctuation">(</span>sal<span class="token punctuation">)</span> AS s FROM emp GROUP BY deptno <span class="token class-name">HAVING</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">10</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1617,6 +1607,343 @@
 
 <p>等价于关系代数</p>
 <p><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BempName=" alt="img"></p>
+<h1 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h1><p>优化过程一般为以下过程</p>
+<ol>
+<li>对SQL进行词法分心得到一个语法树</li>
+<li>根据关系代数进行SQL的逻辑优化</li>
+<li>根据代价估算算法进行物理查询的优化</li>
+<li>执行器执行</li>
+</ol>
+<h2 id="逻辑优化"><a href="#逻辑优化" class="headerlink" title="逻辑优化"></a>逻辑优化</h2><p>在逻辑优化主要解决的问题是,如何找出SQL等价的变换形式,使SQL执行更加高效 优化思路主要包括</p>
+<ul>
+<li>子句局部优化,例如,谓词重写,WHERE和Having条件化简的大部分情况都属于子句局部优化的范围</li>
+<li>子句管理优化,例如,外连接消除,连接消除,子查询优化</li>
+<li>局部与整体优化,例如:or重写,union操作</li>
+<li>形式变化优化,例如,嵌套消除</li>
+<li>语义优化</li>
+<li>其他优化</li>
+</ul>
+<p>各种逻辑优化技术,主要依赖于关系代数和启发式规则进行</p>
+<h3 id="关系代数等价变换"><a href="#关系代数等价变换" class="headerlink" title="关系代数等价变换"></a>关系代数等价变换</h3><p>关系代数表达式的等级:相同的关系代替两个表达式中相应的关系,所得到的结果相同的,两个关系表达式E1和E2等价,记为E1 = E2</p>
+<p>查询语句可以表示为一颗二叉树:</p>
+<ul>
+<li>叶子是关系</li>
+<li>内部节点是云算符(或称算子,操作符,例如 LEFT OUT JOIN) ,表示左右子树的云算方式</li>
+<li>子树是子表示或者SQL片段</li>
+<li>根节点是最后操作的运算符</li>
+<li>根节点运算之后,得到的是SQL查询优化后的结果</li>
+<li>这样一棵树就是一个查询的路径</li>
+<li>多个关系连接，连接顺序不同，可以得出多个类似的二叉树</li>
+<li>查询优化就是找出代价最小的二叉树，即最优的查询路径。</li>
+<li>基于代价估算的查询优化就是通过计算和比较，找出花费最少的是优二叉树。</li>
+</ul>
+<h3 id="运算符角度优化考虑"><a href="#运算符角度优化考虑" class="headerlink" title="运算符角度优化考虑"></a>运算符角度优化考虑</h3><p>不同的运算符优化可c减少中间生成物的大小和数量，节约IO和内存CPU等，从而提高执行速度。前提是优化前和优化后是等价的。</p>
+<h4 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h4><h5 id="基本选择性质"><a href="#基本选择性质" class="headerlink" title="基本选择性质"></a>基本选择性质</h5><p>对同一个表的同样选择条件，作一次即可。 可优化的原因：</p>
+<ul>
+<li>幂等性：多次应用同一个选择有同样的效果</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">// 执行多次相等</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> S<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ul>
+<li>交换性：应用选择的次序在最终结果中没有影响</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> S<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">and</span> S<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token comment">// 两个SQL相等</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> S<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">and</span> S<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>选择可有效减少在它的操作数中的元组数的运算（元组数减少）</li>
+</ul>
+<h5 id="分解有复杂条件的选择"><a href="#分解有复杂条件的选择" class="headerlink" title="分解有复杂条件的选择"></a>分解有复杂条件的选择</h5><ul>
+<li>合取：合并多个选择为更少的需求值的选择，多个等式可以合并,等价于针对这些单独条件的一系列选择。</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">where A.a = B.b and B.b = C.c 可以合并为={A.a,B.b,C.c} 而不是两个等式={A.a,B.b}和={B.b,C.c}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>析取:：分解它们使得其成员选择可被移动或单独优化, 等价于选择的并集。</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">where A.a=3 OR A.b&gt;8 
+如果A.a,A.b分别有索引,也许 select * from A where A.a = 3 union select * from A where A.b&gt;8 可以提高效率 
+// 合取 (DNF)
+select * from S where  S.a=1 and ( S.b=2 or S.c=3 )
+
+// 析取 (CNF)
+select * from S where ( S.a = 1 and S.b=2 ) or ( S.a = 1 and S.c=3 )<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="选择和叉积"><a href="#选择和叉积" class="headerlink" title="选择和叉积"></a>选择和叉积</h5><ul>
+<li>尽可能选做选择：关系有N和M行，先做积运算将包含N*M行。先做选择运算，减少N和M，则可避免不满足条件的条件参与积的运算，节约时间减少结果的大小。</li>
+<li>尽可能下推选择：如果积不跟随着选择运算，可尝试使用其他规则从表达式树更高层下推选择。</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">join</span> R <span class="token keyword">where</span> S<span class="token punctuation">.</span>a <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> R<span class="token punctuation">.</span>b<span class="token operator">=</span><span class="token number">2</span>
+<span class="token comment">// 做类似的转换</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> S<span class="token punctuation">.</span>a<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> ST <span class="token keyword">join</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R <span class="token keyword">where</span> R<span class="token punctuation">.</span>b<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span> RT<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="选择和集合运算"><a href="#选择和集合运算" class="headerlink" title="选择和集合运算"></a>选择和集合运算</h5><ul>
+<li>选择下推到的集合运算中：选择在差集，交集和并集算子上满足分配律</li>
+<li>选择下推到集合的运算</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R<span class="token punctuation">)</span> SR <span class="token keyword">where</span> SR<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment">// 做类似的转换</span>
+<span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> S<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">union</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R <span class="token keyword">where</span> R<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h6 id="选择和集合运算图解"><a href="#选择和集合运算图解" class="headerlink" title="选择和集合运算图解"></a>选择和集合运算图解</h6><table>
+<thead>
+<tr>
+<th>初始式</th>
+<th>等级表达式1</th>
+<th>等价表达式2</th>
+<th>等价表达式3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BA%7D(R&amp;space;%5Csetminus&amp;space;S)" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BA%7D(R)%5Csetminus&amp;space;%5Csigma_%7BA%7D(S)" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BA%7D(R)%5Csetminus&amp;space;S" alt="img"></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BA%7D(R&amp;space;%5Cbigcup&amp;space;S)" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BA%7D(R)&amp;space;%5Cbigcup&amp;space;%5Csigma_%7BA%7D(S)" alt="img"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BA%7D(R&amp;space;%5Cbigcap&amp;space;S)" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BA%7D(R)&amp;space;%5Cbigcap&amp;space;%5Csigma_%7BA%7D(S)" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BA%7D(R)&amp;space;%5Cbigcap&amp;space;S" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?R&amp;space;%5Cbigcap&amp;space;%5Csigma_%7BA%7D(S)" alt="img"></td>
+</tr>
+</tbody></table>
+<h5 id="选择和投影"><a href="#选择和投影" class="headerlink" title="选择和投影"></a>选择和投影</h5><p>在投影之前进行选择：如果选择条件中引用的字段是投影中的字段的子集，则选择与投影满足交换性。</p>
+<h4 id="投影"><a href="#投影" class="headerlink" title="投影"></a>投影</h4><h5 id="基本投影性质"><a href="#基本投影性质" class="headerlink" title="基本投影性质"></a>基本投影性质</h5><p>尽可能先做投影：投影是幂等性的；投影可以减少元组大小。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token punctuation">)</span> ST
+<span class="token comment">// 做类似的换换</span>
+<span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> S <span class="token punctuation">)</span> ST<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="投影和集合云算"><a href="#投影和集合云算" class="headerlink" title="投影和集合云算"></a>投影和集合云算</h4><p>投影下推到集合运算中：投影在差集，交集和并集运算上满足分配律。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S<span class="token punctuation">)</span> ST
+<span class="token comment">// 做类似的换换</span>
+<span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> S <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S<span class="token punctuation">)</span> ST<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="选择和集合运算图解-1"><a href="#选择和集合运算图解-1" class="headerlink" title="选择和集合运算图解"></a>选择和集合运算图解</h5><table>
+<thead>
+<tr>
+<th>初始式</th>
+<th>等级表达式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://latex.codecogs.com/gif.latex?%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(R&amp;space;%5Csetminus&amp;space;S)" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(R)%5Csetminus&amp;space;%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(S)" alt="img"></td>
+</tr>
+<tr>
+<td><img src="https://latex.codecogs.com/gif.latex?%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(R&amp;space;%5Cbigcup&amp;space;S)" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(R)%5Cbigcup&amp;space;%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(S)" alt="img"></td>
+</tr>
+<tr>
+<td><img src="https://latex.codecogs.com/gif.latex?%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(R&amp;space;%5Cbigcap&amp;space;S)" alt="img"></td>
+<td><img src="https://latex.codecogs.com/gif.latex?%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(R)%5Cbigcap&amp;space;%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(S)" alt="img"></td>
+</tr>
+</tbody></table>
+<h3 id="运算规则度优化考虑"><a href="#运算规则度优化考虑" class="headerlink" title="运算规则度优化考虑"></a>运算规则度优化考虑</h3><h4 id="连接-笛卡尔积交换律"><a href="#连接-笛卡尔积交换律" class="headerlink" title="连接,笛卡尔积交换律"></a>连接,笛卡尔积交换律</h4><p>连接、做积运算，可交换前后位置，其结果不变。如两表连接算法中嵌套连接算法，对外表和内表有要求，外表尽可能小则有利于做“基于块的嵌套循环连接“，所以，通过交换律可以把元组少的表作为外表。</p>
+<p>公式: <img src="https://latex.codecogs.com/gif.latex?%5CE_%7B1%7D&amp;space;%5Ctimes&amp;space;E_%7B2%7D%5Cequiv&amp;space;E_%7B2%7D&amp;space;%5Ctimes&amp;space;E_%7B1%7D%5C&amp;space;E_%7B1%7D&amp;space;%5Ctimes&amp;space;E_%7B2%7D%5CJoin&amp;space;E_%7B2%7D&amp;space;%5Ctimes&amp;space;E_%7B1%7D%5C" alt="img"></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">join</span> R
+<span class="token comment">// 等价于</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R <span class="token keyword">join</span> S<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="连接-笛卡尔积结合律"><a href="#连接-笛卡尔积结合律" class="headerlink" title="连接,笛卡尔积结合律"></a>连接,笛卡尔积结合律</h4><p>做连接、做积运算，如果新的结合有利于减少中间关系的大小，则可优先处理。</p>
+<p>公式: <img src="https://latex.codecogs.com/gif.latex?%5C(E_%7B1%7D&amp;space;%5Ctimes&amp;space;E_%7B2%7D)%5Ctimes&amp;space;E_%7B3%7D&amp;space;%5Cequiv&amp;space;E_%7B1%7D&amp;space;%5Ctimes&amp;space;(E_%7B2%7D%5Ctimes&amp;space;E_%7B3%7D)%5C&amp;space;(E_%7B1%7D&amp;space;%5CJoin&amp;space;E_%7B2%7D)%5CJoin&amp;space;E_%7B3%7D&amp;space;%5Cequiv&amp;space;E_%7B1%7D&amp;space;%5CJoin&amp;space;(E_%7B2%7D%5CJoin&amp;space;E_%7B3%7D)%5C" alt="img"></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span> S <span class="token keyword">join</span> R<span class="token punctuation">)</span>  <span class="token keyword">join</span> Q
+<span class="token comment">// 等价于</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">join</span> <span class="token punctuation">(</span> R  <span class="token keyword">join</span> Q <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="投影的串接定律"><a href="#投影的串接定律" class="headerlink" title="投影的串接定律"></a>投影的串接定律</h4><p>在同一个关系上，只需要做一次投影运算，且一次投影时选择多列同时完成。 所以许多数据库优化引擎为同一个关系收集齐本关系上的所有列（目标列和 WHERE， GROUP BY 等子句的本关系的列）</p>
+<p>公式:</p>
+<p><img src="https://latex.codecogs.com/gif.latex?%5C%5CPi_%7BA_%7B1%7D,A_%7B2%7D...A_%7Bn%7D%7D(%5CPi_%7BB_%7B1%7D,B_%7B2%7D...B_%7Bm%7D%7D(E))&amp;space;%5Cequiv&amp;space;%5CPi_%7BA_%7B1%7D...A_%7Bn%7D%7D(E)" alt="img">&amp;space;&amp;space;A\in&amp;space;B)</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span> <span class="token keyword">select</span> a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c <span class="token keyword">from</span> S<span class="token punctuation">)</span>
+<span class="token comment">//  串接定律</span>
+<span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span> <span class="token keyword">select</span> a <span class="token keyword">from</span> S<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="选择的串接定律"><a href="#选择的串接定律" class="headerlink" title="选择的串接定律"></a>选择的串接定律</h4><p>选择条件可以合并，使得可一次就检查全部条件，不必多次过滤元组，所以可以把同层的合取条件收集在一起，统一判断。</p>
+<p>公式:</p>
+<p><img src="https://latex.codecogs.com/gif.latex?%5Csigma_%7BF_%7B1%7D%7D(%5Csigma_%7BF_%7B2%7D%7D(E))&amp;space;%5Cequiv&amp;space;%5Csigma_%7BF_%7B1%7D%5Cwedge&amp;space;F_%7B2%7D%7D(E)" alt="img"></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> ST <span class="token keyword">where</span> b <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token comment">// 等价于</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> a <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">and</span> b <span class="token operator">=</span> <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="投影与选择交换律"><a href="#投影与选择交换律" class="headerlink" title="投影与选择交换律"></a>投影与选择交换律</h4><ul>
+<li>先投影后选择，可以改为先选择后投影，这对于以行为存储格式的主流数据库而言，很有优化意义。存储方式总是在先获得元组后才能解析得到其中的列。</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token comment">// 等价于</span>
+<span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> S <span class="token punctuation">)</span> ST <span class="token keyword">where</span> a <span class="token operator">=</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>先择选后投影，可以改为带有选择条件中列的投影后再选择，最后完成最外层的投影，这样，使得内层的选择和投影可以同时进行。</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> S <span class="token punctuation">)</span> ST <span class="token keyword">where</span> a <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment">// 等价于</span>
+<span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="选择与笛卡尔积的分配律"><a href="#选择与笛卡尔积的分配律" class="headerlink" title="选择与笛卡尔积的分配律"></a>选择与笛卡尔积的分配律</h4><p>条件下推到相关的关系上，先做选择后做积运算，这样可以减小中间结果的大小。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">join</span> R <span class="token keyword">where</span> S<span class="token punctuation">.</span>a <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> R<span class="token punctuation">.</span>b<span class="token operator">=</span><span class="token number">2</span>
+<span class="token comment">// 做类似的转换</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> S<span class="token punctuation">.</span>a<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> ST <span class="token keyword">join</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R <span class="token keyword">where</span> R<span class="token punctuation">.</span>b<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span> RT<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="选择与并的分配律"><a href="#选择与并的分配律" class="headerlink" title="选择与并的分配律"></a>选择与并的分配律</h4><p>条件下推到相关的关系上，先做选择后做并运算，可以减小每个关系输出结果的大小。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R<span class="token punctuation">)</span> SR <span class="token keyword">where</span> SR<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment">// 分配律</span>
+<span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> S<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">union</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R <span class="token keyword">where</span> R<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="选择与差的分配律"><a href="#选择与差的分配律" class="headerlink" title="选择与差的分配律"></a>选择与差的分配律</h4><p>条件下推到相关的关系上，先做选择后做差运算，可以减小每个关系输出结果的大小</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">except</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R<span class="token punctuation">)</span> SR <span class="token keyword">where</span> SR<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment">// 分配律</span>
+<span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> S<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">except</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R <span class="token keyword">where</span> R<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="投影与笛卡儿积的分配律"><a href="#投影与笛卡儿积的分配律" class="headerlink" title="投影与笛卡儿积的分配律"></a>投影与笛卡儿积的分配律</h4><p>先做投影后做积，可减少做积前每个元组的长度，使得再做积后得到新元组的长度变短。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R<span class="token punctuation">)</span> SR 
+<span class="token comment">// 分配律</span>
+<span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> S<span class="token punctuation">)</span> <span class="token keyword">union</span> <span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> R <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="投影与并的分配律"><a href="#投影与并的分配律" class="headerlink" title="投影与并的分配律"></a>投影与并的分配律</h4><p>先做投影后做并，可减少做并前每个元组的长度。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">except</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> R<span class="token punctuation">)</span> SR 
+<span class="token comment">// 分配律</span>
+<span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> S<span class="token punctuation">)</span> <span class="token keyword">except</span> <span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> R <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="规则重写"><a href="#规则重写" class="headerlink" title="规则重写"></a>规则重写</h3><h4 id="选择操作"><a href="#选择操作" class="headerlink" title="选择操作"></a>选择操作</h4><p>对应的是限制条件（格式类似 fieldconsant）优化方式是选择操作下推， 目的是尽量减少连接操作前的元组数，使得中间临时关系<code>尽量少</code>。 这可减少IO和CPU等的消耗。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> sex <span class="token operator">=</span> <span class="token string">'男'</span> <span class="token operator">and</span> username <span class="token operator">=</span> <span class="token string">'join'</span>
+<span class="token comment">// 优化为</span>
+<span class="token keyword">select</span><span class="token operator">*</span> <span class="token keyword">from</span> s <span class="token keyword">where</span> username <span class="token operator">=</span> <span class="token string">'join'</span> <span class="token operator">and</span> sex <span class="token operator">=</span> <span class="token string">'男'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="投影操作"><a href="#投影操作" class="headerlink" title="投影操作"></a>投影操作</h4><p>对应SELECT查询的目的的列对象。优化方式是投影操作下推。 目的是尽量减少连接操作前的列数，使得中间临时关系<code>尽量小</code>（选择操作是使元组个数”尽量少“，投影操作，是使一条元组”尽量小“）。 这样，虽然不能减少IO（多数数据库存储方式是行存储，元组是读取的最基本单位，所以想要操作列必须读取一行数据）。 但可以减少连接后的中间关系的元组大小，节约内存。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> ST
+<span class="token comment">// 优化为</span>
+<span class="token keyword">select</span> a <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> a <span class="token keyword">from</span> S <span class="token keyword">where</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> ST<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="连接操作"><a href="#连接操作" class="headerlink" title="连接操作"></a>连接操作</h4><p>对应的是<code>连接条件</code>。（格式为field1field2, field1和field表示”不同表“上的列对象。表示两个表连接条件。</p>
+<ol>
+<li>”多表连接中每个表被连接的顺序决定着效率。“，即如果ABC三个表，ABC， ACB， CBA， BCA等不同的连接后结果一样的话， 则要计算哪种效率最高。</li>
+<li>多表连接每个表被连接的顺序由用户语义决定，这决定着表之间的前后连接次序是不能随意更换的。</li>
+</ol>
+<h3 id="子查询优化"><a href="#子查询优化" class="headerlink" title="子查询优化"></a>子查询优化</h3><h4 id="子查询分类"><a href="#子查询分类" class="headerlink" title="子查询分类"></a>子查询分类</h4><h5 id="相关子查询"><a href="#相关子查询" class="headerlink" title="相关子查询"></a>相关子查询</h5><p>子查询的执行依赖于外层父查询的一些属性值.子查询因依赖于父查询的参数,当父查询改变事,子查询需要根据参数重新执行</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> S <span class="token keyword">WHERE</span> S<span class="token punctuation">.</span>a <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span> b <span class="token keyword">FROM</span> R <span class="token keyword">WHERE</span> S<span class="token punctuation">.</span>a<span class="token operator">=</span>R<span class="token punctuation">.</span>b<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="非相关子查询"><a href="#非相关子查询" class="headerlink" title="非相关子查询"></a>非相关子查询</h5><p>子查询的执行不依赖于外层父查询的任何属性值,这样的子查询具有独立性,可以独自求解</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> S <span class="token keyword">WHERE</span> S<span class="token punctuation">.</span>a <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span> b <span class="token keyword">FROM</span> R <span class="token keyword">WHERE</span> R<span class="token punctuation">.</span>b<span class="token operator">=</span><span class="token string">'a'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="子查询合并"><a href="#子查询合并" class="headerlink" title="子查询合并"></a>子查询合并</h4><p>多个子查询能够合并成一个子查询.</p>
+<p>等价的情况下。多个子查询能够合并成一个子查询。这样可以把多次表扫描，多次连接减少为单次表扫描和单次连接。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> a <span class="token operator">&gt;</span> <span class="token number">10</span> <span class="token operator">and</span> a <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token keyword">select</span> c <span class="token keyword">from</span> R <span class="token keyword">where</span> b <span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">or</span> a <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token keyword">select</span> c <span class="token keyword">from</span> R <span class="token keyword">where</span> b<span class="token operator">=</span><span class="token number">2</span> <span class="token punctuation">)</span>
+<span class="token comment">// 合并为</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> S <span class="token keyword">where</span> a <span class="token operator">&gt;</span> <span class="token number">10</span> <span class="token operator">and</span> a <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token keyword">select</span> c <span class="token keyword">from</span> R <span class="token keyword">where</span> b<span class="token operator">=</span><span class="token number">1</span> <span class="token operator">or</span> b<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="子查询展开"><a href="#子查询展开" class="headerlink" title="子查询展开"></a>子查询展开</h4><p>又称子查询反嵌套，又称为子查询上拉。 把一些子查询置于外层的父查询中，作为连接关系与外层父查询并列。实质上是把某些子查询重写为等价的多表连接操作。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> t1<span class="token punctuation">,</span> <span class="token punctuation">(</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> t2 <span class="token keyword">where</span> t2<span class="token punctuation">.</span>a2 <span class="token operator">&gt;</span> <span class="token number">10</span><span class="token punctuation">)</span> v_t2 <span class="token keyword">where</span> t1<span class="token punctuation">.</span>a1 <span class="token operator">&lt;</span> <span class="token number">10</span> <span class="token operator">and</span> v_t2<span class="token punctuation">.</span>a2 <span class="token operator">&lt;</span> <span class="token number">20</span>
+<span class="token comment">// 优化为</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> t1<span class="token punctuation">,</span> t2 <span class="token keyword">where</span> t1<span class="token punctuation">.</span>a1 <span class="token operator">&lt;</span> <span class="token number">10</span> <span class="token operator">and</span> t2<span class="token punctuation">.</span>a2 <span class="token operator">&lt;</span> <span class="token number">20</span> <span class="token operator">and</span> t2<span class="token punctuation">.</span>a2 <span class="token operator">&gt;</span> <span class="token number">10</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>注意:</p>
+<ul>
+<li>如果子查询出现了聚集、GROUP BY， DISTINCT 子句，则子查询只能单独求解，不可以上拉到上层。</li>
+<li>如果子查询只是一个简单格式（SPJ<code>select project join</code>）的查询语句，则可以上拉到上层，这样往往能提高查询效率</li>
+</ul>
+<h5 id="子查询展开规则"><a href="#子查询展开规则" class="headerlink" title="子查询展开规则"></a>子查询展开规则</h5><ol>
+<li>如果上层查询的结果没有重复（即SELECT子句中包含<code>主键</code>）， 则可以展开其子查询，并且展开后的查询的SELECT子句前就回上<code>DISTINCT</code>标志。</li>
+<li>如果上层有<code>DISTINCT</code>标志，则可以直接展开子查询</li>
+<li>如果内层查询结果没有重复元组，则可以展开。</li>
+</ol>
+<h5 id="子查询展开的步骤"><a href="#子查询展开的步骤" class="headerlink" title="子查询展开的步骤"></a>子查询展开的步骤</h5><ol>
+<li>将子查询和上层查询的FROM子句连接，为同一个FROM子句，并修改相应的运行参数</li>
+<li>将子查询的谓词符号进行相应修改。如 IN修改为=ANY</li>
+<li>将子查询的WHERE条件作为一个整体与上层查询的WHERE条件合并，并用AND条件连接词连接。</li>
+</ol>
+<h5 id="ALL-SOME-ANY类型"><a href="#ALL-SOME-ANY类型" class="headerlink" title="ALL/SOME/ANY类型"></a>ALL/SOME/ANY类型</h5><p>如果子查询没有 GROUP BY 子句，也没有聚集函数。则可以使用如下表达式做等价转换：</p>
+<ul>
+<li>val &gt; ALL (select …) 等价为 val &gt; MAX(select …)</li>
+<li>val &lt; ALL (select …) 等价为 val &lt; min( select …)</li>
+<li>val &gt; any (select …) 等价为 val &gt; min(select ….）</li>
+<li>val &lt; any (select …) 等价为 val&lt;max(select ….)</li>
+<li>val =&gt; ALL (select …) 等价为 val =&gt; MAX(select …)</li>
+<li>val &lt;= ALL (select …) 等价为 val &lt;= min( select …)</li>
+<li>val =&gt; any (select …) 等价为 val =&gt; min(select ….）</li>
+<li>val &lt;= any (select …) 等价为 val &lt;= max(select ….)</li>
+</ul>
+<h4 id="聚集子查询消除"><a href="#聚集子查询消除" class="headerlink" title="聚集子查询消除"></a>聚集子查询消除</h4><p>将聚集函数上推，将子查询转变为一个新的不包含聚集函数的子查询，并与父查询的部分或者全部表做左外连接。</p>
+<h3 id="等价谓词重写"><a href="#等价谓词重写" class="headerlink" title="等价谓词重写"></a>等价谓词重写</h3><h4 id="LIKE规则"><a href="#LIKE规则" class="headerlink" title="LIKE规则"></a>LIKE规则</h4><p>如：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">name <span class="token operator">like</span> <span class="token string">'abc%'</span>
+<span class="token comment">//重写为</span>
+name <span class="token operator">&gt;=</span> <span class="token string">'abc'</span> <span class="token operator">and</span> name <span class="token operator">&lt;</span> <span class="token string">'abd'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>应用like规则的好处：转换前针对 like 谓词只能进行全表扫描。如果name列上存在索引，则转换后可以进行索引范围扫描。</p>
+<p>如果没有通配符（%或_）。则是与 = 等价</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">name <span class="token operator">like</span> <span class="token string">'abc'</span>
+<span class="token comment">//重写为</span>
+name <span class="token operator">=</span> <span class="token string">'abc'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="BETWEEN-AND规则"><a href="#BETWEEN-AND规则" class="headerlink" title="BETWEEN-AND规则"></a>BETWEEN-AND规则</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">sno <span class="token operator">BETWEEN</span> <span class="token number">10</span> <span class="token operator">AND</span> <span class="token number">20</span> 
+重写为
+sno <span class="token operator">&gt;=</span> <span class="token number">10</span> <span class="token operator">and</span> sno <span class="token operator">&lt;=</span><span class="token number">20</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>好处：如果sno建立了索引，则可以用索引扫描代替原来的BETWEEN-AND谓词限定的全表扫描，从而提高了查询的效率。</p>
+<p>####IN转换OR规则 IN只是IN操作符，而不是IN子查询。改为OR可以更好地利用索引进行优化。将IN改为若干个OR可能会提高效率。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">age <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span>
+<span class="token comment">//重写为</span>
+age <span class="token operator">=</span> <span class="token number">8</span> <span class="token operator">or</span> age <span class="token operator">=</span> <span class="token number">12</span> <span class="token operator">or</span> age <span class="token operator">=</span> <span class="token number">21</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>效率是否提高，需要看数据库对IN谓词是否只支持全表扫描。如果数据库对IN谓词只支持全表扫描且OR谓词中表的age列存在索引，则转换后的查询效率会更好。</p>
+<h4 id="IN转换ANY规则"><a href="#IN转换ANY规则" class="headerlink" title="IN转换ANY规则"></a>IN转换ANY规则</h4><p>因为IN可以转换为OR，而OR可转换为ANY，所以可以直接把IN转换为ANY。这可能会提高效率。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">age <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span>
+<span class="token comment">//重写为</span>
+age <span class="token keyword">any</span> <span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>效率是否提高，依赖于数据库对ANY操作的支持情况。 如：PostgreSQL没有显式支持 ANY 操作，但在内部实现时把IN操作转换为了ANY操作。（通过 explain 知道）</p>
+<h4 id="OR转换为ANY规则"><a href="#OR转换为ANY规则" class="headerlink" title="OR转换为ANY规则"></a>OR转换为ANY规则</h4><p>这样可以更好地利用 MIN/MAX 操作进行优化。但（PG9.2.3 和 MySQL 5.6.10 目前都还没有支持）</p>
+<h4 id="ALL-ANT-转换为集函数规则"><a href="#ALL-ANT-转换为集函数规则" class="headerlink" title="ALL/ANT 转换为集函数规则"></a>ALL/ANT 转换为集函数规则</h4><p>这样可以更好地利用 MIN/MAX 操作进行优化。如：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">sno <span class="token operator">&gt;</span> <span class="token keyword">ANY</span> <span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token operator">*</span><span class="token number">5</span><span class="token operator">+</span><span class="token number">3</span><span class="token punctuation">,</span> sqrt<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+重写为
+sno <span class="token operator">&gt;</span> sqrt<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>通常，聚集函数MAX(), MIN()等的效率比ANY， ALL谓词的执行效率高。</p>
+<h4 id="NOT规则"><a href="#NOT规则" class="headerlink" title="NOT规则"></a>NOT规则</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token operator">NOT</span> <span class="token punctuation">(</span>col_1 <span class="token operator">!=</span> <span class="token number">2</span><span class="token punctuation">)</span> 
+<span class="token comment">//重写为 </span>
+col_1 <span class="token operator">=</span> <span class="token number">2</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>其他类似 好处：如果 col_1 上建立了索引，则可以用索引扫描代替原来的全表扫描。</p>
+<h4 id="OR重写并集规则"><a href="#OR重写并集规则" class="headerlink" title="OR重写并集规则"></a>OR重写并集规则</h4><p>这条SQL会强迫查询优化器使用顺序存取，因为这个语句要检索的是OR操作的集合。假设，sex, age 上有索引，则可优化为：</p>
+<p>如：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> <span class="token punctuation">(</span> sex <span class="token operator">=</span> <span class="token string">'f'</span> <span class="token operator">and</span> sno <span class="token operator">&gt;</span> <span class="token number">15</span> <span class="token punctuation">)</span> <span class="token operator">or</span> age <span class="token operator">&gt;</span> <span class="token number">18</span>
+<span class="token comment">// 重写</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sex <span class="token operator">=</span> <span class="token string">'f'</span> <span class="token operator">and</span> sno <span class="token operator">&gt;</span> <span class="token number">15</span> <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> age <span class="token operator">&gt;</span> <span class="token number">18</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="条件简化"><a href="#条件简化" class="headerlink" title="条件简化"></a>条件简化</h3><ol>
+<li>把HAVING条件并入WHERE条件。（只有SQL语句不存在 GROUP BY 条件 或聚集函数的情况下才可以使用）</li>
+<li>去除表达式中冗余的括号。这样子可以减少语法分析时产生的AND和OR树的层次。</li>
+<li>常量传递。如：col_1 = col_2 and col_2 = 3 。改为：col_1 = 3 and col_2 = 3;</li>
+<li>消除死码。如：永恒为假的条件。</li>
+<li>表达式计算：如：where col_1 = 1 + 2 ，改为 where col_1 = 3</li>
+<li>等式变换：化简条件（如反转关系操作符的操作数顺序）。如： -a = 3; 简化为 a = -3；</li>
+<li>不等式变换。化简条件。如：a &gt; 10 and b = 6 and a &gt; 2 ，简化为 b = 6 and a &gt; 10</li>
+<li>布尔表达式变换。</li>
+<li>谓词传递闭包。</li>
+<li>任何一个布尔表达式都能被转换为一个等价的合取范式（CNF）。如：and 操作符是可交换的，所以优化器可以按先易后难的顺序计算表达式。</li>
+<li>索引的利用。</li>
+</ol>
+<h3 id="group-by优化"><a href="#group-by优化" class="headerlink" title="group by优化"></a>group by优化</h3><h4 id="分组操作下移"><a href="#分组操作下移" class="headerlink" title="分组操作下移"></a>分组操作下移</h4><p>可以减少元组个数,可以提高表连接速度</p>
+<h4 id="分组操作上移"><a href="#分组操作上移" class="headerlink" title="分组操作上移"></a>分组操作上移</h4><p>如果之前有连接 or 过滤的操作,可以考虑分组上移,提高分组效率</p>
+<h3 id="order-by-优化"><a href="#order-by-优化" class="headerlink" title="order by 优化"></a>order by 优化</h3><h4 id="排序消除"><a href="#排序消除" class="headerlink" title="排序消除"></a>排序消除</h4><p>如果有默认的排序(如,索引等),可以将排序消除</p>
+<h4 id="排序下推"><a href="#排序下推" class="headerlink" title="排序下推"></a>排序下推</h4><p>将排序结果尽量下推到基表中,有序基表进行连接,结果符合预期,防止最终在大表操作</p>
+<h3 id="distinct-优化"><a href="#distinct-优化" class="headerlink" title="distinct 优化"></a>distinct 优化</h3><h4 id="distinct消除"><a href="#distinct消除" class="headerlink" title="distinct消除"></a>distinct消除</h4><p>类似主键,唯一约束,索引,可以直接擦除distinct</p>
+<h4 id="distinct推入"><a href="#distinct推入" class="headerlink" title="distinct推入"></a>distinct推入</h4><p>生成含有distinct的反半连接查询时,先进行反半连接,再distinct,也许先distinct,在反半连接更优</p>
+<h4 id="distinct迁移"><a href="#distinct迁移" class="headerlink" title="distinct迁移"></a>distinct迁移</h4><p>对连接操作结果distinct,可以把distinct移动到一个子查询中</p>
+<h2 id="物理优化"><a href="#物理优化" class="headerlink" title="物理优化"></a>物理优化</h2><h3 id="代价估算"><a href="#代价估算" class="headerlink" title="代价估算"></a>代价估算</h3><pre class="line-numbers language-none"><code class="language-none">总代价 = IO 代价 + CPU 代价
+COST = P * a_page_cpu_time + W * T
+
+P：计划运行时访问的页数，a_page_cpu_time 是每个页读取的时间花费，其积反映了IO代价
+T：访问的元组。反映了CPU花费。（存储层是以页面为单位，数据以页面的形式读入内存，每个页面上可能有多个元组，访问元组需要解析元组结构，才能把元组上的字段读出，这消耗的是CPU）。如果是索引扫描，则还会包括索引读取的花费。
+W：权重因子。表明IO到CPU的相关性，又称选择率（selectivity）。选择率用于表示在关系R中，满足条件“A&lt;op&gt;a”的元组数与R的所有元组N的比值。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>其他情况不予说明,重点解释逻辑优化</p>
 
                 
             </div>
@@ -1852,18 +2179,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/10/08/calcite/">
+                <a href="/2024/10/10/lc-385/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Calcite技术详解">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="lc-385">
                         
-                        <span class="card-title">Calcite技术详解</span>
+                        <span class="card-title">lc-385</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1873,27 +2199,26 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-08
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-10-10
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" class="post-category">
-                                    大数据
+                            <a href="/categories/leetcode/" class="post-category">
+                                    leetcode
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Calcite/">
-                        <span class="chip bg-color">Calcite</span>
+                    <a href="/tags/leetcode/">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
