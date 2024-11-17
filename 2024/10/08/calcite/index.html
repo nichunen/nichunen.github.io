@@ -1667,9 +1667,8 @@
 如果A.a,A.b分别有索引,也许 select * from A where A.a = 3 union select * from A where A.b&gt;8 可以提高效率 
 // 合取 (DNF)
 select * from S where  S.a=1 and ( S.b=2 or S.c=3 )
-
 // 析取 (CNF)
-select * from S where ( S.a = 1 and S.b=2 ) or ( S.a = 1 and S.c=3 )<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+select * from S where ( S.a = 1 and S.b=2 ) or ( S.a = 1 and S.c=3 )<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h5 id="选择和叉积"><a href="#选择和叉积" class="headerlink" title="选择和叉积"></a>选择和叉积</h5><ul>
 <li>尽可能选做选择：关系有N和M行，先做积运算将包含N*M行。先做选择运算，减少N和M，则可避免不满足条件的条件参与积的运算，节约时间减少结果的大小。</li>
