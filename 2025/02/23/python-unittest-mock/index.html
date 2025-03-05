@@ -390,6 +390,8 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ol>
+<li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2056383">https://cloud.tencent.com/developer/article/2056383</a></li>
+<li></li>
 <li>Introduction</li>
 </ol>
 <p>What is mock?</p>
@@ -752,6 +754,267 @@ testMock <span class="token operator">=</span> mock<span class="token punctuatio
 <li>Execute the MockTest_side_effect.py file and run the results:</li>
 </ol>
 <p>Set side_effect to SystemError exception, call p.age() method will throw the exception.</p>
+<p>Assertion Methods, Statistical Methods</p>
+<p>Table of Contents<br>1, Assertion methods<br>1.1, assert_not_called<br>1.2, assert_called<br>1.3, assert_called_once<br>1.4, assert_called_with<br>1.5, assert_called_once_with<br>1.6, assert_any_call<br>2. Statistical Methods<br>2.1. called<br>2.2. call_count<br>2.3. call_args<br>2.4, call_args_list<br>2.5, method_calls<br>2.6, mock_calls</p>
+<ol>
+<li>Assertion methods</li>
+</ol>
+<p>1, mock commonly used assertion methods:</p>
+<p>Code Language: javascript Code Runs: 0<br>Copy</p>
+<p>Cloud Studio<br>Code Runs<br>assert_not_called: the simulation has never been called.<br>assert_called: the simulation was called at least once.<br>assert_called_once: the simulation was called only once.<br>assert_called_with: the simulation was called with the specified parameters.<br>assert_called_once_with: the simulation was called exactly once and the call used the specified parameters.<br>assert_any_call: the simulation has been called with the specified parameters.<br>2. Create the Demo.py file (create the class under test: People class).</p>
+<p>Script code:</p>
+<p>Code Language: javascript Code Runs: 0<br>Copy</p>
+<p>Cloud Studio<br>Code Runs<br>#! /usr/bin/env python</p>
+<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>“””<br>Tested Classes<br>“””</p>
+<h1 id="The-People-class-has-two-member-methods-one-with-parameters-and-one-without-and-one-static-method"><a href="#The-People-class-has-two-member-methods-one-with-parameters-and-one-without-and-one-static-method" class="headerlink" title="The People class has two member methods (one with parameters and one without), and one static method"></a>The People class has two member methods (one with parameters and one without), and one static method</h1><p>class People.</p>
+<pre><code>def __init__(self).
+    self.__age = 20
+
+def name(self,firstName,lastName): return firstName + ' ' + lastName.
+    return firstName + ' ' + lastName
+
+def name(self,firstName,lastName): return firstName + ' + lastName
+    return self.__age
+
+@staticmethod
+def class_name(): return People.
+    return People.__name__
+</code></pre>
+<p>1.1. assert_not_called<br>assert_not_called: the simulation is never called.</p>
+<ol>
+<li>Create MockTest_assert.py file (create PeopleTest test class).</li>
+</ol>
+<p>Script code:</p>
+<p>Code Language: javascript Code Runs: 0<br>Copy</p>
+<p>Cloud Studio<br>Code Runs<br>#! /usr/bin/env python</p>
+<h1 id="coding-utf-8-1"><a href="#coding-utf-8-1" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><p>“””<br>Assertion methods (checking if they are called)<br>“””<br>from method.Demo import People<br>from unittest import mock<br>import unittest</p>
+<p>class PeopleTest(unittest.TestCase):</p>
+<pre><code>def test_name(self).
+    # Call the tested class People().
+    p = People()
+    p.name = mock.Mock(return_value='Hello Mock')
+    p.name.assert_not_called()
+</code></pre>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘.<br>    unittest.main(verbosity=2)</p>
+<p>Translated with DeepL.com (free version)</p>
+<p>1, reset method</p>
+<p>reset_mock: restore the mock object to the state before the test (equivalent to not having called).</p>
+<p>1, create Demo.py file (create the class under test: People class).</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">"""
+重置方法
+"""</span>
+<span class="token keyword">from</span> method<span class="token punctuation">.</span>Demo <span class="token keyword">import</span> People
+<span class="token keyword">from</span> unittest <span class="token keyword">import</span> mock
+<span class="token keyword">import</span> unittest
+
+<span class="token keyword">class</span> <span class="token class-name">PeopleTest</span><span class="token punctuation">(</span>unittest<span class="token punctuation">.</span>TestCase<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">test_name</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 调用被测试类People()</span>
+        p <span class="token operator">=</span> People<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>name <span class="token operator">=</span> mock<span class="token punctuation">.</span>Mock<span class="token punctuation">(</span>return_value<span class="token operator">=</span><span class="token string">'Hello Mock'</span><span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>name<span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>name<span class="token punctuation">.</span>reset_mock<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>name<span class="token punctuation">.</span>assert_not_called<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    unittest<span class="token punctuation">.</span>main<span class="token punctuation">(</span>verbosity<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>2, create_autospec</p>
+<p>create_autospec: check the number of parameters, and then return a fixed value; create_autospec method to replace the Mock method.</p>
+<p>1, create Demo.py file (create the class under test: People class).</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">"""
+被测试类
+"""</span>
+<span class="token comment"># People类里有两个成员方法（一个有参数，一个无参数）、一个静态方法</span>
+<span class="token keyword">class</span> <span class="token class-name">People</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>__age <span class="token operator">=</span> <span class="token number">20</span>
+
+    <span class="token keyword">def</span> <span class="token function">name</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>firstName<span class="token punctuation">,</span>lastName<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> lastName
+
+    <span class="token keyword">def</span> <span class="token function">age</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>__age
+
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">class_name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> People<span class="token punctuation">.</span>__name__<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2、创建MockTest_create_autospec.py文件（创建PeopleTest测试类）。</p>
+<p>脚本代码：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">"""
+create_autospec（校验参数个数，再返回固定值）
+"""</span>
+<span class="token keyword">from</span> method<span class="token punctuation">.</span>Demo <span class="token keyword">import</span> People
+<span class="token keyword">from</span> unittest <span class="token keyword">import</span> mock
+<span class="token keyword">import</span> unittest
+
+<span class="token keyword">class</span> <span class="token class-name">PeopleTest</span><span class="token punctuation">(</span>unittest<span class="token punctuation">.</span>TestCase<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">test_name</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 调用被测试类People()</span>
+        p <span class="token operator">=</span> People<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>name <span class="token operator">=</span> mock<span class="token punctuation">.</span>create_autospec<span class="token punctuation">(</span>p<span class="token punctuation">.</span>name<span class="token punctuation">,</span> return_value<span class="token operator">=</span><span class="token string">'Hello Mock'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>name<span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>assertEqual<span class="token punctuation">(</span>p<span class="token punctuation">.</span>name<span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'Hello Mock'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>name<span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    unittest<span class="token punctuation">.</span>main<span class="token punctuation">(</span>verbosity<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="3">
+<li>Execute the MockTest_create_autospec.py file and run the results:</li>
+</ol>
+<p>(1) If you want to verify the parameters you need to use create_autospec method instead of Mock method.</p>
+<p>(2) Pass any two parameters (‘a’, ‘b’), will still return the value of mock (Hello Mock).</p>
+<p>(3) If the number of arguments is not correct (pass one argument ‘a’), an error will be reported (e.g. TypeError: missing a required argument: ‘lastName’).</p>
+<ol start="3">
+<li>Decorator/Context Manager</li>
+</ol>
+<p>The mock library provides the patch function to simplify the replacement of a mock object with the original object. patch can be used as a decorator or a context manager, which means that in the decorated function and the context manager, the corresponding class will be replaced with the mock object.</p>
+<p>Create the Demo.py file (create the class under test: People class).</p>
+<p>Script code:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">"""
+被测试类
+"""</span>
+<span class="token comment"># People类里有两个成员方法（一个有参数，一个无参数）、一个静态方法</span>
+<span class="token keyword">class</span> <span class="token class-name">People</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>__age <span class="token operator">=</span> <span class="token number">20</span>
+
+    <span class="token keyword">def</span> <span class="token function">name</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>firstName<span class="token punctuation">,</span>lastName<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> lastName
+
+    <span class="token keyword">def</span> <span class="token function">age</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>__age
+
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">class_name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> People<span class="token punctuation">.</span>__name__<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>3.1, @patch<br>3.1.1, in the test method parameters to get the Mock object<br>1, create MockTest_patch1.py file (create PeopleTest test class).</p>
+<p>Script code:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">"""
+装饰器/上下文管理器：@patch（在测试方法参数中得到Mock对象）
+"""</span>
+<span class="token keyword">from</span> method<span class="token punctuation">.</span>Demo <span class="token keyword">import</span> People
+<span class="token keyword">from</span> unittest<span class="token punctuation">.</span>mock <span class="token keyword">import</span> patch
+<span class="token keyword">import</span> unittest
+
+<span class="token keyword">class</span> <span class="token class-name">PeopleTest</span><span class="token punctuation">(</span>unittest<span class="token punctuation">.</span>TestCase<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token decorator annotation punctuation">@patch</span><span class="token punctuation">(</span><span class="token string">'method.Demo.People.class_name'</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">test_class_name</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> mock_class_name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        mock_class_name<span class="token punctuation">.</span>return_value <span class="token operator">=</span> <span class="token string">'Hello Mock'</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>People<span class="token punctuation">.</span>class_name<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    unittest<span class="token punctuation">.</span>main<span class="token punctuation">(</span>verbosity<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="2">
+<li>Execute the MockTest_patch1.py file and run the results:</li>
+</ol>
+<p>(1) @patch in the form of a string to list the path of the static method, in the test method (test_class_name) in the parameters will automatically get a Mock object (mock_class_name).</p>
+<p>(2) Set the return value of the class_name static method to Hello Mock.</p>
+<p>(3) Call the People.class_name() static method to return the preset value Hello Mock.</p>
+<p>3.1.2 Setting up Mock objects in patch<br>1, create MockTest_patch2.py file (create PeopleTest test class).</p>
+<p>Script code:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">"""
+装饰器/上下文管理器：@patch（在patch中设置Mock对象）
+"""</span>
+<span class="token keyword">from</span> method<span class="token punctuation">.</span>Demo <span class="token keyword">import</span> People
+<span class="token keyword">from</span> unittest <span class="token keyword">import</span> mock
+<span class="token keyword">from</span> unittest<span class="token punctuation">.</span>mock <span class="token keyword">import</span> patch
+<span class="token keyword">import</span> unittest
+
+<span class="token keyword">class</span> <span class="token class-name">PeopleTest</span><span class="token punctuation">(</span>unittest<span class="token punctuation">.</span>TestCase<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    mock_class_name <span class="token operator">=</span> mock<span class="token punctuation">.</span>Mock<span class="token punctuation">(</span>return_value<span class="token operator">=</span><span class="token string">'Hello Mock'</span><span class="token punctuation">)</span>
+    <span class="token decorator annotation punctuation">@patch</span><span class="token punctuation">(</span><span class="token string">'method.Demo.People.class_name'</span><span class="token punctuation">,</span> mock_class_name<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">test_class_name</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>People<span class="token punctuation">.</span>class_name<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    unittest<span class="token punctuation">.</span>main<span class="token punctuation">(</span>verbosity<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="2">
+<li>Execute the MockTest_patch2.py file and run the results:</li>
+</ol>
+<p>(1) Define the Mock object and set the return value to Hello Mock.</p>
+<p>(2) In @patch give the object of the defined Mock, the advantage is that the defined object can be reused.</p>
+<p>(3) Call People.class_name() static method and return the preset value Hello Mock.</p>
+<p>3.2, @patch.object<br>1, create MockTest_patch_object.py file (create PeopleTest test class).</p>
+<p>Script code:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">"""
+装饰器/上下文管理器：@patch.object
+"""</span>
+<span class="token keyword">from</span> method<span class="token punctuation">.</span>Demo <span class="token keyword">import</span> People
+<span class="token keyword">from</span> unittest <span class="token keyword">import</span> mock
+<span class="token keyword">from</span> unittest<span class="token punctuation">.</span>mock <span class="token keyword">import</span> patch
+<span class="token keyword">import</span> unittest
+
+<span class="token keyword">class</span> <span class="token class-name">PeopleTest</span><span class="token punctuation">(</span>unittest<span class="token punctuation">.</span>TestCase<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    mock_class_name <span class="token operator">=</span> mock<span class="token punctuation">.</span>Mock<span class="token punctuation">(</span>return_value<span class="token operator">=</span><span class="token string">'Hello Mock'</span><span class="token punctuation">)</span>
+    <span class="token decorator annotation punctuation">@patch<span class="token punctuation">.</span>object</span><span class="token punctuation">(</span>People<span class="token punctuation">,</span> <span class="token string">'class_name'</span><span class="token punctuation">,</span> mock_class_name<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">test_class_name</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>People<span class="token punctuation">.</span>class_name<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    unittest<span class="token punctuation">.</span>main<span class="token punctuation">(</span>verbosity<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="2">
+<li>Execute the MockTest_patch_object.py file and run the results:</li>
+</ol>
+<p>(1) Define the Mock object and set the return value to Hello Mock.</p>
+<p>(2) 使用@patch.object来mock, the benefit is that the People class is not given as a string.</p>
+<p>(3) Call the People.class_name() static method and return the preset value Hello Mock.</p>
+<p>3.3. with<br>1, create MockTest_patch_with.py file (create PeopleTest test class).</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">"""
+装饰器/上下文管理器：使用with控制作用域
+"""</span>
+<span class="token keyword">from</span> method<span class="token punctuation">.</span>Demo <span class="token keyword">import</span> People
+<span class="token keyword">from</span> unittest <span class="token keyword">import</span> mock
+<span class="token keyword">from</span> unittest<span class="token punctuation">.</span>mock <span class="token keyword">import</span> patch
+<span class="token keyword">import</span> unittest
+
+<span class="token keyword">class</span> <span class="token class-name">PeopleTest</span><span class="token punctuation">(</span>unittest<span class="token punctuation">.</span>TestCase<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">test_class_name</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        mock_class_name <span class="token operator">=</span> mock<span class="token punctuation">.</span>Mock<span class="token punctuation">(</span>return_value<span class="token operator">=</span><span class="token string">'Hello Mock'</span><span class="token punctuation">)</span>
+        <span class="token keyword">with</span> patch<span class="token punctuation">(</span><span class="token string">'method.Demo.People.class_name'</span><span class="token punctuation">,</span> mock_class_name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>People<span class="token punctuation">.</span>class_name<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>People<span class="token punctuation">.</span>class_name<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    unittest<span class="token punctuation">.</span>main<span class="token punctuation">(</span>verbosity<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="2">
+<li>Execute the MockTest_patch_with.py file and run the results:</li>
+</ol>
+<p>(1) Define the Mock object and set the return value to Hello Mock.</p>
+<p>(2) the use of with control scope, call the first People.class_name () static method (in-scope), return the preset value Hello Mock; call the second People.class_name () static method (out-of-scope), return the true value of People.</p>
 
                 
             </div>
