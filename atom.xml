@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2025-03-05T15:23:39.189Z</updated>
+  <updated>2026-01-14T00:33:01.762Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>csharp基础</title>
+    <link href="http://nichunen.github.io/2026/01/14/csharp/"/>
+    <id>http://nichunen.github.io/2026/01/14/csharp/</id>
+    <published>2026-01-13T16:36:41.000Z</published>
+    <updated>2026-01-14T00:33:01.762Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-c#&quot; data-language=&quot;c#&quot;&gt;&lt;code class=&quot;language-c#&quot;&gt;using System;
+using System.Collections.Generic;
+using</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="http://nichunen.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="csharp" scheme="http://nichunen.github.io/tags/csharp/"/>
+    
+  </entry>
   
   <entry>
     <title>how to mock data in python unittest</title>
@@ -502,31 +529,6 @@
         
         
     <summary type="html">&lt;p&gt;给你两个整数数组 &lt;code&gt;nums1&lt;/code&gt; 和 &lt;code&gt;nums2&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-349</title>
-    <link href="http://nichunen.github.io/2024/08/01/lc-349/"/>
-    <id>http://nichunen.github.io/2024/08/01/lc-349/</id>
-    <published>2024-08-01T02:09:53.000Z</published>
-    <updated>2024-08-01T02:38:27.270Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给定两个数组 &lt;code&gt;nums1&lt;/code&gt; 和 &lt;code&gt;nums2&lt;/code&gt; ，返回 &lt;em&gt;它们的 交集&lt;/em&gt; 。输出结果中的每个元素一定是 &lt;strong&gt;唯一&lt;/strong&gt; 的。我们可以 &lt;strong&gt;不考虑输出结果的顺序&lt;/strong&gt;</summary>
         
       
     
