@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2026-01-14T00:33:01.762Z</updated>
+  <updated>2026-05-27T12:48:55.454Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tasks</title>
+    <link href="http://nichunen.github.io/2026/05/27/tasks/"/>
+    <id>http://nichunen.github.io/2026/05/27/tasks/</id>
+    <published>2026-05-26T22:54:03.000Z</published>
+    <updated>2026-05-27T12:48:55.454Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我将帮您创建一个完整的Spring Boot + React项目，使用Quartz调度任务。这个项目包含后端API和前端界面。&lt;/p&gt;
+&lt;h2 id=&quot;项目结构&quot;&gt;&lt;a href=&quot;#项目结构&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="springboot" scheme="http://nichunen.github.io/categories/springboot/"/>
+    
+    
+    <category term="tasks" scheme="http://nichunen.github.io/tags/tasks/"/>
+    
+  </entry>
   
   <entry>
     <title>csharp基础</title>
@@ -504,31 +530,6 @@ using</summary>
         
     <summary type="html">&lt;p&gt;给你一个由非负整数 &lt;code&gt;a1, a2, ..., an&lt;/code&gt; 组成的数据流输入，请你将到目前为止看到的数字总结为不相交的区间列表。&lt;/p&gt;
 &lt;p&gt;实现 &lt;code&gt;SummaryRanges&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-350</title>
-    <link href="http://nichunen.github.io/2024/08/02/lc-350/"/>
-    <id>http://nichunen.github.io/2024/08/02/lc-350/</id>
-    <published>2024-08-02T11:50:02.000Z</published>
-    <updated>2024-08-06T03:00:46.985Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你两个整数数组 &lt;code&gt;nums1&lt;/code&gt; 和 &lt;code&gt;nums2&lt;/code&gt;</summary>
         
       
     
