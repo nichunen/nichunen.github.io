@@ -6,7 +6,7 @@
   <link href="http://nichunen.github.io/atom.xml" rel="self"/>
   
   <link href="http://nichunen.github.io/"/>
-  <updated>2026-05-27T12:48:55.454Z</updated>
+  <updated>2026-05-28T16:29:04.475Z</updated>
   <id>http://nichunen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ppt</title>
+    <link href="http://nichunen.github.io/2026/05/28/ppt/"/>
+    <id>http://nichunen.github.io/2026/05/28/ppt/</id>
+    <published>2026-05-28T13:37:26.000Z</published>
+    <updated>2026-05-28T16:29:04.475Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;We setup key-store and trust-store in common platform to enable Mtls, and this is the example of Api call to common: the The</summary>
+        
+      
+    
+    
+    
+    <category term="ppt" scheme="http://nichunen.github.io/categories/ppt/"/>
+    
+    
+    <category term="ppt" scheme="http://nichunen.github.io/tags/ppt/"/>
+    
+  </entry>
   
   <entry>
     <title>tasks</title>
@@ -504,32 +530,6 @@ using</summary>
         
         
     <summary type="html">&lt;p&gt;给你一个二维整数数组 &lt;code&gt;envelopes&lt;/code&gt; ，其中 &lt;code&gt;envelopes[i] = [wi, hi]&lt;/code&gt; ，表示第 &lt;code&gt;i&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/categories/leetcode/"/>
-    
-    
-    <category term="leetcode" scheme="http://nichunen.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lc-352</title>
-    <link href="http://nichunen.github.io/2024/08/07/lc-352/"/>
-    <id>http://nichunen.github.io/2024/08/07/lc-352/</id>
-    <published>2024-08-07T11:58:36.000Z</published>
-    <updated>2024-08-09T08:42:19.373Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;给你一个由非负整数 &lt;code&gt;a1, a2, ..., an&lt;/code&gt; 组成的数据流输入，请你将到目前为止看到的数字总结为不相交的区间列表。&lt;/p&gt;
-&lt;p&gt;实现 &lt;code&gt;SummaryRanges&lt;/code&gt;</summary>
         
       
     
